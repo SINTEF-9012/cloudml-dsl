@@ -1,0 +1,8 @@
+rm -rf org.cloudml.dsl/bin
+rm -rf org.cloudml.dsl.test/bin
+rm -rf org.cloudml.dsl.sdk/bin
+rm -rf org.cloudml.dsl.ui/bin
+
+git add -A
+git commit -m "$1"
+git push

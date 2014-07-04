@@ -1,6 +1,6 @@
 cloudml-dsl is a text-based domain-specific language for writing CloudML models. See the first (and so far the only) example below:
 
->
+```
 model MyModel
 provider AWS:'credentials'
 components{

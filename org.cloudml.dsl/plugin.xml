@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CloudML -->
+      <package
+            uri="http://cloudml.net"
+            class="cloudml.CloudmlPackage"
+            genModel="model/CloudML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CloudML-2.0 -->
+      <package
+            uri="http://cloudml.net/core"
+            class="cloudml.core.CorePackage"
+            genModel="model/CloudML-2.0.genmodel"/>
+   </extension>
+
+</plugin>

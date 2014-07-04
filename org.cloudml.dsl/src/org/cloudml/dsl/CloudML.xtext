@@ -1,0 +1,93 @@
+grammar org.cloudml.dsl.CloudML with org.eclipse.xtext.common.Terminals
+
+import "http://cloudml.net" as cloudml
+import "http://cloudml.net/core"
+
+
+
+CloudMLRoot returns CloudMLModel:
+	'model' name = ID 
+	providers += ProviderCS*
+	'components' '{'
+		(
+			vms += VMCS | 
+			internalComponents += InternalComponentCS |
+			externalComponents += ExternalComponentCS
+		)*
+		(relationships += RelationshipCS)*
+	'}'
+	
+	'instances' '{'
+		(
+			componentInstances += InternalComponentInstanceCS |
+			componentInstances += ExternalComponentInstanceCS 
+		)*
+		(relationshipInstances += RelationshipInstanceCS)*
+	'}'
+
+;
+
+
+
+ProviderCS returns Provider:
+	'provider' name = ID ':' credentials = STRING
+	
+;
+
+VMCS returns VM:
+	'vm' name = ID '{'
+		provided += VMPortCS*
+	'}'
+;
+
+VMPortCS returns VMPort: name = ID;
+
+
+ExternalComponentCS returns ExternalComponent:
+	'external' name = ID '{'
+		providedPorts += ProvidedPortCS*
+	'}'
+;
+
+ProvidedPortCS returns ProvidedPort:
+	'provided' (isLocal?='local')? name = ID (component=[Component])?
+;
+
+InternalComponentCS returns InternalComponent:
+	'internal' name = ID '{'
+		providedPorts += ProvidedPortCS*
+		requiredPorts += RequiredPortCS*
+		requiredExecutionPlatform = RequiredExecutionPlatformCS
+	'}'
+;
+
+RequiredPortCS returns RequiredPort:
+	'required' (isMandatory?='mandatory')? name = ID (component = [Component])?
+;
+
+RequiredExecutionPlatformCS returns RequiredExecutionPlatform:
+	'execution' name = ID
+	(owner = [Component])?
+;
+
+RelationshipCS returns Relationship:
+	name = ID ':' requiredPort = [RequiredPort|Fqn] '=>' providedPort = [ProvidedPort|Fqn]
+;
+
+
+
+ExternalComponentInstanceCS returns ExternalComponentInstance:
+	'external' name = ID ':' type = [ExternalComponent]
+;
+
+InternalComponentInstanceCS returns InternalComponentInstance:
+	'internal' name = ID ':' type = [InternalComponent]
+;
+
+RelationshipInstanceCS returns RelationshipInstance:
+	name = ID ':' type = [Relationship] ':' requiredPortInstance = [RequiredPortInstance|Fqn] '=>' providedPortInstance = [ProvidedPortInstance|Fqn]
+;
+
+
+
+Fqn : ID ('.' ID)*;

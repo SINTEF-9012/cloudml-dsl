@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.cloudml.dsl/src" modelPluginID="org.cloudml.dsl"
+    modelName="CloudML-2" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>CloudML-2.0.ecore</foreignModel>
+  <genPackages prefix="Cloudml" disposableProviderFactory="true" ecorePackage="CloudML-2.0.ecore#/">
+    <genClasses ecoreClass="CloudML-2.0.ecore#//NoUse"/>
+    <nestedGenPackages prefix="Core" disposableProviderFactory="true" ecorePackage="CloudML-2.0.ecore#//core">
+      <genClasses image="false" ecoreClass="CloudML-2.0.ecore#//core/CloudMLElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/CloudMLElement/name"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/Property">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Property/value"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="CloudML-2.0.ecore#//core/CloudMLElementWithProperties">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLElementWithProperties/properties"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLElementWithProperties/resources"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/Resource">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Resource/downloadCommand"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Resource/uploadCommand"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Resource/installCommand"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Resource/configureCommand"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Resource/startCommand"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Resource/stopCommand"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Resource/requireCredentials"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Resource/executeLocally"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/CloudMLModel">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/providers"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/components"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/clouds"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/componentInstances"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/internalComponents"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/externalComponents"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/internalComponentInstances"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/externalComponentInstances"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/vms"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/vmInstances"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/relationships"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/relationshipInstances"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/CloudMLModel/executesInstances"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/VM">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/VM/provided"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/minRam"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/maxRam"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/minCores"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/maxCores"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/minStorage"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/maxStorage"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/os"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/is64os"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/imageId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/securityGroup"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/sshKey"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/privateKey"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VM/groupName"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/VMPort"/>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/Provider">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Provider/credentials"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="CloudML-2.0.ecore#//core/Component">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/Component/providedPorts"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/Component/providedExecutionPlatforms"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/InternalComponent">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/InternalComponent/requiredPorts"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/InternalComponent/compositeInternalComponents"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/InternalComponent/requiredExecutionPlatform"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="CloudML-2.0.ecore#//core/Port">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/Port/component"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Port/isLocal"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/Port/portNumber"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/RequiredPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/RequiredPort/isMandatory"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/ProvidedPort"/>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/Relationship">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/Relationship/requiredPort"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/Relationship/providedPort"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/Relationship/requiredPortResource"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/Relationship/providedPortResource"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/Cloud">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/Cloud/vmInstances"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/VMInstance">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/VMInstance/provided"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/VMInstance/publicAddress"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/VMPortInstance">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/VMPortInstance/type"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="CloudML-2.0.ecore#//core/ComponentInstance">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ComponentInstance/providedPortInstances"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ComponentInstance/type"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ComponentInstance/providedExecutionPlatformInstances"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/InternalComponentInstance">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/InternalComponentInstance/requiredPortInstances"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/InternalComponentInstance/requiredExecutionPlatformInstance"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/PortInstance">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/PortInstance/type"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/PortInstance/componentInstance"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/RequiredPortInstance"/>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/ProvidedPortInstance"/>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/RelationshipInstance">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/RelationshipInstance/type"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/RelationshipInstance/requiredPortInstance"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/RelationshipInstance/providedPortInstance"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/ExternalComponent">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ExternalComponent/provider"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/ExternalComponent/endPoint"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ExternalComponent/provide"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/ExternalComponent/login"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/ExternalComponent/passwd"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/ExternalComponent/location"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/ExternalComponent/serviceType"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/ExternalComponent/Region"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/ExternalComponentInstance">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/ExternalComponentInstance/ips"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ExternalComponentInstance/provide"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="CloudML-2.0.ecore#//core/ExecutionPlatform">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ExecutionPlatform/owner"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="CloudML-2.0.ecore#//core/ExecutionPlatformInstance">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ExecutionPlatformInstance/owner"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ExecutionPlatformInstance/type"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/ProvidedExecutionPlatform">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ProvidedExecutionPlatform/offers"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/ProvidedExecutionPlatformInstance"/>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/RequiredExecutionPlatform">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/RequiredExecutionPlatform/demands"/>
+      </genClasses>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/RequiredExecutionPlatformInstance"/>
+      <genClasses ecoreClass="CloudML-2.0.ecore#//core/ExecuteInstance">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ExecuteInstance/providedExecutionPlatformInstance"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference CloudML-2.0.ecore#//core/ExecuteInstance/requiredExecutionPlatformInstance"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

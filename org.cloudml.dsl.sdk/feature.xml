@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.cloudml.dsl.sdk"
+	label="CloudML SDK Feature "
+	version="1.0.0.qualifier">
+	<plugin
+			id="org.cloudml.dsl"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+	<plugin
+			id="org.cloudml.dsl.ui"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+</feature>

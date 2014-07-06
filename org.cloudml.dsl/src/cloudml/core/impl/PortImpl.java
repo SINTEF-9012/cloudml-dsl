@@ -104,7 +104,6 @@ public abstract class PortImpl extends CloudMLElementWithPropertiesImpl implemen
 	 * @generated
 	 */
 	public Component getComponent() {
-		
 		if (component != null && component.eIsProxy()) {
 			InternalEObject oldComponent = (InternalEObject)component;
 			component = (Component)eResolveProxy(oldComponent);

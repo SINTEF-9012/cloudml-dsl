@@ -142,7 +142,7 @@ public abstract class ComponentInstanceImpl extends CloudMLElementWithProperties
 			this.getProvidedPortInstances().clear();
 			for(ProvidedPort provided : newType.getProvidedPorts()){
 				ProvidedPortInstance providedInstance = CoreFactory.eINSTANCE.createProvidedPortInstance();
-				providedInstance.setName(provided.getName().toLowerCase());
+				providedInstance.setName(provided.getName());
 				providedInstance.setComponentInstance(this);
 				providedInstance.setType(provided);
 				this.getProvidedPortInstances().add(providedInstance);
@@ -153,8 +153,9 @@ public abstract class ComponentInstanceImpl extends CloudMLElementWithProperties
 			for(ProvidedExecutionPlatform execution : type.getProvidedExecutionPlatforms()){
 				ProvidedExecutionPlatformInstance executionInstance = CoreFactory.eINSTANCE.createProvidedExecutionPlatformInstance();
 				executionInstance.setType(execution);
-				executionInstance.setName(execution.getName().toLowerCase());
+				executionInstance.setName(execution.getName());
 				executionInstance.setOwner(this);
+				this.getProvidedExecutionPlatformInstances().add(executionInstance);
 			}
 		}
 	}

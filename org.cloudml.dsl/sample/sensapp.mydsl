@@ -1,0 +1,79 @@
+model SensApp
+provider openstacknova : '' ('endPoint':'http://192.168.1.10:5000/v2.0')
+provider awsec2 : ''
+provider flexiant : '' ('endPoint':'https://api.sd1.flexiant.net:4442/userapi')
+
+components{
+	vm ML{
+		[
+			provider: flexiant
+			group: 'sensapp',  securityGroup: 'SensApp', sshKey: 'cloudml'
+			location: 'eu-west-1b', os: 'ubuntu'
+			os64  core: 2..,  ram: 1000..,  storage: 50..			
+		]
+		provided execution m1Provided [offers: ('OS':'Ubuntu')]
+	}
+	vm SL{
+		[
+			provider: flexiant, imageID:'Ubuntu-SINTEF'
+			group: 'sensapp',  securityGroup: 'SensApp', sshKey: 'cloudml'
+			location: 'eu-west-1b', os: 'ubuntu'
+			os64  core: 1..,  ram: 1000..,  storage: 50..			
+		]
+		provided execution s1Provided [offers: ('OS':'Ubuntu')]
+	}
+	internal mangoDB{
+		required execution sl : ('OS':'Ubuntu')
+		provided port mangoDB
+		resource NoName{
+			download: 'wget -P ~ http://cloudml.org/scripts/linux/ubuntu/mongoDB/install_mongoDB.sh'
+			install: 'cd ~; sudo bash install_mongoDB.sh'
+		}  
+	}
+	internal sensapp{
+		provided port rest [port:8080]
+		required port mangoDBRequired [local mandatory]
+		required execution scRequired [demands: ('Servlet Container' : 'true')]
+		resource NoName{
+			download: 'wget -P ~ http://github.com/downloads/SINTEF-9012/sensapp/sensapp.war; wget -P ~ http://cloudml.org/scripts/linux/ubuntu/sensapp/install_start_sensapp.sh'
+			install: 'cd ~; sudo bash install_start_sensapp.sh'
+		}
+	}
+	internal JettySC{
+		provided execution sc [offers: ('Servlet Container' : 'true')]
+		required execution ml [demands: ('OS':'Ubuntu')]
+		resource NoName{
+			download: 'wget -P ~ http://cloudml.org/scripts/linux/ubuntu/jetty/install_jetty.sh'
+			install: 'cd ~; sudo bash install_jetty.sh'
+			stop: 'sudo service jetty stop'
+		}
+	}
+	internal SensAppAdmin{
+		required port restRequired [mandatory, port:8080]
+		required execution scRequired [demands: ('Servlet Container' : 'true')]
+	}
+	relationship SensAppAdminSensApp{
+		SensAppAdmin.restRequired => sensapp.rest
+		resource NoName{
+			download: 'wget -P ~ http://cloudml.org/scripts/linux/ubuntu/sensappAdmin/configure_sensappadmin.sh'
+			install: 'cd ~; sudo bash configure_sensappadmin.sh'
+		}
+	}
+	relationship SensAppMangoDB : sensapp.mangoDBRequired => mangoDB.mangoDB
+}
+instances{
+	vm SL sensappsl1
+	vm ML sensappml1
+	internal JettySC jettySC1
+	internal sensapp sensapp1
+	internal mangoDB mangoDB1
+	internal JettySC jettySC2
+	internal SensAppAdmin sensAppAdmin1
+	relationship SensAppAdminSensApp sensAppAdminSensApp1: sensAppAdmin1.restRequired => sensapp1.rest
+	relationship SensAppMangoDB sansAppMangoDB1: sensapp1.mangoDBRequired => mangoDB1.mangoDB
+	execute runJetty1Ml1: jettySC1.ml => sensappml1.m1Provided
+	execute runJetty2SL1: jettySC2.ml => sensappsl1.s1Provided
+	execute sensAppJetty1: sensapp1.scRequired => jettySC1.sc
+	execute sensAppAdminJetty2 : sensAppAdmin1.scRequired => jettySC2.sc
+	execute mangoDBMl1: mangoDB1.sl => sensappml1.m1Provided 
+}

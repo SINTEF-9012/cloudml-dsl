@@ -10,6 +10,10 @@ import java.io.ByteArrayOutputStream
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl
 import cloudml.core.Port
 import cloudml.core.Component
+import cloudml.core.CloudMLElement
+import cloudml.core.CloudMLModel
+import cloudml.core.VMInstance
+import java.util.ArrayList
 
 /**
  * Generates code from your model files on save.
@@ -28,11 +32,24 @@ class CloudMLGenerator implements IGenerator {
 			}
 		}
 		
+		val fileName = (resource.contents.get(0) as CloudMLElement).getName();
+		
 		val xmires = new XMIResourceImpl()
 		xmires.contents.addAll(resource.contents)
 		
+		val root = xmires.contents.get(0) as CloudMLModel
+		val vms = root.externalComponentInstances.filter[e | e instanceof VMInstance]
+		val vms2 = new ArrayList<VMInstance>()
+		vms.forEach[e|
+			vms2.add(e as VMInstance)
+		]
+		
+		root.vmInstances.addAll(vms2)
+		
+		root.externalComponentInstances.removeAll(vms2)
+		
 		val baos = new ByteArrayOutputStream()
 		xmires.save(baos, null)
-		fsa.generateFile('result.xmi', baos.toString)
+		fsa.generateFile(fileName + '.xmi', baos.toString)
 	}
 }

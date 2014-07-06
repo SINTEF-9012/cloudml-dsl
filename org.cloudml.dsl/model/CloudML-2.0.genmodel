@@ -7,7 +7,8 @@
   <foreignModel>CloudML-2.0.ecore</foreignModel>
   <genPackages prefix="Cloudml" disposableProviderFactory="true" ecorePackage="CloudML-2.0.ecore#/">
     <genClasses ecoreClass="CloudML-2.0.ecore#//NoUse"/>
-    <nestedGenPackages prefix="Core" disposableProviderFactory="true" ecorePackage="CloudML-2.0.ecore#//core">
+    <nestedGenPackages prefix="Core" basePackage="cloudml" disposableProviderFactory="true"
+        ecorePackage="CloudML-2.0.ecore#//core">
       <genClasses image="false" ecoreClass="CloudML-2.0.ecore#//core/CloudMLElement">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloudML-2.0.ecore#//core/CloudMLElement/name"/>
       </genClasses>

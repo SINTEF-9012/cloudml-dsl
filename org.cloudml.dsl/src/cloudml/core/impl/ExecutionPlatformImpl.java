@@ -61,9 +61,6 @@ public abstract class ExecutionPlatformImpl extends CloudMLElementWithProperties
 	 * @generated
 	 */
 	public Component getOwner() {
-		EObject obj = eContainer();
-		if(obj != null & obj instanceof Component)
-			owner = (Component) owner;
 		if (owner != null && owner.eIsProxy()) {
 			InternalEObject oldOwner = (InternalEObject)owner;
 			owner = (Component)eResolveProxy(oldOwner);
@@ -78,12 +75,12 @@ public abstract class ExecutionPlatformImpl extends CloudMLElementWithProperties
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	public Component basicGetOwner() {
-		EObject obj = eContainer();
-		if(obj != null && obj instanceof Component)
-			setOwner((Component) obj);
+		EObject container = eContainer();
+		if(container != null && container instanceof Component)
+			setOwner((Component) container);
 		return owner;
 	}
 

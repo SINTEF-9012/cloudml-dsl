@@ -7,17 +7,11 @@ import cloudml.core.CoreFactory;
 import cloudml.core.CorePackage;
 import cloudml.core.InternalComponent;
 import cloudml.core.InternalComponentInstance;
-import cloudml.core.ProvidedExecutionPlatform;
-import cloudml.core.ProvidedExecutionPlatformInstance;
-import cloudml.core.ProvidedPort;
-import cloudml.core.ProvidedPortInstance;
 import cloudml.core.RequiredExecutionPlatform;
 import cloudml.core.RequiredExecutionPlatformInstance;
 import cloudml.core.RequiredPort;
 import cloudml.core.RequiredPortInstance;
-
 import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
@@ -235,7 +229,7 @@ public class InternalComponentInstanceImpl extends ComponentInstanceImpl impleme
 			this.getRequiredPortInstances().clear();
 			for(RequiredPort required : internalType.getRequiredPorts()){
 				RequiredPortInstance requiredInstance = CoreFactory.eINSTANCE.createRequiredPortInstance();
-				requiredInstance.setName(required.getName().toLowerCase());
+				requiredInstance.setName(required.getName());
 				requiredInstance.setComponentInstance(this);
 				requiredInstance.setType(required);
 				this.getRequiredPortInstances().add(requiredInstance);
@@ -245,7 +239,7 @@ public class InternalComponentInstanceImpl extends ComponentInstanceImpl impleme
 		if(execution!=null){
 			RequiredExecutionPlatformInstance executionInstance = CoreFactory.eINSTANCE.createRequiredExecutionPlatformInstance();
 			executionInstance.setType(execution);
-			executionInstance.setName(execution.getName().toLowerCase());
+			executionInstance.setName(execution.getName());
 			executionInstance.setOwner(this);
 			this.setRequiredExecutionPlatformInstance(executionInstance);
 		}

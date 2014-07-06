@@ -32,7 +32,7 @@ public interface CloudMLElement extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see cloudml.core.CorePackage#getCloudMLElement_Name()
-	 * @model id="true" required="true"
+	 * @model required="true"
 	 * @generated
 	 */
 	String getName();

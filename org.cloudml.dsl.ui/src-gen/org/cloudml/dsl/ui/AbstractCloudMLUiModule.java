@@ -233,5 +233,10 @@ public abstract class AbstractCloudMLUiModule extends DefaultUiModule {
 		return org.cloudml.dsl.ui.contentassist.antlr.PartialCloudMLContentAssistParser.class;
 	}
 
+	// contributed by org.eclipse.xtext.ui.generator.compare.CompareFragment
+	public Class<? extends org.eclipse.compare.IViewerCreator> bindIViewerCreator() {
+		return org.eclipse.xtext.ui.compare.DefaultViewerCreator.class;
+	}
+
 
 }

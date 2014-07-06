@@ -23,7 +23,7 @@ components{
 		provided execution s1Provided [offers: ('OS':'Ubuntu')]
 	}
 	internal mangoDB{
-		required execution sl : ('OS':'Ubuntu')
+		required execution sl [demands: ('OS':'Ubuntu')]
 		provided port mangoDB
 		resource NoName{
 			download: 'wget -P ~ http://cloudml.org/scripts/linux/ubuntu/mongoDB/install_mongoDB.sh'

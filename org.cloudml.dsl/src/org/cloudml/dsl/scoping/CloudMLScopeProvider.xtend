@@ -3,6 +3,17 @@
  */
 package org.cloudml.dsl.scoping
 
+import cloudml.core.RelationshipInstance
+import org.eclipse.emf.ecore.EReference
+import cloudml.core.CorePackage
+import cloudml.core.CloudMLModel
+import cloudml.core.RequiredPortInstance
+import java.util.ArrayList
+import org.eclipse.xtext.scoping.Scopes
+import cloudml.core.ProvidedPortInstance
+import cloudml.core.InternalComponentInstance
+import cloudml.core.ComponentInstance
+
 /**
  * This class contains custom scoping description.
  * 
@@ -11,5 +22,40 @@ package org.cloudml.dsl.scoping
  *
  */
 class CloudMLScopeProvider extends org.eclipse.xtext.scoping.impl.AbstractDeclarativeScopeProvider {
-
+	extension CloudmlQualifiedNameProvider _provider = new CloudmlQualifiedNameProvider()
+	def scope_RelationshipInstance_requiredPortInstance(RelationshipInstance ri, EReference ref){
+		if(ref == CorePackage.Literals.RELATIONSHIP_INSTANCE__REQUIRED_PORT_INSTANCE){
+			val model = ri.eContainer as CloudMLModel
+			val list = new ArrayList<RequiredPortInstance>()
+			val clist = new ArrayList<InternalComponentInstance>()
+			for(ci : model.internalComponentInstances){
+				clist.add(ci)
+				list.addAll(ci.requiredPortInstances)
+			}
+			return Scopes.scopeFor(
+				list, 
+				[RequiredPortInstance e | e.qualifiedName],
+				Scopes.scopeFor(clist)
+			)
+		}
+	}
+	def scope_RelationshipInstance_providedPortInstance(RelationshipInstance ri, EReference ref){
+		val model = ri.eContainer as CloudMLModel
+		val list = new ArrayList<ProvidedPortInstance>()
+		val clist = new ArrayList<ComponentInstance>()
+		for(ci : model.externalComponentInstances){
+			clist.add(ci)
+			list.addAll(ci.providedPortInstances)
+		}
+		for(ci : model.internalComponentInstances){
+			clist.add(ci)
+			list.addAll(ci.providedPortInstances)
+		}	
+		return Scopes.scopeFor(
+			list,
+			[ProvidedPortInstance e | e.qualifiedName], 
+			Scopes.scopeFor(clist)
+		)
+	}
+		
 }

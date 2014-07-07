@@ -3,9 +3,14 @@
  */
 package org.cloudml.dsl;
 
+import org.cloudml.dsl.scoping.CloudmlQualifiedNameProvider;
+import org.eclipse.xtext.naming.IQualifiedNameProvider;
+
 /**
  * Use this class to register components to be used at runtime / without the Equinox extension registry.
  */
 public class CloudMLRuntimeModule extends org.cloudml.dsl.AbstractCloudMLRuntimeModule {
-
+	 public Class<? extends IQualifiedNameProvider> bindIQualifiedNameProvider() {
+	        return CloudmlQualifiedNameProvider.class;
+	    }
 }

@@ -1177,15 +1177,19 @@ ruleProvidedPortCS returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_3='[' 
+)(	otherlv_3=':' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getProvidedPortCSAccess().getLeftSquareBracketKeyword_3_0());
+    	newLeafNode(otherlv_3, grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_0());
+    }
+(	otherlv_4='[' 
+    {
+    	newLeafNode(otherlv_4, grammarAccess.getProvidedPortCSAccess().getLeftSquareBracketKeyword_3_1_0());
     }
 (((
 (
-		lv_isLocal_4_0=	'local' 
+		lv_isLocal_5_0=	'local' 
     {
-        newLeafNode(lv_isLocal_4_0, grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0());
+        newLeafNode(lv_isLocal_5_0, grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0());
     }
  
 	    {
@@ -1197,19 +1201,19 @@ ruleProvidedPortCS returns [EObject current=null]
 
 )
 )
-    |(	otherlv_5='port' 
+    |(	otherlv_6='port' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getProvidedPortCSAccess().getPortKeyword_3_1_0_1_0());
+    	newLeafNode(otherlv_6, grammarAccess.getProvidedPortCSAccess().getPortKeyword_3_1_1_0_1_0());
     }
-	otherlv_6=':' 
+	otherlv_7=':' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_1_0_1_1());
+    	newLeafNode(otherlv_7, grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_1_1_0_1_1());
     }
 (
 (
-		lv_portNumber_7_0=RULE_INT
+		lv_portNumber_8_0=RULE_INT
 		{
-			newLeafNode(lv_portNumber_7_0, grammarAccess.getProvidedPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_0_1_2_0()); 
+			newLeafNode(lv_portNumber_8_0, grammarAccess.getProvidedPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -1218,27 +1222,23 @@ ruleProvidedPortCS returns [EObject current=null]
        		setWithLastConsumed(
        			$current, 
        			"portNumber",
-        		lv_portNumber_7_0, 
+        		lv_portNumber_8_0, 
         		"INT");
 	    }
 
 )
-)))(	otherlv_8=',' 
+)))(	otherlv_9=',' 
     {
-    	newLeafNode(otherlv_8, grammarAccess.getProvidedPortCSAccess().getCommaKeyword_3_1_1());
+    	newLeafNode(otherlv_9, grammarAccess.getProvidedPortCSAccess().getCommaKeyword_3_1_1_1());
     }
-)?)*	otherlv_9=']' 
+)?)*	otherlv_10=']' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getProvidedPortCSAccess().getRightSquareBracketKeyword_3_2());
+    	newLeafNode(otherlv_10, grammarAccess.getProvidedPortCSAccess().getRightSquareBracketKeyword_3_1_2());
     }
-)?(	otherlv_10=':' 
-    {
-    	newLeafNode(otherlv_10, grammarAccess.getProvidedPortCSAccess().getColonKeyword_4_0());
-    }
-(
+)?(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getProvidedPortCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getProvidedPortCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
 	    }
 		lv_properties_11_0=rulePropertyCS		{
 	        if ($current==null) {
@@ -1470,15 +1470,19 @@ ruleRequiredPortCS returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_3='[' 
+)(	otherlv_3=':' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getRequiredPortCSAccess().getLeftSquareBracketKeyword_3_0());
+    	newLeafNode(otherlv_3, grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_0());
+    }
+(	otherlv_4='[' 
+    {
+    	newLeafNode(otherlv_4, grammarAccess.getRequiredPortCSAccess().getLeftSquareBracketKeyword_3_1_0());
     }
 (((
 (
-		lv_isLocal_4_0=	'local' 
+		lv_isLocal_5_0=	'local' 
     {
-        newLeafNode(lv_isLocal_4_0, grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0());
+        newLeafNode(lv_isLocal_5_0, grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0());
     }
  
 	    {
@@ -1490,19 +1494,19 @@ ruleRequiredPortCS returns [EObject current=null]
 
 )
 )
-    |(	otherlv_5='port' 
+    |(	otherlv_6='port' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getRequiredPortCSAccess().getPortKeyword_3_1_0_1_0());
+    	newLeafNode(otherlv_6, grammarAccess.getRequiredPortCSAccess().getPortKeyword_3_1_1_0_1_0());
     }
-	otherlv_6=':' 
+	otherlv_7=':' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_1_0_1_1());
+    	newLeafNode(otherlv_7, grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_1_1_0_1_1());
     }
 (
 (
-		lv_portNumber_7_0=RULE_INT
+		lv_portNumber_8_0=RULE_INT
 		{
-			newLeafNode(lv_portNumber_7_0, grammarAccess.getRequiredPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_0_1_2_0()); 
+			newLeafNode(lv_portNumber_8_0, grammarAccess.getRequiredPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -1511,7 +1515,7 @@ ruleRequiredPortCS returns [EObject current=null]
        		setWithLastConsumed(
        			$current, 
        			"portNumber",
-        		lv_portNumber_7_0, 
+        		lv_portNumber_8_0, 
         		"INT");
 	    }
 
@@ -1519,9 +1523,9 @@ ruleRequiredPortCS returns [EObject current=null]
 ))
     |(
 (
-		lv_isMandatory_8_0=	'mandatory' 
+		lv_isMandatory_9_0=	'mandatory' 
     {
-        newLeafNode(lv_isMandatory_8_0, grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_0_2_0());
+        newLeafNode(lv_isMandatory_9_0, grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_1_0_2_0());
     }
  
 	    {
@@ -1532,22 +1536,18 @@ ruleRequiredPortCS returns [EObject current=null]
 	    }
 
 )
-))(	otherlv_9=',' 
+))(	otherlv_10=',' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getRequiredPortCSAccess().getCommaKeyword_3_1_1());
+    	newLeafNode(otherlv_10, grammarAccess.getRequiredPortCSAccess().getCommaKeyword_3_1_1_1());
     }
-)?)*	otherlv_10=']' 
+)?)*	otherlv_11=']' 
     {
-    	newLeafNode(otherlv_10, grammarAccess.getRequiredPortCSAccess().getRightSquareBracketKeyword_3_2());
+    	newLeafNode(otherlv_11, grammarAccess.getRequiredPortCSAccess().getRightSquareBracketKeyword_3_1_2());
     }
-)?(	otherlv_11=':' 
-    {
-    	newLeafNode(otherlv_11, grammarAccess.getRequiredPortCSAccess().getColonKeyword_4_0());
-    }
-(
+)?(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRequiredPortCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getRequiredPortCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
 	    }
 		lv_properties_12_0=rulePropertyCS		{
 	        if ($current==null) {
@@ -1609,48 +1609,48 @@ ruleRequiredExecutionPlatformCS returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_3='[' 
+)(	otherlv_3=':' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getRequiredExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_0());
+    	newLeafNode(otherlv_3, grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_0());
     }
-	otherlv_4='demands' 
+(	otherlv_4='[' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsKeyword_3_1());
+    	newLeafNode(otherlv_4, grammarAccess.getRequiredExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_1_0());
     }
-	otherlv_5=':' 
+	otherlv_5='demands' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_2());
+    	newLeafNode(otherlv_5, grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsKeyword_3_1_1());
+    }
+	otherlv_6=':' 
+    {
+    	newLeafNode(otherlv_6, grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_1_2());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsPropertyCSParserRuleCall_3_3_0()); 
+	        newCompositeNode(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsPropertyCSParserRuleCall_3_1_3_0()); 
 	    }
-		lv_demands_6_0=rulePropertyCS		{
+		lv_demands_7_0=rulePropertyCS		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRequiredExecutionPlatformCSRule());
 	        }
        		add(
        			$current, 
        			"demands",
-        		lv_demands_6_0, 
+        		lv_demands_7_0, 
         		"PropertyCS");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)*	otherlv_7=']' 
+)*	otherlv_8=']' 
     {
-    	newLeafNode(otherlv_7, grammarAccess.getRequiredExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_4());
+    	newLeafNode(otherlv_8, grammarAccess.getRequiredExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_1_4());
     }
-)?(	otherlv_8=':' 
-    {
-    	newLeafNode(otherlv_8, grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_4_0());
-    }
-(
+)?(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
 	    }
 		lv_properties_9_0=rulePropertyCS		{
 	        if ($current==null) {
@@ -1712,48 +1712,48 @@ ruleProvidedExecutionPlatformCS returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_3='[' 
+)(	otherlv_3=':' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getProvidedExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_0());
+    	newLeafNode(otherlv_3, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_0());
     }
-	otherlv_4='offers' 
+(	otherlv_4='[' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1());
+    	newLeafNode(otherlv_4, grammarAccess.getProvidedExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_1_0());
     }
-	otherlv_5=':' 
+	otherlv_5='offers' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_2());
+    	newLeafNode(otherlv_5, grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1_1());
+    }
+	otherlv_6=':' 
+    {
+    	newLeafNode(otherlv_6, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_1_2());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersPropertyCSParserRuleCall_3_3_0()); 
+	        newCompositeNode(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersPropertyCSParserRuleCall_3_1_3_0()); 
 	    }
-		lv_offers_6_0=rulePropertyCS		{
+		lv_offers_7_0=rulePropertyCS		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getProvidedExecutionPlatformCSRule());
 	        }
        		add(
        			$current, 
        			"offers",
-        		lv_offers_6_0, 
+        		lv_offers_7_0, 
         		"PropertyCS");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)*	otherlv_7=']' 
+)*	otherlv_8=']' 
     {
-    	newLeafNode(otherlv_7, grammarAccess.getProvidedExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_4());
+    	newLeafNode(otherlv_8, grammarAccess.getProvidedExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_1_4());
     }
-)?(	otherlv_8=':' 
-    {
-    	newLeafNode(otherlv_8, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_4_0());
-    }
-(
+)?(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
+	        newCompositeNode(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
 	    }
 		lv_properties_9_0=rulePropertyCS		{
 	        if ($current==null) {

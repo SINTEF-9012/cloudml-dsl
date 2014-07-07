@@ -259,7 +259,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (name=ValidID offers+=PropertyCS* properties+=PropertyCS*)
+	 *     (name=ValidID (offers+=PropertyCS* properties+=PropertyCS*)?)
 	 */
 	protected void sequence_ProvidedExecutionPlatformCS(EObject context, ProvidedExecutionPlatform semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -268,7 +268,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (name=ValidID (isLocal?='local' | portNumber=INT)* properties+=PropertyCS*)
+	 *     (name=ValidID ((isLocal?='local' | portNumber=INT)* properties+=PropertyCS*)?)
 	 */
 	protected void sequence_ProvidedPortCS(EObject context, ProvidedPort semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -310,7 +310,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (name=ValidID demands+=PropertyCS* properties+=PropertyCS*)
+	 *     (name=ValidID (demands+=PropertyCS* properties+=PropertyCS*)?)
 	 */
 	protected void sequence_RequiredExecutionPlatformCS(EObject context, RequiredExecutionPlatform semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -319,7 +319,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (name=ValidID (isLocal?='local' | portNumber=INT | isMandatory?='mandatory')* properties+=PropertyCS*)
+	 *     (name=ValidID ((isLocal?='local' | portNumber=INT | isMandatory?='mandatory')* properties+=PropertyCS*)?)
 	 */
 	protected void sequence_RequiredPortCS(EObject context, RequiredPort semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

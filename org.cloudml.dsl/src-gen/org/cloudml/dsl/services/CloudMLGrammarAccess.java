@@ -712,8 +712,9 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
 		//ExternalComponentCS returns ExternalComponent:
-		//	"external" name=ValidID "{" (providedPorts+=ProvidedPortCS | providedExecutionPlatforms+=ProvidedExecutionPlatformCS)*
-		//	("properties" ":" properties+=PropertyCS*)? resources+=ResourceCS* "}";
+		//	"external" name=ValidID "{" (providedPorts+=ProvidedPortCS |
+		//	providedExecutionPlatforms+=ProvidedExecutionPlatformCS)* ("properties" ":" properties+=PropertyCS*)?
+		//	resources+=ResourceCS* "}";
 		public ParserRule getRule() { return rule; }
 
 		//"external" name=ValidID "{" (providedPorts+=ProvidedPortCS | providedExecutionPlatforms+=ProvidedExecutionPlatformCS)*
@@ -780,29 +781,29 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cNameValidIDParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cLeftSquareBracketKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Keyword cColonKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
 		private final Group cGroup_3_1 = (Group)cGroup_3.eContents().get(1);
-		private final Alternatives cAlternatives_3_1_0 = (Alternatives)cGroup_3_1.eContents().get(0);
-		private final Assignment cIsLocalAssignment_3_1_0_0 = (Assignment)cAlternatives_3_1_0.eContents().get(0);
-		private final Keyword cIsLocalLocalKeyword_3_1_0_0_0 = (Keyword)cIsLocalAssignment_3_1_0_0.eContents().get(0);
-		private final Group cGroup_3_1_0_1 = (Group)cAlternatives_3_1_0.eContents().get(1);
-		private final Keyword cPortKeyword_3_1_0_1_0 = (Keyword)cGroup_3_1_0_1.eContents().get(0);
-		private final Keyword cColonKeyword_3_1_0_1_1 = (Keyword)cGroup_3_1_0_1.eContents().get(1);
-		private final Assignment cPortNumberAssignment_3_1_0_1_2 = (Assignment)cGroup_3_1_0_1.eContents().get(2);
-		private final RuleCall cPortNumberINTTerminalRuleCall_3_1_0_1_2_0 = (RuleCall)cPortNumberAssignment_3_1_0_1_2.eContents().get(0);
-		private final Keyword cCommaKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
-		private final Keyword cRightSquareBracketKeyword_3_2 = (Keyword)cGroup_3.eContents().get(2);
-		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cColonKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cPropertiesAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cPropertiesPropertyCSParserRuleCall_4_1_0 = (RuleCall)cPropertiesAssignment_4_1.eContents().get(0);
+		private final Keyword cLeftSquareBracketKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
+		private final Group cGroup_3_1_1 = (Group)cGroup_3_1.eContents().get(1);
+		private final Alternatives cAlternatives_3_1_1_0 = (Alternatives)cGroup_3_1_1.eContents().get(0);
+		private final Assignment cIsLocalAssignment_3_1_1_0_0 = (Assignment)cAlternatives_3_1_1_0.eContents().get(0);
+		private final Keyword cIsLocalLocalKeyword_3_1_1_0_0_0 = (Keyword)cIsLocalAssignment_3_1_1_0_0.eContents().get(0);
+		private final Group cGroup_3_1_1_0_1 = (Group)cAlternatives_3_1_1_0.eContents().get(1);
+		private final Keyword cPortKeyword_3_1_1_0_1_0 = (Keyword)cGroup_3_1_1_0_1.eContents().get(0);
+		private final Keyword cColonKeyword_3_1_1_0_1_1 = (Keyword)cGroup_3_1_1_0_1.eContents().get(1);
+		private final Assignment cPortNumberAssignment_3_1_1_0_1_2 = (Assignment)cGroup_3_1_1_0_1.eContents().get(2);
+		private final RuleCall cPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0 = (RuleCall)cPortNumberAssignment_3_1_1_0_1_2.eContents().get(0);
+		private final Keyword cCommaKeyword_3_1_1_1 = (Keyword)cGroup_3_1_1.eContents().get(1);
+		private final Keyword cRightSquareBracketKeyword_3_1_2 = (Keyword)cGroup_3_1.eContents().get(2);
+		private final Assignment cPropertiesAssignment_3_2 = (Assignment)cGroup_3.eContents().get(2);
+		private final RuleCall cPropertiesPropertyCSParserRuleCall_3_2_0 = (RuleCall)cPropertiesAssignment_3_2.eContents().get(0);
 		
 		//ProvidedPortCS returns ProvidedPort:
-		//	"provided" "port" name=ValidID ("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")? (":"
+		//	"provided" "port" name=ValidID (":" ("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")?
 		//	properties+=PropertyCS*)?;
 		public ParserRule getRule() { return rule; }
 
-		//"provided" "port" name=ValidID ("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")? (":"
+		//"provided" "port" name=ValidID (":" ("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")?
 		//properties+=PropertyCS*)?
 		public Group getGroup() { return cGroup; }
 
@@ -818,56 +819,56 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		//ValidID
 		public RuleCall getNameValidIDParserRuleCall_2_0() { return cNameValidIDParserRuleCall_2_0; }
 
-		//("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")?
+		//(":" ("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")? properties+=PropertyCS*)?
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"["
-		public Keyword getLeftSquareBracketKeyword_3_0() { return cLeftSquareBracketKeyword_3_0; }
+		//":"
+		public Keyword getColonKeyword_3_0() { return cColonKeyword_3_0; }
 
-		//((isLocal?="local" | "port" ":" portNumber=INT) ","?)*
+		//("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")?
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
+		//"["
+		public Keyword getLeftSquareBracketKeyword_3_1_0() { return cLeftSquareBracketKeyword_3_1_0; }
+
+		//((isLocal?="local" | "port" ":" portNumber=INT) ","?)*
+		public Group getGroup_3_1_1() { return cGroup_3_1_1; }
+
 		//isLocal?="local" | "port" ":" portNumber=INT
-		public Alternatives getAlternatives_3_1_0() { return cAlternatives_3_1_0; }
+		public Alternatives getAlternatives_3_1_1_0() { return cAlternatives_3_1_1_0; }
 
 		//isLocal?="local"
-		public Assignment getIsLocalAssignment_3_1_0_0() { return cIsLocalAssignment_3_1_0_0; }
+		public Assignment getIsLocalAssignment_3_1_1_0_0() { return cIsLocalAssignment_3_1_1_0_0; }
 
 		//"local"
-		public Keyword getIsLocalLocalKeyword_3_1_0_0_0() { return cIsLocalLocalKeyword_3_1_0_0_0; }
+		public Keyword getIsLocalLocalKeyword_3_1_1_0_0_0() { return cIsLocalLocalKeyword_3_1_1_0_0_0; }
 
 		//"port" ":" portNumber=INT
-		public Group getGroup_3_1_0_1() { return cGroup_3_1_0_1; }
+		public Group getGroup_3_1_1_0_1() { return cGroup_3_1_1_0_1; }
 
 		//"port"
-		public Keyword getPortKeyword_3_1_0_1_0() { return cPortKeyword_3_1_0_1_0; }
+		public Keyword getPortKeyword_3_1_1_0_1_0() { return cPortKeyword_3_1_1_0_1_0; }
 
 		//":"
-		public Keyword getColonKeyword_3_1_0_1_1() { return cColonKeyword_3_1_0_1_1; }
+		public Keyword getColonKeyword_3_1_1_0_1_1() { return cColonKeyword_3_1_1_0_1_1; }
 
 		//portNumber=INT
-		public Assignment getPortNumberAssignment_3_1_0_1_2() { return cPortNumberAssignment_3_1_0_1_2; }
+		public Assignment getPortNumberAssignment_3_1_1_0_1_2() { return cPortNumberAssignment_3_1_1_0_1_2; }
 
 		//INT
-		public RuleCall getPortNumberINTTerminalRuleCall_3_1_0_1_2_0() { return cPortNumberINTTerminalRuleCall_3_1_0_1_2_0; }
+		public RuleCall getPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0() { return cPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0; }
 
 		//","?
-		public Keyword getCommaKeyword_3_1_1() { return cCommaKeyword_3_1_1; }
+		public Keyword getCommaKeyword_3_1_1_1() { return cCommaKeyword_3_1_1_1; }
 
 		//"]"
-		public Keyword getRightSquareBracketKeyword_3_2() { return cRightSquareBracketKeyword_3_2; }
-
-		//(":" properties+=PropertyCS*)?
-		public Group getGroup_4() { return cGroup_4; }
-
-		//":"
-		public Keyword getColonKeyword_4_0() { return cColonKeyword_4_0; }
+		public Keyword getRightSquareBracketKeyword_3_1_2() { return cRightSquareBracketKeyword_3_1_2; }
 
 		//properties+=PropertyCS*
-		public Assignment getPropertiesAssignment_4_1() { return cPropertiesAssignment_4_1; }
+		public Assignment getPropertiesAssignment_3_2() { return cPropertiesAssignment_3_2; }
 
 		//PropertyCS
-		public RuleCall getPropertiesPropertyCSParserRuleCall_4_1_0() { return cPropertiesPropertyCSParserRuleCall_4_1_0; }
+		public RuleCall getPropertiesPropertyCSParserRuleCall_3_2_0() { return cPropertiesPropertyCSParserRuleCall_3_2_0; }
 	}
 
 	public class InternalComponentCSElements extends AbstractParserRuleElementFinder {
@@ -979,32 +980,32 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cNameValidIDParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cLeftSquareBracketKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Keyword cColonKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
 		private final Group cGroup_3_1 = (Group)cGroup_3.eContents().get(1);
-		private final Alternatives cAlternatives_3_1_0 = (Alternatives)cGroup_3_1.eContents().get(0);
-		private final Assignment cIsLocalAssignment_3_1_0_0 = (Assignment)cAlternatives_3_1_0.eContents().get(0);
-		private final Keyword cIsLocalLocalKeyword_3_1_0_0_0 = (Keyword)cIsLocalAssignment_3_1_0_0.eContents().get(0);
-		private final Group cGroup_3_1_0_1 = (Group)cAlternatives_3_1_0.eContents().get(1);
-		private final Keyword cPortKeyword_3_1_0_1_0 = (Keyword)cGroup_3_1_0_1.eContents().get(0);
-		private final Keyword cColonKeyword_3_1_0_1_1 = (Keyword)cGroup_3_1_0_1.eContents().get(1);
-		private final Assignment cPortNumberAssignment_3_1_0_1_2 = (Assignment)cGroup_3_1_0_1.eContents().get(2);
-		private final RuleCall cPortNumberINTTerminalRuleCall_3_1_0_1_2_0 = (RuleCall)cPortNumberAssignment_3_1_0_1_2.eContents().get(0);
-		private final Assignment cIsMandatoryAssignment_3_1_0_2 = (Assignment)cAlternatives_3_1_0.eContents().get(2);
-		private final Keyword cIsMandatoryMandatoryKeyword_3_1_0_2_0 = (Keyword)cIsMandatoryAssignment_3_1_0_2.eContents().get(0);
-		private final Keyword cCommaKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
-		private final Keyword cRightSquareBracketKeyword_3_2 = (Keyword)cGroup_3.eContents().get(2);
-		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cColonKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cPropertiesAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cPropertiesPropertyCSParserRuleCall_4_1_0 = (RuleCall)cPropertiesAssignment_4_1.eContents().get(0);
+		private final Keyword cLeftSquareBracketKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
+		private final Group cGroup_3_1_1 = (Group)cGroup_3_1.eContents().get(1);
+		private final Alternatives cAlternatives_3_1_1_0 = (Alternatives)cGroup_3_1_1.eContents().get(0);
+		private final Assignment cIsLocalAssignment_3_1_1_0_0 = (Assignment)cAlternatives_3_1_1_0.eContents().get(0);
+		private final Keyword cIsLocalLocalKeyword_3_1_1_0_0_0 = (Keyword)cIsLocalAssignment_3_1_1_0_0.eContents().get(0);
+		private final Group cGroup_3_1_1_0_1 = (Group)cAlternatives_3_1_1_0.eContents().get(1);
+		private final Keyword cPortKeyword_3_1_1_0_1_0 = (Keyword)cGroup_3_1_1_0_1.eContents().get(0);
+		private final Keyword cColonKeyword_3_1_1_0_1_1 = (Keyword)cGroup_3_1_1_0_1.eContents().get(1);
+		private final Assignment cPortNumberAssignment_3_1_1_0_1_2 = (Assignment)cGroup_3_1_1_0_1.eContents().get(2);
+		private final RuleCall cPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0 = (RuleCall)cPortNumberAssignment_3_1_1_0_1_2.eContents().get(0);
+		private final Assignment cIsMandatoryAssignment_3_1_1_0_2 = (Assignment)cAlternatives_3_1_1_0.eContents().get(2);
+		private final Keyword cIsMandatoryMandatoryKeyword_3_1_1_0_2_0 = (Keyword)cIsMandatoryAssignment_3_1_1_0_2.eContents().get(0);
+		private final Keyword cCommaKeyword_3_1_1_1 = (Keyword)cGroup_3_1_1.eContents().get(1);
+		private final Keyword cRightSquareBracketKeyword_3_1_2 = (Keyword)cGroup_3_1.eContents().get(2);
+		private final Assignment cPropertiesAssignment_3_2 = (Assignment)cGroup_3.eContents().get(2);
+		private final RuleCall cPropertiesPropertyCSParserRuleCall_3_2_0 = (RuleCall)cPropertiesAssignment_3_2.eContents().get(0);
 		
 		//RequiredPortCS returns RequiredPort:
-		//	"required" "port" name=ValidID ("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory") ","?)*
-		//	"]")? (":" properties+=PropertyCS*)?;
+		//	"required" "port" name=ValidID (":" ("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory")
+		//	","?)* "]")? properties+=PropertyCS*)?;
 		public ParserRule getRule() { return rule; }
 
-		//"required" "port" name=ValidID ("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory") ","?)*
-		//"]")? (":" properties+=PropertyCS*)?
+		//"required" "port" name=ValidID (":" ("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory")
+		//","?)* "]")? properties+=PropertyCS*)?
 		public Group getGroup() { return cGroup; }
 
 		//"required"
@@ -1019,62 +1020,63 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		//ValidID
 		public RuleCall getNameValidIDParserRuleCall_2_0() { return cNameValidIDParserRuleCall_2_0; }
 
-		//("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory") ","?)* "]")?
+		//(":" ("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory") ","?)* "]")?
+		//properties+=PropertyCS*)?
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"["
-		public Keyword getLeftSquareBracketKeyword_3_0() { return cLeftSquareBracketKeyword_3_0; }
+		//":"
+		public Keyword getColonKeyword_3_0() { return cColonKeyword_3_0; }
 
-		//((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory") ","?)*
+		//("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory") ","?)* "]")?
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
+		//"["
+		public Keyword getLeftSquareBracketKeyword_3_1_0() { return cLeftSquareBracketKeyword_3_1_0; }
+
+		//((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory") ","?)*
+		public Group getGroup_3_1_1() { return cGroup_3_1_1; }
+
 		//isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory"
-		public Alternatives getAlternatives_3_1_0() { return cAlternatives_3_1_0; }
+		public Alternatives getAlternatives_3_1_1_0() { return cAlternatives_3_1_1_0; }
 
 		//isLocal?="local"
-		public Assignment getIsLocalAssignment_3_1_0_0() { return cIsLocalAssignment_3_1_0_0; }
+		public Assignment getIsLocalAssignment_3_1_1_0_0() { return cIsLocalAssignment_3_1_1_0_0; }
 
 		//"local"
-		public Keyword getIsLocalLocalKeyword_3_1_0_0_0() { return cIsLocalLocalKeyword_3_1_0_0_0; }
+		public Keyword getIsLocalLocalKeyword_3_1_1_0_0_0() { return cIsLocalLocalKeyword_3_1_1_0_0_0; }
 
 		//"port" ":" portNumber=INT
-		public Group getGroup_3_1_0_1() { return cGroup_3_1_0_1; }
+		public Group getGroup_3_1_1_0_1() { return cGroup_3_1_1_0_1; }
 
 		//"port"
-		public Keyword getPortKeyword_3_1_0_1_0() { return cPortKeyword_3_1_0_1_0; }
+		public Keyword getPortKeyword_3_1_1_0_1_0() { return cPortKeyword_3_1_1_0_1_0; }
 
 		//":"
-		public Keyword getColonKeyword_3_1_0_1_1() { return cColonKeyword_3_1_0_1_1; }
+		public Keyword getColonKeyword_3_1_1_0_1_1() { return cColonKeyword_3_1_1_0_1_1; }
 
 		//portNumber=INT
-		public Assignment getPortNumberAssignment_3_1_0_1_2() { return cPortNumberAssignment_3_1_0_1_2; }
+		public Assignment getPortNumberAssignment_3_1_1_0_1_2() { return cPortNumberAssignment_3_1_1_0_1_2; }
 
 		//INT
-		public RuleCall getPortNumberINTTerminalRuleCall_3_1_0_1_2_0() { return cPortNumberINTTerminalRuleCall_3_1_0_1_2_0; }
+		public RuleCall getPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0() { return cPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0; }
 
 		//isMandatory?="mandatory"
-		public Assignment getIsMandatoryAssignment_3_1_0_2() { return cIsMandatoryAssignment_3_1_0_2; }
+		public Assignment getIsMandatoryAssignment_3_1_1_0_2() { return cIsMandatoryAssignment_3_1_1_0_2; }
 
 		//"mandatory"
-		public Keyword getIsMandatoryMandatoryKeyword_3_1_0_2_0() { return cIsMandatoryMandatoryKeyword_3_1_0_2_0; }
+		public Keyword getIsMandatoryMandatoryKeyword_3_1_1_0_2_0() { return cIsMandatoryMandatoryKeyword_3_1_1_0_2_0; }
 
 		//","?
-		public Keyword getCommaKeyword_3_1_1() { return cCommaKeyword_3_1_1; }
+		public Keyword getCommaKeyword_3_1_1_1() { return cCommaKeyword_3_1_1_1; }
 
 		//"]"
-		public Keyword getRightSquareBracketKeyword_3_2() { return cRightSquareBracketKeyword_3_2; }
-
-		//(":" properties+=PropertyCS*)?
-		public Group getGroup_4() { return cGroup_4; }
-
-		//":"
-		public Keyword getColonKeyword_4_0() { return cColonKeyword_4_0; }
+		public Keyword getRightSquareBracketKeyword_3_1_2() { return cRightSquareBracketKeyword_3_1_2; }
 
 		//properties+=PropertyCS*
-		public Assignment getPropertiesAssignment_4_1() { return cPropertiesAssignment_4_1; }
+		public Assignment getPropertiesAssignment_3_2() { return cPropertiesAssignment_3_2; }
 
 		//PropertyCS
-		public RuleCall getPropertiesPropertyCSParserRuleCall_4_1_0() { return cPropertiesPropertyCSParserRuleCall_4_1_0; }
+		public RuleCall getPropertiesPropertyCSParserRuleCall_3_2_0() { return cPropertiesPropertyCSParserRuleCall_3_2_0; }
 	}
 
 	public class RequiredExecutionPlatformCSElements extends AbstractParserRuleElementFinder {
@@ -1085,22 +1087,22 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cNameValidIDParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cLeftSquareBracketKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
-		private final Keyword cDemandsKeyword_3_1 = (Keyword)cGroup_3.eContents().get(1);
-		private final Keyword cColonKeyword_3_2 = (Keyword)cGroup_3.eContents().get(2);
-		private final Assignment cDemandsAssignment_3_3 = (Assignment)cGroup_3.eContents().get(3);
-		private final RuleCall cDemandsPropertyCSParserRuleCall_3_3_0 = (RuleCall)cDemandsAssignment_3_3.eContents().get(0);
-		private final Keyword cRightSquareBracketKeyword_3_4 = (Keyword)cGroup_3.eContents().get(4);
-		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cColonKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cPropertiesAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cPropertiesPropertyCSParserRuleCall_4_1_0 = (RuleCall)cPropertiesAssignment_4_1.eContents().get(0);
+		private final Keyword cColonKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Group cGroup_3_1 = (Group)cGroup_3.eContents().get(1);
+		private final Keyword cLeftSquareBracketKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
+		private final Keyword cDemandsKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
+		private final Keyword cColonKeyword_3_1_2 = (Keyword)cGroup_3_1.eContents().get(2);
+		private final Assignment cDemandsAssignment_3_1_3 = (Assignment)cGroup_3_1.eContents().get(3);
+		private final RuleCall cDemandsPropertyCSParserRuleCall_3_1_3_0 = (RuleCall)cDemandsAssignment_3_1_3.eContents().get(0);
+		private final Keyword cRightSquareBracketKeyword_3_1_4 = (Keyword)cGroup_3_1.eContents().get(4);
+		private final Assignment cPropertiesAssignment_3_2 = (Assignment)cGroup_3.eContents().get(2);
+		private final RuleCall cPropertiesPropertyCSParserRuleCall_3_2_0 = (RuleCall)cPropertiesAssignment_3_2.eContents().get(0);
 		
 		//RequiredExecutionPlatformCS returns RequiredExecutionPlatform:
-		//	"required" "execution" name=ValidID ("[" "demands" ":" demands+=PropertyCS* "]")? (":" properties+=PropertyCS*)?;
+		//	"required" "execution" name=ValidID (":" ("[" "demands" ":" demands+=PropertyCS* "]")? properties+=PropertyCS*)?;
 		public ParserRule getRule() { return rule; }
 
-		//"required" "execution" name=ValidID ("[" "demands" ":" demands+=PropertyCS* "]")? (":" properties+=PropertyCS*)?
+		//"required" "execution" name=ValidID (":" ("[" "demands" ":" demands+=PropertyCS* "]")? properties+=PropertyCS*)?
 		public Group getGroup() { return cGroup; }
 
 		//"required"
@@ -1115,38 +1117,38 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		//ValidID
 		public RuleCall getNameValidIDParserRuleCall_2_0() { return cNameValidIDParserRuleCall_2_0; }
 
-		//("[" "demands" ":" demands+=PropertyCS* "]")?
+		//(":" ("[" "demands" ":" demands+=PropertyCS* "]")? properties+=PropertyCS*)?
 		public Group getGroup_3() { return cGroup_3; }
 
+		//":"
+		public Keyword getColonKeyword_3_0() { return cColonKeyword_3_0; }
+
+		//("[" "demands" ":" demands+=PropertyCS* "]")?
+		public Group getGroup_3_1() { return cGroup_3_1; }
+
 		//"["
-		public Keyword getLeftSquareBracketKeyword_3_0() { return cLeftSquareBracketKeyword_3_0; }
+		public Keyword getLeftSquareBracketKeyword_3_1_0() { return cLeftSquareBracketKeyword_3_1_0; }
 
 		//"demands"
-		public Keyword getDemandsKeyword_3_1() { return cDemandsKeyword_3_1; }
+		public Keyword getDemandsKeyword_3_1_1() { return cDemandsKeyword_3_1_1; }
 
 		//":"
-		public Keyword getColonKeyword_3_2() { return cColonKeyword_3_2; }
+		public Keyword getColonKeyword_3_1_2() { return cColonKeyword_3_1_2; }
 
 		//demands+=PropertyCS*
-		public Assignment getDemandsAssignment_3_3() { return cDemandsAssignment_3_3; }
+		public Assignment getDemandsAssignment_3_1_3() { return cDemandsAssignment_3_1_3; }
 
 		//PropertyCS
-		public RuleCall getDemandsPropertyCSParserRuleCall_3_3_0() { return cDemandsPropertyCSParserRuleCall_3_3_0; }
+		public RuleCall getDemandsPropertyCSParserRuleCall_3_1_3_0() { return cDemandsPropertyCSParserRuleCall_3_1_3_0; }
 
 		//"]"
-		public Keyword getRightSquareBracketKeyword_3_4() { return cRightSquareBracketKeyword_3_4; }
-
-		//(":" properties+=PropertyCS*)?
-		public Group getGroup_4() { return cGroup_4; }
-
-		//":"
-		public Keyword getColonKeyword_4_0() { return cColonKeyword_4_0; }
+		public Keyword getRightSquareBracketKeyword_3_1_4() { return cRightSquareBracketKeyword_3_1_4; }
 
 		//properties+=PropertyCS*
-		public Assignment getPropertiesAssignment_4_1() { return cPropertiesAssignment_4_1; }
+		public Assignment getPropertiesAssignment_3_2() { return cPropertiesAssignment_3_2; }
 
 		//PropertyCS
-		public RuleCall getPropertiesPropertyCSParserRuleCall_4_1_0() { return cPropertiesPropertyCSParserRuleCall_4_1_0; }
+		public RuleCall getPropertiesPropertyCSParserRuleCall_3_2_0() { return cPropertiesPropertyCSParserRuleCall_3_2_0; }
 	}
 
 	public class ProvidedExecutionPlatformCSElements extends AbstractParserRuleElementFinder {
@@ -1157,22 +1159,22 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cNameValidIDParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final Keyword cLeftSquareBracketKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
-		private final Keyword cOffersKeyword_3_1 = (Keyword)cGroup_3.eContents().get(1);
-		private final Keyword cColonKeyword_3_2 = (Keyword)cGroup_3.eContents().get(2);
-		private final Assignment cOffersAssignment_3_3 = (Assignment)cGroup_3.eContents().get(3);
-		private final RuleCall cOffersPropertyCSParserRuleCall_3_3_0 = (RuleCall)cOffersAssignment_3_3.eContents().get(0);
-		private final Keyword cRightSquareBracketKeyword_3_4 = (Keyword)cGroup_3.eContents().get(4);
-		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cColonKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cPropertiesAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cPropertiesPropertyCSParserRuleCall_4_1_0 = (RuleCall)cPropertiesAssignment_4_1.eContents().get(0);
+		private final Keyword cColonKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Group cGroup_3_1 = (Group)cGroup_3.eContents().get(1);
+		private final Keyword cLeftSquareBracketKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
+		private final Keyword cOffersKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
+		private final Keyword cColonKeyword_3_1_2 = (Keyword)cGroup_3_1.eContents().get(2);
+		private final Assignment cOffersAssignment_3_1_3 = (Assignment)cGroup_3_1.eContents().get(3);
+		private final RuleCall cOffersPropertyCSParserRuleCall_3_1_3_0 = (RuleCall)cOffersAssignment_3_1_3.eContents().get(0);
+		private final Keyword cRightSquareBracketKeyword_3_1_4 = (Keyword)cGroup_3_1.eContents().get(4);
+		private final Assignment cPropertiesAssignment_3_2 = (Assignment)cGroup_3.eContents().get(2);
+		private final RuleCall cPropertiesPropertyCSParserRuleCall_3_2_0 = (RuleCall)cPropertiesAssignment_3_2.eContents().get(0);
 		
 		//ProvidedExecutionPlatformCS returns ProvidedExecutionPlatform:
-		//	"provided" "execution" name=ValidID ("[" "offers" ":" offers+=PropertyCS* "]")? (":" properties+=PropertyCS*)?;
+		//	"provided" "execution" name=ValidID (":" ("[" "offers" ":" offers+=PropertyCS* "]")? properties+=PropertyCS*)?;
 		public ParserRule getRule() { return rule; }
 
-		//"provided" "execution" name=ValidID ("[" "offers" ":" offers+=PropertyCS* "]")? (":" properties+=PropertyCS*)?
+		//"provided" "execution" name=ValidID (":" ("[" "offers" ":" offers+=PropertyCS* "]")? properties+=PropertyCS*)?
 		public Group getGroup() { return cGroup; }
 
 		//"provided"
@@ -1187,38 +1189,38 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 		//ValidID
 		public RuleCall getNameValidIDParserRuleCall_2_0() { return cNameValidIDParserRuleCall_2_0; }
 
-		//("[" "offers" ":" offers+=PropertyCS* "]")?
+		//(":" ("[" "offers" ":" offers+=PropertyCS* "]")? properties+=PropertyCS*)?
 		public Group getGroup_3() { return cGroup_3; }
 
+		//":"
+		public Keyword getColonKeyword_3_0() { return cColonKeyword_3_0; }
+
+		//("[" "offers" ":" offers+=PropertyCS* "]")?
+		public Group getGroup_3_1() { return cGroup_3_1; }
+
 		//"["
-		public Keyword getLeftSquareBracketKeyword_3_0() { return cLeftSquareBracketKeyword_3_0; }
+		public Keyword getLeftSquareBracketKeyword_3_1_0() { return cLeftSquareBracketKeyword_3_1_0; }
 
 		//"offers"
-		public Keyword getOffersKeyword_3_1() { return cOffersKeyword_3_1; }
+		public Keyword getOffersKeyword_3_1_1() { return cOffersKeyword_3_1_1; }
 
 		//":"
-		public Keyword getColonKeyword_3_2() { return cColonKeyword_3_2; }
+		public Keyword getColonKeyword_3_1_2() { return cColonKeyword_3_1_2; }
 
 		//offers+=PropertyCS*
-		public Assignment getOffersAssignment_3_3() { return cOffersAssignment_3_3; }
+		public Assignment getOffersAssignment_3_1_3() { return cOffersAssignment_3_1_3; }
 
 		//PropertyCS
-		public RuleCall getOffersPropertyCSParserRuleCall_3_3_0() { return cOffersPropertyCSParserRuleCall_3_3_0; }
+		public RuleCall getOffersPropertyCSParserRuleCall_3_1_3_0() { return cOffersPropertyCSParserRuleCall_3_1_3_0; }
 
 		//"]"
-		public Keyword getRightSquareBracketKeyword_3_4() { return cRightSquareBracketKeyword_3_4; }
-
-		//(":" properties+=PropertyCS*)?
-		public Group getGroup_4() { return cGroup_4; }
-
-		//":"
-		public Keyword getColonKeyword_4_0() { return cColonKeyword_4_0; }
+		public Keyword getRightSquareBracketKeyword_3_1_4() { return cRightSquareBracketKeyword_3_1_4; }
 
 		//properties+=PropertyCS*
-		public Assignment getPropertiesAssignment_4_1() { return cPropertiesAssignment_4_1; }
+		public Assignment getPropertiesAssignment_3_2() { return cPropertiesAssignment_3_2; }
 
 		//PropertyCS
-		public RuleCall getPropertiesPropertyCSParserRuleCall_4_1_0() { return cPropertiesPropertyCSParserRuleCall_4_1_0; }
+		public RuleCall getPropertiesPropertyCSParserRuleCall_3_2_0() { return cPropertiesPropertyCSParserRuleCall_3_2_0; }
 	}
 
 	public class RelationshipCSElements extends AbstractParserRuleElementFinder {
@@ -1975,8 +1977,9 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ExternalComponentCS returns ExternalComponent:
-	//	"external" name=ValidID "{" (providedPorts+=ProvidedPortCS | providedExecutionPlatforms+=ProvidedExecutionPlatformCS)*
-	//	("properties" ":" properties+=PropertyCS*)? resources+=ResourceCS* "}";
+	//	"external" name=ValidID "{" (providedPorts+=ProvidedPortCS |
+	//	providedExecutionPlatforms+=ProvidedExecutionPlatformCS)* ("properties" ":" properties+=PropertyCS*)?
+	//	resources+=ResourceCS* "}";
 	public ExternalComponentCSElements getExternalComponentCSAccess() {
 		return (pExternalComponentCS != null) ? pExternalComponentCS : (pExternalComponentCS = new ExternalComponentCSElements());
 	}
@@ -1986,7 +1989,7 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ProvidedPortCS returns ProvidedPort:
-	//	"provided" "port" name=ValidID ("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")? (":"
+	//	"provided" "port" name=ValidID (":" ("[" ((isLocal?="local" | "port" ":" portNumber=INT) ","?)* "]")?
 	//	properties+=PropertyCS*)?;
 	public ProvidedPortCSElements getProvidedPortCSAccess() {
 		return (pProvidedPortCS != null) ? pProvidedPortCS : (pProvidedPortCS = new ProvidedPortCSElements());
@@ -2009,8 +2012,8 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//RequiredPortCS returns RequiredPort:
-	//	"required" "port" name=ValidID ("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory") ","?)*
-	//	"]")? (":" properties+=PropertyCS*)?;
+	//	"required" "port" name=ValidID (":" ("[" ((isLocal?="local" | "port" ":" portNumber=INT | isMandatory?="mandatory")
+	//	","?)* "]")? properties+=PropertyCS*)?;
 	public RequiredPortCSElements getRequiredPortCSAccess() {
 		return (pRequiredPortCS != null) ? pRequiredPortCS : (pRequiredPortCS = new RequiredPortCSElements());
 	}
@@ -2020,7 +2023,7 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//RequiredExecutionPlatformCS returns RequiredExecutionPlatform:
-	//	"required" "execution" name=ValidID ("[" "demands" ":" demands+=PropertyCS* "]")? (":" properties+=PropertyCS*)?;
+	//	"required" "execution" name=ValidID (":" ("[" "demands" ":" demands+=PropertyCS* "]")? properties+=PropertyCS*)?;
 	public RequiredExecutionPlatformCSElements getRequiredExecutionPlatformCSAccess() {
 		return (pRequiredExecutionPlatformCS != null) ? pRequiredExecutionPlatformCS : (pRequiredExecutionPlatformCS = new RequiredExecutionPlatformCSElements());
 	}
@@ -2030,7 +2033,7 @@ public class CloudMLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ProvidedExecutionPlatformCS returns ProvidedExecutionPlatform:
-	//	"provided" "execution" name=ValidID ("[" "offers" ":" offers+=PropertyCS* "]")? (":" properties+=PropertyCS*)?;
+	//	"provided" "execution" name=ValidID (":" ("[" "offers" ":" offers+=PropertyCS* "]")? properties+=PropertyCS*)?;
 	public ProvidedExecutionPlatformCSElements getProvidedExecutionPlatformCSAccess() {
 		return (pProvidedExecutionPlatformCS != null) ? pProvidedExecutionPlatformCS : (pProvidedExecutionPlatformCS = new ProvidedExecutionPlatformCSElements());
 	}

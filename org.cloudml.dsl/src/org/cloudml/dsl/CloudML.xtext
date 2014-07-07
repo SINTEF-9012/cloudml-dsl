@@ -86,9 +86,10 @@ ExternalComponentCS returns ExternalComponent:
 
 ProvidedPortCS returns ProvidedPort:
 	'provided' 'port' name = ValidID 
-	('[' ((isLocal?='local' | 'port' ':' portNumber=INT) (',')?)* ']')?
-	(':' properties+=PropertyCS*)?
-	
+	(':'
+		('[' ((isLocal?='local' | 'port' ':' portNumber=INT) (',')?)* ']')?
+		properties+=PropertyCS*
+	)?
 ;
 
 InternalComponentCS returns InternalComponent:
@@ -106,18 +107,26 @@ InternalComponentCS returns InternalComponent:
 
 RequiredPortCS returns RequiredPort:
 	'required' 'port' name = ValidID 
-	('[' ((isLocal?='local' | 'port' ':' portNumber=INT | isMandatory?='mandatory') (',')?)* ']')?
-	(':' properties+=PropertyCS*)?
+	(':'
+		('[' ((isLocal?='local' | 'port' ':' portNumber=INT | isMandatory?='mandatory') (',')?)* ']')?
+		properties+=PropertyCS*
+	)?
 ;
 
 RequiredExecutionPlatformCS returns RequiredExecutionPlatform:
-	'required' 'execution' name = ValidID ('[' 'demands' ':' demands+=PropertyCS* ']')?
-	(':' properties+=PropertyCS*)?
+	'required' 'execution' name = ValidID 
+	(':'
+		('[' 'demands' ':' demands+=PropertyCS* ']')?
+		properties+=PropertyCS*
+	)?
 ;
 
 ProvidedExecutionPlatformCS returns ProvidedExecutionPlatform:
-	'provided' 'execution' name = ValidID ('[' 'offers' ':' offers+=PropertyCS* ']')?
-	(':' properties+=PropertyCS*)?
+	'provided' 'execution' name = ValidID 
+	(':'
+		('[' 'offers' ':' offers+=PropertyCS* ']')?
+		properties+=PropertyCS*
+	)?
 ;
 
 RelationshipCS returns Relationship:

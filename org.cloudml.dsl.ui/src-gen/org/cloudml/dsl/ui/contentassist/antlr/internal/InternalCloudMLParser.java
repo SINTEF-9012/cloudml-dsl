@@ -2442,14 +2442,14 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ExternalComponentCS__Alternatives_3"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__Alternatives_3_1_0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:778:1: rule__ProvidedPortCS__Alternatives_3_1_0 : ( ( ( rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0 ) ) | ( ( rule__ProvidedPortCS__Group_3_1_0_1__0 ) ) );
-    public final void rule__ProvidedPortCS__Alternatives_3_1_0() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__Alternatives_3_1_1_0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:778:1: rule__ProvidedPortCS__Alternatives_3_1_1_0 : ( ( ( rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0 ) ) | ( ( rule__ProvidedPortCS__Group_3_1_1_0_1__0 ) ) );
+    public final void rule__ProvidedPortCS__Alternatives_3_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:782:1: ( ( ( rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0 ) ) | ( ( rule__ProvidedPortCS__Group_3_1_0_1__0 ) ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:782:1: ( ( ( rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0 ) ) | ( ( rule__ProvidedPortCS__Group_3_1_1_0_1__0 ) ) )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -2467,24 +2467,24 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             }
             switch (alt5) {
                 case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:783:1: ( ( rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:783:1: ( ( rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0 ) )
                     {
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:783:1: ( ( rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0 ) )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:784:1: ( rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:783:1: ( ( rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:784:1: ( rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0 )
                     {
-                     before(grammarAccess.getProvidedPortCSAccess().getIsLocalAssignment_3_1_0_0()); 
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:785:1: ( rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0 )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:785:2: rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0
+                     before(grammarAccess.getProvidedPortCSAccess().getIsLocalAssignment_3_1_1_0_0()); 
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:785:1: ( rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:785:2: rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0
                     {
-                    pushFollow(FOLLOW_rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0_in_rule__ProvidedPortCS__Alternatives_3_1_01703);
-                    rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0();
+                    pushFollow(FOLLOW_rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0_in_rule__ProvidedPortCS__Alternatives_3_1_1_01703);
+                    rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getProvidedPortCSAccess().getIsLocalAssignment_3_1_0_0()); 
+                     after(grammarAccess.getProvidedPortCSAccess().getIsLocalAssignment_3_1_1_0_0()); 
 
                     }
 
@@ -2492,24 +2492,24 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:789:6: ( ( rule__ProvidedPortCS__Group_3_1_0_1__0 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:789:6: ( ( rule__ProvidedPortCS__Group_3_1_1_0_1__0 ) )
                     {
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:789:6: ( ( rule__ProvidedPortCS__Group_3_1_0_1__0 ) )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:790:1: ( rule__ProvidedPortCS__Group_3_1_0_1__0 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:789:6: ( ( rule__ProvidedPortCS__Group_3_1_1_0_1__0 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:790:1: ( rule__ProvidedPortCS__Group_3_1_1_0_1__0 )
                     {
-                     before(grammarAccess.getProvidedPortCSAccess().getGroup_3_1_0_1()); 
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:791:1: ( rule__ProvidedPortCS__Group_3_1_0_1__0 )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:791:2: rule__ProvidedPortCS__Group_3_1_0_1__0
+                     before(grammarAccess.getProvidedPortCSAccess().getGroup_3_1_1_0_1()); 
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:791:1: ( rule__ProvidedPortCS__Group_3_1_1_0_1__0 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:791:2: rule__ProvidedPortCS__Group_3_1_1_0_1__0
                     {
-                    pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__0_in_rule__ProvidedPortCS__Alternatives_3_1_01721);
-                    rule__ProvidedPortCS__Group_3_1_0_1__0();
+                    pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__0_in_rule__ProvidedPortCS__Alternatives_3_1_1_01721);
+                    rule__ProvidedPortCS__Group_3_1_1_0_1__0();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getProvidedPortCSAccess().getGroup_3_1_0_1()); 
+                     after(grammarAccess.getProvidedPortCSAccess().getGroup_3_1_1_0_1()); 
 
                     }
 
@@ -2530,7 +2530,7 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__Alternatives_3_1_0"
+    // $ANTLR end "rule__ProvidedPortCS__Alternatives_3_1_1_0"
 
 
     // $ANTLR start "rule__InternalComponentCS__Alternatives_3"
@@ -2700,14 +2700,14 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__InternalComponentCS__Alternatives_3"
 
 
-    // $ANTLR start "rule__RequiredPortCS__Alternatives_3_1_0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:834:1: rule__RequiredPortCS__Alternatives_3_1_0 : ( ( ( rule__RequiredPortCS__IsLocalAssignment_3_1_0_0 ) ) | ( ( rule__RequiredPortCS__Group_3_1_0_1__0 ) ) | ( ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2 ) ) );
-    public final void rule__RequiredPortCS__Alternatives_3_1_0() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__Alternatives_3_1_1_0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:834:1: rule__RequiredPortCS__Alternatives_3_1_1_0 : ( ( ( rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0 ) ) | ( ( rule__RequiredPortCS__Group_3_1_1_0_1__0 ) ) | ( ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2 ) ) );
+    public final void rule__RequiredPortCS__Alternatives_3_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:838:1: ( ( ( rule__RequiredPortCS__IsLocalAssignment_3_1_0_0 ) ) | ( ( rule__RequiredPortCS__Group_3_1_0_1__0 ) ) | ( ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2 ) ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:838:1: ( ( ( rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0 ) ) | ( ( rule__RequiredPortCS__Group_3_1_1_0_1__0 ) ) | ( ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2 ) ) )
             int alt7=3;
             switch ( input.LA(1) ) {
             case 60:
@@ -2734,24 +2734,24 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
             switch (alt7) {
                 case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:839:1: ( ( rule__RequiredPortCS__IsLocalAssignment_3_1_0_0 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:839:1: ( ( rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0 ) )
                     {
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:839:1: ( ( rule__RequiredPortCS__IsLocalAssignment_3_1_0_0 ) )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:840:1: ( rule__RequiredPortCS__IsLocalAssignment_3_1_0_0 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:839:1: ( ( rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:840:1: ( rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0 )
                     {
-                     before(grammarAccess.getRequiredPortCSAccess().getIsLocalAssignment_3_1_0_0()); 
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:841:1: ( rule__RequiredPortCS__IsLocalAssignment_3_1_0_0 )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:841:2: rule__RequiredPortCS__IsLocalAssignment_3_1_0_0
+                     before(grammarAccess.getRequiredPortCSAccess().getIsLocalAssignment_3_1_1_0_0()); 
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:841:1: ( rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:841:2: rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0
                     {
-                    pushFollow(FOLLOW_rule__RequiredPortCS__IsLocalAssignment_3_1_0_0_in_rule__RequiredPortCS__Alternatives_3_1_01841);
-                    rule__RequiredPortCS__IsLocalAssignment_3_1_0_0();
+                    pushFollow(FOLLOW_rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0_in_rule__RequiredPortCS__Alternatives_3_1_1_01841);
+                    rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getRequiredPortCSAccess().getIsLocalAssignment_3_1_0_0()); 
+                     after(grammarAccess.getRequiredPortCSAccess().getIsLocalAssignment_3_1_1_0_0()); 
 
                     }
 
@@ -2759,24 +2759,24 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:845:6: ( ( rule__RequiredPortCS__Group_3_1_0_1__0 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:845:6: ( ( rule__RequiredPortCS__Group_3_1_1_0_1__0 ) )
                     {
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:845:6: ( ( rule__RequiredPortCS__Group_3_1_0_1__0 ) )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:846:1: ( rule__RequiredPortCS__Group_3_1_0_1__0 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:845:6: ( ( rule__RequiredPortCS__Group_3_1_1_0_1__0 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:846:1: ( rule__RequiredPortCS__Group_3_1_1_0_1__0 )
                     {
-                     before(grammarAccess.getRequiredPortCSAccess().getGroup_3_1_0_1()); 
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:847:1: ( rule__RequiredPortCS__Group_3_1_0_1__0 )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:847:2: rule__RequiredPortCS__Group_3_1_0_1__0
+                     before(grammarAccess.getRequiredPortCSAccess().getGroup_3_1_1_0_1()); 
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:847:1: ( rule__RequiredPortCS__Group_3_1_1_0_1__0 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:847:2: rule__RequiredPortCS__Group_3_1_1_0_1__0
                     {
-                    pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__0_in_rule__RequiredPortCS__Alternatives_3_1_01859);
-                    rule__RequiredPortCS__Group_3_1_0_1__0();
+                    pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__0_in_rule__RequiredPortCS__Alternatives_3_1_1_01859);
+                    rule__RequiredPortCS__Group_3_1_1_0_1__0();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getRequiredPortCSAccess().getGroup_3_1_0_1()); 
+                     after(grammarAccess.getRequiredPortCSAccess().getGroup_3_1_1_0_1()); 
 
                     }
 
@@ -2784,24 +2784,24 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:851:6: ( ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:851:6: ( ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2 ) )
                     {
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:851:6: ( ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2 ) )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:852:1: ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:851:6: ( ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2 ) )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:852:1: ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2 )
                     {
-                     before(grammarAccess.getRequiredPortCSAccess().getIsMandatoryAssignment_3_1_0_2()); 
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:853:1: ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2 )
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:853:2: rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2
+                     before(grammarAccess.getRequiredPortCSAccess().getIsMandatoryAssignment_3_1_1_0_2()); 
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:853:1: ( rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2 )
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:853:2: rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2
                     {
-                    pushFollow(FOLLOW_rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2_in_rule__RequiredPortCS__Alternatives_3_1_01877);
-                    rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2();
+                    pushFollow(FOLLOW_rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2_in_rule__RequiredPortCS__Alternatives_3_1_1_01877);
+                    rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getRequiredPortCSAccess().getIsMandatoryAssignment_3_1_0_2()); 
+                     after(grammarAccess.getRequiredPortCSAccess().getIsMandatoryAssignment_3_1_1_0_2()); 
 
                     }
 
@@ -2822,7 +2822,7 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__Alternatives_3_1_0"
+    // $ANTLR end "rule__RequiredPortCS__Alternatives_3_1_1_0"
 
 
     // $ANTLR start "rule__RelationshipCS__Alternatives_2"
@@ -11263,22 +11263,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group__3"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4098:1: rule__ProvidedPortCS__Group__3 : rule__ProvidedPortCS__Group__3__Impl rule__ProvidedPortCS__Group__4 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4098:1: rule__ProvidedPortCS__Group__3 : rule__ProvidedPortCS__Group__3__Impl ;
     public final void rule__ProvidedPortCS__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4102:1: ( rule__ProvidedPortCS__Group__3__Impl rule__ProvidedPortCS__Group__4 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4103:2: rule__ProvidedPortCS__Group__3__Impl rule__ProvidedPortCS__Group__4
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4102:1: ( rule__ProvidedPortCS__Group__3__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4103:2: rule__ProvidedPortCS__Group__3__Impl
             {
             pushFollow(FOLLOW_rule__ProvidedPortCS__Group__3__Impl_in_rule__ProvidedPortCS__Group__38318);
             rule__ProvidedPortCS__Group__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group__4_in_rule__ProvidedPortCS__Group__38321);
-            rule__ProvidedPortCS__Group__4();
 
             state._fsp--;
 
@@ -11301,31 +11296,31 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group__3__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4110:1: rule__ProvidedPortCS__Group__3__Impl : ( ( rule__ProvidedPortCS__Group_3__0 )? ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4109:1: rule__ProvidedPortCS__Group__3__Impl : ( ( rule__ProvidedPortCS__Group_3__0 )? ) ;
     public final void rule__ProvidedPortCS__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4114:1: ( ( ( rule__ProvidedPortCS__Group_3__0 )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4115:1: ( ( rule__ProvidedPortCS__Group_3__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4113:1: ( ( ( rule__ProvidedPortCS__Group_3__0 )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4114:1: ( ( rule__ProvidedPortCS__Group_3__0 )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4115:1: ( ( rule__ProvidedPortCS__Group_3__0 )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4116:1: ( rule__ProvidedPortCS__Group_3__0 )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4114:1: ( ( rule__ProvidedPortCS__Group_3__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4115:1: ( rule__ProvidedPortCS__Group_3__0 )?
             {
              before(grammarAccess.getProvidedPortCSAccess().getGroup_3()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4117:1: ( rule__ProvidedPortCS__Group_3__0 )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4116:1: ( rule__ProvidedPortCS__Group_3__0 )?
             int alt31=2;
             int LA31_0 = input.LA(1);
 
-            if ( (LA31_0==19) ) {
+            if ( (LA31_0==17) ) {
                 alt31=1;
             }
             switch (alt31) {
                 case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4117:2: rule__ProvidedPortCS__Group_3__0
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4116:2: rule__ProvidedPortCS__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__0_in_rule__ProvidedPortCS__Group__3__Impl8348);
+                    pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__0_in_rule__ProvidedPortCS__Group__3__Impl8345);
                     rule__ProvidedPortCS__Group_3__0();
 
                     state._fsp--;
@@ -11358,113 +11353,22 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ProvidedPortCS__Group__3__Impl"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__Group__4"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4127:1: rule__ProvidedPortCS__Group__4 : rule__ProvidedPortCS__Group__4__Impl ;
-    public final void rule__ProvidedPortCS__Group__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4131:1: ( rule__ProvidedPortCS__Group__4__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4132:2: rule__ProvidedPortCS__Group__4__Impl
-            {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group__4__Impl_in_rule__ProvidedPortCS__Group__48379);
-            rule__ProvidedPortCS__Group__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedPortCS__Group__4"
-
-
-    // $ANTLR start "rule__ProvidedPortCS__Group__4__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4138:1: rule__ProvidedPortCS__Group__4__Impl : ( ( rule__ProvidedPortCS__Group_4__0 )? ) ;
-    public final void rule__ProvidedPortCS__Group__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4142:1: ( ( ( rule__ProvidedPortCS__Group_4__0 )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4143:1: ( ( rule__ProvidedPortCS__Group_4__0 )? )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4143:1: ( ( rule__ProvidedPortCS__Group_4__0 )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4144:1: ( rule__ProvidedPortCS__Group_4__0 )?
-            {
-             before(grammarAccess.getProvidedPortCSAccess().getGroup_4()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4145:1: ( rule__ProvidedPortCS__Group_4__0 )?
-            int alt32=2;
-            int LA32_0 = input.LA(1);
-
-            if ( (LA32_0==17) ) {
-                alt32=1;
-            }
-            switch (alt32) {
-                case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4145:2: rule__ProvidedPortCS__Group_4__0
-                    {
-                    pushFollow(FOLLOW_rule__ProvidedPortCS__Group_4__0_in_rule__ProvidedPortCS__Group__4__Impl8406);
-                    rule__ProvidedPortCS__Group_4__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getProvidedPortCSAccess().getGroup_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedPortCS__Group__4__Impl"
-
-
     // $ANTLR start "rule__ProvidedPortCS__Group_3__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4165:1: rule__ProvidedPortCS__Group_3__0 : rule__ProvidedPortCS__Group_3__0__Impl rule__ProvidedPortCS__Group_3__1 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4134:1: rule__ProvidedPortCS__Group_3__0 : rule__ProvidedPortCS__Group_3__0__Impl rule__ProvidedPortCS__Group_3__1 ;
     public final void rule__ProvidedPortCS__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4169:1: ( rule__ProvidedPortCS__Group_3__0__Impl rule__ProvidedPortCS__Group_3__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4170:2: rule__ProvidedPortCS__Group_3__0__Impl rule__ProvidedPortCS__Group_3__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4138:1: ( rule__ProvidedPortCS__Group_3__0__Impl rule__ProvidedPortCS__Group_3__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4139:2: rule__ProvidedPortCS__Group_3__0__Impl rule__ProvidedPortCS__Group_3__1
             {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__0__Impl_in_rule__ProvidedPortCS__Group_3__08447);
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__0__Impl_in_rule__ProvidedPortCS__Group_3__08384);
             rule__ProvidedPortCS__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__1_in_rule__ProvidedPortCS__Group_3__08450);
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__1_in_rule__ProvidedPortCS__Group_3__08387);
             rule__ProvidedPortCS__Group_3__1();
 
             state._fsp--;
@@ -11488,21 +11392,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4177:1: rule__ProvidedPortCS__Group_3__0__Impl : ( '[' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4146:1: rule__ProvidedPortCS__Group_3__0__Impl : ( ':' ) ;
     public final void rule__ProvidedPortCS__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4181:1: ( ( '[' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4182:1: ( '[' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4150:1: ( ( ':' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4151:1: ( ':' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4182:1: ( '[' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4183:1: '['
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4151:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4152:1: ':'
             {
-             before(grammarAccess.getProvidedPortCSAccess().getLeftSquareBracketKeyword_3_0()); 
-            match(input,19,FOLLOW_19_in_rule__ProvidedPortCS__Group_3__0__Impl8478); 
-             after(grammarAccess.getProvidedPortCSAccess().getLeftSquareBracketKeyword_3_0()); 
+             before(grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_0()); 
+            match(input,17,FOLLOW_17_in_rule__ProvidedPortCS__Group_3__0__Impl8415); 
+             after(grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_0()); 
 
             }
 
@@ -11525,21 +11429,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4196:1: rule__ProvidedPortCS__Group_3__1 : rule__ProvidedPortCS__Group_3__1__Impl rule__ProvidedPortCS__Group_3__2 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4165:1: rule__ProvidedPortCS__Group_3__1 : rule__ProvidedPortCS__Group_3__1__Impl rule__ProvidedPortCS__Group_3__2 ;
     public final void rule__ProvidedPortCS__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4200:1: ( rule__ProvidedPortCS__Group_3__1__Impl rule__ProvidedPortCS__Group_3__2 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4201:2: rule__ProvidedPortCS__Group_3__1__Impl rule__ProvidedPortCS__Group_3__2
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4169:1: ( rule__ProvidedPortCS__Group_3__1__Impl rule__ProvidedPortCS__Group_3__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4170:2: rule__ProvidedPortCS__Group_3__1__Impl rule__ProvidedPortCS__Group_3__2
             {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__1__Impl_in_rule__ProvidedPortCS__Group_3__18509);
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__1__Impl_in_rule__ProvidedPortCS__Group_3__18446);
             rule__ProvidedPortCS__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__2_in_rule__ProvidedPortCS__Group_3__18512);
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__2_in_rule__ProvidedPortCS__Group_3__18449);
             rule__ProvidedPortCS__Group_3__2();
 
             state._fsp--;
@@ -11563,47 +11467,40 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4208:1: rule__ProvidedPortCS__Group_3__1__Impl : ( ( rule__ProvidedPortCS__Group_3_1__0 )* ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4177:1: rule__ProvidedPortCS__Group_3__1__Impl : ( ( rule__ProvidedPortCS__Group_3_1__0 )? ) ;
     public final void rule__ProvidedPortCS__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4212:1: ( ( ( rule__ProvidedPortCS__Group_3_1__0 )* ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4213:1: ( ( rule__ProvidedPortCS__Group_3_1__0 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4181:1: ( ( ( rule__ProvidedPortCS__Group_3_1__0 )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4182:1: ( ( rule__ProvidedPortCS__Group_3_1__0 )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4213:1: ( ( rule__ProvidedPortCS__Group_3_1__0 )* )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4214:1: ( rule__ProvidedPortCS__Group_3_1__0 )*
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4182:1: ( ( rule__ProvidedPortCS__Group_3_1__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4183:1: ( rule__ProvidedPortCS__Group_3_1__0 )?
             {
              before(grammarAccess.getProvidedPortCSAccess().getGroup_3_1()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4215:1: ( rule__ProvidedPortCS__Group_3_1__0 )*
-            loop33:
-            do {
-                int alt33=2;
-                int LA33_0 = input.LA(1);
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4184:1: ( rule__ProvidedPortCS__Group_3_1__0 )?
+            int alt32=2;
+            int LA32_0 = input.LA(1);
 
-                if ( (LA33_0==40||LA33_0==60) ) {
-                    alt33=1;
-                }
+            if ( (LA32_0==19) ) {
+                alt32=1;
+            }
+            switch (alt32) {
+                case 1 :
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4184:2: rule__ProvidedPortCS__Group_3_1__0
+                    {
+                    pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__0_in_rule__ProvidedPortCS__Group_3__1__Impl8476);
+                    rule__ProvidedPortCS__Group_3_1__0();
 
-
-                switch (alt33) {
-            	case 1 :
-            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4215:2: rule__ProvidedPortCS__Group_3_1__0
-            	    {
-            	    pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__0_in_rule__ProvidedPortCS__Group_3__1__Impl8539);
-            	    rule__ProvidedPortCS__Group_3_1__0();
-
-            	    state._fsp--;
+                    state._fsp--;
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop33;
-                }
-            } while (true);
+            }
 
              after(grammarAccess.getProvidedPortCSAccess().getGroup_3_1()); 
 
@@ -11628,16 +11525,16 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3__2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4225:1: rule__ProvidedPortCS__Group_3__2 : rule__ProvidedPortCS__Group_3__2__Impl ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4194:1: rule__ProvidedPortCS__Group_3__2 : rule__ProvidedPortCS__Group_3__2__Impl ;
     public final void rule__ProvidedPortCS__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4229:1: ( rule__ProvidedPortCS__Group_3__2__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4230:2: rule__ProvidedPortCS__Group_3__2__Impl
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4198:1: ( rule__ProvidedPortCS__Group_3__2__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4199:2: rule__ProvidedPortCS__Group_3__2__Impl
             {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__2__Impl_in_rule__ProvidedPortCS__Group_3__28570);
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3__2__Impl_in_rule__ProvidedPortCS__Group_3__28507);
             rule__ProvidedPortCS__Group_3__2__Impl();
 
             state._fsp--;
@@ -11661,21 +11558,49 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3__2__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4236:1: rule__ProvidedPortCS__Group_3__2__Impl : ( ']' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4205:1: rule__ProvidedPortCS__Group_3__2__Impl : ( ( rule__ProvidedPortCS__PropertiesAssignment_3_2 )* ) ;
     public final void rule__ProvidedPortCS__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4240:1: ( ( ']' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4241:1: ( ']' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4209:1: ( ( ( rule__ProvidedPortCS__PropertiesAssignment_3_2 )* ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4210:1: ( ( rule__ProvidedPortCS__PropertiesAssignment_3_2 )* )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4241:1: ( ']' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4242:1: ']'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4210:1: ( ( rule__ProvidedPortCS__PropertiesAssignment_3_2 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4211:1: ( rule__ProvidedPortCS__PropertiesAssignment_3_2 )*
             {
-             before(grammarAccess.getProvidedPortCSAccess().getRightSquareBracketKeyword_3_2()); 
-            match(input,20,FOLLOW_20_in_rule__ProvidedPortCS__Group_3__2__Impl8598); 
-             after(grammarAccess.getProvidedPortCSAccess().getRightSquareBracketKeyword_3_2()); 
+             before(grammarAccess.getProvidedPortCSAccess().getPropertiesAssignment_3_2()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4212:1: ( rule__ProvidedPortCS__PropertiesAssignment_3_2 )*
+            loop33:
+            do {
+                int alt33=2;
+                int LA33_0 = input.LA(1);
+
+                if ( (LA33_0==49) ) {
+                    alt33=1;
+                }
+
+
+                switch (alt33) {
+            	case 1 :
+            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4212:2: rule__ProvidedPortCS__PropertiesAssignment_3_2
+            	    {
+            	    pushFollow(FOLLOW_rule__ProvidedPortCS__PropertiesAssignment_3_2_in_rule__ProvidedPortCS__Group_3__2__Impl8534);
+            	    rule__ProvidedPortCS__PropertiesAssignment_3_2();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop33;
+                }
+            } while (true);
+
+             after(grammarAccess.getProvidedPortCSAccess().getPropertiesAssignment_3_2()); 
 
             }
 
@@ -11698,21 +11623,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3_1__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4261:1: rule__ProvidedPortCS__Group_3_1__0 : rule__ProvidedPortCS__Group_3_1__0__Impl rule__ProvidedPortCS__Group_3_1__1 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4228:1: rule__ProvidedPortCS__Group_3_1__0 : rule__ProvidedPortCS__Group_3_1__0__Impl rule__ProvidedPortCS__Group_3_1__1 ;
     public final void rule__ProvidedPortCS__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4265:1: ( rule__ProvidedPortCS__Group_3_1__0__Impl rule__ProvidedPortCS__Group_3_1__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4266:2: rule__ProvidedPortCS__Group_3_1__0__Impl rule__ProvidedPortCS__Group_3_1__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4232:1: ( rule__ProvidedPortCS__Group_3_1__0__Impl rule__ProvidedPortCS__Group_3_1__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4233:2: rule__ProvidedPortCS__Group_3_1__0__Impl rule__ProvidedPortCS__Group_3_1__1
             {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1__08635);
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1__08571);
             rule__ProvidedPortCS__Group_3_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__1_in_rule__ProvidedPortCS__Group_3_1__08638);
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__1_in_rule__ProvidedPortCS__Group_3_1__08574);
             rule__ProvidedPortCS__Group_3_1__1();
 
             state._fsp--;
@@ -11736,31 +11661,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3_1__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4273:1: rule__ProvidedPortCS__Group_3_1__0__Impl : ( ( rule__ProvidedPortCS__Alternatives_3_1_0 ) ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4240:1: rule__ProvidedPortCS__Group_3_1__0__Impl : ( '[' ) ;
     public final void rule__ProvidedPortCS__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4277:1: ( ( ( rule__ProvidedPortCS__Alternatives_3_1_0 ) ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4278:1: ( ( rule__ProvidedPortCS__Alternatives_3_1_0 ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4244:1: ( ( '[' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4245:1: ( '[' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4278:1: ( ( rule__ProvidedPortCS__Alternatives_3_1_0 ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4279:1: ( rule__ProvidedPortCS__Alternatives_3_1_0 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4245:1: ( '[' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4246:1: '['
             {
-             before(grammarAccess.getProvidedPortCSAccess().getAlternatives_3_1_0()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4280:1: ( rule__ProvidedPortCS__Alternatives_3_1_0 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4280:2: rule__ProvidedPortCS__Alternatives_3_1_0
-            {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Alternatives_3_1_0_in_rule__ProvidedPortCS__Group_3_1__0__Impl8665);
-            rule__ProvidedPortCS__Alternatives_3_1_0();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getProvidedPortCSAccess().getAlternatives_3_1_0()); 
+             before(grammarAccess.getProvidedPortCSAccess().getLeftSquareBracketKeyword_3_1_0()); 
+            match(input,19,FOLLOW_19_in_rule__ProvidedPortCS__Group_3_1__0__Impl8602); 
+             after(grammarAccess.getProvidedPortCSAccess().getLeftSquareBracketKeyword_3_1_0()); 
 
             }
 
@@ -11783,17 +11698,22 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3_1__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4290:1: rule__ProvidedPortCS__Group_3_1__1 : rule__ProvidedPortCS__Group_3_1__1__Impl ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4259:1: rule__ProvidedPortCS__Group_3_1__1 : rule__ProvidedPortCS__Group_3_1__1__Impl rule__ProvidedPortCS__Group_3_1__2 ;
     public final void rule__ProvidedPortCS__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4294:1: ( rule__ProvidedPortCS__Group_3_1__1__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4295:2: rule__ProvidedPortCS__Group_3_1__1__Impl
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4263:1: ( rule__ProvidedPortCS__Group_3_1__1__Impl rule__ProvidedPortCS__Group_3_1__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4264:2: rule__ProvidedPortCS__Group_3_1__1__Impl rule__ProvidedPortCS__Group_3_1__2
             {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1__18695);
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1__18633);
             rule__ProvidedPortCS__Group_3_1__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__2_in_rule__ProvidedPortCS__Group_3_1__18636);
+            rule__ProvidedPortCS__Group_3_1__2();
 
             state._fsp--;
 
@@ -11816,38 +11736,49 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedPortCS__Group_3_1__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4301:1: rule__ProvidedPortCS__Group_3_1__1__Impl : ( ( ',' )? ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4271:1: rule__ProvidedPortCS__Group_3_1__1__Impl : ( ( rule__ProvidedPortCS__Group_3_1_1__0 )* ) ;
     public final void rule__ProvidedPortCS__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4305:1: ( ( ( ',' )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4306:1: ( ( ',' )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4275:1: ( ( ( rule__ProvidedPortCS__Group_3_1_1__0 )* ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4276:1: ( ( rule__ProvidedPortCS__Group_3_1_1__0 )* )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4306:1: ( ( ',' )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4307:1: ( ',' )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4276:1: ( ( rule__ProvidedPortCS__Group_3_1_1__0 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4277:1: ( rule__ProvidedPortCS__Group_3_1_1__0 )*
             {
-             before(grammarAccess.getProvidedPortCSAccess().getCommaKeyword_3_1_1()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4308:1: ( ',' )?
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+             before(grammarAccess.getProvidedPortCSAccess().getGroup_3_1_1()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4278:1: ( rule__ProvidedPortCS__Group_3_1_1__0 )*
+            loop34:
+            do {
+                int alt34=2;
+                int LA34_0 = input.LA(1);
 
-            if ( (LA34_0==21) ) {
-                alt34=1;
-            }
-            switch (alt34) {
-                case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4309:2: ','
-                    {
-                    match(input,21,FOLLOW_21_in_rule__ProvidedPortCS__Group_3_1__1__Impl8724); 
+                if ( (LA34_0==40||LA34_0==60) ) {
+                    alt34=1;
+                }
 
-                    }
-                    break;
 
-            }
+                switch (alt34) {
+            	case 1 :
+            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4278:2: rule__ProvidedPortCS__Group_3_1_1__0
+            	    {
+            	    pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1__0_in_rule__ProvidedPortCS__Group_3_1__1__Impl8663);
+            	    rule__ProvidedPortCS__Group_3_1_1__0();
 
-             after(grammarAccess.getProvidedPortCSAccess().getCommaKeyword_3_1_1()); 
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop34;
+                }
+            } while (true);
+
+             after(grammarAccess.getProvidedPortCSAccess().getGroup_3_1_1()); 
 
             }
 
@@ -11869,23 +11800,18 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ProvidedPortCS__Group_3_1__1__Impl"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_0_1__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4324:1: rule__ProvidedPortCS__Group_3_1_0_1__0 : rule__ProvidedPortCS__Group_3_1_0_1__0__Impl rule__ProvidedPortCS__Group_3_1_0_1__1 ;
-    public final void rule__ProvidedPortCS__Group_3_1_0_1__0() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1__2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4288:1: rule__ProvidedPortCS__Group_3_1__2 : rule__ProvidedPortCS__Group_3_1__2__Impl ;
+    public final void rule__ProvidedPortCS__Group_3_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4328:1: ( rule__ProvidedPortCS__Group_3_1_0_1__0__Impl rule__ProvidedPortCS__Group_3_1_0_1__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4329:2: rule__ProvidedPortCS__Group_3_1_0_1__0__Impl rule__ProvidedPortCS__Group_3_1_0_1__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4292:1: ( rule__ProvidedPortCS__Group_3_1__2__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4293:2: rule__ProvidedPortCS__Group_3_1__2__Impl
             {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1_0_1__08761);
-            rule__ProvidedPortCS__Group_3_1_0_1__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__1_in_rule__ProvidedPortCS__Group_3_1_0_1__08764);
-            rule__ProvidedPortCS__Group_3_1_0_1__1();
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1__2__Impl_in_rule__ProvidedPortCS__Group_3_1__28694);
+            rule__ProvidedPortCS__Group_3_1__2__Impl();
 
             state._fsp--;
 
@@ -11904,25 +11830,25 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_0_1__0"
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1__2"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_0_1__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4336:1: rule__ProvidedPortCS__Group_3_1_0_1__0__Impl : ( 'port' ) ;
-    public final void rule__ProvidedPortCS__Group_3_1_0_1__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1__2__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4299:1: rule__ProvidedPortCS__Group_3_1__2__Impl : ( ']' ) ;
+    public final void rule__ProvidedPortCS__Group_3_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4340:1: ( ( 'port' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4341:1: ( 'port' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4303:1: ( ( ']' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4304:1: ( ']' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4341:1: ( 'port' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4342:1: 'port'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4304:1: ( ']' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4305:1: ']'
             {
-             before(grammarAccess.getProvidedPortCSAccess().getPortKeyword_3_1_0_1_0()); 
-            match(input,40,FOLLOW_40_in_rule__ProvidedPortCS__Group_3_1_0_1__0__Impl8792); 
-             after(grammarAccess.getProvidedPortCSAccess().getPortKeyword_3_1_0_1_0()); 
+             before(grammarAccess.getProvidedPortCSAccess().getRightSquareBracketKeyword_3_1_2()); 
+            match(input,20,FOLLOW_20_in_rule__ProvidedPortCS__Group_3_1__2__Impl8722); 
+             after(grammarAccess.getProvidedPortCSAccess().getRightSquareBracketKeyword_3_1_2()); 
 
             }
 
@@ -11941,96 +11867,26 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_0_1__0__Impl"
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1__2__Impl"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_0_1__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4355:1: rule__ProvidedPortCS__Group_3_1_0_1__1 : rule__ProvidedPortCS__Group_3_1_0_1__1__Impl rule__ProvidedPortCS__Group_3_1_0_1__2 ;
-    public final void rule__ProvidedPortCS__Group_3_1_0_1__1() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1__0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4324:1: rule__ProvidedPortCS__Group_3_1_1__0 : rule__ProvidedPortCS__Group_3_1_1__0__Impl rule__ProvidedPortCS__Group_3_1_1__1 ;
+    public final void rule__ProvidedPortCS__Group_3_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4359:1: ( rule__ProvidedPortCS__Group_3_1_0_1__1__Impl rule__ProvidedPortCS__Group_3_1_0_1__2 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4360:2: rule__ProvidedPortCS__Group_3_1_0_1__1__Impl rule__ProvidedPortCS__Group_3_1_0_1__2
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4328:1: ( rule__ProvidedPortCS__Group_3_1_1__0__Impl rule__ProvidedPortCS__Group_3_1_1__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4329:2: rule__ProvidedPortCS__Group_3_1_1__0__Impl rule__ProvidedPortCS__Group_3_1_1__1
             {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1_0_1__18823);
-            rule__ProvidedPortCS__Group_3_1_0_1__1__Impl();
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1_1__08759);
+            rule__ProvidedPortCS__Group_3_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__2_in_rule__ProvidedPortCS__Group_3_1_0_1__18826);
-            rule__ProvidedPortCS__Group_3_1_0_1__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_0_1__1"
-
-
-    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_0_1__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4367:1: rule__ProvidedPortCS__Group_3_1_0_1__1__Impl : ( ':' ) ;
-    public final void rule__ProvidedPortCS__Group_3_1_0_1__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4371:1: ( ( ':' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4372:1: ( ':' )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4372:1: ( ':' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4373:1: ':'
-            {
-             before(grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_1_0_1_1()); 
-            match(input,17,FOLLOW_17_in_rule__ProvidedPortCS__Group_3_1_0_1__1__Impl8854); 
-             after(grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_1_0_1_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_0_1__1__Impl"
-
-
-    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_0_1__2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4386:1: rule__ProvidedPortCS__Group_3_1_0_1__2 : rule__ProvidedPortCS__Group_3_1_0_1__2__Impl ;
-    public final void rule__ProvidedPortCS__Group_3_1_0_1__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4390:1: ( rule__ProvidedPortCS__Group_3_1_0_1__2__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4391:2: rule__ProvidedPortCS__Group_3_1_0_1__2__Impl
-            {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__2__Impl_in_rule__ProvidedPortCS__Group_3_1_0_1__28885);
-            rule__ProvidedPortCS__Group_3_1_0_1__2__Impl();
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1__1_in_rule__ProvidedPortCS__Group_3_1_1__08762);
+            rule__ProvidedPortCS__Group_3_1_1__1();
 
             state._fsp--;
 
@@ -12049,35 +11905,35 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_0_1__2"
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1__0"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_0_1__2__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4397:1: rule__ProvidedPortCS__Group_3_1_0_1__2__Impl : ( ( rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2 ) ) ;
-    public final void rule__ProvidedPortCS__Group_3_1_0_1__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1__0__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4336:1: rule__ProvidedPortCS__Group_3_1_1__0__Impl : ( ( rule__ProvidedPortCS__Alternatives_3_1_1_0 ) ) ;
+    public final void rule__ProvidedPortCS__Group_3_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4401:1: ( ( ( rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2 ) ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4402:1: ( ( rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2 ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4340:1: ( ( ( rule__ProvidedPortCS__Alternatives_3_1_1_0 ) ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4341:1: ( ( rule__ProvidedPortCS__Alternatives_3_1_1_0 ) )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4402:1: ( ( rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2 ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4403:1: ( rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4341:1: ( ( rule__ProvidedPortCS__Alternatives_3_1_1_0 ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4342:1: ( rule__ProvidedPortCS__Alternatives_3_1_1_0 )
             {
-             before(grammarAccess.getProvidedPortCSAccess().getPortNumberAssignment_3_1_0_1_2()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4404:1: ( rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4404:2: rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2
+             before(grammarAccess.getProvidedPortCSAccess().getAlternatives_3_1_1_0()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4343:1: ( rule__ProvidedPortCS__Alternatives_3_1_1_0 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4343:2: rule__ProvidedPortCS__Alternatives_3_1_1_0
             {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2_in_rule__ProvidedPortCS__Group_3_1_0_1__2__Impl8912);
-            rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2();
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Alternatives_3_1_1_0_in_rule__ProvidedPortCS__Group_3_1_1__0__Impl8789);
+            rule__ProvidedPortCS__Alternatives_3_1_1_0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getProvidedPortCSAccess().getPortNumberAssignment_3_1_0_1_2()); 
+             after(grammarAccess.getProvidedPortCSAccess().getAlternatives_3_1_1_0()); 
 
             }
 
@@ -12096,96 +11952,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_0_1__2__Impl"
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1__0__Impl"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__Group_4__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4420:1: rule__ProvidedPortCS__Group_4__0 : rule__ProvidedPortCS__Group_4__0__Impl rule__ProvidedPortCS__Group_4__1 ;
-    public final void rule__ProvidedPortCS__Group_4__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4424:1: ( rule__ProvidedPortCS__Group_4__0__Impl rule__ProvidedPortCS__Group_4__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4425:2: rule__ProvidedPortCS__Group_4__0__Impl rule__ProvidedPortCS__Group_4__1
-            {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_4__0__Impl_in_rule__ProvidedPortCS__Group_4__08948);
-            rule__ProvidedPortCS__Group_4__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_4__1_in_rule__ProvidedPortCS__Group_4__08951);
-            rule__ProvidedPortCS__Group_4__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedPortCS__Group_4__0"
-
-
-    // $ANTLR start "rule__ProvidedPortCS__Group_4__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4432:1: rule__ProvidedPortCS__Group_4__0__Impl : ( ':' ) ;
-    public final void rule__ProvidedPortCS__Group_4__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1__1"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4353:1: rule__ProvidedPortCS__Group_3_1_1__1 : rule__ProvidedPortCS__Group_3_1_1__1__Impl ;
+    public final void rule__ProvidedPortCS__Group_3_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4436:1: ( ( ':' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4437:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4357:1: ( rule__ProvidedPortCS__Group_3_1_1__1__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4358:2: rule__ProvidedPortCS__Group_3_1_1__1__Impl
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4437:1: ( ':' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4438:1: ':'
-            {
-             before(grammarAccess.getProvidedPortCSAccess().getColonKeyword_4_0()); 
-            match(input,17,FOLLOW_17_in_rule__ProvidedPortCS__Group_4__0__Impl8979); 
-             after(grammarAccess.getProvidedPortCSAccess().getColonKeyword_4_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedPortCS__Group_4__0__Impl"
-
-
-    // $ANTLR start "rule__ProvidedPortCS__Group_4__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4451:1: rule__ProvidedPortCS__Group_4__1 : rule__ProvidedPortCS__Group_4__1__Impl ;
-    public final void rule__ProvidedPortCS__Group_4__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4455:1: ( rule__ProvidedPortCS__Group_4__1__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4456:2: rule__ProvidedPortCS__Group_4__1__Impl
-            {
-            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_4__1__Impl_in_rule__ProvidedPortCS__Group_4__19010);
-            rule__ProvidedPortCS__Group_4__1__Impl();
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1_1__18819);
+            rule__ProvidedPortCS__Group_3_1_1__1__Impl();
 
             state._fsp--;
 
@@ -12204,53 +11985,42 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__Group_4__1"
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1__1"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__Group_4__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4462:1: rule__ProvidedPortCS__Group_4__1__Impl : ( ( rule__ProvidedPortCS__PropertiesAssignment_4_1 )* ) ;
-    public final void rule__ProvidedPortCS__Group_4__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1__1__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4364:1: rule__ProvidedPortCS__Group_3_1_1__1__Impl : ( ( ',' )? ) ;
+    public final void rule__ProvidedPortCS__Group_3_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4466:1: ( ( ( rule__ProvidedPortCS__PropertiesAssignment_4_1 )* ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4467:1: ( ( rule__ProvidedPortCS__PropertiesAssignment_4_1 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4368:1: ( ( ( ',' )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4369:1: ( ( ',' )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4467:1: ( ( rule__ProvidedPortCS__PropertiesAssignment_4_1 )* )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4468:1: ( rule__ProvidedPortCS__PropertiesAssignment_4_1 )*
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4369:1: ( ( ',' )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4370:1: ( ',' )?
             {
-             before(grammarAccess.getProvidedPortCSAccess().getPropertiesAssignment_4_1()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4469:1: ( rule__ProvidedPortCS__PropertiesAssignment_4_1 )*
-            loop35:
-            do {
-                int alt35=2;
-                int LA35_0 = input.LA(1);
+             before(grammarAccess.getProvidedPortCSAccess().getCommaKeyword_3_1_1_1()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4371:1: ( ',' )?
+            int alt35=2;
+            int LA35_0 = input.LA(1);
 
-                if ( (LA35_0==49) ) {
-                    alt35=1;
-                }
+            if ( (LA35_0==21) ) {
+                alt35=1;
+            }
+            switch (alt35) {
+                case 1 :
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4372:2: ','
+                    {
+                    match(input,21,FOLLOW_21_in_rule__ProvidedPortCS__Group_3_1_1__1__Impl8848); 
 
+                    }
+                    break;
 
-                switch (alt35) {
-            	case 1 :
-            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4469:2: rule__ProvidedPortCS__PropertiesAssignment_4_1
-            	    {
-            	    pushFollow(FOLLOW_rule__ProvidedPortCS__PropertiesAssignment_4_1_in_rule__ProvidedPortCS__Group_4__1__Impl9037);
-            	    rule__ProvidedPortCS__PropertiesAssignment_4_1();
+            }
 
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop35;
-                }
-            } while (true);
-
-             after(grammarAccess.getProvidedPortCSAccess().getPropertiesAssignment_4_1()); 
+             after(grammarAccess.getProvidedPortCSAccess().getCommaKeyword_3_1_1_1()); 
 
             }
 
@@ -12269,7 +12039,237 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__Group_4__1__Impl"
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1__1__Impl"
+
+
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1_0_1__0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4387:1: rule__ProvidedPortCS__Group_3_1_1_0_1__0 : rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl rule__ProvidedPortCS__Group_3_1_1_0_1__1 ;
+    public final void rule__ProvidedPortCS__Group_3_1_1_0_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4391:1: ( rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl rule__ProvidedPortCS__Group_3_1_1_0_1__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4392:2: rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl rule__ProvidedPortCS__Group_3_1_1_0_1__1
+            {
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1_1_0_1__08885);
+            rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__1_in_rule__ProvidedPortCS__Group_3_1_1_0_1__08888);
+            rule__ProvidedPortCS__Group_3_1_1_0_1__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1_0_1__0"
+
+
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4399:1: rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl : ( 'port' ) ;
+    public final void rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4403:1: ( ( 'port' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4404:1: ( 'port' )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4404:1: ( 'port' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4405:1: 'port'
+            {
+             before(grammarAccess.getProvidedPortCSAccess().getPortKeyword_3_1_1_0_1_0()); 
+            match(input,40,FOLLOW_40_in_rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl8916); 
+             after(grammarAccess.getProvidedPortCSAccess().getPortKeyword_3_1_1_0_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl"
+
+
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1_0_1__1"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4418:1: rule__ProvidedPortCS__Group_3_1_1_0_1__1 : rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl rule__ProvidedPortCS__Group_3_1_1_0_1__2 ;
+    public final void rule__ProvidedPortCS__Group_3_1_1_0_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4422:1: ( rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl rule__ProvidedPortCS__Group_3_1_1_0_1__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4423:2: rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl rule__ProvidedPortCS__Group_3_1_1_0_1__2
+            {
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1_1_0_1__18947);
+            rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__2_in_rule__ProvidedPortCS__Group_3_1_1_0_1__18950);
+            rule__ProvidedPortCS__Group_3_1_1_0_1__2();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1_0_1__1"
+
+
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4430:1: rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl : ( ':' ) ;
+    public final void rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4434:1: ( ( ':' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4435:1: ( ':' )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4435:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4436:1: ':'
+            {
+             before(grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_1_1_0_1_1()); 
+            match(input,17,FOLLOW_17_in_rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl8978); 
+             after(grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_1_1_0_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl"
+
+
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1_0_1__2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4449:1: rule__ProvidedPortCS__Group_3_1_1_0_1__2 : rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl ;
+    public final void rule__ProvidedPortCS__Group_3_1_1_0_1__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4453:1: ( rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4454:2: rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl
+            {
+            pushFollow(FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl_in_rule__ProvidedPortCS__Group_3_1_1_0_1__29009);
+            rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1_0_1__2"
+
+
+    // $ANTLR start "rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4460:1: rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl : ( ( rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2 ) ) ;
+    public final void rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4464:1: ( ( ( rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2 ) ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4465:1: ( ( rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2 ) )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4465:1: ( ( rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2 ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4466:1: ( rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2 )
+            {
+             before(grammarAccess.getProvidedPortCSAccess().getPortNumberAssignment_3_1_1_0_1_2()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4467:1: ( rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4467:2: rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2
+            {
+            pushFollow(FOLLOW_rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2_in_rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl9036);
+            rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getProvidedPortCSAccess().getPortNumberAssignment_3_1_1_0_1_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl"
 
 
     // $ANTLR start "rule__InternalComponentCS__Group__0"
@@ -13363,22 +13363,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group__3"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4892:1: rule__RequiredPortCS__Group__3 : rule__RequiredPortCS__Group__3__Impl rule__RequiredPortCS__Group__4 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4892:1: rule__RequiredPortCS__Group__3 : rule__RequiredPortCS__Group__3__Impl ;
     public final void rule__RequiredPortCS__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4896:1: ( rule__RequiredPortCS__Group__3__Impl rule__RequiredPortCS__Group__4 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4897:2: rule__RequiredPortCS__Group__3__Impl rule__RequiredPortCS__Group__4
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4896:1: ( rule__RequiredPortCS__Group__3__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4897:2: rule__RequiredPortCS__Group__3__Impl
             {
             pushFollow(FOLLOW_rule__RequiredPortCS__Group__3__Impl_in_rule__RequiredPortCS__Group__39884);
             rule__RequiredPortCS__Group__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group__4_in_rule__RequiredPortCS__Group__39887);
-            rule__RequiredPortCS__Group__4();
 
             state._fsp--;
 
@@ -13401,31 +13396,31 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group__3__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4904:1: rule__RequiredPortCS__Group__3__Impl : ( ( rule__RequiredPortCS__Group_3__0 )? ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4903:1: rule__RequiredPortCS__Group__3__Impl : ( ( rule__RequiredPortCS__Group_3__0 )? ) ;
     public final void rule__RequiredPortCS__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4908:1: ( ( ( rule__RequiredPortCS__Group_3__0 )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4909:1: ( ( rule__RequiredPortCS__Group_3__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4907:1: ( ( ( rule__RequiredPortCS__Group_3__0 )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4908:1: ( ( rule__RequiredPortCS__Group_3__0 )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4909:1: ( ( rule__RequiredPortCS__Group_3__0 )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4910:1: ( rule__RequiredPortCS__Group_3__0 )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4908:1: ( ( rule__RequiredPortCS__Group_3__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4909:1: ( rule__RequiredPortCS__Group_3__0 )?
             {
              before(grammarAccess.getRequiredPortCSAccess().getGroup_3()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4911:1: ( rule__RequiredPortCS__Group_3__0 )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4910:1: ( rule__RequiredPortCS__Group_3__0 )?
             int alt40=2;
             int LA40_0 = input.LA(1);
 
-            if ( (LA40_0==19) ) {
+            if ( (LA40_0==17) ) {
                 alt40=1;
             }
             switch (alt40) {
                 case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4911:2: rule__RequiredPortCS__Group_3__0
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4910:2: rule__RequiredPortCS__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__0_in_rule__RequiredPortCS__Group__3__Impl9914);
+                    pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__0_in_rule__RequiredPortCS__Group__3__Impl9911);
                     rule__RequiredPortCS__Group_3__0();
 
                     state._fsp--;
@@ -13458,113 +13453,22 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__RequiredPortCS__Group__3__Impl"
 
 
-    // $ANTLR start "rule__RequiredPortCS__Group__4"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4921:1: rule__RequiredPortCS__Group__4 : rule__RequiredPortCS__Group__4__Impl ;
-    public final void rule__RequiredPortCS__Group__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4925:1: ( rule__RequiredPortCS__Group__4__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4926:2: rule__RequiredPortCS__Group__4__Impl
-            {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group__4__Impl_in_rule__RequiredPortCS__Group__49945);
-            rule__RequiredPortCS__Group__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredPortCS__Group__4"
-
-
-    // $ANTLR start "rule__RequiredPortCS__Group__4__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4932:1: rule__RequiredPortCS__Group__4__Impl : ( ( rule__RequiredPortCS__Group_4__0 )? ) ;
-    public final void rule__RequiredPortCS__Group__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4936:1: ( ( ( rule__RequiredPortCS__Group_4__0 )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4937:1: ( ( rule__RequiredPortCS__Group_4__0 )? )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4937:1: ( ( rule__RequiredPortCS__Group_4__0 )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4938:1: ( rule__RequiredPortCS__Group_4__0 )?
-            {
-             before(grammarAccess.getRequiredPortCSAccess().getGroup_4()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4939:1: ( rule__RequiredPortCS__Group_4__0 )?
-            int alt41=2;
-            int LA41_0 = input.LA(1);
-
-            if ( (LA41_0==17) ) {
-                alt41=1;
-            }
-            switch (alt41) {
-                case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4939:2: rule__RequiredPortCS__Group_4__0
-                    {
-                    pushFollow(FOLLOW_rule__RequiredPortCS__Group_4__0_in_rule__RequiredPortCS__Group__4__Impl9972);
-                    rule__RequiredPortCS__Group_4__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getRequiredPortCSAccess().getGroup_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredPortCS__Group__4__Impl"
-
-
     // $ANTLR start "rule__RequiredPortCS__Group_3__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4959:1: rule__RequiredPortCS__Group_3__0 : rule__RequiredPortCS__Group_3__0__Impl rule__RequiredPortCS__Group_3__1 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4928:1: rule__RequiredPortCS__Group_3__0 : rule__RequiredPortCS__Group_3__0__Impl rule__RequiredPortCS__Group_3__1 ;
     public final void rule__RequiredPortCS__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4963:1: ( rule__RequiredPortCS__Group_3__0__Impl rule__RequiredPortCS__Group_3__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4964:2: rule__RequiredPortCS__Group_3__0__Impl rule__RequiredPortCS__Group_3__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4932:1: ( rule__RequiredPortCS__Group_3__0__Impl rule__RequiredPortCS__Group_3__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4933:2: rule__RequiredPortCS__Group_3__0__Impl rule__RequiredPortCS__Group_3__1
             {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__0__Impl_in_rule__RequiredPortCS__Group_3__010013);
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__0__Impl_in_rule__RequiredPortCS__Group_3__09950);
             rule__RequiredPortCS__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__1_in_rule__RequiredPortCS__Group_3__010016);
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__1_in_rule__RequiredPortCS__Group_3__09953);
             rule__RequiredPortCS__Group_3__1();
 
             state._fsp--;
@@ -13588,21 +13492,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4971:1: rule__RequiredPortCS__Group_3__0__Impl : ( '[' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4940:1: rule__RequiredPortCS__Group_3__0__Impl : ( ':' ) ;
     public final void rule__RequiredPortCS__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4975:1: ( ( '[' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4976:1: ( '[' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4944:1: ( ( ':' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4945:1: ( ':' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4976:1: ( '[' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4977:1: '['
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4945:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4946:1: ':'
             {
-             before(grammarAccess.getRequiredPortCSAccess().getLeftSquareBracketKeyword_3_0()); 
-            match(input,19,FOLLOW_19_in_rule__RequiredPortCS__Group_3__0__Impl10044); 
-             after(grammarAccess.getRequiredPortCSAccess().getLeftSquareBracketKeyword_3_0()); 
+             before(grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_0()); 
+            match(input,17,FOLLOW_17_in_rule__RequiredPortCS__Group_3__0__Impl9981); 
+             after(grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_0()); 
 
             }
 
@@ -13625,21 +13529,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4990:1: rule__RequiredPortCS__Group_3__1 : rule__RequiredPortCS__Group_3__1__Impl rule__RequiredPortCS__Group_3__2 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4959:1: rule__RequiredPortCS__Group_3__1 : rule__RequiredPortCS__Group_3__1__Impl rule__RequiredPortCS__Group_3__2 ;
     public final void rule__RequiredPortCS__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4994:1: ( rule__RequiredPortCS__Group_3__1__Impl rule__RequiredPortCS__Group_3__2 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4995:2: rule__RequiredPortCS__Group_3__1__Impl rule__RequiredPortCS__Group_3__2
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4963:1: ( rule__RequiredPortCS__Group_3__1__Impl rule__RequiredPortCS__Group_3__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4964:2: rule__RequiredPortCS__Group_3__1__Impl rule__RequiredPortCS__Group_3__2
             {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__1__Impl_in_rule__RequiredPortCS__Group_3__110075);
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__1__Impl_in_rule__RequiredPortCS__Group_3__110012);
             rule__RequiredPortCS__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__2_in_rule__RequiredPortCS__Group_3__110078);
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__2_in_rule__RequiredPortCS__Group_3__110015);
             rule__RequiredPortCS__Group_3__2();
 
             state._fsp--;
@@ -13663,47 +13567,40 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5002:1: rule__RequiredPortCS__Group_3__1__Impl : ( ( rule__RequiredPortCS__Group_3_1__0 )* ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4971:1: rule__RequiredPortCS__Group_3__1__Impl : ( ( rule__RequiredPortCS__Group_3_1__0 )? ) ;
     public final void rule__RequiredPortCS__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5006:1: ( ( ( rule__RequiredPortCS__Group_3_1__0 )* ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5007:1: ( ( rule__RequiredPortCS__Group_3_1__0 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4975:1: ( ( ( rule__RequiredPortCS__Group_3_1__0 )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4976:1: ( ( rule__RequiredPortCS__Group_3_1__0 )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5007:1: ( ( rule__RequiredPortCS__Group_3_1__0 )* )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5008:1: ( rule__RequiredPortCS__Group_3_1__0 )*
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4976:1: ( ( rule__RequiredPortCS__Group_3_1__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4977:1: ( rule__RequiredPortCS__Group_3_1__0 )?
             {
              before(grammarAccess.getRequiredPortCSAccess().getGroup_3_1()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5009:1: ( rule__RequiredPortCS__Group_3_1__0 )*
-            loop42:
-            do {
-                int alt42=2;
-                int LA42_0 = input.LA(1);
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4978:1: ( rule__RequiredPortCS__Group_3_1__0 )?
+            int alt41=2;
+            int LA41_0 = input.LA(1);
 
-                if ( (LA42_0==40||(LA42_0>=60 && LA42_0<=61)) ) {
-                    alt42=1;
-                }
+            if ( (LA41_0==19) ) {
+                alt41=1;
+            }
+            switch (alt41) {
+                case 1 :
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4978:2: rule__RequiredPortCS__Group_3_1__0
+                    {
+                    pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__0_in_rule__RequiredPortCS__Group_3__1__Impl10042);
+                    rule__RequiredPortCS__Group_3_1__0();
 
-
-                switch (alt42) {
-            	case 1 :
-            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5009:2: rule__RequiredPortCS__Group_3_1__0
-            	    {
-            	    pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__0_in_rule__RequiredPortCS__Group_3__1__Impl10105);
-            	    rule__RequiredPortCS__Group_3_1__0();
-
-            	    state._fsp--;
+                    state._fsp--;
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop42;
-                }
-            } while (true);
+            }
 
              after(grammarAccess.getRequiredPortCSAccess().getGroup_3_1()); 
 
@@ -13728,16 +13625,16 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3__2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5019:1: rule__RequiredPortCS__Group_3__2 : rule__RequiredPortCS__Group_3__2__Impl ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4988:1: rule__RequiredPortCS__Group_3__2 : rule__RequiredPortCS__Group_3__2__Impl ;
     public final void rule__RequiredPortCS__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5023:1: ( rule__RequiredPortCS__Group_3__2__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5024:2: rule__RequiredPortCS__Group_3__2__Impl
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4992:1: ( rule__RequiredPortCS__Group_3__2__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4993:2: rule__RequiredPortCS__Group_3__2__Impl
             {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__2__Impl_in_rule__RequiredPortCS__Group_3__210136);
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3__2__Impl_in_rule__RequiredPortCS__Group_3__210073);
             rule__RequiredPortCS__Group_3__2__Impl();
 
             state._fsp--;
@@ -13761,21 +13658,49 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3__2__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5030:1: rule__RequiredPortCS__Group_3__2__Impl : ( ']' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:4999:1: rule__RequiredPortCS__Group_3__2__Impl : ( ( rule__RequiredPortCS__PropertiesAssignment_3_2 )* ) ;
     public final void rule__RequiredPortCS__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5034:1: ( ( ']' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5035:1: ( ']' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5003:1: ( ( ( rule__RequiredPortCS__PropertiesAssignment_3_2 )* ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5004:1: ( ( rule__RequiredPortCS__PropertiesAssignment_3_2 )* )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5035:1: ( ']' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5036:1: ']'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5004:1: ( ( rule__RequiredPortCS__PropertiesAssignment_3_2 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5005:1: ( rule__RequiredPortCS__PropertiesAssignment_3_2 )*
             {
-             before(grammarAccess.getRequiredPortCSAccess().getRightSquareBracketKeyword_3_2()); 
-            match(input,20,FOLLOW_20_in_rule__RequiredPortCS__Group_3__2__Impl10164); 
-             after(grammarAccess.getRequiredPortCSAccess().getRightSquareBracketKeyword_3_2()); 
+             before(grammarAccess.getRequiredPortCSAccess().getPropertiesAssignment_3_2()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5006:1: ( rule__RequiredPortCS__PropertiesAssignment_3_2 )*
+            loop42:
+            do {
+                int alt42=2;
+                int LA42_0 = input.LA(1);
+
+                if ( (LA42_0==49) ) {
+                    alt42=1;
+                }
+
+
+                switch (alt42) {
+            	case 1 :
+            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5006:2: rule__RequiredPortCS__PropertiesAssignment_3_2
+            	    {
+            	    pushFollow(FOLLOW_rule__RequiredPortCS__PropertiesAssignment_3_2_in_rule__RequiredPortCS__Group_3__2__Impl10100);
+            	    rule__RequiredPortCS__PropertiesAssignment_3_2();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop42;
+                }
+            } while (true);
+
+             after(grammarAccess.getRequiredPortCSAccess().getPropertiesAssignment_3_2()); 
 
             }
 
@@ -13798,21 +13723,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3_1__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5055:1: rule__RequiredPortCS__Group_3_1__0 : rule__RequiredPortCS__Group_3_1__0__Impl rule__RequiredPortCS__Group_3_1__1 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5022:1: rule__RequiredPortCS__Group_3_1__0 : rule__RequiredPortCS__Group_3_1__0__Impl rule__RequiredPortCS__Group_3_1__1 ;
     public final void rule__RequiredPortCS__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5059:1: ( rule__RequiredPortCS__Group_3_1__0__Impl rule__RequiredPortCS__Group_3_1__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5060:2: rule__RequiredPortCS__Group_3_1__0__Impl rule__RequiredPortCS__Group_3_1__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5026:1: ( rule__RequiredPortCS__Group_3_1__0__Impl rule__RequiredPortCS__Group_3_1__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5027:2: rule__RequiredPortCS__Group_3_1__0__Impl rule__RequiredPortCS__Group_3_1__1
             {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__0__Impl_in_rule__RequiredPortCS__Group_3_1__010201);
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__0__Impl_in_rule__RequiredPortCS__Group_3_1__010137);
             rule__RequiredPortCS__Group_3_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__1_in_rule__RequiredPortCS__Group_3_1__010204);
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__1_in_rule__RequiredPortCS__Group_3_1__010140);
             rule__RequiredPortCS__Group_3_1__1();
 
             state._fsp--;
@@ -13836,31 +13761,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3_1__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5067:1: rule__RequiredPortCS__Group_3_1__0__Impl : ( ( rule__RequiredPortCS__Alternatives_3_1_0 ) ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5034:1: rule__RequiredPortCS__Group_3_1__0__Impl : ( '[' ) ;
     public final void rule__RequiredPortCS__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5071:1: ( ( ( rule__RequiredPortCS__Alternatives_3_1_0 ) ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5072:1: ( ( rule__RequiredPortCS__Alternatives_3_1_0 ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5038:1: ( ( '[' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5039:1: ( '[' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5072:1: ( ( rule__RequiredPortCS__Alternatives_3_1_0 ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5073:1: ( rule__RequiredPortCS__Alternatives_3_1_0 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5039:1: ( '[' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5040:1: '['
             {
-             before(grammarAccess.getRequiredPortCSAccess().getAlternatives_3_1_0()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5074:1: ( rule__RequiredPortCS__Alternatives_3_1_0 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5074:2: rule__RequiredPortCS__Alternatives_3_1_0
-            {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Alternatives_3_1_0_in_rule__RequiredPortCS__Group_3_1__0__Impl10231);
-            rule__RequiredPortCS__Alternatives_3_1_0();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRequiredPortCSAccess().getAlternatives_3_1_0()); 
+             before(grammarAccess.getRequiredPortCSAccess().getLeftSquareBracketKeyword_3_1_0()); 
+            match(input,19,FOLLOW_19_in_rule__RequiredPortCS__Group_3_1__0__Impl10168); 
+             after(grammarAccess.getRequiredPortCSAccess().getLeftSquareBracketKeyword_3_1_0()); 
 
             }
 
@@ -13883,17 +13798,22 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3_1__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5084:1: rule__RequiredPortCS__Group_3_1__1 : rule__RequiredPortCS__Group_3_1__1__Impl ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5053:1: rule__RequiredPortCS__Group_3_1__1 : rule__RequiredPortCS__Group_3_1__1__Impl rule__RequiredPortCS__Group_3_1__2 ;
     public final void rule__RequiredPortCS__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5088:1: ( rule__RequiredPortCS__Group_3_1__1__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5089:2: rule__RequiredPortCS__Group_3_1__1__Impl
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5057:1: ( rule__RequiredPortCS__Group_3_1__1__Impl rule__RequiredPortCS__Group_3_1__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5058:2: rule__RequiredPortCS__Group_3_1__1__Impl rule__RequiredPortCS__Group_3_1__2
             {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__1__Impl_in_rule__RequiredPortCS__Group_3_1__110261);
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__1__Impl_in_rule__RequiredPortCS__Group_3_1__110199);
             rule__RequiredPortCS__Group_3_1__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__2_in_rule__RequiredPortCS__Group_3_1__110202);
+            rule__RequiredPortCS__Group_3_1__2();
 
             state._fsp--;
 
@@ -13916,38 +13836,49 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredPortCS__Group_3_1__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5095:1: rule__RequiredPortCS__Group_3_1__1__Impl : ( ( ',' )? ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5065:1: rule__RequiredPortCS__Group_3_1__1__Impl : ( ( rule__RequiredPortCS__Group_3_1_1__0 )* ) ;
     public final void rule__RequiredPortCS__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5099:1: ( ( ( ',' )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5100:1: ( ( ',' )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5069:1: ( ( ( rule__RequiredPortCS__Group_3_1_1__0 )* ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5070:1: ( ( rule__RequiredPortCS__Group_3_1_1__0 )* )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5100:1: ( ( ',' )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5101:1: ( ',' )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5070:1: ( ( rule__RequiredPortCS__Group_3_1_1__0 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5071:1: ( rule__RequiredPortCS__Group_3_1_1__0 )*
             {
-             before(grammarAccess.getRequiredPortCSAccess().getCommaKeyword_3_1_1()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5102:1: ( ',' )?
-            int alt43=2;
-            int LA43_0 = input.LA(1);
+             before(grammarAccess.getRequiredPortCSAccess().getGroup_3_1_1()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5072:1: ( rule__RequiredPortCS__Group_3_1_1__0 )*
+            loop43:
+            do {
+                int alt43=2;
+                int LA43_0 = input.LA(1);
 
-            if ( (LA43_0==21) ) {
-                alt43=1;
-            }
-            switch (alt43) {
-                case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5103:2: ','
-                    {
-                    match(input,21,FOLLOW_21_in_rule__RequiredPortCS__Group_3_1__1__Impl10290); 
+                if ( (LA43_0==40||(LA43_0>=60 && LA43_0<=61)) ) {
+                    alt43=1;
+                }
 
-                    }
-                    break;
 
-            }
+                switch (alt43) {
+            	case 1 :
+            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5072:2: rule__RequiredPortCS__Group_3_1_1__0
+            	    {
+            	    pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1__0_in_rule__RequiredPortCS__Group_3_1__1__Impl10229);
+            	    rule__RequiredPortCS__Group_3_1_1__0();
 
-             after(grammarAccess.getRequiredPortCSAccess().getCommaKeyword_3_1_1()); 
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop43;
+                }
+            } while (true);
+
+             after(grammarAccess.getRequiredPortCSAccess().getGroup_3_1_1()); 
 
             }
 
@@ -13969,23 +13900,18 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__RequiredPortCS__Group_3_1__1__Impl"
 
 
-    // $ANTLR start "rule__RequiredPortCS__Group_3_1_0_1__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5118:1: rule__RequiredPortCS__Group_3_1_0_1__0 : rule__RequiredPortCS__Group_3_1_0_1__0__Impl rule__RequiredPortCS__Group_3_1_0_1__1 ;
-    public final void rule__RequiredPortCS__Group_3_1_0_1__0() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1__2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5082:1: rule__RequiredPortCS__Group_3_1__2 : rule__RequiredPortCS__Group_3_1__2__Impl ;
+    public final void rule__RequiredPortCS__Group_3_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5122:1: ( rule__RequiredPortCS__Group_3_1_0_1__0__Impl rule__RequiredPortCS__Group_3_1_0_1__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5123:2: rule__RequiredPortCS__Group_3_1_0_1__0__Impl rule__RequiredPortCS__Group_3_1_0_1__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5086:1: ( rule__RequiredPortCS__Group_3_1__2__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5087:2: rule__RequiredPortCS__Group_3_1__2__Impl
             {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__0__Impl_in_rule__RequiredPortCS__Group_3_1_0_1__010327);
-            rule__RequiredPortCS__Group_3_1_0_1__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__1_in_rule__RequiredPortCS__Group_3_1_0_1__010330);
-            rule__RequiredPortCS__Group_3_1_0_1__1();
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1__2__Impl_in_rule__RequiredPortCS__Group_3_1__210260);
+            rule__RequiredPortCS__Group_3_1__2__Impl();
 
             state._fsp--;
 
@@ -14004,25 +13930,25 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__Group_3_1_0_1__0"
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1__2"
 
 
-    // $ANTLR start "rule__RequiredPortCS__Group_3_1_0_1__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5130:1: rule__RequiredPortCS__Group_3_1_0_1__0__Impl : ( 'port' ) ;
-    public final void rule__RequiredPortCS__Group_3_1_0_1__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1__2__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5093:1: rule__RequiredPortCS__Group_3_1__2__Impl : ( ']' ) ;
+    public final void rule__RequiredPortCS__Group_3_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5134:1: ( ( 'port' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5135:1: ( 'port' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5097:1: ( ( ']' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5098:1: ( ']' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5135:1: ( 'port' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5136:1: 'port'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5098:1: ( ']' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5099:1: ']'
             {
-             before(grammarAccess.getRequiredPortCSAccess().getPortKeyword_3_1_0_1_0()); 
-            match(input,40,FOLLOW_40_in_rule__RequiredPortCS__Group_3_1_0_1__0__Impl10358); 
-             after(grammarAccess.getRequiredPortCSAccess().getPortKeyword_3_1_0_1_0()); 
+             before(grammarAccess.getRequiredPortCSAccess().getRightSquareBracketKeyword_3_1_2()); 
+            match(input,20,FOLLOW_20_in_rule__RequiredPortCS__Group_3_1__2__Impl10288); 
+             after(grammarAccess.getRequiredPortCSAccess().getRightSquareBracketKeyword_3_1_2()); 
 
             }
 
@@ -14041,96 +13967,26 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__Group_3_1_0_1__0__Impl"
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1__2__Impl"
 
 
-    // $ANTLR start "rule__RequiredPortCS__Group_3_1_0_1__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5149:1: rule__RequiredPortCS__Group_3_1_0_1__1 : rule__RequiredPortCS__Group_3_1_0_1__1__Impl rule__RequiredPortCS__Group_3_1_0_1__2 ;
-    public final void rule__RequiredPortCS__Group_3_1_0_1__1() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1__0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5118:1: rule__RequiredPortCS__Group_3_1_1__0 : rule__RequiredPortCS__Group_3_1_1__0__Impl rule__RequiredPortCS__Group_3_1_1__1 ;
+    public final void rule__RequiredPortCS__Group_3_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5153:1: ( rule__RequiredPortCS__Group_3_1_0_1__1__Impl rule__RequiredPortCS__Group_3_1_0_1__2 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5154:2: rule__RequiredPortCS__Group_3_1_0_1__1__Impl rule__RequiredPortCS__Group_3_1_0_1__2
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5122:1: ( rule__RequiredPortCS__Group_3_1_1__0__Impl rule__RequiredPortCS__Group_3_1_1__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5123:2: rule__RequiredPortCS__Group_3_1_1__0__Impl rule__RequiredPortCS__Group_3_1_1__1
             {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__1__Impl_in_rule__RequiredPortCS__Group_3_1_0_1__110389);
-            rule__RequiredPortCS__Group_3_1_0_1__1__Impl();
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1__0__Impl_in_rule__RequiredPortCS__Group_3_1_1__010325);
+            rule__RequiredPortCS__Group_3_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__2_in_rule__RequiredPortCS__Group_3_1_0_1__110392);
-            rule__RequiredPortCS__Group_3_1_0_1__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredPortCS__Group_3_1_0_1__1"
-
-
-    // $ANTLR start "rule__RequiredPortCS__Group_3_1_0_1__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5161:1: rule__RequiredPortCS__Group_3_1_0_1__1__Impl : ( ':' ) ;
-    public final void rule__RequiredPortCS__Group_3_1_0_1__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5165:1: ( ( ':' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5166:1: ( ':' )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5166:1: ( ':' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5167:1: ':'
-            {
-             before(grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_1_0_1_1()); 
-            match(input,17,FOLLOW_17_in_rule__RequiredPortCS__Group_3_1_0_1__1__Impl10420); 
-             after(grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_1_0_1_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredPortCS__Group_3_1_0_1__1__Impl"
-
-
-    // $ANTLR start "rule__RequiredPortCS__Group_3_1_0_1__2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5180:1: rule__RequiredPortCS__Group_3_1_0_1__2 : rule__RequiredPortCS__Group_3_1_0_1__2__Impl ;
-    public final void rule__RequiredPortCS__Group_3_1_0_1__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5184:1: ( rule__RequiredPortCS__Group_3_1_0_1__2__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5185:2: rule__RequiredPortCS__Group_3_1_0_1__2__Impl
-            {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__2__Impl_in_rule__RequiredPortCS__Group_3_1_0_1__210451);
-            rule__RequiredPortCS__Group_3_1_0_1__2__Impl();
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1__1_in_rule__RequiredPortCS__Group_3_1_1__010328);
+            rule__RequiredPortCS__Group_3_1_1__1();
 
             state._fsp--;
 
@@ -14149,35 +14005,35 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__Group_3_1_0_1__2"
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1__0"
 
 
-    // $ANTLR start "rule__RequiredPortCS__Group_3_1_0_1__2__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5191:1: rule__RequiredPortCS__Group_3_1_0_1__2__Impl : ( ( rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2 ) ) ;
-    public final void rule__RequiredPortCS__Group_3_1_0_1__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1__0__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5130:1: rule__RequiredPortCS__Group_3_1_1__0__Impl : ( ( rule__RequiredPortCS__Alternatives_3_1_1_0 ) ) ;
+    public final void rule__RequiredPortCS__Group_3_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5195:1: ( ( ( rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2 ) ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5196:1: ( ( rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2 ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5134:1: ( ( ( rule__RequiredPortCS__Alternatives_3_1_1_0 ) ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5135:1: ( ( rule__RequiredPortCS__Alternatives_3_1_1_0 ) )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5196:1: ( ( rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2 ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5197:1: ( rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5135:1: ( ( rule__RequiredPortCS__Alternatives_3_1_1_0 ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5136:1: ( rule__RequiredPortCS__Alternatives_3_1_1_0 )
             {
-             before(grammarAccess.getRequiredPortCSAccess().getPortNumberAssignment_3_1_0_1_2()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5198:1: ( rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5198:2: rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2
+             before(grammarAccess.getRequiredPortCSAccess().getAlternatives_3_1_1_0()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5137:1: ( rule__RequiredPortCS__Alternatives_3_1_1_0 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5137:2: rule__RequiredPortCS__Alternatives_3_1_1_0
             {
-            pushFollow(FOLLOW_rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2_in_rule__RequiredPortCS__Group_3_1_0_1__2__Impl10478);
-            rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2();
+            pushFollow(FOLLOW_rule__RequiredPortCS__Alternatives_3_1_1_0_in_rule__RequiredPortCS__Group_3_1_1__0__Impl10355);
+            rule__RequiredPortCS__Alternatives_3_1_1_0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRequiredPortCSAccess().getPortNumberAssignment_3_1_0_1_2()); 
+             after(grammarAccess.getRequiredPortCSAccess().getAlternatives_3_1_1_0()); 
 
             }
 
@@ -14196,96 +14052,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__Group_3_1_0_1__2__Impl"
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1__0__Impl"
 
 
-    // $ANTLR start "rule__RequiredPortCS__Group_4__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5214:1: rule__RequiredPortCS__Group_4__0 : rule__RequiredPortCS__Group_4__0__Impl rule__RequiredPortCS__Group_4__1 ;
-    public final void rule__RequiredPortCS__Group_4__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5218:1: ( rule__RequiredPortCS__Group_4__0__Impl rule__RequiredPortCS__Group_4__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5219:2: rule__RequiredPortCS__Group_4__0__Impl rule__RequiredPortCS__Group_4__1
-            {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_4__0__Impl_in_rule__RequiredPortCS__Group_4__010514);
-            rule__RequiredPortCS__Group_4__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_4__1_in_rule__RequiredPortCS__Group_4__010517);
-            rule__RequiredPortCS__Group_4__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredPortCS__Group_4__0"
-
-
-    // $ANTLR start "rule__RequiredPortCS__Group_4__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5226:1: rule__RequiredPortCS__Group_4__0__Impl : ( ':' ) ;
-    public final void rule__RequiredPortCS__Group_4__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1__1"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5147:1: rule__RequiredPortCS__Group_3_1_1__1 : rule__RequiredPortCS__Group_3_1_1__1__Impl ;
+    public final void rule__RequiredPortCS__Group_3_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5230:1: ( ( ':' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5231:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5151:1: ( rule__RequiredPortCS__Group_3_1_1__1__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5152:2: rule__RequiredPortCS__Group_3_1_1__1__Impl
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5231:1: ( ':' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5232:1: ':'
-            {
-             before(grammarAccess.getRequiredPortCSAccess().getColonKeyword_4_0()); 
-            match(input,17,FOLLOW_17_in_rule__RequiredPortCS__Group_4__0__Impl10545); 
-             after(grammarAccess.getRequiredPortCSAccess().getColonKeyword_4_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredPortCS__Group_4__0__Impl"
-
-
-    // $ANTLR start "rule__RequiredPortCS__Group_4__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5245:1: rule__RequiredPortCS__Group_4__1 : rule__RequiredPortCS__Group_4__1__Impl ;
-    public final void rule__RequiredPortCS__Group_4__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5249:1: ( rule__RequiredPortCS__Group_4__1__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5250:2: rule__RequiredPortCS__Group_4__1__Impl
-            {
-            pushFollow(FOLLOW_rule__RequiredPortCS__Group_4__1__Impl_in_rule__RequiredPortCS__Group_4__110576);
-            rule__RequiredPortCS__Group_4__1__Impl();
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1__1__Impl_in_rule__RequiredPortCS__Group_3_1_1__110385);
+            rule__RequiredPortCS__Group_3_1_1__1__Impl();
 
             state._fsp--;
 
@@ -14304,53 +14085,42 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__Group_4__1"
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1__1"
 
 
-    // $ANTLR start "rule__RequiredPortCS__Group_4__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5256:1: rule__RequiredPortCS__Group_4__1__Impl : ( ( rule__RequiredPortCS__PropertiesAssignment_4_1 )* ) ;
-    public final void rule__RequiredPortCS__Group_4__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1__1__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5158:1: rule__RequiredPortCS__Group_3_1_1__1__Impl : ( ( ',' )? ) ;
+    public final void rule__RequiredPortCS__Group_3_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5260:1: ( ( ( rule__RequiredPortCS__PropertiesAssignment_4_1 )* ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5261:1: ( ( rule__RequiredPortCS__PropertiesAssignment_4_1 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5162:1: ( ( ( ',' )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5163:1: ( ( ',' )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5261:1: ( ( rule__RequiredPortCS__PropertiesAssignment_4_1 )* )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5262:1: ( rule__RequiredPortCS__PropertiesAssignment_4_1 )*
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5163:1: ( ( ',' )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5164:1: ( ',' )?
             {
-             before(grammarAccess.getRequiredPortCSAccess().getPropertiesAssignment_4_1()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5263:1: ( rule__RequiredPortCS__PropertiesAssignment_4_1 )*
-            loop44:
-            do {
-                int alt44=2;
-                int LA44_0 = input.LA(1);
+             before(grammarAccess.getRequiredPortCSAccess().getCommaKeyword_3_1_1_1()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5165:1: ( ',' )?
+            int alt44=2;
+            int LA44_0 = input.LA(1);
 
-                if ( (LA44_0==49) ) {
-                    alt44=1;
-                }
+            if ( (LA44_0==21) ) {
+                alt44=1;
+            }
+            switch (alt44) {
+                case 1 :
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5166:2: ','
+                    {
+                    match(input,21,FOLLOW_21_in_rule__RequiredPortCS__Group_3_1_1__1__Impl10414); 
 
+                    }
+                    break;
 
-                switch (alt44) {
-            	case 1 :
-            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5263:2: rule__RequiredPortCS__PropertiesAssignment_4_1
-            	    {
-            	    pushFollow(FOLLOW_rule__RequiredPortCS__PropertiesAssignment_4_1_in_rule__RequiredPortCS__Group_4__1__Impl10603);
-            	    rule__RequiredPortCS__PropertiesAssignment_4_1();
+            }
 
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop44;
-                }
-            } while (true);
-
-             after(grammarAccess.getRequiredPortCSAccess().getPropertiesAssignment_4_1()); 
+             after(grammarAccess.getRequiredPortCSAccess().getCommaKeyword_3_1_1_1()); 
 
             }
 
@@ -14369,7 +14139,237 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__Group_4__1__Impl"
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1__1__Impl"
+
+
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1_0_1__0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5181:1: rule__RequiredPortCS__Group_3_1_1_0_1__0 : rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl rule__RequiredPortCS__Group_3_1_1_0_1__1 ;
+    public final void rule__RequiredPortCS__Group_3_1_1_0_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5185:1: ( rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl rule__RequiredPortCS__Group_3_1_1_0_1__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5186:2: rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl rule__RequiredPortCS__Group_3_1_1_0_1__1
+            {
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl_in_rule__RequiredPortCS__Group_3_1_1_0_1__010451);
+            rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__1_in_rule__RequiredPortCS__Group_3_1_1_0_1__010454);
+            rule__RequiredPortCS__Group_3_1_1_0_1__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1_0_1__0"
+
+
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5193:1: rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl : ( 'port' ) ;
+    public final void rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5197:1: ( ( 'port' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5198:1: ( 'port' )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5198:1: ( 'port' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5199:1: 'port'
+            {
+             before(grammarAccess.getRequiredPortCSAccess().getPortKeyword_3_1_1_0_1_0()); 
+            match(input,40,FOLLOW_40_in_rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl10482); 
+             after(grammarAccess.getRequiredPortCSAccess().getPortKeyword_3_1_1_0_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl"
+
+
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1_0_1__1"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5212:1: rule__RequiredPortCS__Group_3_1_1_0_1__1 : rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl rule__RequiredPortCS__Group_3_1_1_0_1__2 ;
+    public final void rule__RequiredPortCS__Group_3_1_1_0_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5216:1: ( rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl rule__RequiredPortCS__Group_3_1_1_0_1__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5217:2: rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl rule__RequiredPortCS__Group_3_1_1_0_1__2
+            {
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl_in_rule__RequiredPortCS__Group_3_1_1_0_1__110513);
+            rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__2_in_rule__RequiredPortCS__Group_3_1_1_0_1__110516);
+            rule__RequiredPortCS__Group_3_1_1_0_1__2();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1_0_1__1"
+
+
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5224:1: rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl : ( ':' ) ;
+    public final void rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5228:1: ( ( ':' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5229:1: ( ':' )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5229:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5230:1: ':'
+            {
+             before(grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_1_1_0_1_1()); 
+            match(input,17,FOLLOW_17_in_rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl10544); 
+             after(grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_1_1_0_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl"
+
+
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1_0_1__2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5243:1: rule__RequiredPortCS__Group_3_1_1_0_1__2 : rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl ;
+    public final void rule__RequiredPortCS__Group_3_1_1_0_1__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5247:1: ( rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5248:2: rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl
+            {
+            pushFollow(FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl_in_rule__RequiredPortCS__Group_3_1_1_0_1__210575);
+            rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1_0_1__2"
+
+
+    // $ANTLR start "rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5254:1: rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl : ( ( rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2 ) ) ;
+    public final void rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5258:1: ( ( ( rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2 ) ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5259:1: ( ( rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2 ) )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5259:1: ( ( rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2 ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5260:1: ( rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2 )
+            {
+             before(grammarAccess.getRequiredPortCSAccess().getPortNumberAssignment_3_1_1_0_1_2()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5261:1: ( rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5261:2: rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2
+            {
+            pushFollow(FOLLOW_rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2_in_rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl10602);
+            rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getRequiredPortCSAccess().getPortNumberAssignment_3_1_1_0_1_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl"
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group__0"
@@ -14608,22 +14608,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group__3"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5368:1: rule__RequiredExecutionPlatformCS__Group__3 : rule__RequiredExecutionPlatformCS__Group__3__Impl rule__RequiredExecutionPlatformCS__Group__4 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5368:1: rule__RequiredExecutionPlatformCS__Group__3 : rule__RequiredExecutionPlatformCS__Group__3__Impl ;
     public final void rule__RequiredExecutionPlatformCS__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5372:1: ( rule__RequiredExecutionPlatformCS__Group__3__Impl rule__RequiredExecutionPlatformCS__Group__4 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5373:2: rule__RequiredExecutionPlatformCS__Group__3__Impl rule__RequiredExecutionPlatformCS__Group__4
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5372:1: ( rule__RequiredExecutionPlatformCS__Group__3__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5373:2: rule__RequiredExecutionPlatformCS__Group__3__Impl
             {
             pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group__3__Impl_in_rule__RequiredExecutionPlatformCS__Group__310822);
             rule__RequiredExecutionPlatformCS__Group__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group__4_in_rule__RequiredExecutionPlatformCS__Group__310825);
-            rule__RequiredExecutionPlatformCS__Group__4();
 
             state._fsp--;
 
@@ -14646,31 +14641,31 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group__3__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5380:1: rule__RequiredExecutionPlatformCS__Group__3__Impl : ( ( rule__RequiredExecutionPlatformCS__Group_3__0 )? ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5379:1: rule__RequiredExecutionPlatformCS__Group__3__Impl : ( ( rule__RequiredExecutionPlatformCS__Group_3__0 )? ) ;
     public final void rule__RequiredExecutionPlatformCS__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5384:1: ( ( ( rule__RequiredExecutionPlatformCS__Group_3__0 )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5385:1: ( ( rule__RequiredExecutionPlatformCS__Group_3__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5383:1: ( ( ( rule__RequiredExecutionPlatformCS__Group_3__0 )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5384:1: ( ( rule__RequiredExecutionPlatformCS__Group_3__0 )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5385:1: ( ( rule__RequiredExecutionPlatformCS__Group_3__0 )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5386:1: ( rule__RequiredExecutionPlatformCS__Group_3__0 )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5384:1: ( ( rule__RequiredExecutionPlatformCS__Group_3__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5385:1: ( rule__RequiredExecutionPlatformCS__Group_3__0 )?
             {
              before(grammarAccess.getRequiredExecutionPlatformCSAccess().getGroup_3()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5387:1: ( rule__RequiredExecutionPlatformCS__Group_3__0 )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5386:1: ( rule__RequiredExecutionPlatformCS__Group_3__0 )?
             int alt45=2;
             int LA45_0 = input.LA(1);
 
-            if ( (LA45_0==19) ) {
+            if ( (LA45_0==17) ) {
                 alt45=1;
             }
             switch (alt45) {
                 case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5387:2: rule__RequiredExecutionPlatformCS__Group_3__0
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5386:2: rule__RequiredExecutionPlatformCS__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__0_in_rule__RequiredExecutionPlatformCS__Group__3__Impl10852);
+                    pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__0_in_rule__RequiredExecutionPlatformCS__Group__3__Impl10849);
                     rule__RequiredExecutionPlatformCS__Group_3__0();
 
                     state._fsp--;
@@ -14703,113 +14698,22 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__RequiredExecutionPlatformCS__Group__3__Impl"
 
 
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group__4"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5397:1: rule__RequiredExecutionPlatformCS__Group__4 : rule__RequiredExecutionPlatformCS__Group__4__Impl ;
-    public final void rule__RequiredExecutionPlatformCS__Group__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5401:1: ( rule__RequiredExecutionPlatformCS__Group__4__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5402:2: rule__RequiredExecutionPlatformCS__Group__4__Impl
-            {
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group__4__Impl_in_rule__RequiredExecutionPlatformCS__Group__410883);
-            rule__RequiredExecutionPlatformCS__Group__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group__4"
-
-
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group__4__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5408:1: rule__RequiredExecutionPlatformCS__Group__4__Impl : ( ( rule__RequiredExecutionPlatformCS__Group_4__0 )? ) ;
-    public final void rule__RequiredExecutionPlatformCS__Group__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5412:1: ( ( ( rule__RequiredExecutionPlatformCS__Group_4__0 )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5413:1: ( ( rule__RequiredExecutionPlatformCS__Group_4__0 )? )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5413:1: ( ( rule__RequiredExecutionPlatformCS__Group_4__0 )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5414:1: ( rule__RequiredExecutionPlatformCS__Group_4__0 )?
-            {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getGroup_4()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5415:1: ( rule__RequiredExecutionPlatformCS__Group_4__0 )?
-            int alt46=2;
-            int LA46_0 = input.LA(1);
-
-            if ( (LA46_0==17) ) {
-                alt46=1;
-            }
-            switch (alt46) {
-                case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5415:2: rule__RequiredExecutionPlatformCS__Group_4__0
-                    {
-                    pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_4__0_in_rule__RequiredExecutionPlatformCS__Group__4__Impl10910);
-                    rule__RequiredExecutionPlatformCS__Group_4__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getGroup_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group__4__Impl"
-
-
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5435:1: rule__RequiredExecutionPlatformCS__Group_3__0 : rule__RequiredExecutionPlatformCS__Group_3__0__Impl rule__RequiredExecutionPlatformCS__Group_3__1 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5404:1: rule__RequiredExecutionPlatformCS__Group_3__0 : rule__RequiredExecutionPlatformCS__Group_3__0__Impl rule__RequiredExecutionPlatformCS__Group_3__1 ;
     public final void rule__RequiredExecutionPlatformCS__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5439:1: ( rule__RequiredExecutionPlatformCS__Group_3__0__Impl rule__RequiredExecutionPlatformCS__Group_3__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5440:2: rule__RequiredExecutionPlatformCS__Group_3__0__Impl rule__RequiredExecutionPlatformCS__Group_3__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5408:1: ( rule__RequiredExecutionPlatformCS__Group_3__0__Impl rule__RequiredExecutionPlatformCS__Group_3__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5409:2: rule__RequiredExecutionPlatformCS__Group_3__0__Impl rule__RequiredExecutionPlatformCS__Group_3__1
             {
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__0__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__010951);
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__0__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__010888);
             rule__RequiredExecutionPlatformCS__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__1_in_rule__RequiredExecutionPlatformCS__Group_3__010954);
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__1_in_rule__RequiredExecutionPlatformCS__Group_3__010891);
             rule__RequiredExecutionPlatformCS__Group_3__1();
 
             state._fsp--;
@@ -14833,21 +14737,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5447:1: rule__RequiredExecutionPlatformCS__Group_3__0__Impl : ( '[' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5416:1: rule__RequiredExecutionPlatformCS__Group_3__0__Impl : ( ':' ) ;
     public final void rule__RequiredExecutionPlatformCS__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5451:1: ( ( '[' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5452:1: ( '[' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5420:1: ( ( ':' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5421:1: ( ':' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5452:1: ( '[' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5453:1: '['
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5421:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5422:1: ':'
             {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_0()); 
-            match(input,19,FOLLOW_19_in_rule__RequiredExecutionPlatformCS__Group_3__0__Impl10982); 
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_0()); 
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_0()); 
+            match(input,17,FOLLOW_17_in_rule__RequiredExecutionPlatformCS__Group_3__0__Impl10919); 
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_0()); 
 
             }
 
@@ -14870,21 +14774,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5466:1: rule__RequiredExecutionPlatformCS__Group_3__1 : rule__RequiredExecutionPlatformCS__Group_3__1__Impl rule__RequiredExecutionPlatformCS__Group_3__2 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5435:1: rule__RequiredExecutionPlatformCS__Group_3__1 : rule__RequiredExecutionPlatformCS__Group_3__1__Impl rule__RequiredExecutionPlatformCS__Group_3__2 ;
     public final void rule__RequiredExecutionPlatformCS__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5470:1: ( rule__RequiredExecutionPlatformCS__Group_3__1__Impl rule__RequiredExecutionPlatformCS__Group_3__2 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5471:2: rule__RequiredExecutionPlatformCS__Group_3__1__Impl rule__RequiredExecutionPlatformCS__Group_3__2
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5439:1: ( rule__RequiredExecutionPlatformCS__Group_3__1__Impl rule__RequiredExecutionPlatformCS__Group_3__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5440:2: rule__RequiredExecutionPlatformCS__Group_3__1__Impl rule__RequiredExecutionPlatformCS__Group_3__2
             {
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__1__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__111013);
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__1__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__110950);
             rule__RequiredExecutionPlatformCS__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__2_in_rule__RequiredExecutionPlatformCS__Group_3__111016);
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__2_in_rule__RequiredExecutionPlatformCS__Group_3__110953);
             rule__RequiredExecutionPlatformCS__Group_3__2();
 
             state._fsp--;
@@ -14908,21 +14812,42 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5478:1: rule__RequiredExecutionPlatformCS__Group_3__1__Impl : ( 'demands' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5447:1: rule__RequiredExecutionPlatformCS__Group_3__1__Impl : ( ( rule__RequiredExecutionPlatformCS__Group_3_1__0 )? ) ;
     public final void rule__RequiredExecutionPlatformCS__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5482:1: ( ( 'demands' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5483:1: ( 'demands' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5451:1: ( ( ( rule__RequiredExecutionPlatformCS__Group_3_1__0 )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5452:1: ( ( rule__RequiredExecutionPlatformCS__Group_3_1__0 )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5483:1: ( 'demands' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5484:1: 'demands'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5452:1: ( ( rule__RequiredExecutionPlatformCS__Group_3_1__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5453:1: ( rule__RequiredExecutionPlatformCS__Group_3_1__0 )?
             {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsKeyword_3_1()); 
-            match(input,44,FOLLOW_44_in_rule__RequiredExecutionPlatformCS__Group_3__1__Impl11044); 
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsKeyword_3_1()); 
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getGroup_3_1()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5454:1: ( rule__RequiredExecutionPlatformCS__Group_3_1__0 )?
+            int alt46=2;
+            int LA46_0 = input.LA(1);
+
+            if ( (LA46_0==19) ) {
+                alt46=1;
+            }
+            switch (alt46) {
+                case 1 :
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5454:2: rule__RequiredExecutionPlatformCS__Group_3_1__0
+                    {
+                    pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__0_in_rule__RequiredExecutionPlatformCS__Group_3__1__Impl10980);
+                    rule__RequiredExecutionPlatformCS__Group_3_1__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getGroup_3_1()); 
 
             }
 
@@ -14945,22 +14870,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5497:1: rule__RequiredExecutionPlatformCS__Group_3__2 : rule__RequiredExecutionPlatformCS__Group_3__2__Impl rule__RequiredExecutionPlatformCS__Group_3__3 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5464:1: rule__RequiredExecutionPlatformCS__Group_3__2 : rule__RequiredExecutionPlatformCS__Group_3__2__Impl ;
     public final void rule__RequiredExecutionPlatformCS__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5501:1: ( rule__RequiredExecutionPlatformCS__Group_3__2__Impl rule__RequiredExecutionPlatformCS__Group_3__3 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5502:2: rule__RequiredExecutionPlatformCS__Group_3__2__Impl rule__RequiredExecutionPlatformCS__Group_3__3
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5468:1: ( rule__RequiredExecutionPlatformCS__Group_3__2__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5469:2: rule__RequiredExecutionPlatformCS__Group_3__2__Impl
             {
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__2__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__211075);
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__2__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__211011);
             rule__RequiredExecutionPlatformCS__Group_3__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__3_in_rule__RequiredExecutionPlatformCS__Group_3__211078);
-            rule__RequiredExecutionPlatformCS__Group_3__3();
 
             state._fsp--;
 
@@ -14983,21 +14903,49 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__2__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5509:1: rule__RequiredExecutionPlatformCS__Group_3__2__Impl : ( ':' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5475:1: rule__RequiredExecutionPlatformCS__Group_3__2__Impl : ( ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2 )* ) ;
     public final void rule__RequiredExecutionPlatformCS__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5513:1: ( ( ':' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5514:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5479:1: ( ( ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2 )* ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5480:1: ( ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2 )* )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5514:1: ( ':' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5515:1: ':'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5480:1: ( ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5481:1: ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2 )*
             {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_2()); 
-            match(input,17,FOLLOW_17_in_rule__RequiredExecutionPlatformCS__Group_3__2__Impl11106); 
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_2()); 
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesAssignment_3_2()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5482:1: ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2 )*
+            loop47:
+            do {
+                int alt47=2;
+                int LA47_0 = input.LA(1);
+
+                if ( (LA47_0==49) ) {
+                    alt47=1;
+                }
+
+
+                switch (alt47) {
+            	case 1 :
+            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5482:2: rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2
+            	    {
+            	    pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2_in_rule__RequiredExecutionPlatformCS__Group_3__2__Impl11038);
+            	    rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop47;
+                }
+            } while (true);
+
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesAssignment_3_2()); 
 
             }
 
@@ -15019,121 +14967,23 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3__2__Impl"
 
 
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__3"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5528:1: rule__RequiredExecutionPlatformCS__Group_3__3 : rule__RequiredExecutionPlatformCS__Group_3__3__Impl rule__RequiredExecutionPlatformCS__Group_3__4 ;
-    public final void rule__RequiredExecutionPlatformCS__Group_3__3() throws RecognitionException {
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5498:1: rule__RequiredExecutionPlatformCS__Group_3_1__0 : rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl rule__RequiredExecutionPlatformCS__Group_3_1__1 ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5532:1: ( rule__RequiredExecutionPlatformCS__Group_3__3__Impl rule__RequiredExecutionPlatformCS__Group_3__4 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5533:2: rule__RequiredExecutionPlatformCS__Group_3__3__Impl rule__RequiredExecutionPlatformCS__Group_3__4
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5502:1: ( rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl rule__RequiredExecutionPlatformCS__Group_3_1__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5503:2: rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl rule__RequiredExecutionPlatformCS__Group_3_1__1
             {
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__3__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__311137);
-            rule__RequiredExecutionPlatformCS__Group_3__3__Impl();
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__011075);
+            rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__4_in_rule__RequiredExecutionPlatformCS__Group_3__311140);
-            rule__RequiredExecutionPlatformCS__Group_3__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3__3"
-
-
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__3__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5540:1: rule__RequiredExecutionPlatformCS__Group_3__3__Impl : ( ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3 )* ) ;
-    public final void rule__RequiredExecutionPlatformCS__Group_3__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5544:1: ( ( ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3 )* ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5545:1: ( ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3 )* )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5545:1: ( ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3 )* )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5546:1: ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3 )*
-            {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsAssignment_3_3()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5547:1: ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3 )*
-            loop47:
-            do {
-                int alt47=2;
-                int LA47_0 = input.LA(1);
-
-                if ( (LA47_0==49) ) {
-                    alt47=1;
-                }
-
-
-                switch (alt47) {
-            	case 1 :
-            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5547:2: rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3
-            	    {
-            	    pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3_in_rule__RequiredExecutionPlatformCS__Group_3__3__Impl11167);
-            	    rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop47;
-                }
-            } while (true);
-
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsAssignment_3_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3__3__Impl"
-
-
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__4"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5557:1: rule__RequiredExecutionPlatformCS__Group_3__4 : rule__RequiredExecutionPlatformCS__Group_3__4__Impl ;
-    public final void rule__RequiredExecutionPlatformCS__Group_3__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5561:1: ( rule__RequiredExecutionPlatformCS__Group_3__4__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5562:2: rule__RequiredExecutionPlatformCS__Group_3__4__Impl
-            {
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__4__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__411198);
-            rule__RequiredExecutionPlatformCS__Group_3__4__Impl();
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__1_in_rule__RequiredExecutionPlatformCS__Group_3_1__011078);
+            rule__RequiredExecutionPlatformCS__Group_3_1__1();
 
             state._fsp--;
 
@@ -15152,25 +15002,25 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3__4"
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__0"
 
 
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3__4__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5568:1: rule__RequiredExecutionPlatformCS__Group_3__4__Impl : ( ']' ) ;
-    public final void rule__RequiredExecutionPlatformCS__Group_3__4__Impl() throws RecognitionException {
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5510:1: rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl : ( '[' ) ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5572:1: ( ( ']' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5573:1: ( ']' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5514:1: ( ( '[' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5515:1: ( '[' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5573:1: ( ']' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5574:1: ']'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5515:1: ( '[' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5516:1: '['
             {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_4()); 
-            match(input,20,FOLLOW_20_in_rule__RequiredExecutionPlatformCS__Group_3__4__Impl11226); 
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_4()); 
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_1_0()); 
+            match(input,19,FOLLOW_19_in_rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl11106); 
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_1_0()); 
 
             }
 
@@ -15189,96 +15039,26 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3__4__Impl"
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl"
 
 
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_4__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5597:1: rule__RequiredExecutionPlatformCS__Group_4__0 : rule__RequiredExecutionPlatformCS__Group_4__0__Impl rule__RequiredExecutionPlatformCS__Group_4__1 ;
-    public final void rule__RequiredExecutionPlatformCS__Group_4__0() throws RecognitionException {
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__1"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5529:1: rule__RequiredExecutionPlatformCS__Group_3_1__1 : rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl rule__RequiredExecutionPlatformCS__Group_3_1__2 ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5601:1: ( rule__RequiredExecutionPlatformCS__Group_4__0__Impl rule__RequiredExecutionPlatformCS__Group_4__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5602:2: rule__RequiredExecutionPlatformCS__Group_4__0__Impl rule__RequiredExecutionPlatformCS__Group_4__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5533:1: ( rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl rule__RequiredExecutionPlatformCS__Group_3_1__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5534:2: rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl rule__RequiredExecutionPlatformCS__Group_3_1__2
             {
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_4__0__Impl_in_rule__RequiredExecutionPlatformCS__Group_4__011267);
-            rule__RequiredExecutionPlatformCS__Group_4__0__Impl();
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__111137);
+            rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_4__1_in_rule__RequiredExecutionPlatformCS__Group_4__011270);
-            rule__RequiredExecutionPlatformCS__Group_4__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_4__0"
-
-
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_4__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5609:1: rule__RequiredExecutionPlatformCS__Group_4__0__Impl : ( ':' ) ;
-    public final void rule__RequiredExecutionPlatformCS__Group_4__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5613:1: ( ( ':' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5614:1: ( ':' )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5614:1: ( ':' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5615:1: ':'
-            {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_4_0()); 
-            match(input,17,FOLLOW_17_in_rule__RequiredExecutionPlatformCS__Group_4__0__Impl11298); 
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_4_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_4__0__Impl"
-
-
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_4__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5628:1: rule__RequiredExecutionPlatformCS__Group_4__1 : rule__RequiredExecutionPlatformCS__Group_4__1__Impl ;
-    public final void rule__RequiredExecutionPlatformCS__Group_4__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5632:1: ( rule__RequiredExecutionPlatformCS__Group_4__1__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5633:2: rule__RequiredExecutionPlatformCS__Group_4__1__Impl
-            {
-            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_4__1__Impl_in_rule__RequiredExecutionPlatformCS__Group_4__111329);
-            rule__RequiredExecutionPlatformCS__Group_4__1__Impl();
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__2_in_rule__RequiredExecutionPlatformCS__Group_3_1__111140);
+            rule__RequiredExecutionPlatformCS__Group_3_1__2();
 
             state._fsp--;
 
@@ -15297,24 +15077,174 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_4__1"
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__1"
 
 
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_4__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5639:1: rule__RequiredExecutionPlatformCS__Group_4__1__Impl : ( ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1 )* ) ;
-    public final void rule__RequiredExecutionPlatformCS__Group_4__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5541:1: rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl : ( 'demands' ) ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5643:1: ( ( ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1 )* ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5644:1: ( ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5545:1: ( ( 'demands' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5546:1: ( 'demands' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5644:1: ( ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1 )* )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5645:1: ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1 )*
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5546:1: ( 'demands' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5547:1: 'demands'
             {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesAssignment_4_1()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5646:1: ( rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1 )*
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsKeyword_3_1_1()); 
+            match(input,44,FOLLOW_44_in_rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl11168); 
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsKeyword_3_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl"
+
+
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5560:1: rule__RequiredExecutionPlatformCS__Group_3_1__2 : rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl rule__RequiredExecutionPlatformCS__Group_3_1__3 ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5564:1: ( rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl rule__RequiredExecutionPlatformCS__Group_3_1__3 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5565:2: rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl rule__RequiredExecutionPlatformCS__Group_3_1__3
+            {
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__211199);
+            rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__3_in_rule__RequiredExecutionPlatformCS__Group_3_1__211202);
+            rule__RequiredExecutionPlatformCS__Group_3_1__3();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__2"
+
+
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5572:1: rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl : ( ':' ) ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5576:1: ( ( ':' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5577:1: ( ':' )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5577:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5578:1: ':'
+            {
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_1_2()); 
+            match(input,17,FOLLOW_17_in_rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl11230); 
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_1_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl"
+
+
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__3"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5591:1: rule__RequiredExecutionPlatformCS__Group_3_1__3 : rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl rule__RequiredExecutionPlatformCS__Group_3_1__4 ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5595:1: ( rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl rule__RequiredExecutionPlatformCS__Group_3_1__4 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5596:2: rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl rule__RequiredExecutionPlatformCS__Group_3_1__4
+            {
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__311261);
+            rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__4_in_rule__RequiredExecutionPlatformCS__Group_3_1__311264);
+            rule__RequiredExecutionPlatformCS__Group_3_1__4();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__3"
+
+
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5603:1: rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl : ( ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3 )* ) ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5607:1: ( ( ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3 )* ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5608:1: ( ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3 )* )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5608:1: ( ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5609:1: ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3 )*
+            {
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsAssignment_3_1_3()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5610:1: ( rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3 )*
             loop48:
             do {
                 int alt48=2;
@@ -15327,10 +15257,10 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
                 switch (alt48) {
             	case 1 :
-            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5646:2: rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1
+            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5610:2: rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3
             	    {
-            	    pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1_in_rule__RequiredExecutionPlatformCS__Group_4__1__Impl11356);
-            	    rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1();
+            	    pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3_in_rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl11291);
+            	    rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3();
 
             	    state._fsp--;
 
@@ -15343,7 +15273,7 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
                 }
             } while (true);
 
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesAssignment_4_1()); 
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsAssignment_3_1_3()); 
 
             }
 
@@ -15362,7 +15292,77 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_4__1__Impl"
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl"
+
+
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__4"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5620:1: rule__RequiredExecutionPlatformCS__Group_3_1__4 : rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__4() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5624:1: ( rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5625:2: rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl
+            {
+            pushFollow(FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__411322);
+            rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__4"
+
+
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5631:1: rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl : ( ']' ) ;
+    public final void rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5635:1: ( ( ']' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5636:1: ( ']' )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5636:1: ( ']' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5637:1: ']'
+            {
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_1_4()); 
+            match(input,20,FOLLOW_20_in_rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl11350); 
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_1_4()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl"
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group__0"
@@ -15601,22 +15601,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group__3"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5751:1: rule__ProvidedExecutionPlatformCS__Group__3 : rule__ProvidedExecutionPlatformCS__Group__3__Impl rule__ProvidedExecutionPlatformCS__Group__4 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5751:1: rule__ProvidedExecutionPlatformCS__Group__3 : rule__ProvidedExecutionPlatformCS__Group__3__Impl ;
     public final void rule__ProvidedExecutionPlatformCS__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5755:1: ( rule__ProvidedExecutionPlatformCS__Group__3__Impl rule__ProvidedExecutionPlatformCS__Group__4 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5756:2: rule__ProvidedExecutionPlatformCS__Group__3__Impl rule__ProvidedExecutionPlatformCS__Group__4
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5755:1: ( rule__ProvidedExecutionPlatformCS__Group__3__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5756:2: rule__ProvidedExecutionPlatformCS__Group__3__Impl
             {
             pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group__3__Impl_in_rule__ProvidedExecutionPlatformCS__Group__311575);
             rule__ProvidedExecutionPlatformCS__Group__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group__4_in_rule__ProvidedExecutionPlatformCS__Group__311578);
-            rule__ProvidedExecutionPlatformCS__Group__4();
 
             state._fsp--;
 
@@ -15639,31 +15634,31 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group__3__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5763:1: rule__ProvidedExecutionPlatformCS__Group__3__Impl : ( ( rule__ProvidedExecutionPlatformCS__Group_3__0 )? ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5762:1: rule__ProvidedExecutionPlatformCS__Group__3__Impl : ( ( rule__ProvidedExecutionPlatformCS__Group_3__0 )? ) ;
     public final void rule__ProvidedExecutionPlatformCS__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5767:1: ( ( ( rule__ProvidedExecutionPlatformCS__Group_3__0 )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5768:1: ( ( rule__ProvidedExecutionPlatformCS__Group_3__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5766:1: ( ( ( rule__ProvidedExecutionPlatformCS__Group_3__0 )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5767:1: ( ( rule__ProvidedExecutionPlatformCS__Group_3__0 )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5768:1: ( ( rule__ProvidedExecutionPlatformCS__Group_3__0 )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5769:1: ( rule__ProvidedExecutionPlatformCS__Group_3__0 )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5767:1: ( ( rule__ProvidedExecutionPlatformCS__Group_3__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5768:1: ( rule__ProvidedExecutionPlatformCS__Group_3__0 )?
             {
              before(grammarAccess.getProvidedExecutionPlatformCSAccess().getGroup_3()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5770:1: ( rule__ProvidedExecutionPlatformCS__Group_3__0 )?
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5769:1: ( rule__ProvidedExecutionPlatformCS__Group_3__0 )?
             int alt49=2;
             int LA49_0 = input.LA(1);
 
-            if ( (LA49_0==19) ) {
+            if ( (LA49_0==17) ) {
                 alt49=1;
             }
             switch (alt49) {
                 case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5770:2: rule__ProvidedExecutionPlatformCS__Group_3__0
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5769:2: rule__ProvidedExecutionPlatformCS__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__0_in_rule__ProvidedExecutionPlatformCS__Group__3__Impl11605);
+                    pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__0_in_rule__ProvidedExecutionPlatformCS__Group__3__Impl11602);
                     rule__ProvidedExecutionPlatformCS__Group_3__0();
 
                     state._fsp--;
@@ -15696,113 +15691,22 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group__3__Impl"
 
 
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group__4"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5780:1: rule__ProvidedExecutionPlatformCS__Group__4 : rule__ProvidedExecutionPlatformCS__Group__4__Impl ;
-    public final void rule__ProvidedExecutionPlatformCS__Group__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5784:1: ( rule__ProvidedExecutionPlatformCS__Group__4__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5785:2: rule__ProvidedExecutionPlatformCS__Group__4__Impl
-            {
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group__4__Impl_in_rule__ProvidedExecutionPlatformCS__Group__411636);
-            rule__ProvidedExecutionPlatformCS__Group__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group__4"
-
-
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group__4__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5791:1: rule__ProvidedExecutionPlatformCS__Group__4__Impl : ( ( rule__ProvidedExecutionPlatformCS__Group_4__0 )? ) ;
-    public final void rule__ProvidedExecutionPlatformCS__Group__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5795:1: ( ( ( rule__ProvidedExecutionPlatformCS__Group_4__0 )? ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5796:1: ( ( rule__ProvidedExecutionPlatformCS__Group_4__0 )? )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5796:1: ( ( rule__ProvidedExecutionPlatformCS__Group_4__0 )? )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5797:1: ( rule__ProvidedExecutionPlatformCS__Group_4__0 )?
-            {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getGroup_4()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5798:1: ( rule__ProvidedExecutionPlatformCS__Group_4__0 )?
-            int alt50=2;
-            int LA50_0 = input.LA(1);
-
-            if ( (LA50_0==17) ) {
-                alt50=1;
-            }
-            switch (alt50) {
-                case 1 :
-                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5798:2: rule__ProvidedExecutionPlatformCS__Group_4__0
-                    {
-                    pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_4__0_in_rule__ProvidedExecutionPlatformCS__Group__4__Impl11663);
-                    rule__ProvidedExecutionPlatformCS__Group_4__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getGroup_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group__4__Impl"
-
-
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5818:1: rule__ProvidedExecutionPlatformCS__Group_3__0 : rule__ProvidedExecutionPlatformCS__Group_3__0__Impl rule__ProvidedExecutionPlatformCS__Group_3__1 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5787:1: rule__ProvidedExecutionPlatformCS__Group_3__0 : rule__ProvidedExecutionPlatformCS__Group_3__0__Impl rule__ProvidedExecutionPlatformCS__Group_3__1 ;
     public final void rule__ProvidedExecutionPlatformCS__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5822:1: ( rule__ProvidedExecutionPlatformCS__Group_3__0__Impl rule__ProvidedExecutionPlatformCS__Group_3__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5823:2: rule__ProvidedExecutionPlatformCS__Group_3__0__Impl rule__ProvidedExecutionPlatformCS__Group_3__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5791:1: ( rule__ProvidedExecutionPlatformCS__Group_3__0__Impl rule__ProvidedExecutionPlatformCS__Group_3__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5792:2: rule__ProvidedExecutionPlatformCS__Group_3__0__Impl rule__ProvidedExecutionPlatformCS__Group_3__1
             {
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__011704);
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__011641);
             rule__ProvidedExecutionPlatformCS__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__1_in_rule__ProvidedExecutionPlatformCS__Group_3__011707);
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__1_in_rule__ProvidedExecutionPlatformCS__Group_3__011644);
             rule__ProvidedExecutionPlatformCS__Group_3__1();
 
             state._fsp--;
@@ -15826,21 +15730,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5830:1: rule__ProvidedExecutionPlatformCS__Group_3__0__Impl : ( '[' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5799:1: rule__ProvidedExecutionPlatformCS__Group_3__0__Impl : ( ':' ) ;
     public final void rule__ProvidedExecutionPlatformCS__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5834:1: ( ( '[' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5835:1: ( '[' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5803:1: ( ( ':' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5804:1: ( ':' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5835:1: ( '[' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5836:1: '['
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5804:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5805:1: ':'
             {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_0()); 
-            match(input,19,FOLLOW_19_in_rule__ProvidedExecutionPlatformCS__Group_3__0__Impl11735); 
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_0()); 
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_0()); 
+            match(input,17,FOLLOW_17_in_rule__ProvidedExecutionPlatformCS__Group_3__0__Impl11672); 
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_0()); 
 
             }
 
@@ -15863,21 +15767,21 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5849:1: rule__ProvidedExecutionPlatformCS__Group_3__1 : rule__ProvidedExecutionPlatformCS__Group_3__1__Impl rule__ProvidedExecutionPlatformCS__Group_3__2 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5818:1: rule__ProvidedExecutionPlatformCS__Group_3__1 : rule__ProvidedExecutionPlatformCS__Group_3__1__Impl rule__ProvidedExecutionPlatformCS__Group_3__2 ;
     public final void rule__ProvidedExecutionPlatformCS__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5853:1: ( rule__ProvidedExecutionPlatformCS__Group_3__1__Impl rule__ProvidedExecutionPlatformCS__Group_3__2 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5854:2: rule__ProvidedExecutionPlatformCS__Group_3__1__Impl rule__ProvidedExecutionPlatformCS__Group_3__2
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5822:1: ( rule__ProvidedExecutionPlatformCS__Group_3__1__Impl rule__ProvidedExecutionPlatformCS__Group_3__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5823:2: rule__ProvidedExecutionPlatformCS__Group_3__1__Impl rule__ProvidedExecutionPlatformCS__Group_3__2
             {
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__111766);
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__111703);
             rule__ProvidedExecutionPlatformCS__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__2_in_rule__ProvidedExecutionPlatformCS__Group_3__111769);
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__2_in_rule__ProvidedExecutionPlatformCS__Group_3__111706);
             rule__ProvidedExecutionPlatformCS__Group_3__2();
 
             state._fsp--;
@@ -15901,21 +15805,42 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5861:1: rule__ProvidedExecutionPlatformCS__Group_3__1__Impl : ( 'offers' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5830:1: rule__ProvidedExecutionPlatformCS__Group_3__1__Impl : ( ( rule__ProvidedExecutionPlatformCS__Group_3_1__0 )? ) ;
     public final void rule__ProvidedExecutionPlatformCS__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5865:1: ( ( 'offers' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5866:1: ( 'offers' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5834:1: ( ( ( rule__ProvidedExecutionPlatformCS__Group_3_1__0 )? ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5835:1: ( ( rule__ProvidedExecutionPlatformCS__Group_3_1__0 )? )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5866:1: ( 'offers' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5867:1: 'offers'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5835:1: ( ( rule__ProvidedExecutionPlatformCS__Group_3_1__0 )? )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5836:1: ( rule__ProvidedExecutionPlatformCS__Group_3_1__0 )?
             {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1()); 
-            match(input,45,FOLLOW_45_in_rule__ProvidedExecutionPlatformCS__Group_3__1__Impl11797); 
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1()); 
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getGroup_3_1()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5837:1: ( rule__ProvidedExecutionPlatformCS__Group_3_1__0 )?
+            int alt50=2;
+            int LA50_0 = input.LA(1);
+
+            if ( (LA50_0==19) ) {
+                alt50=1;
+            }
+            switch (alt50) {
+                case 1 :
+                    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5837:2: rule__ProvidedExecutionPlatformCS__Group_3_1__0
+                    {
+                    pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__0_in_rule__ProvidedExecutionPlatformCS__Group_3__1__Impl11733);
+                    rule__ProvidedExecutionPlatformCS__Group_3_1__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getGroup_3_1()); 
 
             }
 
@@ -15938,22 +15863,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5880:1: rule__ProvidedExecutionPlatformCS__Group_3__2 : rule__ProvidedExecutionPlatformCS__Group_3__2__Impl rule__ProvidedExecutionPlatformCS__Group_3__3 ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5847:1: rule__ProvidedExecutionPlatformCS__Group_3__2 : rule__ProvidedExecutionPlatformCS__Group_3__2__Impl ;
     public final void rule__ProvidedExecutionPlatformCS__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5884:1: ( rule__ProvidedExecutionPlatformCS__Group_3__2__Impl rule__ProvidedExecutionPlatformCS__Group_3__3 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5885:2: rule__ProvidedExecutionPlatformCS__Group_3__2__Impl rule__ProvidedExecutionPlatformCS__Group_3__3
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5851:1: ( rule__ProvidedExecutionPlatformCS__Group_3__2__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5852:2: rule__ProvidedExecutionPlatformCS__Group_3__2__Impl
             {
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__2__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__211828);
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__2__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__211764);
             rule__ProvidedExecutionPlatformCS__Group_3__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__3_in_rule__ProvidedExecutionPlatformCS__Group_3__211831);
-            rule__ProvidedExecutionPlatformCS__Group_3__3();
 
             state._fsp--;
 
@@ -15976,21 +15896,49 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__2__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5892:1: rule__ProvidedExecutionPlatformCS__Group_3__2__Impl : ( ':' ) ;
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5858:1: rule__ProvidedExecutionPlatformCS__Group_3__2__Impl : ( ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2 )* ) ;
     public final void rule__ProvidedExecutionPlatformCS__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5896:1: ( ( ':' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5897:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5862:1: ( ( ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2 )* ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5863:1: ( ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2 )* )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5897:1: ( ':' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5898:1: ':'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5863:1: ( ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5864:1: ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2 )*
             {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_2()); 
-            match(input,17,FOLLOW_17_in_rule__ProvidedExecutionPlatformCS__Group_3__2__Impl11859); 
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_2()); 
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesAssignment_3_2()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5865:1: ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2 )*
+            loop51:
+            do {
+                int alt51=2;
+                int LA51_0 = input.LA(1);
+
+                if ( (LA51_0==49) ) {
+                    alt51=1;
+                }
+
+
+                switch (alt51) {
+            	case 1 :
+            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5865:2: rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2
+            	    {
+            	    pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2_in_rule__ProvidedExecutionPlatformCS__Group_3__2__Impl11791);
+            	    rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop51;
+                }
+            } while (true);
+
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesAssignment_3_2()); 
 
             }
 
@@ -16012,121 +15960,23 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3__2__Impl"
 
 
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__3"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5911:1: rule__ProvidedExecutionPlatformCS__Group_3__3 : rule__ProvidedExecutionPlatformCS__Group_3__3__Impl rule__ProvidedExecutionPlatformCS__Group_3__4 ;
-    public final void rule__ProvidedExecutionPlatformCS__Group_3__3() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5881:1: rule__ProvidedExecutionPlatformCS__Group_3_1__0 : rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__1 ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5915:1: ( rule__ProvidedExecutionPlatformCS__Group_3__3__Impl rule__ProvidedExecutionPlatformCS__Group_3__4 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5916:2: rule__ProvidedExecutionPlatformCS__Group_3__3__Impl rule__ProvidedExecutionPlatformCS__Group_3__4
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5885:1: ( rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__1 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5886:2: rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__1
             {
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__3__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__311890);
-            rule__ProvidedExecutionPlatformCS__Group_3__3__Impl();
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__011828);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__4_in_rule__ProvidedExecutionPlatformCS__Group_3__311893);
-            rule__ProvidedExecutionPlatformCS__Group_3__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3__3"
-
-
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__3__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5923:1: rule__ProvidedExecutionPlatformCS__Group_3__3__Impl : ( ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3 )* ) ;
-    public final void rule__ProvidedExecutionPlatformCS__Group_3__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5927:1: ( ( ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3 )* ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5928:1: ( ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3 )* )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5928:1: ( ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3 )* )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5929:1: ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3 )*
-            {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersAssignment_3_3()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5930:1: ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3 )*
-            loop51:
-            do {
-                int alt51=2;
-                int LA51_0 = input.LA(1);
-
-                if ( (LA51_0==49) ) {
-                    alt51=1;
-                }
-
-
-                switch (alt51) {
-            	case 1 :
-            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5930:2: rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3
-            	    {
-            	    pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3_in_rule__ProvidedExecutionPlatformCS__Group_3__3__Impl11920);
-            	    rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop51;
-                }
-            } while (true);
-
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersAssignment_3_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3__3__Impl"
-
-
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__4"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5940:1: rule__ProvidedExecutionPlatformCS__Group_3__4 : rule__ProvidedExecutionPlatformCS__Group_3__4__Impl ;
-    public final void rule__ProvidedExecutionPlatformCS__Group_3__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5944:1: ( rule__ProvidedExecutionPlatformCS__Group_3__4__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5945:2: rule__ProvidedExecutionPlatformCS__Group_3__4__Impl
-            {
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__4__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__411951);
-            rule__ProvidedExecutionPlatformCS__Group_3__4__Impl();
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__1_in_rule__ProvidedExecutionPlatformCS__Group_3_1__011831);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__1();
 
             state._fsp--;
 
@@ -16145,25 +15995,25 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3__4"
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__0"
 
 
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3__4__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5951:1: rule__ProvidedExecutionPlatformCS__Group_3__4__Impl : ( ']' ) ;
-    public final void rule__ProvidedExecutionPlatformCS__Group_3__4__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5893:1: rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl : ( '[' ) ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5955:1: ( ( ']' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5956:1: ( ']' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5897:1: ( ( '[' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5898:1: ( '[' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5956:1: ( ']' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5957:1: ']'
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5898:1: ( '[' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5899:1: '['
             {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_4()); 
-            match(input,20,FOLLOW_20_in_rule__ProvidedExecutionPlatformCS__Group_3__4__Impl11979); 
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_4()); 
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_1_0()); 
+            match(input,19,FOLLOW_19_in_rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl11859); 
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getLeftSquareBracketKeyword_3_1_0()); 
 
             }
 
@@ -16182,96 +16032,26 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3__4__Impl"
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl"
 
 
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_4__0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5980:1: rule__ProvidedExecutionPlatformCS__Group_4__0 : rule__ProvidedExecutionPlatformCS__Group_4__0__Impl rule__ProvidedExecutionPlatformCS__Group_4__1 ;
-    public final void rule__ProvidedExecutionPlatformCS__Group_4__0() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__1"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5912:1: rule__ProvidedExecutionPlatformCS__Group_3_1__1 : rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__2 ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5984:1: ( rule__ProvidedExecutionPlatformCS__Group_4__0__Impl rule__ProvidedExecutionPlatformCS__Group_4__1 )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5985:2: rule__ProvidedExecutionPlatformCS__Group_4__0__Impl rule__ProvidedExecutionPlatformCS__Group_4__1
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5916:1: ( rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__2 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5917:2: rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__2
             {
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_4__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group_4__012020);
-            rule__ProvidedExecutionPlatformCS__Group_4__0__Impl();
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__111890);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_4__1_in_rule__ProvidedExecutionPlatformCS__Group_4__012023);
-            rule__ProvidedExecutionPlatformCS__Group_4__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_4__0"
-
-
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_4__0__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5992:1: rule__ProvidedExecutionPlatformCS__Group_4__0__Impl : ( ':' ) ;
-    public final void rule__ProvidedExecutionPlatformCS__Group_4__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5996:1: ( ( ':' ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5997:1: ( ':' )
-            {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5997:1: ( ':' )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5998:1: ':'
-            {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_4_0()); 
-            match(input,17,FOLLOW_17_in_rule__ProvidedExecutionPlatformCS__Group_4__0__Impl12051); 
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_4_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_4__0__Impl"
-
-
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_4__1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6011:1: rule__ProvidedExecutionPlatformCS__Group_4__1 : rule__ProvidedExecutionPlatformCS__Group_4__1__Impl ;
-    public final void rule__ProvidedExecutionPlatformCS__Group_4__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6015:1: ( rule__ProvidedExecutionPlatformCS__Group_4__1__Impl )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6016:2: rule__ProvidedExecutionPlatformCS__Group_4__1__Impl
-            {
-            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_4__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group_4__112082);
-            rule__ProvidedExecutionPlatformCS__Group_4__1__Impl();
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__2_in_rule__ProvidedExecutionPlatformCS__Group_3_1__111893);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__2();
 
             state._fsp--;
 
@@ -16290,24 +16070,174 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_4__1"
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__1"
 
 
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_4__1__Impl"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6022:1: rule__ProvidedExecutionPlatformCS__Group_4__1__Impl : ( ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1 )* ) ;
-    public final void rule__ProvidedExecutionPlatformCS__Group_4__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5924:1: rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl : ( 'offers' ) ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6026:1: ( ( ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1 )* ) )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6027:1: ( ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5928:1: ( ( 'offers' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5929:1: ( 'offers' )
             {
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6027:1: ( ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1 )* )
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6028:1: ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1 )*
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5929:1: ( 'offers' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5930:1: 'offers'
             {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesAssignment_4_1()); 
-            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6029:1: ( rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1 )*
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1_1()); 
+            match(input,45,FOLLOW_45_in_rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl11921); 
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl"
+
+
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5943:1: rule__ProvidedExecutionPlatformCS__Group_3_1__2 : rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__3 ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5947:1: ( rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__3 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5948:2: rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__3
+            {
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__211952);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__3_in_rule__ProvidedExecutionPlatformCS__Group_3_1__211955);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__3();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__2"
+
+
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5955:1: rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl : ( ':' ) ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5959:1: ( ( ':' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5960:1: ( ':' )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5960:1: ( ':' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5961:1: ':'
+            {
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_1_2()); 
+            match(input,17,FOLLOW_17_in_rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl11983); 
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_1_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl"
+
+
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__3"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5974:1: rule__ProvidedExecutionPlatformCS__Group_3_1__3 : rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__4 ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5978:1: ( rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__4 )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5979:2: rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl rule__ProvidedExecutionPlatformCS__Group_3_1__4
+            {
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__312014);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__4_in_rule__ProvidedExecutionPlatformCS__Group_3_1__312017);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__4();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__3"
+
+
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5986:1: rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl : ( ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3 )* ) ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5990:1: ( ( ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3 )* ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5991:1: ( ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3 )* )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5991:1: ( ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3 )* )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5992:1: ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3 )*
+            {
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersAssignment_3_1_3()); 
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5993:1: ( rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3 )*
             loop52:
             do {
                 int alt52=2;
@@ -16320,10 +16250,10 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
 
                 switch (alt52) {
             	case 1 :
-            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6029:2: rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1
+            	    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:5993:2: rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3
             	    {
-            	    pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1_in_rule__ProvidedExecutionPlatformCS__Group_4__1__Impl12109);
-            	    rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1();
+            	    pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3_in_rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl12044);
+            	    rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3();
 
             	    state._fsp--;
 
@@ -16336,7 +16266,7 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
                 }
             } while (true);
 
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesAssignment_4_1()); 
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersAssignment_3_1_3()); 
 
             }
 
@@ -16355,7 +16285,77 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_4__1__Impl"
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl"
+
+
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__4"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6003:1: rule__ProvidedExecutionPlatformCS__Group_3_1__4 : rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__4() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6007:1: ( rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6008:2: rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl
+            {
+            pushFollow(FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__412075);
+            rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__4"
+
+
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6014:1: rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl : ( ']' ) ;
+    public final void rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6018:1: ( ( ']' ) )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6019:1: ( ']' )
+            {
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6019:1: ( ']' )
+            // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:6020:1: ']'
+            {
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_1_4()); 
+            match(input,20,FOLLOW_20_in_rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl12103); 
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getRightSquareBracketKeyword_3_1_4()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl"
 
 
     // $ANTLR start "rule__RelationshipCS__Group__0"
@@ -23880,9 +23880,9 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ProvidedPortCS__NameAssignment_2"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9019:1: rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0 : ( ( 'local' ) ) ;
-    public final void rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9019:1: rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0 : ( ( 'local' ) ) ;
+    public final void rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -23893,17 +23893,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9024:1: ( ( 'local' ) )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9025:1: ( 'local' )
             {
-             before(grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0()); 
+             before(grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0()); 
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9026:1: ( 'local' )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9027:1: 'local'
             {
-             before(grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0()); 
-            match(input,60,FOLLOW_60_in_rule__ProvidedPortCS__IsLocalAssignment_3_1_0_018055); 
-             after(grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0()); 
+             before(grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0()); 
+            match(input,60,FOLLOW_60_in_rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_018055); 
+             after(grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0()); 
 
             }
 
-             after(grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0()); 
+             after(grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0()); 
 
             }
 
@@ -23922,12 +23922,12 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0"
+    // $ANTLR end "rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9042:1: rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2 : ( RULE_INT ) ;
-    public final void rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9042:1: rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2 : ( RULE_INT ) ;
+    public final void rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -23938,9 +23938,9 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9047:1: ( RULE_INT )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9048:1: RULE_INT
             {
-             before(grammarAccess.getProvidedPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_0_1_2_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_218094); 
-             after(grammarAccess.getProvidedPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_0_1_2_0()); 
+             before(grammarAccess.getProvidedPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0()); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_218094); 
+             after(grammarAccess.getProvidedPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0()); 
 
             }
 
@@ -23959,12 +23959,12 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2"
+    // $ANTLR end "rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2"
 
 
-    // $ANTLR start "rule__ProvidedPortCS__PropertiesAssignment_4_1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9057:1: rule__ProvidedPortCS__PropertiesAssignment_4_1 : ( rulePropertyCS ) ;
-    public final void rule__ProvidedPortCS__PropertiesAssignment_4_1() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedPortCS__PropertiesAssignment_3_2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9057:1: rule__ProvidedPortCS__PropertiesAssignment_3_2 : ( rulePropertyCS ) ;
+    public final void rule__ProvidedPortCS__PropertiesAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -23975,13 +23975,13 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9062:1: ( rulePropertyCS )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9063:1: rulePropertyCS
             {
-             before(grammarAccess.getProvidedPortCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
-            pushFollow(FOLLOW_rulePropertyCS_in_rule__ProvidedPortCS__PropertiesAssignment_4_118125);
+             before(grammarAccess.getProvidedPortCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
+            pushFollow(FOLLOW_rulePropertyCS_in_rule__ProvidedPortCS__PropertiesAssignment_3_218125);
             rulePropertyCS();
 
             state._fsp--;
 
-             after(grammarAccess.getProvidedPortCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
+             after(grammarAccess.getProvidedPortCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
 
             }
 
@@ -24000,7 +24000,7 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedPortCS__PropertiesAssignment_4_1"
+    // $ANTLR end "rule__ProvidedPortCS__PropertiesAssignment_3_2"
 
 
     // $ANTLR start "rule__InternalComponentCS__NameAssignment_1"
@@ -24331,9 +24331,9 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__RequiredPortCS__NameAssignment_2"
 
 
-    // $ANTLR start "rule__RequiredPortCS__IsLocalAssignment_3_1_0_0"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9192:1: rule__RequiredPortCS__IsLocalAssignment_3_1_0_0 : ( ( 'local' ) ) ;
-    public final void rule__RequiredPortCS__IsLocalAssignment_3_1_0_0() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9192:1: rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0 : ( ( 'local' ) ) ;
+    public final void rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -24344,17 +24344,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9197:1: ( ( 'local' ) )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9198:1: ( 'local' )
             {
-             before(grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0()); 
+             before(grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0()); 
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9199:1: ( 'local' )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9200:1: 'local'
             {
-             before(grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0()); 
-            match(input,60,FOLLOW_60_in_rule__RequiredPortCS__IsLocalAssignment_3_1_0_018409); 
-             after(grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0()); 
+             before(grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0()); 
+            match(input,60,FOLLOW_60_in_rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_018409); 
+             after(grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0()); 
 
             }
 
-             after(grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0()); 
+             after(grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_1_0_0_0()); 
 
             }
 
@@ -24373,12 +24373,12 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__IsLocalAssignment_3_1_0_0"
+    // $ANTLR end "rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0"
 
 
-    // $ANTLR start "rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9215:1: rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2 : ( RULE_INT ) ;
-    public final void rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9215:1: rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2 : ( RULE_INT ) ;
+    public final void rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -24389,9 +24389,9 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9220:1: ( RULE_INT )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9221:1: RULE_INT
             {
-             before(grammarAccess.getRequiredPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_0_1_2_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_218448); 
-             after(grammarAccess.getRequiredPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_0_1_2_0()); 
+             before(grammarAccess.getRequiredPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0()); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_218448); 
+             after(grammarAccess.getRequiredPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_1_0_1_2_0()); 
 
             }
 
@@ -24410,12 +24410,12 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2"
+    // $ANTLR end "rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2"
 
 
-    // $ANTLR start "rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9230:1: rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2 : ( ( 'mandatory' ) ) ;
-    public final void rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9230:1: rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2 : ( ( 'mandatory' ) ) ;
+    public final void rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -24426,17 +24426,17 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9235:1: ( ( 'mandatory' ) )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9236:1: ( 'mandatory' )
             {
-             before(grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_0_2_0()); 
+             before(grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_1_0_2_0()); 
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9237:1: ( 'mandatory' )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9238:1: 'mandatory'
             {
-             before(grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_0_2_0()); 
-            match(input,61,FOLLOW_61_in_rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_218484); 
-             after(grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_0_2_0()); 
+             before(grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_1_0_2_0()); 
+            match(input,61,FOLLOW_61_in_rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_218484); 
+             after(grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_1_0_2_0()); 
 
             }
 
-             after(grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_0_2_0()); 
+             after(grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_1_0_2_0()); 
 
             }
 
@@ -24455,12 +24455,12 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2"
+    // $ANTLR end "rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2"
 
 
-    // $ANTLR start "rule__RequiredPortCS__PropertiesAssignment_4_1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9253:1: rule__RequiredPortCS__PropertiesAssignment_4_1 : ( rulePropertyCS ) ;
-    public final void rule__RequiredPortCS__PropertiesAssignment_4_1() throws RecognitionException {
+    // $ANTLR start "rule__RequiredPortCS__PropertiesAssignment_3_2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9253:1: rule__RequiredPortCS__PropertiesAssignment_3_2 : ( rulePropertyCS ) ;
+    public final void rule__RequiredPortCS__PropertiesAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -24471,13 +24471,13 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9258:1: ( rulePropertyCS )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9259:1: rulePropertyCS
             {
-             before(grammarAccess.getRequiredPortCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
-            pushFollow(FOLLOW_rulePropertyCS_in_rule__RequiredPortCS__PropertiesAssignment_4_118523);
+             before(grammarAccess.getRequiredPortCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
+            pushFollow(FOLLOW_rulePropertyCS_in_rule__RequiredPortCS__PropertiesAssignment_3_218523);
             rulePropertyCS();
 
             state._fsp--;
 
-             after(grammarAccess.getRequiredPortCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
+             after(grammarAccess.getRequiredPortCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
 
             }
 
@@ -24496,7 +24496,7 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredPortCS__PropertiesAssignment_4_1"
+    // $ANTLR end "rule__RequiredPortCS__PropertiesAssignment_3_2"
 
 
     // $ANTLR start "rule__RequiredExecutionPlatformCS__NameAssignment_2"
@@ -24540,9 +24540,9 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__RequiredExecutionPlatformCS__NameAssignment_2"
 
 
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9283:1: rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3 : ( rulePropertyCS ) ;
-    public final void rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3() throws RecognitionException {
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9283:1: rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3 : ( rulePropertyCS ) ;
+    public final void rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -24553,13 +24553,13 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9288:1: ( rulePropertyCS )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9289:1: rulePropertyCS
             {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsPropertyCSParserRuleCall_3_3_0()); 
-            pushFollow(FOLLOW_rulePropertyCS_in_rule__RequiredExecutionPlatformCS__DemandsAssignment_3_318585);
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsPropertyCSParserRuleCall_3_1_3_0()); 
+            pushFollow(FOLLOW_rulePropertyCS_in_rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_318585);
             rulePropertyCS();
 
             state._fsp--;
 
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsPropertyCSParserRuleCall_3_3_0()); 
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsPropertyCSParserRuleCall_3_1_3_0()); 
 
             }
 
@@ -24578,12 +24578,12 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3"
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3"
 
 
-    // $ANTLR start "rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9298:1: rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1 : ( rulePropertyCS ) ;
-    public final void rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1() throws RecognitionException {
+    // $ANTLR start "rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9298:1: rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2 : ( rulePropertyCS ) ;
+    public final void rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -24594,13 +24594,13 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9303:1: ( rulePropertyCS )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9304:1: rulePropertyCS
             {
-             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
-            pushFollow(FOLLOW_rulePropertyCS_in_rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_118616);
+             before(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
+            pushFollow(FOLLOW_rulePropertyCS_in_rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_218616);
             rulePropertyCS();
 
             state._fsp--;
 
-             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
+             after(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
 
             }
 
@@ -24619,7 +24619,7 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1"
+    // $ANTLR end "rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2"
 
 
     // $ANTLR start "rule__ProvidedExecutionPlatformCS__NameAssignment_2"
@@ -24663,9 +24663,9 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ProvidedExecutionPlatformCS__NameAssignment_2"
 
 
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9328:1: rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3 : ( rulePropertyCS ) ;
-    public final void rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9328:1: rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3 : ( rulePropertyCS ) ;
+    public final void rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -24676,13 +24676,13 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9333:1: ( rulePropertyCS )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9334:1: rulePropertyCS
             {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersPropertyCSParserRuleCall_3_3_0()); 
-            pushFollow(FOLLOW_rulePropertyCS_in_rule__ProvidedExecutionPlatformCS__OffersAssignment_3_318678);
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersPropertyCSParserRuleCall_3_1_3_0()); 
+            pushFollow(FOLLOW_rulePropertyCS_in_rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_318678);
             rulePropertyCS();
 
             state._fsp--;
 
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersPropertyCSParserRuleCall_3_3_0()); 
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersPropertyCSParserRuleCall_3_1_3_0()); 
 
             }
 
@@ -24701,12 +24701,12 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3"
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3"
 
 
-    // $ANTLR start "rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1"
-    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9343:1: rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1 : ( rulePropertyCS ) ;
-    public final void rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1() throws RecognitionException {
+    // $ANTLR start "rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2"
+    // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9343:1: rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2 : ( rulePropertyCS ) ;
+    public final void rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -24717,13 +24717,13 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9348:1: ( rulePropertyCS )
             // ../org.cloudml.dsl.ui/src-gen/org/cloudml/dsl/ui/contentassist/antlr/internal/InternalCloudML.g:9349:1: rulePropertyCS
             {
-             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
-            pushFollow(FOLLOW_rulePropertyCS_in_rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_118709);
+             before(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
+            pushFollow(FOLLOW_rulePropertyCS_in_rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_218709);
             rulePropertyCS();
 
             state._fsp--;
 
-             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_4_1_0()); 
+             after(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
 
             }
 
@@ -24742,7 +24742,7 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1"
+    // $ANTLR end "rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2"
 
 
     // $ANTLR start "rule__RelationshipCS__NameAssignment_1"
@@ -26157,15 +26157,15 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__VMCS__Group_3_1_0_15__0_in_rule__VMCS__Alternatives_3_1_01619 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ExternalComponentCS__ProvidedPortsAssignment_3_0_in_rule__ExternalComponentCS__Alternatives_31652 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ExternalComponentCS__ProvidedExecutionPlatformsAssignment_3_1_in_rule__ExternalComponentCS__Alternatives_31670 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0_in_rule__ProvidedPortCS__Alternatives_3_1_01703 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__0_in_rule__ProvidedPortCS__Alternatives_3_1_01721 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_0_in_rule__ProvidedPortCS__Alternatives_3_1_1_01703 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__0_in_rule__ProvidedPortCS__Alternatives_3_1_1_01721 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__InternalComponentCS__ProvidedPortsAssignment_3_0_in_rule__InternalComponentCS__Alternatives_31754 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__InternalComponentCS__RequiredPortsAssignment_3_1_in_rule__InternalComponentCS__Alternatives_31772 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__InternalComponentCS__RequiredExecutionPlatformAssignment_3_2_in_rule__InternalComponentCS__Alternatives_31790 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__InternalComponentCS__ProvidedExecutionPlatformsAssignment_3_3_in_rule__InternalComponentCS__Alternatives_31808 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__IsLocalAssignment_3_1_0_0_in_rule__RequiredPortCS__Alternatives_3_1_01841 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__0_in_rule__RequiredPortCS__Alternatives_3_1_01859 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_2_in_rule__RequiredPortCS__Alternatives_3_1_01877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_0_in_rule__RequiredPortCS__Alternatives_3_1_1_01841 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__0_in_rule__RequiredPortCS__Alternatives_3_1_1_01859 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_2_in_rule__RequiredPortCS__Alternatives_3_1_1_01877 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__RelationshipCS__Group_2_0__0_in_rule__RelationshipCS__Alternatives_21910 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__RelationshipCS__Group_2_1__0_in_rule__RelationshipCS__Alternatives_21928 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ResourceCS__Group_3_0_0__0_in_rule__ResourceCS__Alternatives_3_01961 = new BitSet(new long[]{0x0000000000000002L});
@@ -26447,40 +26447,40 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__1__Impl_in_rule__ProvidedPortCS__Group__18196 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__2_in_rule__ProvidedPortCS__Group__18199 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_40_in_rule__ProvidedPortCS__Group__1__Impl8227 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__2__Impl_in_rule__ProvidedPortCS__Group__28258 = new BitSet(new long[]{0x00000000000A0000L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__2__Impl_in_rule__ProvidedPortCS__Group__28258 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__3_in_rule__ProvidedPortCS__Group__28261 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ProvidedPortCS__NameAssignment_2_in_rule__ProvidedPortCS__Group__2__Impl8288 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__3__Impl_in_rule__ProvidedPortCS__Group__38318 = new BitSet(new long[]{0x00000000000A0000L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__4_in_rule__ProvidedPortCS__Group__38321 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__0_in_rule__ProvidedPortCS__Group__3__Impl8348 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__4__Impl_in_rule__ProvidedPortCS__Group__48379 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_4__0_in_rule__ProvidedPortCS__Group__4__Impl8406 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__0__Impl_in_rule__ProvidedPortCS__Group_3__08447 = new BitSet(new long[]{0x1000010000100000L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__1_in_rule__ProvidedPortCS__Group_3__08450 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__ProvidedPortCS__Group_3__0__Impl8478 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__1__Impl_in_rule__ProvidedPortCS__Group_3__18509 = new BitSet(new long[]{0x1000010000100000L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__2_in_rule__ProvidedPortCS__Group_3__18512 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__0_in_rule__ProvidedPortCS__Group_3__1__Impl8539 = new BitSet(new long[]{0x1000010000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__2__Impl_in_rule__ProvidedPortCS__Group_3__28570 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__ProvidedPortCS__Group_3__2__Impl8598 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1__08635 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__1_in_rule__ProvidedPortCS__Group_3_1__08638 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Alternatives_3_1_0_in_rule__ProvidedPortCS__Group_3_1__0__Impl8665 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1__18695 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__ProvidedPortCS__Group_3_1__1__Impl8724 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1_0_1__08761 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__1_in_rule__ProvidedPortCS__Group_3_1_0_1__08764 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_rule__ProvidedPortCS__Group_3_1_0_1__0__Impl8792 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1_0_1__18823 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__2_in_rule__ProvidedPortCS__Group_3_1_0_1__18826 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__ProvidedPortCS__Group_3_1_0_1__1__Impl8854 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_0_1__2__Impl_in_rule__ProvidedPortCS__Group_3_1_0_1__28885 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2_in_rule__ProvidedPortCS__Group_3_1_0_1__2__Impl8912 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_4__0__Impl_in_rule__ProvidedPortCS__Group_4__08948 = new BitSet(new long[]{0x0002000000000000L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_4__1_in_rule__ProvidedPortCS__Group_4__08951 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__ProvidedPortCS__Group_4__0__Impl8979 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_4__1__Impl_in_rule__ProvidedPortCS__Group_4__19010 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedPortCS__PropertiesAssignment_4_1_in_rule__ProvidedPortCS__Group_4__1__Impl9037 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group__3__Impl_in_rule__ProvidedPortCS__Group__38318 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__0_in_rule__ProvidedPortCS__Group__3__Impl8345 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__0__Impl_in_rule__ProvidedPortCS__Group_3__08384 = new BitSet(new long[]{0x0002000000080000L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__1_in_rule__ProvidedPortCS__Group_3__08387 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__ProvidedPortCS__Group_3__0__Impl8415 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__1__Impl_in_rule__ProvidedPortCS__Group_3__18446 = new BitSet(new long[]{0x0002000000080000L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__2_in_rule__ProvidedPortCS__Group_3__18449 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__0_in_rule__ProvidedPortCS__Group_3__1__Impl8476 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3__2__Impl_in_rule__ProvidedPortCS__Group_3__28507 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__PropertiesAssignment_3_2_in_rule__ProvidedPortCS__Group_3__2__Impl8534 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1__08571 = new BitSet(new long[]{0x1000010000100000L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__1_in_rule__ProvidedPortCS__Group_3_1__08574 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__ProvidedPortCS__Group_3_1__0__Impl8602 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1__18633 = new BitSet(new long[]{0x1000010000100000L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__2_in_rule__ProvidedPortCS__Group_3_1__18636 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1__0_in_rule__ProvidedPortCS__Group_3_1__1__Impl8663 = new BitSet(new long[]{0x1000010000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1__2__Impl_in_rule__ProvidedPortCS__Group_3_1__28694 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__ProvidedPortCS__Group_3_1__2__Impl8722 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1_1__08759 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1__1_in_rule__ProvidedPortCS__Group_3_1_1__08762 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Alternatives_3_1_1_0_in_rule__ProvidedPortCS__Group_3_1_1__0__Impl8789 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1_1__18819 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__ProvidedPortCS__Group_3_1_1__1__Impl8848 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl_in_rule__ProvidedPortCS__Group_3_1_1_0_1__08885 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__1_in_rule__ProvidedPortCS__Group_3_1_1_0_1__08888 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_rule__ProvidedPortCS__Group_3_1_1_0_1__0__Impl8916 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl_in_rule__ProvidedPortCS__Group_3_1_1_0_1__18947 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__2_in_rule__ProvidedPortCS__Group_3_1_1_0_1__18950 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__ProvidedPortCS__Group_3_1_1_0_1__1__Impl8978 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl_in_rule__ProvidedPortCS__Group_3_1_1_0_1__29009 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_2_in_rule__ProvidedPortCS__Group_3_1_1_0_1__2__Impl9036 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__InternalComponentCS__Group__0__Impl_in_rule__InternalComponentCS__Group__09072 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__InternalComponentCS__Group__1_in_rule__InternalComponentCS__Group__09075 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_41_in_rule__InternalComponentCS__Group__0__Impl9103 = new BitSet(new long[]{0x0000000000000002L});
@@ -26515,106 +26515,106 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__RequiredPortCS__Group__1__Impl_in_rule__RequiredPortCS__Group__19762 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__RequiredPortCS__Group__2_in_rule__RequiredPortCS__Group__19765 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_40_in_rule__RequiredPortCS__Group__1__Impl9793 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group__2__Impl_in_rule__RequiredPortCS__Group__29824 = new BitSet(new long[]{0x00000000000A0000L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group__2__Impl_in_rule__RequiredPortCS__Group__29824 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_rule__RequiredPortCS__Group__3_in_rule__RequiredPortCS__Group__29827 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__RequiredPortCS__NameAssignment_2_in_rule__RequiredPortCS__Group__2__Impl9854 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group__3__Impl_in_rule__RequiredPortCS__Group__39884 = new BitSet(new long[]{0x00000000000A0000L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group__4_in_rule__RequiredPortCS__Group__39887 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__0_in_rule__RequiredPortCS__Group__3__Impl9914 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group__4__Impl_in_rule__RequiredPortCS__Group__49945 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_4__0_in_rule__RequiredPortCS__Group__4__Impl9972 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__0__Impl_in_rule__RequiredPortCS__Group_3__010013 = new BitSet(new long[]{0x3000010000100000L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__1_in_rule__RequiredPortCS__Group_3__010016 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__RequiredPortCS__Group_3__0__Impl10044 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__1__Impl_in_rule__RequiredPortCS__Group_3__110075 = new BitSet(new long[]{0x3000010000100000L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__2_in_rule__RequiredPortCS__Group_3__110078 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__0_in_rule__RequiredPortCS__Group_3__1__Impl10105 = new BitSet(new long[]{0x3000010000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__2__Impl_in_rule__RequiredPortCS__Group_3__210136 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__RequiredPortCS__Group_3__2__Impl10164 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__0__Impl_in_rule__RequiredPortCS__Group_3_1__010201 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__1_in_rule__RequiredPortCS__Group_3_1__010204 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Alternatives_3_1_0_in_rule__RequiredPortCS__Group_3_1__0__Impl10231 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__1__Impl_in_rule__RequiredPortCS__Group_3_1__110261 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__RequiredPortCS__Group_3_1__1__Impl10290 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__0__Impl_in_rule__RequiredPortCS__Group_3_1_0_1__010327 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__1_in_rule__RequiredPortCS__Group_3_1_0_1__010330 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_rule__RequiredPortCS__Group_3_1_0_1__0__Impl10358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__1__Impl_in_rule__RequiredPortCS__Group_3_1_0_1__110389 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__2_in_rule__RequiredPortCS__Group_3_1_0_1__110392 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__RequiredPortCS__Group_3_1_0_1__1__Impl10420 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_0_1__2__Impl_in_rule__RequiredPortCS__Group_3_1_0_1__210451 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_2_in_rule__RequiredPortCS__Group_3_1_0_1__2__Impl10478 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_4__0__Impl_in_rule__RequiredPortCS__Group_4__010514 = new BitSet(new long[]{0x0002000000000000L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_4__1_in_rule__RequiredPortCS__Group_4__010517 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__RequiredPortCS__Group_4__0__Impl10545 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_4__1__Impl_in_rule__RequiredPortCS__Group_4__110576 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredPortCS__PropertiesAssignment_4_1_in_rule__RequiredPortCS__Group_4__1__Impl10603 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group__3__Impl_in_rule__RequiredPortCS__Group__39884 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__0_in_rule__RequiredPortCS__Group__3__Impl9911 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__0__Impl_in_rule__RequiredPortCS__Group_3__09950 = new BitSet(new long[]{0x0002000000080000L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__1_in_rule__RequiredPortCS__Group_3__09953 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__RequiredPortCS__Group_3__0__Impl9981 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__1__Impl_in_rule__RequiredPortCS__Group_3__110012 = new BitSet(new long[]{0x0002000000080000L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__2_in_rule__RequiredPortCS__Group_3__110015 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__0_in_rule__RequiredPortCS__Group_3__1__Impl10042 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3__2__Impl_in_rule__RequiredPortCS__Group_3__210073 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__PropertiesAssignment_3_2_in_rule__RequiredPortCS__Group_3__2__Impl10100 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__0__Impl_in_rule__RequiredPortCS__Group_3_1__010137 = new BitSet(new long[]{0x3000010000100000L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__1_in_rule__RequiredPortCS__Group_3_1__010140 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__RequiredPortCS__Group_3_1__0__Impl10168 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__1__Impl_in_rule__RequiredPortCS__Group_3_1__110199 = new BitSet(new long[]{0x3000010000100000L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__2_in_rule__RequiredPortCS__Group_3_1__110202 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1__0_in_rule__RequiredPortCS__Group_3_1__1__Impl10229 = new BitSet(new long[]{0x3000010000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1__2__Impl_in_rule__RequiredPortCS__Group_3_1__210260 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__RequiredPortCS__Group_3_1__2__Impl10288 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1__0__Impl_in_rule__RequiredPortCS__Group_3_1_1__010325 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1__1_in_rule__RequiredPortCS__Group_3_1_1__010328 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Alternatives_3_1_1_0_in_rule__RequiredPortCS__Group_3_1_1__0__Impl10355 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1__1__Impl_in_rule__RequiredPortCS__Group_3_1_1__110385 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__RequiredPortCS__Group_3_1_1__1__Impl10414 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl_in_rule__RequiredPortCS__Group_3_1_1_0_1__010451 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__1_in_rule__RequiredPortCS__Group_3_1_1_0_1__010454 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_rule__RequiredPortCS__Group_3_1_1_0_1__0__Impl10482 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl_in_rule__RequiredPortCS__Group_3_1_1_0_1__110513 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__2_in_rule__RequiredPortCS__Group_3_1_1_0_1__110516 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__RequiredPortCS__Group_3_1_1_0_1__1__Impl10544 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl_in_rule__RequiredPortCS__Group_3_1_1_0_1__210575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_2_in_rule__RequiredPortCS__Group_3_1_1_0_1__2__Impl10602 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__0__Impl_in_rule__RequiredExecutionPlatformCS__Group__010638 = new BitSet(new long[]{0x0000080000000000L});
     public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__1_in_rule__RequiredExecutionPlatformCS__Group__010641 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_42_in_rule__RequiredExecutionPlatformCS__Group__0__Impl10669 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__1__Impl_in_rule__RequiredExecutionPlatformCS__Group__110700 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__2_in_rule__RequiredExecutionPlatformCS__Group__110703 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_43_in_rule__RequiredExecutionPlatformCS__Group__1__Impl10731 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__2__Impl_in_rule__RequiredExecutionPlatformCS__Group__210762 = new BitSet(new long[]{0x00000000000A0000L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__2__Impl_in_rule__RequiredExecutionPlatformCS__Group__210762 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__3_in_rule__RequiredExecutionPlatformCS__Group__210765 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__NameAssignment_2_in_rule__RequiredExecutionPlatformCS__Group__2__Impl10792 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__3__Impl_in_rule__RequiredExecutionPlatformCS__Group__310822 = new BitSet(new long[]{0x00000000000A0000L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__4_in_rule__RequiredExecutionPlatformCS__Group__310825 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__0_in_rule__RequiredExecutionPlatformCS__Group__3__Impl10852 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__4__Impl_in_rule__RequiredExecutionPlatformCS__Group__410883 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_4__0_in_rule__RequiredExecutionPlatformCS__Group__4__Impl10910 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__0__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__010951 = new BitSet(new long[]{0x0000100000000000L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__1_in_rule__RequiredExecutionPlatformCS__Group_3__010954 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__RequiredExecutionPlatformCS__Group_3__0__Impl10982 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__1__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__111013 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__2_in_rule__RequiredExecutionPlatformCS__Group_3__111016 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_44_in_rule__RequiredExecutionPlatformCS__Group_3__1__Impl11044 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__2__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__211075 = new BitSet(new long[]{0x0002000000100000L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__3_in_rule__RequiredExecutionPlatformCS__Group_3__211078 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__RequiredExecutionPlatformCS__Group_3__2__Impl11106 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__3__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__311137 = new BitSet(new long[]{0x0002000000100000L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__4_in_rule__RequiredExecutionPlatformCS__Group_3__311140 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__DemandsAssignment_3_3_in_rule__RequiredExecutionPlatformCS__Group_3__3__Impl11167 = new BitSet(new long[]{0x0002000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__4__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__411198 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__RequiredExecutionPlatformCS__Group_3__4__Impl11226 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_4__0__Impl_in_rule__RequiredExecutionPlatformCS__Group_4__011267 = new BitSet(new long[]{0x0002000000000000L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_4__1_in_rule__RequiredExecutionPlatformCS__Group_4__011270 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__RequiredExecutionPlatformCS__Group_4__0__Impl11298 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_4__1__Impl_in_rule__RequiredExecutionPlatformCS__Group_4__111329 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_1_in_rule__RequiredExecutionPlatformCS__Group_4__1__Impl11356 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group__3__Impl_in_rule__RequiredExecutionPlatformCS__Group__310822 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__0_in_rule__RequiredExecutionPlatformCS__Group__3__Impl10849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__0__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__010888 = new BitSet(new long[]{0x0002000000080000L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__1_in_rule__RequiredExecutionPlatformCS__Group_3__010891 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__RequiredExecutionPlatformCS__Group_3__0__Impl10919 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__1__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__110950 = new BitSet(new long[]{0x0002000000080000L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__2_in_rule__RequiredExecutionPlatformCS__Group_3__110953 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__0_in_rule__RequiredExecutionPlatformCS__Group_3__1__Impl10980 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3__2__Impl_in_rule__RequiredExecutionPlatformCS__Group_3__211011 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_2_in_rule__RequiredExecutionPlatformCS__Group_3__2__Impl11038 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__011075 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__1_in_rule__RequiredExecutionPlatformCS__Group_3_1__011078 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__RequiredExecutionPlatformCS__Group_3_1__0__Impl11106 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__111137 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__2_in_rule__RequiredExecutionPlatformCS__Group_3_1__111140 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_rule__RequiredExecutionPlatformCS__Group_3_1__1__Impl11168 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__211199 = new BitSet(new long[]{0x0002000000100000L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__3_in_rule__RequiredExecutionPlatformCS__Group_3_1__211202 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__RequiredExecutionPlatformCS__Group_3_1__2__Impl11230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__311261 = new BitSet(new long[]{0x0002000000100000L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__4_in_rule__RequiredExecutionPlatformCS__Group_3_1__311264 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_3_in_rule__RequiredExecutionPlatformCS__Group_3_1__3__Impl11291 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl_in_rule__RequiredExecutionPlatformCS__Group_3_1__411322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__RequiredExecutionPlatformCS__Group_3_1__4__Impl11350 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group__011391 = new BitSet(new long[]{0x0000080000000000L});
     public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__1_in_rule__ProvidedExecutionPlatformCS__Group__011394 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_39_in_rule__ProvidedExecutionPlatformCS__Group__0__Impl11422 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group__111453 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__2_in_rule__ProvidedExecutionPlatformCS__Group__111456 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_43_in_rule__ProvidedExecutionPlatformCS__Group__1__Impl11484 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__2__Impl_in_rule__ProvidedExecutionPlatformCS__Group__211515 = new BitSet(new long[]{0x00000000000A0000L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__2__Impl_in_rule__ProvidedExecutionPlatformCS__Group__211515 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__3_in_rule__ProvidedExecutionPlatformCS__Group__211518 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__NameAssignment_2_in_rule__ProvidedExecutionPlatformCS__Group__2__Impl11545 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__3__Impl_in_rule__ProvidedExecutionPlatformCS__Group__311575 = new BitSet(new long[]{0x00000000000A0000L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__4_in_rule__ProvidedExecutionPlatformCS__Group__311578 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__0_in_rule__ProvidedExecutionPlatformCS__Group__3__Impl11605 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__4__Impl_in_rule__ProvidedExecutionPlatformCS__Group__411636 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_4__0_in_rule__ProvidedExecutionPlatformCS__Group__4__Impl11663 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__011704 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__1_in_rule__ProvidedExecutionPlatformCS__Group_3__011707 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__ProvidedExecutionPlatformCS__Group_3__0__Impl11735 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__111766 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__2_in_rule__ProvidedExecutionPlatformCS__Group_3__111769 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_rule__ProvidedExecutionPlatformCS__Group_3__1__Impl11797 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__2__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__211828 = new BitSet(new long[]{0x0002000000100000L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__3_in_rule__ProvidedExecutionPlatformCS__Group_3__211831 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__ProvidedExecutionPlatformCS__Group_3__2__Impl11859 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__3__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__311890 = new BitSet(new long[]{0x0002000000100000L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__4_in_rule__ProvidedExecutionPlatformCS__Group_3__311893 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__OffersAssignment_3_3_in_rule__ProvidedExecutionPlatformCS__Group_3__3__Impl11920 = new BitSet(new long[]{0x0002000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__4__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__411951 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__ProvidedExecutionPlatformCS__Group_3__4__Impl11979 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_4__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group_4__012020 = new BitSet(new long[]{0x0002000000000000L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_4__1_in_rule__ProvidedExecutionPlatformCS__Group_4__012023 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__ProvidedExecutionPlatformCS__Group_4__0__Impl12051 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_4__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group_4__112082 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_1_in_rule__ProvidedExecutionPlatformCS__Group_4__1__Impl12109 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group__3__Impl_in_rule__ProvidedExecutionPlatformCS__Group__311575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__0_in_rule__ProvidedExecutionPlatformCS__Group__3__Impl11602 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__011641 = new BitSet(new long[]{0x0002000000080000L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__1_in_rule__ProvidedExecutionPlatformCS__Group_3__011644 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__ProvidedExecutionPlatformCS__Group_3__0__Impl11672 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__111703 = new BitSet(new long[]{0x0002000000080000L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__2_in_rule__ProvidedExecutionPlatformCS__Group_3__111706 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__0_in_rule__ProvidedExecutionPlatformCS__Group_3__1__Impl11733 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3__2__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3__211764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_2_in_rule__ProvidedExecutionPlatformCS__Group_3__2__Impl11791 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__011828 = new BitSet(new long[]{0x0000200000000000L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__1_in_rule__ProvidedExecutionPlatformCS__Group_3_1__011831 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__ProvidedExecutionPlatformCS__Group_3_1__0__Impl11859 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__111890 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__2_in_rule__ProvidedExecutionPlatformCS__Group_3_1__111893 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_rule__ProvidedExecutionPlatformCS__Group_3_1__1__Impl11921 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__211952 = new BitSet(new long[]{0x0002000000100000L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__3_in_rule__ProvidedExecutionPlatformCS__Group_3_1__211955 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__ProvidedExecutionPlatformCS__Group_3_1__2__Impl11983 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__312014 = new BitSet(new long[]{0x0002000000100000L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__4_in_rule__ProvidedExecutionPlatformCS__Group_3_1__312017 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_3_in_rule__ProvidedExecutionPlatformCS__Group_3_1__3__Impl12044 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl_in_rule__ProvidedExecutionPlatformCS__Group_3_1__412075 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__ProvidedExecutionPlatformCS__Group_3_1__4__Impl12103 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__RelationshipCS__Group__0__Impl_in_rule__RelationshipCS__Group__012144 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__RelationshipCS__Group__1_in_rule__RelationshipCS__Group__012147 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_46_in_rule__RelationshipCS__Group__0__Impl12175 = new BitSet(new long[]{0x0000000000000002L});
@@ -26857,9 +26857,9 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rulePropertyCS_in_rule__ExternalComponentCS__PropertiesAssignment_4_217957 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleResourceCS_in_rule__ExternalComponentCS__ResourcesAssignment_517988 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleValidID_in_rule__ProvidedPortCS__NameAssignment_218019 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_60_in_rule__ProvidedPortCS__IsLocalAssignment_3_1_0_018055 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_218094 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_rule__ProvidedPortCS__PropertiesAssignment_4_118125 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_60_in_rule__ProvidedPortCS__IsLocalAssignment_3_1_1_0_018055 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__ProvidedPortCS__PortNumberAssignment_3_1_1_0_1_218094 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_rule__ProvidedPortCS__PropertiesAssignment_3_218125 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleValidID_in_rule__InternalComponentCS__NameAssignment_118156 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleProvidedPortCS_in_rule__InternalComponentCS__ProvidedPortsAssignment_3_018187 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleRequiredPortCS_in_rule__InternalComponentCS__RequiredPortsAssignment_3_118218 = new BitSet(new long[]{0x0000000000000002L});
@@ -26868,16 +26868,16 @@ public class InternalCloudMLParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rulePropertyCS_in_rule__InternalComponentCS__PropertiesAssignment_4_218311 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleResourceCS_in_rule__InternalComponentCS__ResourcesAssignment_518342 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleValidID_in_rule__RequiredPortCS__NameAssignment_218373 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_60_in_rule__RequiredPortCS__IsLocalAssignment_3_1_0_018409 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__RequiredPortCS__PortNumberAssignment_3_1_0_1_218448 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_61_in_rule__RequiredPortCS__IsMandatoryAssignment_3_1_0_218484 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_rule__RequiredPortCS__PropertiesAssignment_4_118523 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_60_in_rule__RequiredPortCS__IsLocalAssignment_3_1_1_0_018409 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__RequiredPortCS__PortNumberAssignment_3_1_1_0_1_218448 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_61_in_rule__RequiredPortCS__IsMandatoryAssignment_3_1_1_0_218484 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_rule__RequiredPortCS__PropertiesAssignment_3_218523 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleValidID_in_rule__RequiredExecutionPlatformCS__NameAssignment_218554 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_rule__RequiredExecutionPlatformCS__DemandsAssignment_3_318585 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_rule__RequiredExecutionPlatformCS__PropertiesAssignment_4_118616 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_rule__RequiredExecutionPlatformCS__DemandsAssignment_3_1_318585 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_rule__RequiredExecutionPlatformCS__PropertiesAssignment_3_218616 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleValidID_in_rule__ProvidedExecutionPlatformCS__NameAssignment_218647 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_rule__ProvidedExecutionPlatformCS__OffersAssignment_3_318678 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_rule__ProvidedExecutionPlatformCS__PropertiesAssignment_4_118709 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_rule__ProvidedExecutionPlatformCS__OffersAssignment_3_1_318678 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_rule__ProvidedExecutionPlatformCS__PropertiesAssignment_3_218709 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleValidID_in_rule__RelationshipCS__NameAssignment_118740 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleFqn_in_rule__RelationshipCS__RequiredPortAssignment_2_0_118775 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleFqn_in_rule__RelationshipCS__ProvidedPortAssignment_2_0_318814 = new BitSet(new long[]{0x0000000000000002L});

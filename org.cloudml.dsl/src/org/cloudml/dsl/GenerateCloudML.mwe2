@@ -5,7 +5,7 @@ import org.eclipse.xtext.generator.*
 import org.eclipse.xtext.ui.generator.*
 
 var grammarURI = "classpath:/org/cloudml/dsl/CloudML.xtext"
-var fileExtensions = "mydsl"
+var fileExtensions = "cloudml"
 var projectName = "org.cloudml.dsl"
 var runtimeProject = "../${projectName}"
 var generateXtendStub = true

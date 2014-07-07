@@ -1,21 +1,28 @@
 cloudml-dsl is a text-based domain-specific language for writing CloudML models. See a made-up example below:
 
 ```
-model MyModel
+model MyModel2
 provider AWS:'credentials'
+
 components{
-	internal Mine {
-		required req
-	}
-	external Yours{
-		provided prv
-	}
-	relationship R1 : Mine.req => Yours.prv
+    internal Mine {
+        required port req
+        required execution exec
+    }
+    vm VM{
+    	provided execution exec
+    }
+    external Yours{
+        provided port prv
+    }
+    relationship R1 : Mine.req => Yours.prv
 }
 instances{
-	internal Mine mine
-	external Yours yours
+	internal Mine mine 
+	external Yours yours 
+	vm VM vm1
 	relationship R1 r1 : mine.req => yours.prv
+	execute mineVm : mine.exec => vm1.exec
 }
 ```
 

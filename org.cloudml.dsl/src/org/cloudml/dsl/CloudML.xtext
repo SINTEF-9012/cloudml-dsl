@@ -6,9 +6,9 @@ import "http://cloudml.net/core"
 
 
 CloudMLRoot returns CloudMLModel:
-	'model' name = ValidID 
+	'deployment' 'model' name = ValidID 
 	providers += ProviderCS*
-	'components' '{'
+	'types' '{'
 		(
 			vms += VMCS | 
 			internalComponents += InternalComponentCS |
@@ -22,7 +22,7 @@ CloudMLRoot returns CloudMLModel:
 		(
 			internalComponentInstances += InternalComponentInstanceCS |
 			externalComponentInstances += ExternalComponentInstanceCS |
-			externalComponentInstances += VMInstanceCS
+			vmInstances += VMInstanceCS
 		)*
 		(relationshipInstances += RelationshipInstanceCS)*
 		(executesInstances += ExecuteInstanceCS)*
@@ -36,12 +36,11 @@ ProviderCS returns Provider:
 	'provider' name = ValidID ':'
 		credentials = STRING
 		properties += PropertyCS*
-	
 ;
 
 VMCS returns VM:
 	'vm' name = ValidID '{'
-		('['( 
+		( 
 			(
 			'provider' ':' provider = [Provider] |
 			'group' ':' groupName=STRING |
@@ -61,7 +60,7 @@ VMCS returns VM:
 			'sshKey' ':' sshKey=STRING 
 			) (',')?
 				
-		)*']')?
+		)*
 		//'provided' 'vm' 'port' provided += VMPortCS*
 		providedPorts += ProvidedPortCS*
 		providedExecutionPlatforms += ProvidedExecutionPlatformCS*
@@ -87,7 +86,7 @@ ExternalComponentCS returns ExternalComponent:
 ProvidedPortCS returns ProvidedPort:
 	'provided' 'port' name = ValidID 
 	(':'
-		('[' ((isLocal?='local' | 'port' ':' portNumber=INT) (',')?)* ']')?
+		((isLocal?='local' | 'port' ':' portNumber=INT) (',')?)*
 		properties+=PropertyCS*
 	)?
 ;
@@ -108,7 +107,7 @@ InternalComponentCS returns InternalComponent:
 RequiredPortCS returns RequiredPort:
 	'required' 'port' name = ValidID 
 	(':'
-		('[' ((isLocal?='local' | 'port' ':' portNumber=INT | isMandatory?='mandatory') (',')?)* ']')?
+		((isLocal?='local' | 'port' ':' portNumber=INT | isMandatory?='mandatory') (',')?)*
 		properties+=PropertyCS*
 	)?
 ;
@@ -116,20 +115,20 @@ RequiredPortCS returns RequiredPort:
 RequiredExecutionPlatformCS returns RequiredExecutionPlatform:
 	'required' 'execution' name = ValidID 
 	(':'
-		('[' 'demands' ':' demands+=PropertyCS* ']')?
-		properties+=PropertyCS*
+		('demands' ':' demands+=PropertyCS* )?
+		'properties' ':' properties+=PropertyCS*
 	)?
 ;
 
 ProvidedExecutionPlatformCS returns ProvidedExecutionPlatform:
 	'provided' 'execution' name = ValidID 
 	(':'
-		('[' 'offers' ':' offers+=PropertyCS* ']')?
-		properties+=PropertyCS*
+		('offers' ':' offers+=PropertyCS*)?
+		'properties' ':' properties+=PropertyCS*
 	)?
 ;
 
-RelationshipCS returns Relationship:
+RelationshipCSOld returns Relationship:
 	'relationship' name = ValidID 
 		(
 			(':' requiredPort = [RequiredPort|Fqn] '=>' providedPort = [ProvidedPort|Fqn]) |
@@ -142,31 +141,41 @@ RelationshipCS returns Relationship:
 		)
 ;
 
-
+RelationshipCS returns Relationship:
+	'connect' requiredPort = [RequiredPort|Fqn] 'to' providedPort = [ProvidedPort|Fqn] 'named' name=ValidID 
+		(   
+			(':' properties += PropertyCS*) |
+			('{' 
+				('properties' ':' properties += PropertyCS*)?
+				resources += ResourceCS*
+			 '}'	
+			)
+		)?
+;
 
 ExternalComponentInstanceCS returns ExternalComponentInstance:
-	'external' type = [ExternalComponent] name = ValidID 
+	'external' name = ValidID 'typed' type = [ExternalComponent]
 ;
 
 InternalComponentInstanceCS returns InternalComponentInstance:
-	'internal' type = [InternalComponent] name = ValidID 
+	'internal'  name = ValidID 'typed' type = [InternalComponent]
 ;
 
 VMInstanceCS returns VMInstance:
-	'vm' type = [VM] name = ValidID
+	'vm'  name = ValidID 'typed' type = [VM]
 ;
 
 RelationshipInstanceCS returns RelationshipInstance:
-	'relationship' type = [Relationship]  name = ValidID  
-		':' requiredPortInstance = [RequiredPortInstance|Fqn] '=>' providedPortInstance = [ProvidedPortInstance|Fqn]
+	'connect' requiredPortInstance = [RequiredPortInstance|Fqn] 'to' providedPortInstance = [ProvidedPortInstance|Fqn]
+	'typed' type = [Relationship]  ('named' name = ValidID)?
 ;
 
 ExecuteInstanceCS returns ExecuteInstance:
-	'execute' name = ValidID ':' 
+	'host' 
 		requiredExecutionPlatformInstance = [RequiredExecutionPlatformInstance|Fqn] 
-		'=>'
-		providedExecutionPlatformInstance = [ProvidedExecutionPlatformInstance|Fqn]
-		
+		'on'
+		providedExecutionPlatformInstance = [ProvidedExecutionPlatformInstance|Fqn]	
+	('named' name = ValidID)?
 ;
 
 PropertyCS returns Property:
@@ -174,7 +183,7 @@ PropertyCS returns Property:
 ;
 
 ResourceCS returns Resource:
-	'resource' name = ValidID '{'
+	'resource' (name = ValidID)? '{'
 		((
 			'download' ':' downloadCommand = STRING |
 			'upload' ':' uploadCommand = STRING |

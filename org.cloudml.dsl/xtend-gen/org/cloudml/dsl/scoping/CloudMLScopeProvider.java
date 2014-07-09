@@ -6,14 +6,19 @@ package org.cloudml.dsl.scoping;
 import cloudml.core.CloudMLModel;
 import cloudml.core.ComponentInstance;
 import cloudml.core.CorePackage;
+import cloudml.core.ExecuteInstance;
 import cloudml.core.ExternalComponentInstance;
 import cloudml.core.InternalComponentInstance;
+import cloudml.core.ProvidedExecutionPlatformInstance;
 import cloudml.core.ProvidedPortInstance;
 import cloudml.core.RelationshipInstance;
+import cloudml.core.RequiredExecutionPlatformInstance;
 import cloudml.core.RequiredPortInstance;
+import cloudml.core.VMInstance;
 import com.google.common.base.Function;
 import com.google.common.base.Objects;
 import java.util.ArrayList;
+import java.util.List;
 import org.cloudml.dsl.scoping.CloudmlQualifiedNameProvider;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
@@ -23,6 +28,8 @@ import org.eclipse.xtext.scoping.IScope;
 import org.eclipse.xtext.scoping.Scopes;
 import org.eclipse.xtext.scoping.impl.AbstractDeclarativeScopeProvider;
 import org.eclipse.xtext.xbase.lib.Extension;
+import org.eclipse.xtext.xbase.lib.Functions.Function1;
+import org.eclipse.xtext.xbase.lib.ListExtensions;
 
 /**
  * This class contains custom scoping description.
@@ -82,6 +89,14 @@ public class CloudMLScopeProvider extends AbstractDeclarativeScopeProvider {
         list.addAll(_providedPortInstances);
       }
     }
+    EList<VMInstance> _vmInstances = model.getVmInstances();
+    for (final VMInstance vi : _vmInstances) {
+      {
+        clist.add(vi);
+        EList<ProvidedPortInstance> _providedPortInstances = vi.getProvidedPortInstances();
+        list.addAll(_providedPortInstances);
+      }
+    }
     final Function<ProvidedPortInstance, QualifiedName> _function = new Function<ProvidedPortInstance, QualifiedName>() {
       public QualifiedName apply(final ProvidedPortInstance e) {
         return CloudMLScopeProvider.this._provider.qualifiedName(e);
@@ -89,5 +104,63 @@ public class CloudMLScopeProvider extends AbstractDeclarativeScopeProvider {
     };
     IScope _scopeFor = Scopes.scopeFor(clist);
     return Scopes.<ProvidedPortInstance>scopeFor(list, _function, _scopeFor);
+  }
+  
+  public IScope scope_ExecuteInstance_providedExecutionPlatformInstance(final ExecuteInstance ri, final EReference ref) {
+    EObject _eContainer = ri.eContainer();
+    final CloudMLModel model = ((CloudMLModel) _eContainer);
+    final ArrayList<ProvidedExecutionPlatformInstance> list = new ArrayList<ProvidedExecutionPlatformInstance>();
+    final ArrayList<ComponentInstance> clist = new ArrayList<ComponentInstance>();
+    EList<ExternalComponentInstance> _externalComponentInstances = model.getExternalComponentInstances();
+    for (final ExternalComponentInstance ci : _externalComponentInstances) {
+      {
+        clist.add(ci);
+        EList<ProvidedExecutionPlatformInstance> _providedExecutionPlatformInstances = ci.getProvidedExecutionPlatformInstances();
+        list.addAll(_providedExecutionPlatformInstances);
+      }
+    }
+    EList<InternalComponentInstance> _internalComponentInstances = model.getInternalComponentInstances();
+    for (final InternalComponentInstance ci_1 : _internalComponentInstances) {
+      {
+        clist.add(ci_1);
+        EList<ProvidedExecutionPlatformInstance> _providedExecutionPlatformInstances = ci_1.getProvidedExecutionPlatformInstances();
+        list.addAll(_providedExecutionPlatformInstances);
+      }
+    }
+    EList<VMInstance> _vmInstances = model.getVmInstances();
+    for (final VMInstance vi : _vmInstances) {
+      {
+        clist.add(vi);
+        EList<ProvidedExecutionPlatformInstance> _providedExecutionPlatformInstances = vi.getProvidedExecutionPlatformInstances();
+        list.addAll(_providedExecutionPlatformInstances);
+      }
+    }
+    final Function<ProvidedExecutionPlatformInstance, QualifiedName> _function = new Function<ProvidedExecutionPlatformInstance, QualifiedName>() {
+      public QualifiedName apply(final ProvidedExecutionPlatformInstance e) {
+        return CloudMLScopeProvider.this._provider.qualifiedName(e);
+      }
+    };
+    IScope _scopeFor = Scopes.scopeFor(clist);
+    return Scopes.<ProvidedExecutionPlatformInstance>scopeFor(list, _function, _scopeFor);
+  }
+  
+  public IScope scope_ExecuteInstance_requiredExecutionPlatformInstance(final ExecuteInstance ri, final EReference ref) {
+    EObject _eContainer = ri.eContainer();
+    final CloudMLModel model = ((CloudMLModel) _eContainer);
+    EList<InternalComponentInstance> _internalComponentInstances = model.getInternalComponentInstances();
+    final Function1<InternalComponentInstance, RequiredExecutionPlatformInstance> _function = new Function1<InternalComponentInstance, RequiredExecutionPlatformInstance>() {
+      public RequiredExecutionPlatformInstance apply(final InternalComponentInstance e) {
+        return e.getRequiredExecutionPlatformInstance();
+      }
+    };
+    List<RequiredExecutionPlatformInstance> _map = ListExtensions.<InternalComponentInstance, RequiredExecutionPlatformInstance>map(_internalComponentInstances, _function);
+    final Function<RequiredExecutionPlatformInstance, QualifiedName> _function_1 = new Function<RequiredExecutionPlatformInstance, QualifiedName>() {
+      public QualifiedName apply(final RequiredExecutionPlatformInstance e) {
+        return CloudMLScopeProvider.this._provider.qualifiedName(e);
+      }
+    };
+    EList<InternalComponentInstance> _internalComponentInstances_1 = model.getInternalComponentInstances();
+    IScope _scopeFor = Scopes.scopeFor(_internalComponentInstances_1);
+    return Scopes.<RequiredExecutionPlatformInstance>scopeFor(_map, _function_1, _scopeFor);
   }
 }

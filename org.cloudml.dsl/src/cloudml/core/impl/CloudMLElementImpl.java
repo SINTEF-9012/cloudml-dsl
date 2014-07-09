@@ -2,13 +2,13 @@
  */
 package cloudml.core.impl;
 
+import java.util.Random;
+
 import cloudml.core.CloudMLElement;
 import cloudml.core.CorePackage;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * @generated
  */
 public abstract class CloudMLElementImpl extends MinimalEObjectImpl.Container implements CloudMLElement {
+	public static Random random = new Random(System.currentTimeMillis());
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -68,9 +69,12 @@ public abstract class CloudMLElementImpl extends MinimalEObjectImpl.Container im
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	public String getName() {
+		if(name == null){
+			name = String.format("NoName%5d", random.nextInt(100000));
+		}
 		return name;
 	}
 

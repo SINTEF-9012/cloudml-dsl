@@ -37,16 +37,16 @@ class CloudMLGenerator implements IGenerator {
 		val xmires = new XMIResourceImpl()
 		xmires.contents.addAll(resource.contents)
 		
-		val root = xmires.contents.get(0) as CloudMLModel
-		val vms = root.externalComponentInstances.filter[e | e instanceof VMInstance]
-		val vms2 = new ArrayList<VMInstance>()
-		vms.forEach[e|
-			vms2.add(e as VMInstance)
-		]
-		
-		root.vmInstances.addAll(vms2)
-		
-		root.externalComponentInstances.removeAll(vms2)
+//		val root = xmires.contents.get(0) as CloudMLModel
+//		val vms = root.externalComponentInstances.filter[e | e instanceof VMInstance]
+//		val vms2 = new ArrayList<VMInstance>()
+//		vms.forEach[e|
+//			vms2.add(e as VMInstance)
+//		]
+//		
+//		root.vmInstances.addAll(vms2)
+//		
+//		root.externalComponentInstances.removeAll(vms2)
 		
 		val baos = new ByteArrayOutputStream()
 		xmires.save(baos, null)

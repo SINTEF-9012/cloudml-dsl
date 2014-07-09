@@ -4,13 +4,9 @@
 package org.cloudml.dsl.generator;
 
 import cloudml.core.CloudMLElement;
-import cloudml.core.CloudMLModel;
 import cloudml.core.Component;
-import cloudml.core.ExternalComponentInstance;
 import cloudml.core.Port;
-import cloudml.core.VMInstance;
 import java.io.ByteArrayOutputStream;
-import java.util.ArrayList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
@@ -19,9 +15,6 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
 import org.eclipse.xtext.xbase.lib.Exceptions;
-import org.eclipse.xtext.xbase.lib.Functions.Function1;
-import org.eclipse.xtext.xbase.lib.IterableExtensions;
-import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 
 /**
  * Generates code from your model files on save.
@@ -53,27 +46,6 @@ public class CloudMLGenerator implements IGenerator {
       EList<EObject> _contents_1 = xmires.getContents();
       EList<EObject> _contents_2 = resource.getContents();
       _contents_1.addAll(_contents_2);
-      EList<EObject> _contents_3 = xmires.getContents();
-      EObject _get_1 = _contents_3.get(0);
-      final CloudMLModel root = ((CloudMLModel) _get_1);
-      EList<ExternalComponentInstance> _externalComponentInstances = root.getExternalComponentInstances();
-      final Function1<ExternalComponentInstance, Boolean> _function = new Function1<ExternalComponentInstance, Boolean>() {
-        public Boolean apply(final ExternalComponentInstance e) {
-          return Boolean.valueOf((e instanceof VMInstance));
-        }
-      };
-      final Iterable<ExternalComponentInstance> vms = IterableExtensions.<ExternalComponentInstance>filter(_externalComponentInstances, _function);
-      final ArrayList<VMInstance> vms2 = new ArrayList<VMInstance>();
-      final Procedure1<ExternalComponentInstance> _function_1 = new Procedure1<ExternalComponentInstance>() {
-        public void apply(final ExternalComponentInstance e) {
-          vms2.add(((VMInstance) e));
-        }
-      };
-      IterableExtensions.<ExternalComponentInstance>forEach(vms, _function_1);
-      EList<VMInstance> _vmInstances = root.getVmInstances();
-      _vmInstances.addAll(vms2);
-      EList<ExternalComponentInstance> _externalComponentInstances_1 = root.getExternalComponentInstances();
-      _externalComponentInstances_1.removeAll(vms2);
       final ByteArrayOutputStream baos = new ByteArrayOutputStream();
       xmires.save(baos, null);
       String _string = baos.toString();

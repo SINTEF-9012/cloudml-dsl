@@ -102,7 +102,11 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 				}
 				else break;
 			case CorePackage.RELATIONSHIP:
-				if(context == grammarAccess.getRelationshipCSRule()) {
+				if(context == grammarAccess.getRelationshipCSOldRule()) {
+					sequence_RelationshipCSOld(context, (Relationship) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getRelationshipCSRule()) {
 					sequence_RelationshipCS(context, (Relationship) semanticObject); 
 					return; 
 				}
@@ -160,11 +164,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *         providers+=ProviderCS* 
 	 *         (vms+=VMCS | internalComponents+=InternalComponentCS | externalComponents+=ExternalComponentCS)* 
 	 *         relationships+=RelationshipCS* 
-	 *         (
-	 *             internalComponentInstances+=InternalComponentInstanceCS | 
-	 *             externalComponentInstances+=ExternalComponentInstanceCS | 
-	 *             externalComponentInstances+=VMInstanceCS
-	 *         )* 
+	 *         (internalComponentInstances+=InternalComponentInstanceCS | externalComponentInstances+=ExternalComponentInstanceCS | vmInstances+=VMInstanceCS)* 
 	 *         relationshipInstances+=RelationshipInstanceCS* 
 	 *         executesInstances+=ExecuteInstanceCS*
 	 *     )
@@ -177,9 +177,9 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	/**
 	 * Constraint:
 	 *     (
-	 *         name=ValidID 
 	 *         requiredExecutionPlatformInstance=[RequiredExecutionPlatformInstance|Fqn] 
-	 *         providedExecutionPlatformInstance=[ProvidedExecutionPlatformInstance|Fqn]
+	 *         providedExecutionPlatformInstance=[ProvidedExecutionPlatformInstance|Fqn] 
+	 *         name=ValidID?
 	 *     )
 	 */
 	protected void sequence_ExecuteInstanceCS(EObject context, ExecuteInstance semanticObject) {
@@ -203,7 +203,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (type=[ExternalComponent|ID] name=ValidID)
+	 *     (name=ValidID type=[ExternalComponent|ID])
 	 */
 	protected void sequence_ExternalComponentInstanceCS(EObject context, ExternalComponentInstance semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -231,7 +231,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (type=[InternalComponent|ID] name=ValidID)
+	 *     (name=ValidID type=[InternalComponent|ID])
 	 */
 	protected void sequence_InternalComponentInstanceCS(EObject context, InternalComponentInstance semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -294,6 +294,20 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *         )
 	 *     )
 	 */
+	protected void sequence_RelationshipCSOld(EObject context, Relationship semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (
+	 *         requiredPort=[RequiredPort|Fqn] 
+	 *         providedPort=[ProvidedPort|Fqn] 
+	 *         name=ValidID 
+	 *         (properties+=PropertyCS* | (properties+=PropertyCS* resources+=ResourceCS*))?
+	 *     )
+	 */
 	protected void sequence_RelationshipCS(EObject context, Relationship semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
@@ -301,7 +315,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (type=[Relationship|ID] name=ValidID requiredPortInstance=[RequiredPortInstance|Fqn] providedPortInstance=[ProvidedPortInstance|Fqn])
+	 *     (requiredPortInstance=[RequiredPortInstance|Fqn] providedPortInstance=[ProvidedPortInstance|Fqn] type=[Relationship|ID] name=ValidID?)
 	 */
 	protected void sequence_RelationshipInstanceCS(EObject context, RelationshipInstance semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -329,7 +343,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	/**
 	 * Constraint:
 	 *     (
-	 *         name=ValidID 
+	 *         name=ValidID? 
 	 *         (
 	 *             downloadCommand=STRING | 
 	 *             uploadCommand=STRING | 
@@ -381,7 +395,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (type=[VM|ID] name=ValidID)
+	 *     (name=ValidID type=[VM|ID])
 	 */
 	protected void sequence_VMInstanceCS(EObject context, VMInstance semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

@@ -13,6 +13,9 @@ import org.eclipse.xtext.scoping.Scopes
 import cloudml.core.ProvidedPortInstance
 import cloudml.core.InternalComponentInstance
 import cloudml.core.ComponentInstance
+import cloudml.core.ExecuteInstance
+import cloudml.core.ProvidedExecutionPlatformInstance
+import cloudml.core.RequiredExecutionPlatformInstance
 
 /**
  * This class contains custom scoping description.
@@ -39,6 +42,7 @@ class CloudMLScopeProvider extends org.eclipse.xtext.scoping.impl.AbstractDeclar
 			)
 		}
 	}
+	
 	def scope_RelationshipInstance_providedPortInstance(RelationshipInstance ri, EReference ref){
 		val model = ri.eContainer as CloudMLModel
 		val list = new ArrayList<ProvidedPortInstance>()
@@ -51,11 +55,48 @@ class CloudMLScopeProvider extends org.eclipse.xtext.scoping.impl.AbstractDeclar
 			clist.add(ci)
 			list.addAll(ci.providedPortInstances)
 		}	
+		for(vi : model.vmInstances){
+			clist.add(vi)
+			list.addAll(vi.providedPortInstances)
+		}	
 		return Scopes.scopeFor(
 			list,
 			[ProvidedPortInstance e | e.qualifiedName], 
 			Scopes.scopeFor(clist)
 		)
 	}
+	
+	def scope_ExecuteInstance_providedExecutionPlatformInstance(ExecuteInstance ri, EReference ref){
+		val model = ri.eContainer as CloudMLModel
+		val list = new ArrayList<ProvidedExecutionPlatformInstance>()
+		val clist = new ArrayList<ComponentInstance>()
+		for(ci : model.externalComponentInstances){
+			clist.add(ci)
+			list.addAll(ci.providedExecutionPlatformInstances)
+		}
+		for(ci : model.internalComponentInstances){
+			clist.add(ci)
+			list.addAll(ci.providedExecutionPlatformInstances)
+		}
+		for(vi : model.vmInstances){
+			clist.add(vi)
+			list.addAll(vi.providedExecutionPlatformInstances)
+		}	
+		return Scopes.scopeFor(
+			list,
+			[ProvidedExecutionPlatformInstance e | e.qualifiedName], 
+			Scopes.scopeFor(clist)
+		)
+	}
+	
+	def scope_ExecuteInstance_requiredExecutionPlatformInstance(ExecuteInstance ri, EReference ref){
+		val model = ri.eContainer as CloudMLModel
+		return Scopes.scopeFor(
+			model.internalComponentInstances.map[e|e.requiredExecutionPlatformInstance],
+			[RequiredExecutionPlatformInstance e | e.qualifiedName], 
+			Scopes.scopeFor(model.internalComponentInstances)
+		)
+	}
+	
 		
 }

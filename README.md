@@ -1,29 +1,32 @@
 cloudml-dsl is a text-based domain-specific language for writing CloudML models. See a made-up example below:
 
 ```
-model MyModel2
-provider AWS:'credentials'
-
-components{
-    internal Mine {
-        required port req
-        required execution exec
-    }
-    vm VM{
-    	provided execution exec
-    }
-    external Yours{
-        provided port prv
-    }
-    relationship R1 : Mine.req => Yours.prv
+deployment model SomeModel
+provider aws:'./credential'
+types{
+	internal C1{
+		provided port prv
+		required execution exec
+	}
+	internal C2{
+		required port req
+		required execution exec
+	}
+	vm VM1{
+		location:'eu', core:1..5, ram:5.., provider:aws
+		provided execution exec
+	}
+	connect C2.req to C1.prv named R1
 }
 instances{
-	internal Mine mine 
-	external Yours yours 
-	vm VM vm1
-	relationship R1 r1 : mine.req => yours.prv
-	execute mineVm : mine.exec => vm1.exec
+	internal c1 typed C1
+	internal c2 typed C2
+	vm v1 typed VM1
+	connect c2.req to c1.prv typed R1
+	host c1.exec on v1.exec
+	host c2.exec on v1.exec
 }
+
 ```
 
 A real example for SensApp deployment can be found here: [org.cloudml.dsl/sample/sensapp.mydsl] (https://github.com/SINTEF-9012/cloudml-dsl/blob/master/org.cloudml.dsl/sample/sensapp.mydsl)

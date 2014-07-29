@@ -72,7 +72,7 @@ VMPortCS returns VMPort: name = ValidID;
 
 
 ExternalComponentCS returns ExternalComponent:
-	'external' name = ValidID '{'
+	'external' 'component' name = ValidID '{'
 		(
 			providedPorts += ProvidedPortCS |
 			providedExecutionPlatforms += ProvidedExecutionPlatformCS
@@ -84,7 +84,7 @@ ExternalComponentCS returns ExternalComponent:
 ;
 
 ProvidedPortCS returns ProvidedPort:
-	'provided' 'port' name = ValidID 
+	'provided' 'communication' name = ValidID 
 	(':'
 		((isLocal?='local' | 'port' ':' portNumber=INT) (',')?)*
 		properties+=PropertyCS*
@@ -92,7 +92,7 @@ ProvidedPortCS returns ProvidedPort:
 ;
 
 InternalComponentCS returns InternalComponent:
-	'internal' name = ValidID '{'
+	'internal' 'component' name = ValidID '{'
 		(
 			providedPorts += ProvidedPortCS |
 			requiredPorts += RequiredPortCS |
@@ -105,7 +105,7 @@ InternalComponentCS returns InternalComponent:
 ;
 
 RequiredPortCS returns RequiredPort:
-	'required' 'port' name = ValidID 
+	'required' 'communication' name = ValidID 
 	(':'
 		((isLocal?='local' | 'port' ':' portNumber=INT | isMandatory?='mandatory') (',')?)*
 		properties+=PropertyCS*
@@ -113,7 +113,7 @@ RequiredPortCS returns RequiredPort:
 ;
 
 RequiredExecutionPlatformCS returns RequiredExecutionPlatform:
-	'required' 'execution' name = ValidID 
+	'required' 'host' name = ValidID 
 	(':'
 		('demands' ':' demands+=PropertyCS* )?
 		'properties' ':' properties+=PropertyCS*
@@ -121,7 +121,7 @@ RequiredExecutionPlatformCS returns RequiredExecutionPlatform:
 ;
 
 ProvidedExecutionPlatformCS returns ProvidedExecutionPlatform:
-	'provided' 'execution' name = ValidID 
+	'provided' 'host' name = ValidID 
 	(':'
 		('offers' ':' offers+=PropertyCS*)?
 		'properties' ':' properties+=PropertyCS*
@@ -142,23 +142,24 @@ RelationshipCSOld returns Relationship:
 ;
 
 RelationshipCS returns Relationship:
-	'connect' requiredPort = [RequiredPort|Fqn] 'to' providedPort = [ProvidedPort|Fqn] 'named' name=ValidID 
-		(   
-			(':' properties += PropertyCS*) |
-			('{' 
-				('properties' ':' properties += PropertyCS*)?
-				resources += ResourceCS*
-			 '}'	
-			)
-		)?
+	'communication' name=ValidID 
+		
+		'{' 
+			'from' requiredPort = [RequiredPort|Fqn] 
+			'to' providedPort = [ProvidedPort|Fqn] 
+			('properties' ':' properties += PropertyCS*)?
+			resources += ResourceCS*
+		 '}'	
+		
+		
 ;
 
 ExternalComponentInstanceCS returns ExternalComponentInstance:
-	'external' name = ValidID 'typed' type = [ExternalComponent]
+	'external' 'component' name = ValidID 'typed' type = [ExternalComponent]
 ;
 
 InternalComponentInstanceCS returns InternalComponentInstance:
-	'internal'  name = ValidID 'typed' type = [InternalComponent]
+	'internal' 'component' name = ValidID 'typed' type = [InternalComponent]
 ;
 
 VMInstanceCS returns VMInstance:

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cloudml" nsURI="http://cloudml.net" nsPrefix="net.cloudml">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG&#xD;&#xA;"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="NoUse"/>
   <eSubpackages name="core" nsURI="http://cloudml.net/core" nsPrefix="net.cloudml.core">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG"/>
+    </eAnnotations>
     <eClassifiers xsi:type="ecore:EClass" name="CloudMLElement" abstract="true">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -57,6 +63,12 @@
           eType="#//core/ExecuteInstance" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="VM" eSuperTypes="#//core/ExternalComponent">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="constraints" value="NameCap"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG">
+        <details key="NameCap" value="Tuple {&#xD;&#xA;&#x9;message : String = 'wrong',&#xD;&#xA;&#x9;status : Boolean = name.at(1)=name.at(1).toUpperCase()&#xD;&#xA;}.status"/>
+      </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="provided" upperBound="-1"
           eType="#//core/VMPort" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="minRam" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>

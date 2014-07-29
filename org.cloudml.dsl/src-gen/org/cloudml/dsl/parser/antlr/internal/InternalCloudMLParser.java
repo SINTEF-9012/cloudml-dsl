@@ -21,9 +21,11 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalCloudMLParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'deployment'", "'model'", "'types'", "'{'", "'}'", "'instances'", "'provider'", "':'", "'vm'", "'group'", "'imageID'", "'os64'", "'location'", "'login'", "'core'", "'..'", "'ram'", "'storage'", "'os'", "'passwd'", "'privateKey'", "'region'", "'securityGroup'", "'serviceType'", "'sshKey'", "','", "'properties'", "'external'", "'provided'", "'port'", "'local'", "'internal'", "'required'", "'mandatory'", "'execution'", "'demands'", "'offers'", "'connect'", "'to'", "'named'", "'typed'", "'host'", "'on'", "'('", "')'", "'resource'", "'download'", "'upload'", "'install'", "'configure'", "'start'", "'stop'", "'requireCredentials'", "'executeLocally'", "'.'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'deployment'", "'model'", "'types'", "'{'", "'}'", "'instances'", "'provider'", "':'", "'vm'", "'group'", "'imageID'", "'os64'", "'location'", "'login'", "'core'", "'..'", "'ram'", "'storage'", "'os'", "'passwd'", "'privateKey'", "'region'", "'securityGroup'", "'serviceType'", "'sshKey'", "','", "'properties'", "'external'", "'component'", "'provided'", "'communication'", "'local'", "'port'", "'internal'", "'required'", "'mandatory'", "'host'", "'demands'", "'offers'", "'from'", "'to'", "'typed'", "'connect'", "'named'", "'on'", "'('", "')'", "'resource'", "'download'", "'upload'", "'install'", "'configure'", "'start'", "'stop'", "'requireCredentials'", "'executeLocally'", "'.'"
     };
     public static final int RULE_ID=5;
+    public static final int T__66=66;
+    public static final int T__67=67;
     public static final int T__64=64;
     public static final int T__29=29;
     public static final int T__65=65;
@@ -312,7 +314,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     alt2=1;
                     }
                     break;
-                case 42:
+                case 44:
                     {
                     alt2=2;
                     }
@@ -449,7 +451,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 int alt3=2;
                 int LA3_0 = input.LA(1);
 
-                if ( (LA3_0==48) ) {
+                if ( (LA3_0==41) ) {
                     alt3=1;
                 }
 
@@ -509,7 +511,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             do {
                 int alt4=4;
                 switch ( input.LA(1) ) {
-                case 42:
+                case 44:
                     {
                     alt4=1;
                     }
@@ -651,7 +653,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 int alt5=2;
                 int LA5_0 = input.LA(1);
 
-                if ( (LA5_0==48) ) {
+                if ( (LA5_0==53) ) {
                     alt5=1;
                 }
 
@@ -700,7 +702,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 int alt6=2;
                 int LA6_0 = input.LA(1);
 
-                if ( (LA6_0==52) ) {
+                if ( (LA6_0==47) ) {
                     alt6=1;
                 }
 
@@ -896,7 +898,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 int alt7=2;
                 int LA7_0 = input.LA(1);
 
-                if ( (LA7_0==54) ) {
+                if ( (LA7_0==56) ) {
                     alt7=1;
                 }
 
@@ -2096,10 +2098,10 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 int alt14=2;
                 int LA14_0 = input.LA(1);
 
-                if ( (LA14_0==39) ) {
+                if ( (LA14_0==40) ) {
                     int LA14_1 = input.LA(2);
 
-                    if ( (LA14_1==40) ) {
+                    if ( (LA14_1==41) ) {
                         alt14=1;
                     }
 
@@ -2151,7 +2153,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 int alt15=2;
                 int LA15_0 = input.LA(1);
 
-                if ( (LA15_0==39) ) {
+                if ( (LA15_0==40) ) {
                     alt15=1;
                 }
 
@@ -2219,7 +2221,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                         int alt16=2;
                         int LA16_0 = input.LA(1);
 
-                        if ( (LA16_0==54) ) {
+                        if ( (LA16_0==56) ) {
                             alt16=1;
                         }
 
@@ -2329,50 +2331,55 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleExternalComponentCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1014:1: ruleExternalComponentCS returns [EObject current=null] : (otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_5= 'properties' otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* )? ( (lv_resources_8_0= ruleResourceCS ) )* otherlv_9= '}' ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1014:1: ruleExternalComponentCS returns [EObject current=null] : (otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_6= 'properties' otherlv_7= ':' ( (lv_properties_8_0= rulePropertyCS ) )* )? ( (lv_resources_9_0= ruleResourceCS ) )* otherlv_10= '}' ) ;
     public final EObject ruleExternalComponentCS() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token otherlv_2=null;
-        Token otherlv_5=null;
+        Token otherlv_1=null;
+        Token otherlv_3=null;
         Token otherlv_6=null;
-        Token otherlv_9=null;
-        AntlrDatatypeRuleToken lv_name_1_0 = null;
+        Token otherlv_7=null;
+        Token otherlv_10=null;
+        AntlrDatatypeRuleToken lv_name_2_0 = null;
 
-        EObject lv_providedPorts_3_0 = null;
+        EObject lv_providedPorts_4_0 = null;
 
-        EObject lv_providedExecutionPlatforms_4_0 = null;
+        EObject lv_providedExecutionPlatforms_5_0 = null;
 
-        EObject lv_properties_7_0 = null;
+        EObject lv_properties_8_0 = null;
 
-        EObject lv_resources_8_0 = null;
+        EObject lv_resources_9_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1017:28: ( (otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_5= 'properties' otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* )? ( (lv_resources_8_0= ruleResourceCS ) )* otherlv_9= '}' ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1018:1: (otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_5= 'properties' otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* )? ( (lv_resources_8_0= ruleResourceCS ) )* otherlv_9= '}' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1017:28: ( (otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_6= 'properties' otherlv_7= ':' ( (lv_properties_8_0= rulePropertyCS ) )* )? ( (lv_resources_9_0= ruleResourceCS ) )* otherlv_10= '}' ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1018:1: (otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_6= 'properties' otherlv_7= ':' ( (lv_properties_8_0= rulePropertyCS ) )* )? ( (lv_resources_9_0= ruleResourceCS ) )* otherlv_10= '}' )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1018:1: (otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_5= 'properties' otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* )? ( (lv_resources_8_0= ruleResourceCS ) )* otherlv_9= '}' )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1018:3: otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_5= 'properties' otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* )? ( (lv_resources_8_0= ruleResourceCS ) )* otherlv_9= '}'
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1018:1: (otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_6= 'properties' otherlv_7= ':' ( (lv_properties_8_0= rulePropertyCS ) )* )? ( (lv_resources_9_0= ruleResourceCS ) )* otherlv_10= '}' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1018:3: otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_6= 'properties' otherlv_7= ':' ( (lv_properties_8_0= rulePropertyCS ) )* )? ( (lv_resources_9_0= ruleResourceCS ) )* otherlv_10= '}'
             {
             otherlv_0=(Token)match(input,38,FOLLOW_38_in_ruleExternalComponentCS1901); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getExternalComponentCSAccess().getExternalKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1022:1: ( (lv_name_1_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1023:1: (lv_name_1_0= ruleValidID )
+            otherlv_1=(Token)match(input,39,FOLLOW_39_in_ruleExternalComponentCS1913); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getExternalComponentCSAccess().getComponentKeyword_1());
+                
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1026:1: ( (lv_name_2_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1027:1: (lv_name_2_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1023:1: (lv_name_1_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1024:3: lv_name_1_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1027:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1028:3: lv_name_2_0= ruleValidID
             {
              
-            	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getNameValidIDParserRuleCall_1_0()); 
+            	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getNameValidIDParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleExternalComponentCS1922);
-            lv_name_1_0=ruleValidID();
+            pushFollow(FOLLOW_ruleValidID_in_ruleExternalComponentCS1934);
+            lv_name_2_0=ruleValidID();
 
             state._fsp--;
 
@@ -2383,7 +2390,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                    		set(
                    			current, 
                    			"name",
-                    		lv_name_1_0, 
+                    		lv_name_2_0, 
                     		"ValidID");
             	        afterParserOrEnumRuleCall();
             	    
@@ -2393,23 +2400,23 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,14,FOLLOW_14_in_ruleExternalComponentCS1934); 
+            otherlv_3=(Token)match(input,14,FOLLOW_14_in_ruleExternalComponentCS1946); 
 
-                	newLeafNode(otherlv_2, grammarAccess.getExternalComponentCSAccess().getLeftCurlyBracketKeyword_2());
+                	newLeafNode(otherlv_3, grammarAccess.getExternalComponentCSAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1044:1: ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS ) ) )*
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1048:1: ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS ) ) )*
             loop18:
             do {
                 int alt18=3;
                 int LA18_0 = input.LA(1);
 
-                if ( (LA18_0==39) ) {
+                if ( (LA18_0==40) ) {
                     int LA18_2 = input.LA(2);
 
-                    if ( (LA18_2==45) ) {
+                    if ( (LA18_2==47) ) {
                         alt18=2;
                     }
-                    else if ( (LA18_2==40) ) {
+                    else if ( (LA18_2==41) ) {
                         alt18=1;
                     }
 
@@ -2419,19 +2426,19 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
                 switch (alt18) {
             	case 1 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1044:2: ( (lv_providedPorts_3_0= ruleProvidedPortCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1048:2: ( (lv_providedPorts_4_0= ruleProvidedPortCS ) )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1044:2: ( (lv_providedPorts_3_0= ruleProvidedPortCS ) )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1045:1: (lv_providedPorts_3_0= ruleProvidedPortCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1048:2: ( (lv_providedPorts_4_0= ruleProvidedPortCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1049:1: (lv_providedPorts_4_0= ruleProvidedPortCS )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1045:1: (lv_providedPorts_3_0= ruleProvidedPortCS )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1046:3: lv_providedPorts_3_0= ruleProvidedPortCS
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1049:1: (lv_providedPorts_4_0= ruleProvidedPortCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1050:3: lv_providedPorts_4_0= ruleProvidedPortCS
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getProvidedPortsProvidedPortCSParserRuleCall_3_0_0()); 
+            	    	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getProvidedPortsProvidedPortCSParserRuleCall_4_0_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleProvidedPortCS_in_ruleExternalComponentCS1956);
-            	    lv_providedPorts_3_0=ruleProvidedPortCS();
+            	    pushFollow(FOLLOW_ruleProvidedPortCS_in_ruleExternalComponentCS1968);
+            	    lv_providedPorts_4_0=ruleProvidedPortCS();
 
             	    state._fsp--;
 
@@ -2442,7 +2449,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"providedPorts",
-            	            		lv_providedPorts_3_0, 
+            	            		lv_providedPorts_4_0, 
             	            		"ProvidedPortCS");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -2456,19 +2463,19 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 2 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1063:6: ( (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1067:6: ( (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS ) )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1063:6: ( (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS ) )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1064:1: (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1067:6: ( (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1068:1: (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1064:1: (lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1065:3: lv_providedExecutionPlatforms_4_0= ruleProvidedExecutionPlatformCS
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1068:1: (lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1069:3: lv_providedExecutionPlatforms_5_0= ruleProvidedExecutionPlatformCS
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getProvidedExecutionPlatformsProvidedExecutionPlatformCSParserRuleCall_3_1_0()); 
+            	    	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getProvidedExecutionPlatformsProvidedExecutionPlatformCSParserRuleCall_4_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleExternalComponentCS1983);
-            	    lv_providedExecutionPlatforms_4_0=ruleProvidedExecutionPlatformCS();
+            	    pushFollow(FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleExternalComponentCS1995);
+            	    lv_providedExecutionPlatforms_5_0=ruleProvidedExecutionPlatformCS();
 
             	    state._fsp--;
 
@@ -2479,7 +2486,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"providedExecutionPlatforms",
-            	            		lv_providedExecutionPlatforms_4_0, 
+            	            		lv_providedExecutionPlatforms_5_0, 
             	            		"ProvidedExecutionPlatformCS");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -2498,7 +2505,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1081:4: (otherlv_5= 'properties' otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1085:4: (otherlv_6= 'properties' otherlv_7= ':' ( (lv_properties_8_0= rulePropertyCS ) )* )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -2507,39 +2514,39 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             }
             switch (alt20) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1081:6: otherlv_5= 'properties' otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1085:6: otherlv_6= 'properties' otherlv_7= ':' ( (lv_properties_8_0= rulePropertyCS ) )*
                     {
-                    otherlv_5=(Token)match(input,37,FOLLOW_37_in_ruleExternalComponentCS1998); 
+                    otherlv_6=(Token)match(input,37,FOLLOW_37_in_ruleExternalComponentCS2010); 
 
-                        	newLeafNode(otherlv_5, grammarAccess.getExternalComponentCSAccess().getPropertiesKeyword_4_0());
+                        	newLeafNode(otherlv_6, grammarAccess.getExternalComponentCSAccess().getPropertiesKeyword_5_0());
                         
-                    otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleExternalComponentCS2010); 
+                    otherlv_7=(Token)match(input,18,FOLLOW_18_in_ruleExternalComponentCS2022); 
 
-                        	newLeafNode(otherlv_6, grammarAccess.getExternalComponentCSAccess().getColonKeyword_4_1());
+                        	newLeafNode(otherlv_7, grammarAccess.getExternalComponentCSAccess().getColonKeyword_5_1());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1089:1: ( (lv_properties_7_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1093:1: ( (lv_properties_8_0= rulePropertyCS ) )*
                     loop19:
                     do {
                         int alt19=2;
                         int LA19_0 = input.LA(1);
 
-                        if ( (LA19_0==54) ) {
+                        if ( (LA19_0==56) ) {
                             alt19=1;
                         }
 
 
                         switch (alt19) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1090:1: (lv_properties_7_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1094:1: (lv_properties_8_0= rulePropertyCS )
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1090:1: (lv_properties_7_0= rulePropertyCS )
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1091:3: lv_properties_7_0= rulePropertyCS
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1094:1: (lv_properties_8_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1095:3: lv_properties_8_0= rulePropertyCS
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getPropertiesPropertyCSParserRuleCall_4_2_0()); 
+                    	    	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getPropertiesPropertyCSParserRuleCall_5_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleExternalComponentCS2031);
-                    	    lv_properties_7_0=rulePropertyCS();
+                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleExternalComponentCS2043);
+                    	    lv_properties_8_0=rulePropertyCS();
 
                     	    state._fsp--;
 
@@ -2550,7 +2557,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	           		add(
                     	           			current, 
                     	           			"properties",
-                    	            		lv_properties_7_0, 
+                    	            		lv_properties_8_0, 
                     	            		"PropertyCS");
                     	    	        afterParserOrEnumRuleCall();
                     	    	    
@@ -2572,29 +2579,29 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1107:5: ( (lv_resources_8_0= ruleResourceCS ) )*
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1111:5: ( (lv_resources_9_0= ruleResourceCS ) )*
             loop21:
             do {
                 int alt21=2;
                 int LA21_0 = input.LA(1);
 
-                if ( (LA21_0==56) ) {
+                if ( (LA21_0==58) ) {
                     alt21=1;
                 }
 
 
                 switch (alt21) {
             	case 1 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1108:1: (lv_resources_8_0= ruleResourceCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1112:1: (lv_resources_9_0= ruleResourceCS )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1108:1: (lv_resources_8_0= ruleResourceCS )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1109:3: lv_resources_8_0= ruleResourceCS
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1112:1: (lv_resources_9_0= ruleResourceCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1113:3: lv_resources_9_0= ruleResourceCS
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getResourcesResourceCSParserRuleCall_5_0()); 
+            	    	        newCompositeNode(grammarAccess.getExternalComponentCSAccess().getResourcesResourceCSParserRuleCall_6_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleResourceCS_in_ruleExternalComponentCS2055);
-            	    lv_resources_8_0=ruleResourceCS();
+            	    pushFollow(FOLLOW_ruleResourceCS_in_ruleExternalComponentCS2067);
+            	    lv_resources_9_0=ruleResourceCS();
 
             	    state._fsp--;
 
@@ -2605,7 +2612,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"resources",
-            	            		lv_resources_8_0, 
+            	            		lv_resources_9_0, 
             	            		"ResourceCS");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -2621,9 +2628,9 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_9=(Token)match(input,15,FOLLOW_15_in_ruleExternalComponentCS2068); 
+            otherlv_10=(Token)match(input,15,FOLLOW_15_in_ruleExternalComponentCS2080); 
 
-                	newLeafNode(otherlv_9, grammarAccess.getExternalComponentCSAccess().getRightCurlyBracketKeyword_6());
+                	newLeafNode(otherlv_10, grammarAccess.getExternalComponentCSAccess().getRightCurlyBracketKeyword_7());
                 
 
             }
@@ -2646,7 +2653,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleProvidedPortCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1137:1: entryRuleProvidedPortCS returns [EObject current=null] : iv_ruleProvidedPortCS= ruleProvidedPortCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1141:1: entryRuleProvidedPortCS returns [EObject current=null] : iv_ruleProvidedPortCS= ruleProvidedPortCS EOF ;
     public final EObject entryRuleProvidedPortCS() throws RecognitionException {
         EObject current = null;
 
@@ -2654,17 +2661,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1138:2: (iv_ruleProvidedPortCS= ruleProvidedPortCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1139:2: iv_ruleProvidedPortCS= ruleProvidedPortCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1142:2: (iv_ruleProvidedPortCS= ruleProvidedPortCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1143:2: iv_ruleProvidedPortCS= ruleProvidedPortCS EOF
             {
              newCompositeNode(grammarAccess.getProvidedPortCSRule()); 
-            pushFollow(FOLLOW_ruleProvidedPortCS_in_entryRuleProvidedPortCS2104);
+            pushFollow(FOLLOW_ruleProvidedPortCS_in_entryRuleProvidedPortCS2116);
             iv_ruleProvidedPortCS=ruleProvidedPortCS();
 
             state._fsp--;
 
              current =iv_ruleProvidedPortCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleProvidedPortCS2114); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleProvidedPortCS2126); 
 
             }
 
@@ -2682,7 +2689,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleProvidedPortCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1146:1: ruleProvidedPortCS returns [EObject current=null] : (otherlv_0= 'provided' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )? ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1150:1: ruleProvidedPortCS returns [EObject current=null] : (otherlv_0= 'provided' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )? ) ;
     public final EObject ruleProvidedPortCS() throws RecognitionException {
         EObject current = null;
 
@@ -2702,30 +2709,30 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1149:28: ( (otherlv_0= 'provided' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )? ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1150:1: (otherlv_0= 'provided' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1153:28: ( (otherlv_0= 'provided' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )? ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1154:1: (otherlv_0= 'provided' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )? )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1150:1: (otherlv_0= 'provided' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )? )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1150:3: otherlv_0= 'provided' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1154:1: (otherlv_0= 'provided' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1154:3: otherlv_0= 'provided' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )?
             {
-            otherlv_0=(Token)match(input,39,FOLLOW_39_in_ruleProvidedPortCS2151); 
+            otherlv_0=(Token)match(input,40,FOLLOW_40_in_ruleProvidedPortCS2163); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getProvidedPortCSAccess().getProvidedKeyword_0());
                 
-            otherlv_1=(Token)match(input,40,FOLLOW_40_in_ruleProvidedPortCS2163); 
+            otherlv_1=(Token)match(input,41,FOLLOW_41_in_ruleProvidedPortCS2175); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getProvidedPortCSAccess().getPortKeyword_1());
+                	newLeafNode(otherlv_1, grammarAccess.getProvidedPortCSAccess().getCommunicationKeyword_1());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1158:1: ( (lv_name_2_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1159:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1162:1: ( (lv_name_2_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1163:1: (lv_name_2_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1159:1: (lv_name_2_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1160:3: lv_name_2_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1163:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1164:3: lv_name_2_0= ruleValidID
             {
              
             	        newCompositeNode(grammarAccess.getProvidedPortCSAccess().getNameValidIDParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleProvidedPortCS2184);
+            pushFollow(FOLLOW_ruleValidID_in_ruleProvidedPortCS2196);
             lv_name_2_0=ruleValidID();
 
             state._fsp--;
@@ -2747,7 +2754,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1176:2: (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1180:2: (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )* )?
             int alt26=2;
             int LA26_0 = input.LA(1);
 
@@ -2756,35 +2763,35 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             }
             switch (alt26) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1176:4: otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1180:4: otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )* ( (lv_properties_9_0= rulePropertyCS ) )*
                     {
-                    otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleProvidedPortCS2197); 
+                    otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleProvidedPortCS2209); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_0());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1180:1: ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1184:1: ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )? )*
                     loop24:
                     do {
                         int alt24=2;
                         int LA24_0 = input.LA(1);
 
-                        if ( ((LA24_0>=40 && LA24_0<=41)) ) {
+                        if ( ((LA24_0>=42 && LA24_0<=43)) ) {
                             alt24=1;
                         }
 
 
                         switch (alt24) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1180:2: ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )?
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1184:2: ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) ) (otherlv_8= ',' )?
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1180:2: ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1184:2: ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) )
                     	    int alt22=2;
                     	    int LA22_0 = input.LA(1);
 
-                    	    if ( (LA22_0==41) ) {
+                    	    if ( (LA22_0==42) ) {
                     	        alt22=1;
                     	    }
-                    	    else if ( (LA22_0==40) ) {
+                    	    else if ( (LA22_0==43) ) {
                     	        alt22=2;
                     	    }
                     	    else {
@@ -2795,15 +2802,15 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	    }
                     	    switch (alt22) {
                     	        case 1 :
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1180:3: ( (lv_isLocal_4_0= 'local' ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1184:3: ( (lv_isLocal_4_0= 'local' ) )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1180:3: ( (lv_isLocal_4_0= 'local' ) )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1181:1: (lv_isLocal_4_0= 'local' )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1184:3: ( (lv_isLocal_4_0= 'local' ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1185:1: (lv_isLocal_4_0= 'local' )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1181:1: (lv_isLocal_4_0= 'local' )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1182:3: lv_isLocal_4_0= 'local'
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1185:1: (lv_isLocal_4_0= 'local' )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1186:3: lv_isLocal_4_0= 'local'
                     	            {
-                    	            lv_isLocal_4_0=(Token)match(input,41,FOLLOW_41_in_ruleProvidedPortCS2217); 
+                    	            lv_isLocal_4_0=(Token)match(input,42,FOLLOW_42_in_ruleProvidedPortCS2229); 
 
                     	                    newLeafNode(lv_isLocal_4_0, grammarAccess.getProvidedPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0());
                     	                
@@ -2823,26 +2830,26 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	            }
                     	            break;
                     	        case 2 :
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1196:6: (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1200:6: (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1196:6: (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1196:8: otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1200:6: (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1200:8: otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) )
                     	            {
-                    	            otherlv_5=(Token)match(input,40,FOLLOW_40_in_ruleProvidedPortCS2249); 
+                    	            otherlv_5=(Token)match(input,43,FOLLOW_43_in_ruleProvidedPortCS2261); 
 
                     	                	newLeafNode(otherlv_5, grammarAccess.getProvidedPortCSAccess().getPortKeyword_3_1_0_1_0());
                     	                
-                    	            otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleProvidedPortCS2261); 
+                    	            otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleProvidedPortCS2273); 
 
                     	                	newLeafNode(otherlv_6, grammarAccess.getProvidedPortCSAccess().getColonKeyword_3_1_0_1_1());
                     	                
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1204:1: ( (lv_portNumber_7_0= RULE_INT ) )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1205:1: (lv_portNumber_7_0= RULE_INT )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1208:1: ( (lv_portNumber_7_0= RULE_INT ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1209:1: (lv_portNumber_7_0= RULE_INT )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1205:1: (lv_portNumber_7_0= RULE_INT )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1206:3: lv_portNumber_7_0= RULE_INT
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1209:1: (lv_portNumber_7_0= RULE_INT )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1210:3: lv_portNumber_7_0= RULE_INT
                     	            {
-                    	            lv_portNumber_7_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleProvidedPortCS2278); 
+                    	            lv_portNumber_7_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleProvidedPortCS2290); 
 
                     	            			newLeafNode(lv_portNumber_7_0, grammarAccess.getProvidedPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_0_1_2_0()); 
                     	            		
@@ -2871,7 +2878,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
                     	    }
 
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1222:4: (otherlv_8= ',' )?
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1226:4: (otherlv_8= ',' )?
                     	    int alt23=2;
                     	    int LA23_0 = input.LA(1);
 
@@ -2880,9 +2887,9 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	    }
                     	    switch (alt23) {
                     	        case 1 :
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1222:6: otherlv_8= ','
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1226:6: otherlv_8= ','
                     	            {
-                    	            otherlv_8=(Token)match(input,36,FOLLOW_36_in_ruleProvidedPortCS2298); 
+                    	            otherlv_8=(Token)match(input,36,FOLLOW_36_in_ruleProvidedPortCS2310); 
 
                     	                	newLeafNode(otherlv_8, grammarAccess.getProvidedPortCSAccess().getCommaKeyword_3_1_1());
                     	                
@@ -2901,28 +2908,28 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1226:5: ( (lv_properties_9_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1230:5: ( (lv_properties_9_0= rulePropertyCS ) )*
                     loop25:
                     do {
                         int alt25=2;
                         int LA25_0 = input.LA(1);
 
-                        if ( (LA25_0==54) ) {
+                        if ( (LA25_0==56) ) {
                             alt25=1;
                         }
 
 
                         switch (alt25) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1227:1: (lv_properties_9_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1231:1: (lv_properties_9_0= rulePropertyCS )
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1227:1: (lv_properties_9_0= rulePropertyCS )
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1228:3: lv_properties_9_0= rulePropertyCS
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1231:1: (lv_properties_9_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1232:3: lv_properties_9_0= rulePropertyCS
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getProvidedPortCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleProvidedPortCS2323);
+                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleProvidedPortCS2335);
                     	    lv_properties_9_0=rulePropertyCS();
 
                     	    state._fsp--;
@@ -2977,7 +2984,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleInternalComponentCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1252:1: entryRuleInternalComponentCS returns [EObject current=null] : iv_ruleInternalComponentCS= ruleInternalComponentCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1256:1: entryRuleInternalComponentCS returns [EObject current=null] : iv_ruleInternalComponentCS= ruleInternalComponentCS EOF ;
     public final EObject entryRuleInternalComponentCS() throws RecognitionException {
         EObject current = null;
 
@@ -2985,17 +2992,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1253:2: (iv_ruleInternalComponentCS= ruleInternalComponentCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1254:2: iv_ruleInternalComponentCS= ruleInternalComponentCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1257:2: (iv_ruleInternalComponentCS= ruleInternalComponentCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1258:2: iv_ruleInternalComponentCS= ruleInternalComponentCS EOF
             {
              newCompositeNode(grammarAccess.getInternalComponentCSRule()); 
-            pushFollow(FOLLOW_ruleInternalComponentCS_in_entryRuleInternalComponentCS2362);
+            pushFollow(FOLLOW_ruleInternalComponentCS_in_entryRuleInternalComponentCS2374);
             iv_ruleInternalComponentCS=ruleInternalComponentCS();
 
             state._fsp--;
 
              current =iv_ruleInternalComponentCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleInternalComponentCS2372); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleInternalComponentCS2384); 
 
             }
 
@@ -3013,54 +3020,59 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleInternalComponentCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1261:1: ruleInternalComponentCS returns [EObject current=null] : (otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_4_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}' ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1265:1: ruleInternalComponentCS returns [EObject current=null] : (otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_5_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_8= 'properties' otherlv_9= ':' ( (lv_properties_10_0= rulePropertyCS ) )* )? ( (lv_resources_11_0= ruleResourceCS ) )* otherlv_12= '}' ) ;
     public final EObject ruleInternalComponentCS() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token otherlv_2=null;
-        Token otherlv_7=null;
+        Token otherlv_1=null;
+        Token otherlv_3=null;
         Token otherlv_8=null;
-        Token otherlv_11=null;
-        AntlrDatatypeRuleToken lv_name_1_0 = null;
+        Token otherlv_9=null;
+        Token otherlv_12=null;
+        AntlrDatatypeRuleToken lv_name_2_0 = null;
 
-        EObject lv_providedPorts_3_0 = null;
+        EObject lv_providedPorts_4_0 = null;
 
-        EObject lv_requiredPorts_4_0 = null;
+        EObject lv_requiredPorts_5_0 = null;
 
-        EObject lv_requiredExecutionPlatform_5_0 = null;
+        EObject lv_requiredExecutionPlatform_6_0 = null;
 
-        EObject lv_providedExecutionPlatforms_6_0 = null;
+        EObject lv_providedExecutionPlatforms_7_0 = null;
 
-        EObject lv_properties_9_0 = null;
+        EObject lv_properties_10_0 = null;
 
-        EObject lv_resources_10_0 = null;
+        EObject lv_resources_11_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1264:28: ( (otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_4_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}' ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1265:1: (otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_4_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1268:28: ( (otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_5_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_8= 'properties' otherlv_9= ':' ( (lv_properties_10_0= rulePropertyCS ) )* )? ( (lv_resources_11_0= ruleResourceCS ) )* otherlv_12= '}' ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1269:1: (otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_5_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_8= 'properties' otherlv_9= ':' ( (lv_properties_10_0= rulePropertyCS ) )* )? ( (lv_resources_11_0= ruleResourceCS ) )* otherlv_12= '}' )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1265:1: (otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_4_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}' )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1265:3: otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_4_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}'
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1269:1: (otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_5_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_8= 'properties' otherlv_9= ':' ( (lv_properties_10_0= rulePropertyCS ) )* )? ( (lv_resources_11_0= ruleResourceCS ) )* otherlv_12= '}' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1269:3: otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= '{' ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_5_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS ) ) )* (otherlv_8= 'properties' otherlv_9= ':' ( (lv_properties_10_0= rulePropertyCS ) )* )? ( (lv_resources_11_0= ruleResourceCS ) )* otherlv_12= '}'
             {
-            otherlv_0=(Token)match(input,42,FOLLOW_42_in_ruleInternalComponentCS2409); 
+            otherlv_0=(Token)match(input,44,FOLLOW_44_in_ruleInternalComponentCS2421); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getInternalComponentCSAccess().getInternalKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1269:1: ( (lv_name_1_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1270:1: (lv_name_1_0= ruleValidID )
+            otherlv_1=(Token)match(input,39,FOLLOW_39_in_ruleInternalComponentCS2433); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getInternalComponentCSAccess().getComponentKeyword_1());
+                
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1277:1: ( (lv_name_2_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1278:1: (lv_name_2_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1270:1: (lv_name_1_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1271:3: lv_name_1_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1278:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1279:3: lv_name_2_0= ruleValidID
             {
              
-            	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getNameValidIDParserRuleCall_1_0()); 
+            	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getNameValidIDParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleInternalComponentCS2430);
-            lv_name_1_0=ruleValidID();
+            pushFollow(FOLLOW_ruleValidID_in_ruleInternalComponentCS2454);
+            lv_name_2_0=ruleValidID();
 
             state._fsp--;
 
@@ -3071,7 +3083,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                    		set(
                    			current, 
                    			"name",
-                    		lv_name_1_0, 
+                    		lv_name_2_0, 
                     		"ValidID");
             	        afterParserOrEnumRuleCall();
             	    
@@ -3081,36 +3093,36 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,14,FOLLOW_14_in_ruleInternalComponentCS2442); 
+            otherlv_3=(Token)match(input,14,FOLLOW_14_in_ruleInternalComponentCS2466); 
 
-                	newLeafNode(otherlv_2, grammarAccess.getInternalComponentCSAccess().getLeftCurlyBracketKeyword_2());
+                	newLeafNode(otherlv_3, grammarAccess.getInternalComponentCSAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1291:1: ( ( (lv_providedPorts_3_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_4_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS ) ) )*
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1299:1: ( ( (lv_providedPorts_4_0= ruleProvidedPortCS ) ) | ( (lv_requiredPorts_5_0= ruleRequiredPortCS ) ) | ( (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS ) ) | ( (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS ) ) )*
             loop27:
             do {
                 int alt27=5;
                 int LA27_0 = input.LA(1);
 
-                if ( (LA27_0==39) ) {
+                if ( (LA27_0==40) ) {
                     int LA27_2 = input.LA(2);
 
-                    if ( (LA27_2==45) ) {
+                    if ( (LA27_2==47) ) {
                         alt27=4;
                     }
-                    else if ( (LA27_2==40) ) {
+                    else if ( (LA27_2==41) ) {
                         alt27=1;
                     }
 
 
                 }
-                else if ( (LA27_0==43) ) {
+                else if ( (LA27_0==45) ) {
                     int LA27_3 = input.LA(2);
 
-                    if ( (LA27_3==45) ) {
-                        alt27=3;
-                    }
-                    else if ( (LA27_3==40) ) {
+                    if ( (LA27_3==41) ) {
                         alt27=2;
+                    }
+                    else if ( (LA27_3==47) ) {
+                        alt27=3;
                     }
 
 
@@ -3119,19 +3131,19 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
                 switch (alt27) {
             	case 1 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1291:2: ( (lv_providedPorts_3_0= ruleProvidedPortCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1299:2: ( (lv_providedPorts_4_0= ruleProvidedPortCS ) )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1291:2: ( (lv_providedPorts_3_0= ruleProvidedPortCS ) )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1292:1: (lv_providedPorts_3_0= ruleProvidedPortCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1299:2: ( (lv_providedPorts_4_0= ruleProvidedPortCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1300:1: (lv_providedPorts_4_0= ruleProvidedPortCS )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1292:1: (lv_providedPorts_3_0= ruleProvidedPortCS )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1293:3: lv_providedPorts_3_0= ruleProvidedPortCS
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1300:1: (lv_providedPorts_4_0= ruleProvidedPortCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1301:3: lv_providedPorts_4_0= ruleProvidedPortCS
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getProvidedPortsProvidedPortCSParserRuleCall_3_0_0()); 
+            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getProvidedPortsProvidedPortCSParserRuleCall_4_0_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleProvidedPortCS_in_ruleInternalComponentCS2464);
-            	    lv_providedPorts_3_0=ruleProvidedPortCS();
+            	    pushFollow(FOLLOW_ruleProvidedPortCS_in_ruleInternalComponentCS2488);
+            	    lv_providedPorts_4_0=ruleProvidedPortCS();
 
             	    state._fsp--;
 
@@ -3142,7 +3154,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"providedPorts",
-            	            		lv_providedPorts_3_0, 
+            	            		lv_providedPorts_4_0, 
             	            		"ProvidedPortCS");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -3156,19 +3168,19 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 2 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1310:6: ( (lv_requiredPorts_4_0= ruleRequiredPortCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1318:6: ( (lv_requiredPorts_5_0= ruleRequiredPortCS ) )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1310:6: ( (lv_requiredPorts_4_0= ruleRequiredPortCS ) )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1311:1: (lv_requiredPorts_4_0= ruleRequiredPortCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1318:6: ( (lv_requiredPorts_5_0= ruleRequiredPortCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1319:1: (lv_requiredPorts_5_0= ruleRequiredPortCS )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1311:1: (lv_requiredPorts_4_0= ruleRequiredPortCS )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1312:3: lv_requiredPorts_4_0= ruleRequiredPortCS
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1319:1: (lv_requiredPorts_5_0= ruleRequiredPortCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1320:3: lv_requiredPorts_5_0= ruleRequiredPortCS
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getRequiredPortsRequiredPortCSParserRuleCall_3_1_0()); 
+            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getRequiredPortsRequiredPortCSParserRuleCall_4_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleRequiredPortCS_in_ruleInternalComponentCS2491);
-            	    lv_requiredPorts_4_0=ruleRequiredPortCS();
+            	    pushFollow(FOLLOW_ruleRequiredPortCS_in_ruleInternalComponentCS2515);
+            	    lv_requiredPorts_5_0=ruleRequiredPortCS();
 
             	    state._fsp--;
 
@@ -3179,7 +3191,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"requiredPorts",
-            	            		lv_requiredPorts_4_0, 
+            	            		lv_requiredPorts_5_0, 
             	            		"RequiredPortCS");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -3193,19 +3205,19 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 3 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1329:6: ( (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1337:6: ( (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS ) )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1329:6: ( (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS ) )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1330:1: (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1337:6: ( (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1338:1: (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1330:1: (lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1331:3: lv_requiredExecutionPlatform_5_0= ruleRequiredExecutionPlatformCS
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1338:1: (lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1339:3: lv_requiredExecutionPlatform_6_0= ruleRequiredExecutionPlatformCS
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getRequiredExecutionPlatformRequiredExecutionPlatformCSParserRuleCall_3_2_0()); 
+            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getRequiredExecutionPlatformRequiredExecutionPlatformCSParserRuleCall_4_2_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleRequiredExecutionPlatformCS_in_ruleInternalComponentCS2518);
-            	    lv_requiredExecutionPlatform_5_0=ruleRequiredExecutionPlatformCS();
+            	    pushFollow(FOLLOW_ruleRequiredExecutionPlatformCS_in_ruleInternalComponentCS2542);
+            	    lv_requiredExecutionPlatform_6_0=ruleRequiredExecutionPlatformCS();
 
             	    state._fsp--;
 
@@ -3216,7 +3228,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	           		set(
             	           			current, 
             	           			"requiredExecutionPlatform",
-            	            		lv_requiredExecutionPlatform_5_0, 
+            	            		lv_requiredExecutionPlatform_6_0, 
             	            		"RequiredExecutionPlatformCS");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -3230,19 +3242,19 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 4 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1348:6: ( (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1356:6: ( (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS ) )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1348:6: ( (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS ) )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1349:1: (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1356:6: ( (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS ) )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1357:1: (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1349:1: (lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1350:3: lv_providedExecutionPlatforms_6_0= ruleProvidedExecutionPlatformCS
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1357:1: (lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1358:3: lv_providedExecutionPlatforms_7_0= ruleProvidedExecutionPlatformCS
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getProvidedExecutionPlatformsProvidedExecutionPlatformCSParserRuleCall_3_3_0()); 
+            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getProvidedExecutionPlatformsProvidedExecutionPlatformCSParserRuleCall_4_3_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleInternalComponentCS2545);
-            	    lv_providedExecutionPlatforms_6_0=ruleProvidedExecutionPlatformCS();
+            	    pushFollow(FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleInternalComponentCS2569);
+            	    lv_providedExecutionPlatforms_7_0=ruleProvidedExecutionPlatformCS();
 
             	    state._fsp--;
 
@@ -3253,7 +3265,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"providedExecutionPlatforms",
-            	            		lv_providedExecutionPlatforms_6_0, 
+            	            		lv_providedExecutionPlatforms_7_0, 
             	            		"ProvidedExecutionPlatformCS");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -3272,7 +3284,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1366:4: (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1374:4: (otherlv_8= 'properties' otherlv_9= ':' ( (lv_properties_10_0= rulePropertyCS ) )* )?
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -3281,39 +3293,39 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             }
             switch (alt29) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1366:6: otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1374:6: otherlv_8= 'properties' otherlv_9= ':' ( (lv_properties_10_0= rulePropertyCS ) )*
                     {
-                    otherlv_7=(Token)match(input,37,FOLLOW_37_in_ruleInternalComponentCS2560); 
+                    otherlv_8=(Token)match(input,37,FOLLOW_37_in_ruleInternalComponentCS2584); 
 
-                        	newLeafNode(otherlv_7, grammarAccess.getInternalComponentCSAccess().getPropertiesKeyword_4_0());
+                        	newLeafNode(otherlv_8, grammarAccess.getInternalComponentCSAccess().getPropertiesKeyword_5_0());
                         
-                    otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleInternalComponentCS2572); 
+                    otherlv_9=(Token)match(input,18,FOLLOW_18_in_ruleInternalComponentCS2596); 
 
-                        	newLeafNode(otherlv_8, grammarAccess.getInternalComponentCSAccess().getColonKeyword_4_1());
+                        	newLeafNode(otherlv_9, grammarAccess.getInternalComponentCSAccess().getColonKeyword_5_1());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1374:1: ( (lv_properties_9_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1382:1: ( (lv_properties_10_0= rulePropertyCS ) )*
                     loop28:
                     do {
                         int alt28=2;
                         int LA28_0 = input.LA(1);
 
-                        if ( (LA28_0==54) ) {
+                        if ( (LA28_0==56) ) {
                             alt28=1;
                         }
 
 
                         switch (alt28) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1375:1: (lv_properties_9_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1383:1: (lv_properties_10_0= rulePropertyCS )
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1375:1: (lv_properties_9_0= rulePropertyCS )
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1376:3: lv_properties_9_0= rulePropertyCS
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1383:1: (lv_properties_10_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1384:3: lv_properties_10_0= rulePropertyCS
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getPropertiesPropertyCSParserRuleCall_4_2_0()); 
+                    	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getPropertiesPropertyCSParserRuleCall_5_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleInternalComponentCS2593);
-                    	    lv_properties_9_0=rulePropertyCS();
+                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleInternalComponentCS2617);
+                    	    lv_properties_10_0=rulePropertyCS();
 
                     	    state._fsp--;
 
@@ -3324,7 +3336,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	           		add(
                     	           			current, 
                     	           			"properties",
-                    	            		lv_properties_9_0, 
+                    	            		lv_properties_10_0, 
                     	            		"PropertyCS");
                     	    	        afterParserOrEnumRuleCall();
                     	    	    
@@ -3346,29 +3358,29 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1392:5: ( (lv_resources_10_0= ruleResourceCS ) )*
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1400:5: ( (lv_resources_11_0= ruleResourceCS ) )*
             loop30:
             do {
                 int alt30=2;
                 int LA30_0 = input.LA(1);
 
-                if ( (LA30_0==56) ) {
+                if ( (LA30_0==58) ) {
                     alt30=1;
                 }
 
 
                 switch (alt30) {
             	case 1 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1393:1: (lv_resources_10_0= ruleResourceCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1401:1: (lv_resources_11_0= ruleResourceCS )
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1393:1: (lv_resources_10_0= ruleResourceCS )
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1394:3: lv_resources_10_0= ruleResourceCS
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1401:1: (lv_resources_11_0= ruleResourceCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1402:3: lv_resources_11_0= ruleResourceCS
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getResourcesResourceCSParserRuleCall_5_0()); 
+            	    	        newCompositeNode(grammarAccess.getInternalComponentCSAccess().getResourcesResourceCSParserRuleCall_6_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleResourceCS_in_ruleInternalComponentCS2617);
-            	    lv_resources_10_0=ruleResourceCS();
+            	    pushFollow(FOLLOW_ruleResourceCS_in_ruleInternalComponentCS2641);
+            	    lv_resources_11_0=ruleResourceCS();
 
             	    state._fsp--;
 
@@ -3379,7 +3391,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"resources",
-            	            		lv_resources_10_0, 
+            	            		lv_resources_11_0, 
             	            		"ResourceCS");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -3395,9 +3407,9 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_11=(Token)match(input,15,FOLLOW_15_in_ruleInternalComponentCS2630); 
+            otherlv_12=(Token)match(input,15,FOLLOW_15_in_ruleInternalComponentCS2654); 
 
-                	newLeafNode(otherlv_11, grammarAccess.getInternalComponentCSAccess().getRightCurlyBracketKeyword_6());
+                	newLeafNode(otherlv_12, grammarAccess.getInternalComponentCSAccess().getRightCurlyBracketKeyword_7());
                 
 
             }
@@ -3420,7 +3432,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRequiredPortCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1422:1: entryRuleRequiredPortCS returns [EObject current=null] : iv_ruleRequiredPortCS= ruleRequiredPortCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1430:1: entryRuleRequiredPortCS returns [EObject current=null] : iv_ruleRequiredPortCS= ruleRequiredPortCS EOF ;
     public final EObject entryRuleRequiredPortCS() throws RecognitionException {
         EObject current = null;
 
@@ -3428,17 +3440,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1423:2: (iv_ruleRequiredPortCS= ruleRequiredPortCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1424:2: iv_ruleRequiredPortCS= ruleRequiredPortCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1431:2: (iv_ruleRequiredPortCS= ruleRequiredPortCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1432:2: iv_ruleRequiredPortCS= ruleRequiredPortCS EOF
             {
              newCompositeNode(grammarAccess.getRequiredPortCSRule()); 
-            pushFollow(FOLLOW_ruleRequiredPortCS_in_entryRuleRequiredPortCS2666);
+            pushFollow(FOLLOW_ruleRequiredPortCS_in_entryRuleRequiredPortCS2690);
             iv_ruleRequiredPortCS=ruleRequiredPortCS();
 
             state._fsp--;
 
              current =iv_ruleRequiredPortCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRequiredPortCS2676); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRequiredPortCS2700); 
 
             }
 
@@ -3456,7 +3468,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRequiredPortCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1431:1: ruleRequiredPortCS returns [EObject current=null] : (otherlv_0= 'required' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )? ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1439:1: ruleRequiredPortCS returns [EObject current=null] : (otherlv_0= 'required' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )? ) ;
     public final EObject ruleRequiredPortCS() throws RecognitionException {
         EObject current = null;
 
@@ -3477,30 +3489,30 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1434:28: ( (otherlv_0= 'required' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )? ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1435:1: (otherlv_0= 'required' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1442:28: ( (otherlv_0= 'required' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )? ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1443:1: (otherlv_0= 'required' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )? )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1435:1: (otherlv_0= 'required' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )? )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1435:3: otherlv_0= 'required' otherlv_1= 'port' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1443:1: (otherlv_0= 'required' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1443:3: otherlv_0= 'required' otherlv_1= 'communication' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )?
             {
-            otherlv_0=(Token)match(input,43,FOLLOW_43_in_ruleRequiredPortCS2713); 
+            otherlv_0=(Token)match(input,45,FOLLOW_45_in_ruleRequiredPortCS2737); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getRequiredPortCSAccess().getRequiredKeyword_0());
                 
-            otherlv_1=(Token)match(input,40,FOLLOW_40_in_ruleRequiredPortCS2725); 
+            otherlv_1=(Token)match(input,41,FOLLOW_41_in_ruleRequiredPortCS2749); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getRequiredPortCSAccess().getPortKeyword_1());
+                	newLeafNode(otherlv_1, grammarAccess.getRequiredPortCSAccess().getCommunicationKeyword_1());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1443:1: ( (lv_name_2_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1444:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1451:1: ( (lv_name_2_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1452:1: (lv_name_2_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1444:1: (lv_name_2_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1445:3: lv_name_2_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1452:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1453:3: lv_name_2_0= ruleValidID
             {
              
             	        newCompositeNode(grammarAccess.getRequiredPortCSAccess().getNameValidIDParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleRequiredPortCS2746);
+            pushFollow(FOLLOW_ruleValidID_in_ruleRequiredPortCS2770);
             lv_name_2_0=ruleValidID();
 
             state._fsp--;
@@ -3522,7 +3534,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1461:2: (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1469:2: (otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )* )?
             int alt35=2;
             int LA35_0 = input.LA(1);
 
@@ -3531,41 +3543,41 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             }
             switch (alt35) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1461:4: otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1469:4: otherlv_3= ':' ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )* ( (lv_properties_10_0= rulePropertyCS ) )*
                     {
-                    otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleRequiredPortCS2759); 
+                    otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleRequiredPortCS2783); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_0());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1465:1: ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1473:1: ( ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )? )*
                     loop33:
                     do {
                         int alt33=2;
                         int LA33_0 = input.LA(1);
 
-                        if ( ((LA33_0>=40 && LA33_0<=41)||LA33_0==44) ) {
+                        if ( ((LA33_0>=42 && LA33_0<=43)||LA33_0==46) ) {
                             alt33=1;
                         }
 
 
                         switch (alt33) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1465:2: ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )?
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1473:2: ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) ) (otherlv_9= ',' )?
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1465:2: ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1473:2: ( ( (lv_isLocal_4_0= 'local' ) ) | (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) ) | ( (lv_isMandatory_8_0= 'mandatory' ) ) )
                     	    int alt31=3;
                     	    switch ( input.LA(1) ) {
-                    	    case 41:
+                    	    case 42:
                     	        {
                     	        alt31=1;
                     	        }
                     	        break;
-                    	    case 40:
+                    	    case 43:
                     	        {
                     	        alt31=2;
                     	        }
                     	        break;
-                    	    case 44:
+                    	    case 46:
                     	        {
                     	        alt31=3;
                     	        }
@@ -3579,15 +3591,15 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
                     	    switch (alt31) {
                     	        case 1 :
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1465:3: ( (lv_isLocal_4_0= 'local' ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1473:3: ( (lv_isLocal_4_0= 'local' ) )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1465:3: ( (lv_isLocal_4_0= 'local' ) )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1466:1: (lv_isLocal_4_0= 'local' )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1473:3: ( (lv_isLocal_4_0= 'local' ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1474:1: (lv_isLocal_4_0= 'local' )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1466:1: (lv_isLocal_4_0= 'local' )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1467:3: lv_isLocal_4_0= 'local'
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1474:1: (lv_isLocal_4_0= 'local' )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1475:3: lv_isLocal_4_0= 'local'
                     	            {
-                    	            lv_isLocal_4_0=(Token)match(input,41,FOLLOW_41_in_ruleRequiredPortCS2779); 
+                    	            lv_isLocal_4_0=(Token)match(input,42,FOLLOW_42_in_ruleRequiredPortCS2803); 
 
                     	                    newLeafNode(lv_isLocal_4_0, grammarAccess.getRequiredPortCSAccess().getIsLocalLocalKeyword_3_1_0_0_0());
                     	                
@@ -3607,26 +3619,26 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	            }
                     	            break;
                     	        case 2 :
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1481:6: (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1489:6: (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1481:6: (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1481:8: otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1489:6: (otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1489:8: otherlv_5= 'port' otherlv_6= ':' ( (lv_portNumber_7_0= RULE_INT ) )
                     	            {
-                    	            otherlv_5=(Token)match(input,40,FOLLOW_40_in_ruleRequiredPortCS2811); 
+                    	            otherlv_5=(Token)match(input,43,FOLLOW_43_in_ruleRequiredPortCS2835); 
 
                     	                	newLeafNode(otherlv_5, grammarAccess.getRequiredPortCSAccess().getPortKeyword_3_1_0_1_0());
                     	                
-                    	            otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleRequiredPortCS2823); 
+                    	            otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleRequiredPortCS2847); 
 
                     	                	newLeafNode(otherlv_6, grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_1_0_1_1());
                     	                
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1489:1: ( (lv_portNumber_7_0= RULE_INT ) )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1490:1: (lv_portNumber_7_0= RULE_INT )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1497:1: ( (lv_portNumber_7_0= RULE_INT ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1498:1: (lv_portNumber_7_0= RULE_INT )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1490:1: (lv_portNumber_7_0= RULE_INT )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1491:3: lv_portNumber_7_0= RULE_INT
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1498:1: (lv_portNumber_7_0= RULE_INT )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1499:3: lv_portNumber_7_0= RULE_INT
                     	            {
-                    	            lv_portNumber_7_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleRequiredPortCS2840); 
+                    	            lv_portNumber_7_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleRequiredPortCS2864); 
 
                     	            			newLeafNode(lv_portNumber_7_0, grammarAccess.getRequiredPortCSAccess().getPortNumberINTTerminalRuleCall_3_1_0_1_2_0()); 
                     	            		
@@ -3653,15 +3665,15 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	            }
                     	            break;
                     	        case 3 :
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1508:6: ( (lv_isMandatory_8_0= 'mandatory' ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1516:6: ( (lv_isMandatory_8_0= 'mandatory' ) )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1508:6: ( (lv_isMandatory_8_0= 'mandatory' ) )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1509:1: (lv_isMandatory_8_0= 'mandatory' )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1516:6: ( (lv_isMandatory_8_0= 'mandatory' ) )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1517:1: (lv_isMandatory_8_0= 'mandatory' )
                     	            {
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1509:1: (lv_isMandatory_8_0= 'mandatory' )
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1510:3: lv_isMandatory_8_0= 'mandatory'
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1517:1: (lv_isMandatory_8_0= 'mandatory' )
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1518:3: lv_isMandatory_8_0= 'mandatory'
                     	            {
-                    	            lv_isMandatory_8_0=(Token)match(input,44,FOLLOW_44_in_ruleRequiredPortCS2870); 
+                    	            lv_isMandatory_8_0=(Token)match(input,46,FOLLOW_46_in_ruleRequiredPortCS2894); 
 
                     	                    newLeafNode(lv_isMandatory_8_0, grammarAccess.getRequiredPortCSAccess().getIsMandatoryMandatoryKeyword_3_1_0_2_0());
                     	                
@@ -3683,7 +3695,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
                     	    }
 
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1523:3: (otherlv_9= ',' )?
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1531:3: (otherlv_9= ',' )?
                     	    int alt32=2;
                     	    int LA32_0 = input.LA(1);
 
@@ -3692,9 +3704,9 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	    }
                     	    switch (alt32) {
                     	        case 1 :
-                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1523:5: otherlv_9= ','
+                    	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1531:5: otherlv_9= ','
                     	            {
-                    	            otherlv_9=(Token)match(input,36,FOLLOW_36_in_ruleRequiredPortCS2897); 
+                    	            otherlv_9=(Token)match(input,36,FOLLOW_36_in_ruleRequiredPortCS2921); 
 
                     	                	newLeafNode(otherlv_9, grammarAccess.getRequiredPortCSAccess().getCommaKeyword_3_1_1());
                     	                
@@ -3713,28 +3725,28 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1527:5: ( (lv_properties_10_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1535:5: ( (lv_properties_10_0= rulePropertyCS ) )*
                     loop34:
                     do {
                         int alt34=2;
                         int LA34_0 = input.LA(1);
 
-                        if ( (LA34_0==54) ) {
+                        if ( (LA34_0==56) ) {
                             alt34=1;
                         }
 
 
                         switch (alt34) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1528:1: (lv_properties_10_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1536:1: (lv_properties_10_0= rulePropertyCS )
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1528:1: (lv_properties_10_0= rulePropertyCS )
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1529:3: lv_properties_10_0= rulePropertyCS
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1536:1: (lv_properties_10_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1537:3: lv_properties_10_0= rulePropertyCS
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getRequiredPortCSAccess().getPropertiesPropertyCSParserRuleCall_3_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRequiredPortCS2922);
+                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRequiredPortCS2946);
                     	    lv_properties_10_0=rulePropertyCS();
 
                     	    state._fsp--;
@@ -3789,7 +3801,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRequiredExecutionPlatformCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1553:1: entryRuleRequiredExecutionPlatformCS returns [EObject current=null] : iv_ruleRequiredExecutionPlatformCS= ruleRequiredExecutionPlatformCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1561:1: entryRuleRequiredExecutionPlatformCS returns [EObject current=null] : iv_ruleRequiredExecutionPlatformCS= ruleRequiredExecutionPlatformCS EOF ;
     public final EObject entryRuleRequiredExecutionPlatformCS() throws RecognitionException {
         EObject current = null;
 
@@ -3797,17 +3809,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1554:2: (iv_ruleRequiredExecutionPlatformCS= ruleRequiredExecutionPlatformCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1555:2: iv_ruleRequiredExecutionPlatformCS= ruleRequiredExecutionPlatformCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1562:2: (iv_ruleRequiredExecutionPlatformCS= ruleRequiredExecutionPlatformCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1563:2: iv_ruleRequiredExecutionPlatformCS= ruleRequiredExecutionPlatformCS EOF
             {
              newCompositeNode(grammarAccess.getRequiredExecutionPlatformCSRule()); 
-            pushFollow(FOLLOW_ruleRequiredExecutionPlatformCS_in_entryRuleRequiredExecutionPlatformCS2961);
+            pushFollow(FOLLOW_ruleRequiredExecutionPlatformCS_in_entryRuleRequiredExecutionPlatformCS2985);
             iv_ruleRequiredExecutionPlatformCS=ruleRequiredExecutionPlatformCS();
 
             state._fsp--;
 
              current =iv_ruleRequiredExecutionPlatformCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRequiredExecutionPlatformCS2971); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRequiredExecutionPlatformCS2995); 
 
             }
 
@@ -3825,7 +3837,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRequiredExecutionPlatformCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1562:1: ruleRequiredExecutionPlatformCS returns [EObject current=null] : (otherlv_0= 'required' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1570:1: ruleRequiredExecutionPlatformCS returns [EObject current=null] : (otherlv_0= 'required' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ) ;
     public final EObject ruleRequiredExecutionPlatformCS() throws RecognitionException {
         EObject current = null;
 
@@ -3846,30 +3858,30 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1565:28: ( (otherlv_0= 'required' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1566:1: (otherlv_0= 'required' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1573:28: ( (otherlv_0= 'required' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1574:1: (otherlv_0= 'required' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1566:1: (otherlv_0= 'required' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1566:3: otherlv_0= 'required' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1574:1: (otherlv_0= 'required' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1574:3: otherlv_0= 'required' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
             {
-            otherlv_0=(Token)match(input,43,FOLLOW_43_in_ruleRequiredExecutionPlatformCS3008); 
+            otherlv_0=(Token)match(input,45,FOLLOW_45_in_ruleRequiredExecutionPlatformCS3032); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getRequiredExecutionPlatformCSAccess().getRequiredKeyword_0());
                 
-            otherlv_1=(Token)match(input,45,FOLLOW_45_in_ruleRequiredExecutionPlatformCS3020); 
+            otherlv_1=(Token)match(input,47,FOLLOW_47_in_ruleRequiredExecutionPlatformCS3044); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getRequiredExecutionPlatformCSAccess().getExecutionKeyword_1());
+                	newLeafNode(otherlv_1, grammarAccess.getRequiredExecutionPlatformCSAccess().getHostKeyword_1());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1574:1: ( (lv_name_2_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1575:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1582:1: ( (lv_name_2_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1583:1: (lv_name_2_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1575:1: (lv_name_2_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1576:3: lv_name_2_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1583:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1584:3: lv_name_2_0= ruleValidID
             {
              
             	        newCompositeNode(grammarAccess.getRequiredExecutionPlatformCSAccess().getNameValidIDParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleRequiredExecutionPlatformCS3041);
+            pushFollow(FOLLOW_ruleValidID_in_ruleRequiredExecutionPlatformCS3065);
             lv_name_2_0=ruleValidID();
 
             state._fsp--;
@@ -3891,7 +3903,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1592:2: (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1600:2: (otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
             int alt39=2;
             int LA39_0 = input.LA(1);
 
@@ -3900,53 +3912,53 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             }
             switch (alt39) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1592:4: otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1600:4: otherlv_3= ':' (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )*
                     {
-                    otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleRequiredExecutionPlatformCS3054); 
+                    otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleRequiredExecutionPlatformCS3078); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_0());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1596:1: (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )?
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1604:1: (otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )* )?
                     int alt37=2;
                     int LA37_0 = input.LA(1);
 
-                    if ( (LA37_0==46) ) {
+                    if ( (LA37_0==48) ) {
                         alt37=1;
                     }
                     switch (alt37) {
                         case 1 :
-                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1596:3: otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )*
+                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1604:3: otherlv_4= 'demands' otherlv_5= ':' ( (lv_demands_6_0= rulePropertyCS ) )*
                             {
-                            otherlv_4=(Token)match(input,46,FOLLOW_46_in_ruleRequiredExecutionPlatformCS3067); 
+                            otherlv_4=(Token)match(input,48,FOLLOW_48_in_ruleRequiredExecutionPlatformCS3091); 
 
                                 	newLeafNode(otherlv_4, grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsKeyword_3_1_0());
                                 
-                            otherlv_5=(Token)match(input,18,FOLLOW_18_in_ruleRequiredExecutionPlatformCS3079); 
+                            otherlv_5=(Token)match(input,18,FOLLOW_18_in_ruleRequiredExecutionPlatformCS3103); 
 
                                 	newLeafNode(otherlv_5, grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_1_1());
                                 
-                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1604:1: ( (lv_demands_6_0= rulePropertyCS ) )*
+                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1612:1: ( (lv_demands_6_0= rulePropertyCS ) )*
                             loop36:
                             do {
                                 int alt36=2;
                                 int LA36_0 = input.LA(1);
 
-                                if ( (LA36_0==54) ) {
+                                if ( (LA36_0==56) ) {
                                     alt36=1;
                                 }
 
 
                                 switch (alt36) {
                             	case 1 :
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1605:1: (lv_demands_6_0= rulePropertyCS )
+                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1613:1: (lv_demands_6_0= rulePropertyCS )
                             	    {
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1605:1: (lv_demands_6_0= rulePropertyCS )
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1606:3: lv_demands_6_0= rulePropertyCS
+                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1613:1: (lv_demands_6_0= rulePropertyCS )
+                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1614:3: lv_demands_6_0= rulePropertyCS
                             	    {
                             	     
                             	    	        newCompositeNode(grammarAccess.getRequiredExecutionPlatformCSAccess().getDemandsPropertyCSParserRuleCall_3_1_2_0()); 
                             	    	    
-                            	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRequiredExecutionPlatformCS3100);
+                            	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRequiredExecutionPlatformCS3124);
                             	    lv_demands_6_0=rulePropertyCS();
 
                             	    state._fsp--;
@@ -3980,36 +3992,36 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_7=(Token)match(input,37,FOLLOW_37_in_ruleRequiredExecutionPlatformCS3115); 
+                    otherlv_7=(Token)match(input,37,FOLLOW_37_in_ruleRequiredExecutionPlatformCS3139); 
 
                         	newLeafNode(otherlv_7, grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesKeyword_3_2());
                         
-                    otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleRequiredExecutionPlatformCS3127); 
+                    otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleRequiredExecutionPlatformCS3151); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getRequiredExecutionPlatformCSAccess().getColonKeyword_3_3());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1630:1: ( (lv_properties_9_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1638:1: ( (lv_properties_9_0= rulePropertyCS ) )*
                     loop38:
                     do {
                         int alt38=2;
                         int LA38_0 = input.LA(1);
 
-                        if ( (LA38_0==54) ) {
+                        if ( (LA38_0==56) ) {
                             alt38=1;
                         }
 
 
                         switch (alt38) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1631:1: (lv_properties_9_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1639:1: (lv_properties_9_0= rulePropertyCS )
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1631:1: (lv_properties_9_0= rulePropertyCS )
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1632:3: lv_properties_9_0= rulePropertyCS
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1639:1: (lv_properties_9_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1640:3: lv_properties_9_0= rulePropertyCS
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getRequiredExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_3_4_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRequiredExecutionPlatformCS3148);
+                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRequiredExecutionPlatformCS3172);
                     	    lv_properties_9_0=rulePropertyCS();
 
                     	    state._fsp--;
@@ -4064,7 +4076,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleProvidedExecutionPlatformCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1656:1: entryRuleProvidedExecutionPlatformCS returns [EObject current=null] : iv_ruleProvidedExecutionPlatformCS= ruleProvidedExecutionPlatformCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1664:1: entryRuleProvidedExecutionPlatformCS returns [EObject current=null] : iv_ruleProvidedExecutionPlatformCS= ruleProvidedExecutionPlatformCS EOF ;
     public final EObject entryRuleProvidedExecutionPlatformCS() throws RecognitionException {
         EObject current = null;
 
@@ -4072,17 +4084,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1657:2: (iv_ruleProvidedExecutionPlatformCS= ruleProvidedExecutionPlatformCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1658:2: iv_ruleProvidedExecutionPlatformCS= ruleProvidedExecutionPlatformCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1665:2: (iv_ruleProvidedExecutionPlatformCS= ruleProvidedExecutionPlatformCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1666:2: iv_ruleProvidedExecutionPlatformCS= ruleProvidedExecutionPlatformCS EOF
             {
              newCompositeNode(grammarAccess.getProvidedExecutionPlatformCSRule()); 
-            pushFollow(FOLLOW_ruleProvidedExecutionPlatformCS_in_entryRuleProvidedExecutionPlatformCS3187);
+            pushFollow(FOLLOW_ruleProvidedExecutionPlatformCS_in_entryRuleProvidedExecutionPlatformCS3211);
             iv_ruleProvidedExecutionPlatformCS=ruleProvidedExecutionPlatformCS();
 
             state._fsp--;
 
              current =iv_ruleProvidedExecutionPlatformCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleProvidedExecutionPlatformCS3197); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleProvidedExecutionPlatformCS3221); 
 
             }
 
@@ -4100,7 +4112,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleProvidedExecutionPlatformCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1665:1: ruleProvidedExecutionPlatformCS returns [EObject current=null] : (otherlv_0= 'provided' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1673:1: ruleProvidedExecutionPlatformCS returns [EObject current=null] : (otherlv_0= 'provided' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ) ;
     public final EObject ruleProvidedExecutionPlatformCS() throws RecognitionException {
         EObject current = null;
 
@@ -4121,30 +4133,30 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1668:28: ( (otherlv_0= 'provided' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1669:1: (otherlv_0= 'provided' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1676:28: ( (otherlv_0= 'provided' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1677:1: (otherlv_0= 'provided' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1669:1: (otherlv_0= 'provided' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1669:3: otherlv_0= 'provided' otherlv_1= 'execution' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1677:1: (otherlv_0= 'provided' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1677:3: otherlv_0= 'provided' otherlv_1= 'host' ( (lv_name_2_0= ruleValidID ) ) (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
             {
-            otherlv_0=(Token)match(input,39,FOLLOW_39_in_ruleProvidedExecutionPlatformCS3234); 
+            otherlv_0=(Token)match(input,40,FOLLOW_40_in_ruleProvidedExecutionPlatformCS3258); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getProvidedExecutionPlatformCSAccess().getProvidedKeyword_0());
                 
-            otherlv_1=(Token)match(input,45,FOLLOW_45_in_ruleProvidedExecutionPlatformCS3246); 
+            otherlv_1=(Token)match(input,47,FOLLOW_47_in_ruleProvidedExecutionPlatformCS3270); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getProvidedExecutionPlatformCSAccess().getExecutionKeyword_1());
+                	newLeafNode(otherlv_1, grammarAccess.getProvidedExecutionPlatformCSAccess().getHostKeyword_1());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1677:1: ( (lv_name_2_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1678:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1685:1: ( (lv_name_2_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1686:1: (lv_name_2_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1678:1: (lv_name_2_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1679:3: lv_name_2_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1686:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1687:3: lv_name_2_0= ruleValidID
             {
              
             	        newCompositeNode(grammarAccess.getProvidedExecutionPlatformCSAccess().getNameValidIDParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleProvidedExecutionPlatformCS3267);
+            pushFollow(FOLLOW_ruleValidID_in_ruleProvidedExecutionPlatformCS3291);
             lv_name_2_0=ruleValidID();
 
             state._fsp--;
@@ -4166,7 +4178,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1695:2: (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1703:2: (otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
             int alt43=2;
             int LA43_0 = input.LA(1);
 
@@ -4175,53 +4187,53 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             }
             switch (alt43) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1695:4: otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1703:4: otherlv_3= ':' (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )? otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )*
                     {
-                    otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleProvidedExecutionPlatformCS3280); 
+                    otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleProvidedExecutionPlatformCS3304); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_0());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1699:1: (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )?
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1707:1: (otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )* )?
                     int alt41=2;
                     int LA41_0 = input.LA(1);
 
-                    if ( (LA41_0==47) ) {
+                    if ( (LA41_0==49) ) {
                         alt41=1;
                     }
                     switch (alt41) {
                         case 1 :
-                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1699:3: otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )*
+                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1707:3: otherlv_4= 'offers' otherlv_5= ':' ( (lv_offers_6_0= rulePropertyCS ) )*
                             {
-                            otherlv_4=(Token)match(input,47,FOLLOW_47_in_ruleProvidedExecutionPlatformCS3293); 
+                            otherlv_4=(Token)match(input,49,FOLLOW_49_in_ruleProvidedExecutionPlatformCS3317); 
 
                                 	newLeafNode(otherlv_4, grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1_0());
                                 
-                            otherlv_5=(Token)match(input,18,FOLLOW_18_in_ruleProvidedExecutionPlatformCS3305); 
+                            otherlv_5=(Token)match(input,18,FOLLOW_18_in_ruleProvidedExecutionPlatformCS3329); 
 
                                 	newLeafNode(otherlv_5, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_1_1());
                                 
-                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1707:1: ( (lv_offers_6_0= rulePropertyCS ) )*
+                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1715:1: ( (lv_offers_6_0= rulePropertyCS ) )*
                             loop40:
                             do {
                                 int alt40=2;
                                 int LA40_0 = input.LA(1);
 
-                                if ( (LA40_0==54) ) {
+                                if ( (LA40_0==56) ) {
                                     alt40=1;
                                 }
 
 
                                 switch (alt40) {
                             	case 1 :
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1708:1: (lv_offers_6_0= rulePropertyCS )
+                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1716:1: (lv_offers_6_0= rulePropertyCS )
                             	    {
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1708:1: (lv_offers_6_0= rulePropertyCS )
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1709:3: lv_offers_6_0= rulePropertyCS
+                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1716:1: (lv_offers_6_0= rulePropertyCS )
+                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1717:3: lv_offers_6_0= rulePropertyCS
                             	    {
                             	     
                             	    	        newCompositeNode(grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersPropertyCSParserRuleCall_3_1_2_0()); 
                             	    	    
-                            	    pushFollow(FOLLOW_rulePropertyCS_in_ruleProvidedExecutionPlatformCS3326);
+                            	    pushFollow(FOLLOW_rulePropertyCS_in_ruleProvidedExecutionPlatformCS3350);
                             	    lv_offers_6_0=rulePropertyCS();
 
                             	    state._fsp--;
@@ -4255,36 +4267,36 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_7=(Token)match(input,37,FOLLOW_37_in_ruleProvidedExecutionPlatformCS3341); 
+                    otherlv_7=(Token)match(input,37,FOLLOW_37_in_ruleProvidedExecutionPlatformCS3365); 
 
                         	newLeafNode(otherlv_7, grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesKeyword_3_2());
                         
-                    otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleProvidedExecutionPlatformCS3353); 
+                    otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleProvidedExecutionPlatformCS3377); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_3());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1733:1: ( (lv_properties_9_0= rulePropertyCS ) )*
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1741:1: ( (lv_properties_9_0= rulePropertyCS ) )*
                     loop42:
                     do {
                         int alt42=2;
                         int LA42_0 = input.LA(1);
 
-                        if ( (LA42_0==54) ) {
+                        if ( (LA42_0==56) ) {
                             alt42=1;
                         }
 
 
                         switch (alt42) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1734:1: (lv_properties_9_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1742:1: (lv_properties_9_0= rulePropertyCS )
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1734:1: (lv_properties_9_0= rulePropertyCS )
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1735:3: lv_properties_9_0= rulePropertyCS
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1742:1: (lv_properties_9_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1743:3: lv_properties_9_0= rulePropertyCS
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesPropertyCSParserRuleCall_3_4_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleProvidedExecutionPlatformCS3374);
+                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleProvidedExecutionPlatformCS3398);
                     	    lv_properties_9_0=rulePropertyCS();
 
                     	    state._fsp--;
@@ -4339,7 +4351,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRelationshipCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1761:1: entryRuleRelationshipCS returns [EObject current=null] : iv_ruleRelationshipCS= ruleRelationshipCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1769:1: entryRuleRelationshipCS returns [EObject current=null] : iv_ruleRelationshipCS= ruleRelationshipCS EOF ;
     public final EObject entryRuleRelationshipCS() throws RecognitionException {
         EObject current = null;
 
@@ -4347,17 +4359,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1762:2: (iv_ruleRelationshipCS= ruleRelationshipCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1763:2: iv_ruleRelationshipCS= ruleRelationshipCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1770:2: (iv_ruleRelationshipCS= ruleRelationshipCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1771:2: iv_ruleRelationshipCS= ruleRelationshipCS EOF
             {
              newCompositeNode(grammarAccess.getRelationshipCSRule()); 
-            pushFollow(FOLLOW_ruleRelationshipCS_in_entryRuleRelationshipCS3415);
+            pushFollow(FOLLOW_ruleRelationshipCS_in_entryRuleRelationshipCS3439);
             iv_ruleRelationshipCS=ruleRelationshipCS();
 
             state._fsp--;
 
              current =iv_ruleRelationshipCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRelationshipCS3425); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRelationshipCS3449); 
 
             }
 
@@ -4375,115 +4387,48 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRelationshipCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1770:1: ruleRelationshipCS returns [EObject current=null] : (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) ( (otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* ) | (otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}' ) )? ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1778:1: ruleRelationshipCS returns [EObject current=null] : (otherlv_0= 'communication' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' otherlv_3= 'from' ( ( ruleFqn ) ) otherlv_5= 'to' ( ( ruleFqn ) ) (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}' ) ;
     public final EObject ruleRelationshipCS() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_2=null;
-        Token otherlv_4=null;
-        Token otherlv_6=null;
+        Token otherlv_3=null;
+        Token otherlv_5=null;
+        Token otherlv_7=null;
         Token otherlv_8=null;
-        Token otherlv_9=null;
-        Token otherlv_10=null;
-        Token otherlv_13=null;
-        AntlrDatatypeRuleToken lv_name_5_0 = null;
+        Token otherlv_11=null;
+        AntlrDatatypeRuleToken lv_name_1_0 = null;
 
-        EObject lv_properties_7_0 = null;
+        EObject lv_properties_9_0 = null;
 
-        EObject lv_properties_11_0 = null;
-
-        EObject lv_resources_12_0 = null;
+        EObject lv_resources_10_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1773:28: ( (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) ( (otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* ) | (otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}' ) )? ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1774:1: (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) ( (otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* ) | (otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}' ) )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1781:28: ( (otherlv_0= 'communication' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' otherlv_3= 'from' ( ( ruleFqn ) ) otherlv_5= 'to' ( ( ruleFqn ) ) (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}' ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1782:1: (otherlv_0= 'communication' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' otherlv_3= 'from' ( ( ruleFqn ) ) otherlv_5= 'to' ( ( ruleFqn ) ) (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}' )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1774:1: (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) ( (otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* ) | (otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}' ) )? )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1774:3: otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) ( (otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* ) | (otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}' ) )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1782:1: (otherlv_0= 'communication' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' otherlv_3= 'from' ( ( ruleFqn ) ) otherlv_5= 'to' ( ( ruleFqn ) ) (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1782:3: otherlv_0= 'communication' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '{' otherlv_3= 'from' ( ( ruleFqn ) ) otherlv_5= 'to' ( ( ruleFqn ) ) (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )? ( (lv_resources_10_0= ruleResourceCS ) )* otherlv_11= '}'
             {
-            otherlv_0=(Token)match(input,48,FOLLOW_48_in_ruleRelationshipCS3462); 
+            otherlv_0=(Token)match(input,41,FOLLOW_41_in_ruleRelationshipCS3486); 
 
-                	newLeafNode(otherlv_0, grammarAccess.getRelationshipCSAccess().getConnectKeyword_0());
+                	newLeafNode(otherlv_0, grammarAccess.getRelationshipCSAccess().getCommunicationKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1778:1: ( ( ruleFqn ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1779:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1786:1: ( (lv_name_1_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1787:1: (lv_name_1_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1779:1: ( ruleFqn )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1780:3: ruleFqn
-            {
-
-            			if (current==null) {
-            	            current = createModelElement(grammarAccess.getRelationshipCSRule());
-            	        }
-                    
-             
-            	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getRequiredPortRequiredPortCrossReference_1_0()); 
-            	    
-            pushFollow(FOLLOW_ruleFqn_in_ruleRelationshipCS3485);
-            ruleFqn();
-
-            state._fsp--;
-
-             
-            	        afterParserOrEnumRuleCall();
-            	    
-
-            }
-
-
-            }
-
-            otherlv_2=(Token)match(input,49,FOLLOW_49_in_ruleRelationshipCS3497); 
-
-                	newLeafNode(otherlv_2, grammarAccess.getRelationshipCSAccess().getToKeyword_2());
-                
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1797:1: ( ( ruleFqn ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1798:1: ( ruleFqn )
-            {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1798:1: ( ruleFqn )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1799:3: ruleFqn
-            {
-
-            			if (current==null) {
-            	            current = createModelElement(grammarAccess.getRelationshipCSRule());
-            	        }
-                    
-             
-            	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getProvidedPortProvidedPortCrossReference_3_0()); 
-            	    
-            pushFollow(FOLLOW_ruleFqn_in_ruleRelationshipCS3520);
-            ruleFqn();
-
-            state._fsp--;
-
-             
-            	        afterParserOrEnumRuleCall();
-            	    
-
-            }
-
-
-            }
-
-            otherlv_4=(Token)match(input,50,FOLLOW_50_in_ruleRelationshipCS3532); 
-
-                	newLeafNode(otherlv_4, grammarAccess.getRelationshipCSAccess().getNamedKeyword_4());
-                
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1816:1: ( (lv_name_5_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1817:1: (lv_name_5_0= ruleValidID )
-            {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1817:1: (lv_name_5_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1818:3: lv_name_5_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1787:1: (lv_name_1_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1788:3: lv_name_1_0= ruleValidID
             {
              
-            	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getNameValidIDParserRuleCall_5_0()); 
+            	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getNameValidIDParserRuleCall_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleRelationshipCS3553);
-            lv_name_5_0=ruleValidID();
+            pushFollow(FOLLOW_ruleValidID_in_ruleRelationshipCS3507);
+            lv_name_1_0=ruleValidID();
 
             state._fsp--;
 
@@ -4494,7 +4439,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                    		set(
                    			current, 
                    			"name",
-                    		lv_name_5_0, 
+                    		lv_name_1_0, 
                     		"ValidID");
             	        afterParserOrEnumRuleCall();
             	    
@@ -4504,50 +4449,116 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1834:2: ( (otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* ) | (otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}' ) )?
-            int alt48=3;
-            int LA48_0 = input.LA(1);
+            otherlv_2=(Token)match(input,14,FOLLOW_14_in_ruleRelationshipCS3519); 
 
-            if ( (LA48_0==18) ) {
-                alt48=1;
+                	newLeafNode(otherlv_2, grammarAccess.getRelationshipCSAccess().getLeftCurlyBracketKeyword_2());
+                
+            otherlv_3=(Token)match(input,50,FOLLOW_50_in_ruleRelationshipCS3531); 
+
+                	newLeafNode(otherlv_3, grammarAccess.getRelationshipCSAccess().getFromKeyword_3());
+                
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1812:1: ( ( ruleFqn ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1813:1: ( ruleFqn )
+            {
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1813:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1814:3: ruleFqn
+            {
+
+            			if (current==null) {
+            	            current = createModelElement(grammarAccess.getRelationshipCSRule());
+            	        }
+                    
+             
+            	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getRequiredPortRequiredPortCrossReference_4_0()); 
+            	    
+            pushFollow(FOLLOW_ruleFqn_in_ruleRelationshipCS3554);
+            ruleFqn();
+
+            state._fsp--;
+
+             
+            	        afterParserOrEnumRuleCall();
+            	    
+
             }
-            else if ( (LA48_0==14) ) {
-                alt48=2;
+
+
             }
-            switch (alt48) {
+
+            otherlv_5=(Token)match(input,51,FOLLOW_51_in_ruleRelationshipCS3566); 
+
+                	newLeafNode(otherlv_5, grammarAccess.getRelationshipCSAccess().getToKeyword_5());
+                
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1831:1: ( ( ruleFqn ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1832:1: ( ruleFqn )
+            {
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1832:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1833:3: ruleFqn
+            {
+
+            			if (current==null) {
+            	            current = createModelElement(grammarAccess.getRelationshipCSRule());
+            	        }
+                    
+             
+            	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getProvidedPortProvidedPortCrossReference_6_0()); 
+            	    
+            pushFollow(FOLLOW_ruleFqn_in_ruleRelationshipCS3589);
+            ruleFqn();
+
+            state._fsp--;
+
+             
+            	        afterParserOrEnumRuleCall();
+            	    
+
+            }
+
+
+            }
+
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1846:2: (otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )* )?
+            int alt45=2;
+            int LA45_0 = input.LA(1);
+
+            if ( (LA45_0==37) ) {
+                alt45=1;
+            }
+            switch (alt45) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1834:3: (otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1846:4: otherlv_7= 'properties' otherlv_8= ':' ( (lv_properties_9_0= rulePropertyCS ) )*
                     {
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1834:3: (otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )* )
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1834:5: otherlv_6= ':' ( (lv_properties_7_0= rulePropertyCS ) )*
-                    {
-                    otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleRelationshipCS3567); 
+                    otherlv_7=(Token)match(input,37,FOLLOW_37_in_ruleRelationshipCS3602); 
 
-                        	newLeafNode(otherlv_6, grammarAccess.getRelationshipCSAccess().getColonKeyword_6_0_0());
+                        	newLeafNode(otherlv_7, grammarAccess.getRelationshipCSAccess().getPropertiesKeyword_7_0());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1838:1: ( (lv_properties_7_0= rulePropertyCS ) )*
+                    otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleRelationshipCS3614); 
+
+                        	newLeafNode(otherlv_8, grammarAccess.getRelationshipCSAccess().getColonKeyword_7_1());
+                        
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1854:1: ( (lv_properties_9_0= rulePropertyCS ) )*
                     loop44:
                     do {
                         int alt44=2;
                         int LA44_0 = input.LA(1);
 
-                        if ( (LA44_0==54) ) {
+                        if ( (LA44_0==56) ) {
                             alt44=1;
                         }
 
 
                         switch (alt44) {
                     	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1839:1: (lv_properties_7_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1855:1: (lv_properties_9_0= rulePropertyCS )
                     	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1839:1: (lv_properties_7_0= rulePropertyCS )
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1840:3: lv_properties_7_0= rulePropertyCS
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1855:1: (lv_properties_9_0= rulePropertyCS )
+                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1856:3: lv_properties_9_0= rulePropertyCS
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getPropertiesPropertyCSParserRuleCall_6_0_1_0()); 
+                    	    	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getPropertiesPropertyCSParserRuleCall_7_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRelationshipCS3588);
-                    	    lv_properties_7_0=rulePropertyCS();
+                    	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRelationshipCS3635);
+                    	    lv_properties_9_0=rulePropertyCS();
 
                     	    state._fsp--;
 
@@ -4558,7 +4569,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                     	           		add(
                     	           			current, 
                     	           			"properties",
-                    	            		lv_properties_7_0, 
+                    	            		lv_properties_9_0, 
                     	            		"PropertyCS");
                     	    	        afterParserOrEnumRuleCall();
                     	    	    
@@ -4576,156 +4587,63 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
                     }
-
-
-                    }
-                    break;
-                case 2 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1857:6: (otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}' )
-                    {
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1857:6: (otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}' )
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1857:8: otherlv_8= '{' (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )? ( (lv_resources_12_0= ruleResourceCS ) )* otherlv_13= '}'
-                    {
-                    otherlv_8=(Token)match(input,14,FOLLOW_14_in_ruleRelationshipCS3609); 
-
-                        	newLeafNode(otherlv_8, grammarAccess.getRelationshipCSAccess().getLeftCurlyBracketKeyword_6_1_0());
-                        
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1861:1: (otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )* )?
-                    int alt46=2;
-                    int LA46_0 = input.LA(1);
-
-                    if ( (LA46_0==37) ) {
-                        alt46=1;
-                    }
-                    switch (alt46) {
-                        case 1 :
-                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1861:3: otherlv_9= 'properties' otherlv_10= ':' ( (lv_properties_11_0= rulePropertyCS ) )*
-                            {
-                            otherlv_9=(Token)match(input,37,FOLLOW_37_in_ruleRelationshipCS3622); 
-
-                                	newLeafNode(otherlv_9, grammarAccess.getRelationshipCSAccess().getPropertiesKeyword_6_1_1_0());
-                                
-                            otherlv_10=(Token)match(input,18,FOLLOW_18_in_ruleRelationshipCS3634); 
-
-                                	newLeafNode(otherlv_10, grammarAccess.getRelationshipCSAccess().getColonKeyword_6_1_1_1());
-                                
-                            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1869:1: ( (lv_properties_11_0= rulePropertyCS ) )*
-                            loop45:
-                            do {
-                                int alt45=2;
-                                int LA45_0 = input.LA(1);
-
-                                if ( (LA45_0==54) ) {
-                                    alt45=1;
-                                }
-
-
-                                switch (alt45) {
-                            	case 1 :
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1870:1: (lv_properties_11_0= rulePropertyCS )
-                            	    {
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1870:1: (lv_properties_11_0= rulePropertyCS )
-                            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1871:3: lv_properties_11_0= rulePropertyCS
-                            	    {
-                            	     
-                            	    	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getPropertiesPropertyCSParserRuleCall_6_1_1_2_0()); 
-                            	    	    
-                            	    pushFollow(FOLLOW_rulePropertyCS_in_ruleRelationshipCS3655);
-                            	    lv_properties_11_0=rulePropertyCS();
-
-                            	    state._fsp--;
-
-
-                            	    	        if (current==null) {
-                            	    	            current = createModelElementForParent(grammarAccess.getRelationshipCSRule());
-                            	    	        }
-                            	           		add(
-                            	           			current, 
-                            	           			"properties",
-                            	            		lv_properties_11_0, 
-                            	            		"PropertyCS");
-                            	    	        afterParserOrEnumRuleCall();
-                            	    	    
-
-                            	    }
-
-
-                            	    }
-                            	    break;
-
-                            	default :
-                            	    break loop45;
-                                }
-                            } while (true);
-
-
-                            }
-                            break;
-
-                    }
-
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1887:5: ( (lv_resources_12_0= ruleResourceCS ) )*
-                    loop47:
-                    do {
-                        int alt47=2;
-                        int LA47_0 = input.LA(1);
-
-                        if ( (LA47_0==56) ) {
-                            alt47=1;
-                        }
-
-
-                        switch (alt47) {
-                    	case 1 :
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1888:1: (lv_resources_12_0= ruleResourceCS )
-                    	    {
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1888:1: (lv_resources_12_0= ruleResourceCS )
-                    	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1889:3: lv_resources_12_0= ruleResourceCS
-                    	    {
-                    	     
-                    	    	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getResourcesResourceCSParserRuleCall_6_1_2_0()); 
-                    	    	    
-                    	    pushFollow(FOLLOW_ruleResourceCS_in_ruleRelationshipCS3679);
-                    	    lv_resources_12_0=ruleResourceCS();
-
-                    	    state._fsp--;
-
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getRelationshipCSRule());
-                    	    	        }
-                    	           		add(
-                    	           			current, 
-                    	           			"resources",
-                    	            		lv_resources_12_0, 
-                    	            		"ResourceCS");
-                    	    	        afterParserOrEnumRuleCall();
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop47;
-                        }
-                    } while (true);
-
-                    otherlv_13=(Token)match(input,15,FOLLOW_15_in_ruleRelationshipCS3692); 
-
-                        	newLeafNode(otherlv_13, grammarAccess.getRelationshipCSAccess().getRightCurlyBracketKeyword_6_1_3());
-                        
-
-                    }
-
-
-                    }
                     break;
 
             }
 
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1872:5: ( (lv_resources_10_0= ruleResourceCS ) )*
+            loop46:
+            do {
+                int alt46=2;
+                int LA46_0 = input.LA(1);
+
+                if ( (LA46_0==58) ) {
+                    alt46=1;
+                }
+
+
+                switch (alt46) {
+            	case 1 :
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1873:1: (lv_resources_10_0= ruleResourceCS )
+            	    {
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1873:1: (lv_resources_10_0= ruleResourceCS )
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1874:3: lv_resources_10_0= ruleResourceCS
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getRelationshipCSAccess().getResourcesResourceCSParserRuleCall_8_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleResourceCS_in_ruleRelationshipCS3659);
+            	    lv_resources_10_0=ruleResourceCS();
+
+            	    state._fsp--;
+
+
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getRelationshipCSRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"resources",
+            	            		lv_resources_10_0, 
+            	            		"ResourceCS");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop46;
+                }
+            } while (true);
+
+            otherlv_11=(Token)match(input,15,FOLLOW_15_in_ruleRelationshipCS3672); 
+
+                	newLeafNode(otherlv_11, grammarAccess.getRelationshipCSAccess().getRightCurlyBracketKeyword_9());
+                
 
             }
 
@@ -4747,7 +4665,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleExternalComponentInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1917:1: entryRuleExternalComponentInstanceCS returns [EObject current=null] : iv_ruleExternalComponentInstanceCS= ruleExternalComponentInstanceCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1902:1: entryRuleExternalComponentInstanceCS returns [EObject current=null] : iv_ruleExternalComponentInstanceCS= ruleExternalComponentInstanceCS EOF ;
     public final EObject entryRuleExternalComponentInstanceCS() throws RecognitionException {
         EObject current = null;
 
@@ -4755,17 +4673,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1918:2: (iv_ruleExternalComponentInstanceCS= ruleExternalComponentInstanceCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1919:2: iv_ruleExternalComponentInstanceCS= ruleExternalComponentInstanceCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1903:2: (iv_ruleExternalComponentInstanceCS= ruleExternalComponentInstanceCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1904:2: iv_ruleExternalComponentInstanceCS= ruleExternalComponentInstanceCS EOF
             {
              newCompositeNode(grammarAccess.getExternalComponentInstanceCSRule()); 
-            pushFollow(FOLLOW_ruleExternalComponentInstanceCS_in_entryRuleExternalComponentInstanceCS3731);
+            pushFollow(FOLLOW_ruleExternalComponentInstanceCS_in_entryRuleExternalComponentInstanceCS3708);
             iv_ruleExternalComponentInstanceCS=ruleExternalComponentInstanceCS();
 
             state._fsp--;
 
              current =iv_ruleExternalComponentInstanceCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleExternalComponentInstanceCS3741); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleExternalComponentInstanceCS3718); 
 
             }
 
@@ -4783,40 +4701,45 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleExternalComponentInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1926:1: ruleExternalComponentInstanceCS returns [EObject current=null] : (otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1911:1: ruleExternalComponentInstanceCS returns [EObject current=null] : (otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) ) ) ;
     public final EObject ruleExternalComponentInstanceCS() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token otherlv_2=null;
+        Token otherlv_1=null;
         Token otherlv_3=null;
-        AntlrDatatypeRuleToken lv_name_1_0 = null;
+        Token otherlv_4=null;
+        AntlrDatatypeRuleToken lv_name_2_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1929:28: ( (otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1930:1: (otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1914:28: ( (otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1915:1: (otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) ) )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1930:1: (otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1930:3: otherlv_0= 'external' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1915:1: (otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1915:3: otherlv_0= 'external' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) )
             {
-            otherlv_0=(Token)match(input,38,FOLLOW_38_in_ruleExternalComponentInstanceCS3778); 
+            otherlv_0=(Token)match(input,38,FOLLOW_38_in_ruleExternalComponentInstanceCS3755); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getExternalComponentInstanceCSAccess().getExternalKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1934:1: ( (lv_name_1_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1935:1: (lv_name_1_0= ruleValidID )
+            otherlv_1=(Token)match(input,39,FOLLOW_39_in_ruleExternalComponentInstanceCS3767); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getExternalComponentInstanceCSAccess().getComponentKeyword_1());
+                
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1923:1: ( (lv_name_2_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1924:1: (lv_name_2_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1935:1: (lv_name_1_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1936:3: lv_name_1_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1924:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1925:3: lv_name_2_0= ruleValidID
             {
              
-            	        newCompositeNode(grammarAccess.getExternalComponentInstanceCSAccess().getNameValidIDParserRuleCall_1_0()); 
+            	        newCompositeNode(grammarAccess.getExternalComponentInstanceCSAccess().getNameValidIDParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleExternalComponentInstanceCS3799);
-            lv_name_1_0=ruleValidID();
+            pushFollow(FOLLOW_ruleValidID_in_ruleExternalComponentInstanceCS3788);
+            lv_name_2_0=ruleValidID();
 
             state._fsp--;
 
@@ -4827,7 +4750,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                    		set(
                    			current, 
                    			"name",
-                    		lv_name_1_0, 
+                    		lv_name_2_0, 
                     		"ValidID");
             	        afterParserOrEnumRuleCall();
             	    
@@ -4837,24 +4760,24 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,51,FOLLOW_51_in_ruleExternalComponentInstanceCS3811); 
+            otherlv_3=(Token)match(input,52,FOLLOW_52_in_ruleExternalComponentInstanceCS3800); 
 
-                	newLeafNode(otherlv_2, grammarAccess.getExternalComponentInstanceCSAccess().getTypedKeyword_2());
+                	newLeafNode(otherlv_3, grammarAccess.getExternalComponentInstanceCSAccess().getTypedKeyword_3());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1956:1: ( (otherlv_3= RULE_ID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1957:1: (otherlv_3= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1945:1: ( (otherlv_4= RULE_ID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1946:1: (otherlv_4= RULE_ID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1957:1: (otherlv_3= RULE_ID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1958:3: otherlv_3= RULE_ID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1946:1: (otherlv_4= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1947:3: otherlv_4= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getExternalComponentInstanceCSRule());
             	        }
                     
-            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleExternalComponentInstanceCS3831); 
+            otherlv_4=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleExternalComponentInstanceCS3820); 
 
-            		newLeafNode(otherlv_3, grammarAccess.getExternalComponentInstanceCSAccess().getTypeExternalComponentCrossReference_3_0()); 
+            		newLeafNode(otherlv_4, grammarAccess.getExternalComponentInstanceCSAccess().getTypeExternalComponentCrossReference_4_0()); 
             	
 
             }
@@ -4883,7 +4806,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleInternalComponentInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1977:1: entryRuleInternalComponentInstanceCS returns [EObject current=null] : iv_ruleInternalComponentInstanceCS= ruleInternalComponentInstanceCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1966:1: entryRuleInternalComponentInstanceCS returns [EObject current=null] : iv_ruleInternalComponentInstanceCS= ruleInternalComponentInstanceCS EOF ;
     public final EObject entryRuleInternalComponentInstanceCS() throws RecognitionException {
         EObject current = null;
 
@@ -4891,17 +4814,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1978:2: (iv_ruleInternalComponentInstanceCS= ruleInternalComponentInstanceCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1979:2: iv_ruleInternalComponentInstanceCS= ruleInternalComponentInstanceCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1967:2: (iv_ruleInternalComponentInstanceCS= ruleInternalComponentInstanceCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1968:2: iv_ruleInternalComponentInstanceCS= ruleInternalComponentInstanceCS EOF
             {
              newCompositeNode(grammarAccess.getInternalComponentInstanceCSRule()); 
-            pushFollow(FOLLOW_ruleInternalComponentInstanceCS_in_entryRuleInternalComponentInstanceCS3867);
+            pushFollow(FOLLOW_ruleInternalComponentInstanceCS_in_entryRuleInternalComponentInstanceCS3856);
             iv_ruleInternalComponentInstanceCS=ruleInternalComponentInstanceCS();
 
             state._fsp--;
 
              current =iv_ruleInternalComponentInstanceCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleInternalComponentInstanceCS3877); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleInternalComponentInstanceCS3866); 
 
             }
 
@@ -4919,40 +4842,45 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleInternalComponentInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1986:1: ruleInternalComponentInstanceCS returns [EObject current=null] : (otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1975:1: ruleInternalComponentInstanceCS returns [EObject current=null] : (otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) ) ) ;
     public final EObject ruleInternalComponentInstanceCS() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token otherlv_2=null;
+        Token otherlv_1=null;
         Token otherlv_3=null;
-        AntlrDatatypeRuleToken lv_name_1_0 = null;
+        Token otherlv_4=null;
+        AntlrDatatypeRuleToken lv_name_2_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1989:28: ( (otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1990:1: (otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1978:28: ( (otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1979:1: (otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) ) )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1990:1: (otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1990:3: otherlv_0= 'internal' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1979:1: (otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1979:3: otherlv_0= 'internal' otherlv_1= 'component' ( (lv_name_2_0= ruleValidID ) ) otherlv_3= 'typed' ( (otherlv_4= RULE_ID ) )
             {
-            otherlv_0=(Token)match(input,42,FOLLOW_42_in_ruleInternalComponentInstanceCS3914); 
+            otherlv_0=(Token)match(input,44,FOLLOW_44_in_ruleInternalComponentInstanceCS3903); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getInternalComponentInstanceCSAccess().getInternalKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1994:1: ( (lv_name_1_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1995:1: (lv_name_1_0= ruleValidID )
+            otherlv_1=(Token)match(input,39,FOLLOW_39_in_ruleInternalComponentInstanceCS3915); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getInternalComponentInstanceCSAccess().getComponentKeyword_1());
+                
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1987:1: ( (lv_name_2_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1988:1: (lv_name_2_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1995:1: (lv_name_1_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1996:3: lv_name_1_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1988:1: (lv_name_2_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:1989:3: lv_name_2_0= ruleValidID
             {
              
-            	        newCompositeNode(grammarAccess.getInternalComponentInstanceCSAccess().getNameValidIDParserRuleCall_1_0()); 
+            	        newCompositeNode(grammarAccess.getInternalComponentInstanceCSAccess().getNameValidIDParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleInternalComponentInstanceCS3935);
-            lv_name_1_0=ruleValidID();
+            pushFollow(FOLLOW_ruleValidID_in_ruleInternalComponentInstanceCS3936);
+            lv_name_2_0=ruleValidID();
 
             state._fsp--;
 
@@ -4963,7 +4891,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
                    		set(
                    			current, 
                    			"name",
-                    		lv_name_1_0, 
+                    		lv_name_2_0, 
                     		"ValidID");
             	        afterParserOrEnumRuleCall();
             	    
@@ -4973,24 +4901,24 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,51,FOLLOW_51_in_ruleInternalComponentInstanceCS3947); 
+            otherlv_3=(Token)match(input,52,FOLLOW_52_in_ruleInternalComponentInstanceCS3948); 
 
-                	newLeafNode(otherlv_2, grammarAccess.getInternalComponentInstanceCSAccess().getTypedKeyword_2());
+                	newLeafNode(otherlv_3, grammarAccess.getInternalComponentInstanceCSAccess().getTypedKeyword_3());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2016:1: ( (otherlv_3= RULE_ID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2017:1: (otherlv_3= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2009:1: ( (otherlv_4= RULE_ID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2010:1: (otherlv_4= RULE_ID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2017:1: (otherlv_3= RULE_ID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2018:3: otherlv_3= RULE_ID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2010:1: (otherlv_4= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2011:3: otherlv_4= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getInternalComponentInstanceCSRule());
             	        }
                     
-            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleInternalComponentInstanceCS3967); 
+            otherlv_4=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleInternalComponentInstanceCS3968); 
 
-            		newLeafNode(otherlv_3, grammarAccess.getInternalComponentInstanceCSAccess().getTypeInternalComponentCrossReference_3_0()); 
+            		newLeafNode(otherlv_4, grammarAccess.getInternalComponentInstanceCSAccess().getTypeInternalComponentCrossReference_4_0()); 
             	
 
             }
@@ -5019,7 +4947,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleVMInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2037:1: entryRuleVMInstanceCS returns [EObject current=null] : iv_ruleVMInstanceCS= ruleVMInstanceCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2030:1: entryRuleVMInstanceCS returns [EObject current=null] : iv_ruleVMInstanceCS= ruleVMInstanceCS EOF ;
     public final EObject entryRuleVMInstanceCS() throws RecognitionException {
         EObject current = null;
 
@@ -5027,17 +4955,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2038:2: (iv_ruleVMInstanceCS= ruleVMInstanceCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2039:2: iv_ruleVMInstanceCS= ruleVMInstanceCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2031:2: (iv_ruleVMInstanceCS= ruleVMInstanceCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2032:2: iv_ruleVMInstanceCS= ruleVMInstanceCS EOF
             {
              newCompositeNode(grammarAccess.getVMInstanceCSRule()); 
-            pushFollow(FOLLOW_ruleVMInstanceCS_in_entryRuleVMInstanceCS4003);
+            pushFollow(FOLLOW_ruleVMInstanceCS_in_entryRuleVMInstanceCS4004);
             iv_ruleVMInstanceCS=ruleVMInstanceCS();
 
             state._fsp--;
 
              current =iv_ruleVMInstanceCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleVMInstanceCS4013); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleVMInstanceCS4014); 
 
             }
 
@@ -5055,7 +4983,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleVMInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2046:1: ruleVMInstanceCS returns [EObject current=null] : (otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2039:1: ruleVMInstanceCS returns [EObject current=null] : (otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) ) ;
     public final EObject ruleVMInstanceCS() throws RecognitionException {
         EObject current = null;
 
@@ -5068,26 +4996,26 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2049:28: ( (otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2050:1: (otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2042:28: ( (otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2043:1: (otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2050:1: (otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2050:3: otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2043:1: (otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2043:3: otherlv_0= 'vm' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= 'typed' ( (otherlv_3= RULE_ID ) )
             {
-            otherlv_0=(Token)match(input,19,FOLLOW_19_in_ruleVMInstanceCS4050); 
+            otherlv_0=(Token)match(input,19,FOLLOW_19_in_ruleVMInstanceCS4051); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getVMInstanceCSAccess().getVmKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2054:1: ( (lv_name_1_0= ruleValidID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2055:1: (lv_name_1_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2047:1: ( (lv_name_1_0= ruleValidID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2048:1: (lv_name_1_0= ruleValidID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2055:1: (lv_name_1_0= ruleValidID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2056:3: lv_name_1_0= ruleValidID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2048:1: (lv_name_1_0= ruleValidID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2049:3: lv_name_1_0= ruleValidID
             {
              
             	        newCompositeNode(grammarAccess.getVMInstanceCSAccess().getNameValidIDParserRuleCall_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleValidID_in_ruleVMInstanceCS4071);
+            pushFollow(FOLLOW_ruleValidID_in_ruleVMInstanceCS4072);
             lv_name_1_0=ruleValidID();
 
             state._fsp--;
@@ -5109,22 +5037,22 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,51,FOLLOW_51_in_ruleVMInstanceCS4083); 
+            otherlv_2=(Token)match(input,52,FOLLOW_52_in_ruleVMInstanceCS4084); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getVMInstanceCSAccess().getTypedKeyword_2());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2076:1: ( (otherlv_3= RULE_ID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2077:1: (otherlv_3= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2069:1: ( (otherlv_3= RULE_ID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2070:1: (otherlv_3= RULE_ID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2077:1: (otherlv_3= RULE_ID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2078:3: otherlv_3= RULE_ID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2070:1: (otherlv_3= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2071:3: otherlv_3= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getVMInstanceCSRule());
             	        }
                     
-            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleVMInstanceCS4103); 
+            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleVMInstanceCS4104); 
 
             		newLeafNode(otherlv_3, grammarAccess.getVMInstanceCSAccess().getTypeVMCrossReference_3_0()); 
             	
@@ -5155,7 +5083,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRelationshipInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2097:1: entryRuleRelationshipInstanceCS returns [EObject current=null] : iv_ruleRelationshipInstanceCS= ruleRelationshipInstanceCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2090:1: entryRuleRelationshipInstanceCS returns [EObject current=null] : iv_ruleRelationshipInstanceCS= ruleRelationshipInstanceCS EOF ;
     public final EObject entryRuleRelationshipInstanceCS() throws RecognitionException {
         EObject current = null;
 
@@ -5163,17 +5091,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2098:2: (iv_ruleRelationshipInstanceCS= ruleRelationshipInstanceCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2099:2: iv_ruleRelationshipInstanceCS= ruleRelationshipInstanceCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2091:2: (iv_ruleRelationshipInstanceCS= ruleRelationshipInstanceCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2092:2: iv_ruleRelationshipInstanceCS= ruleRelationshipInstanceCS EOF
             {
              newCompositeNode(grammarAccess.getRelationshipInstanceCSRule()); 
-            pushFollow(FOLLOW_ruleRelationshipInstanceCS_in_entryRuleRelationshipInstanceCS4139);
+            pushFollow(FOLLOW_ruleRelationshipInstanceCS_in_entryRuleRelationshipInstanceCS4140);
             iv_ruleRelationshipInstanceCS=ruleRelationshipInstanceCS();
 
             state._fsp--;
 
              current =iv_ruleRelationshipInstanceCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRelationshipInstanceCS4149); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRelationshipInstanceCS4150); 
 
             }
 
@@ -5191,7 +5119,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRelationshipInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2106:1: ruleRelationshipInstanceCS returns [EObject current=null] : (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )? ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2099:1: ruleRelationshipInstanceCS returns [EObject current=null] : (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )? ) ;
     public final EObject ruleRelationshipInstanceCS() throws RecognitionException {
         EObject current = null;
 
@@ -5206,21 +5134,21 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2109:28: ( (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )? ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2110:1: (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2102:28: ( (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )? ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2103:1: (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )? )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2110:1: (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )? )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2110:3: otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2103:1: (otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2103:3: otherlv_0= 'connect' ( ( ruleFqn ) ) otherlv_2= 'to' ( ( ruleFqn ) ) otherlv_4= 'typed' ( (otherlv_5= RULE_ID ) ) (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )?
             {
-            otherlv_0=(Token)match(input,48,FOLLOW_48_in_ruleRelationshipInstanceCS4186); 
+            otherlv_0=(Token)match(input,53,FOLLOW_53_in_ruleRelationshipInstanceCS4187); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getRelationshipInstanceCSAccess().getConnectKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2114:1: ( ( ruleFqn ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2115:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2107:1: ( ( ruleFqn ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2108:1: ( ruleFqn )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2115:1: ( ruleFqn )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2116:3: ruleFqn
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2108:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2109:3: ruleFqn
             {
 
             			if (current==null) {
@@ -5230,7 +5158,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getRelationshipInstanceCSAccess().getRequiredPortInstanceRequiredPortInstanceCrossReference_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleFqn_in_ruleRelationshipInstanceCS4209);
+            pushFollow(FOLLOW_ruleFqn_in_ruleRelationshipInstanceCS4210);
             ruleFqn();
 
             state._fsp--;
@@ -5244,15 +5172,15 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,49,FOLLOW_49_in_ruleRelationshipInstanceCS4221); 
+            otherlv_2=(Token)match(input,51,FOLLOW_51_in_ruleRelationshipInstanceCS4222); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getRelationshipInstanceCSAccess().getToKeyword_2());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2133:1: ( ( ruleFqn ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2134:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2126:1: ( ( ruleFqn ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2127:1: ( ruleFqn )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2134:1: ( ruleFqn )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2135:3: ruleFqn
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2127:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2128:3: ruleFqn
             {
 
             			if (current==null) {
@@ -5262,7 +5190,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getRelationshipInstanceCSAccess().getProvidedPortInstanceProvidedPortInstanceCrossReference_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleFqn_in_ruleRelationshipInstanceCS4244);
+            pushFollow(FOLLOW_ruleFqn_in_ruleRelationshipInstanceCS4245);
             ruleFqn();
 
             state._fsp--;
@@ -5276,22 +5204,22 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,51,FOLLOW_51_in_ruleRelationshipInstanceCS4256); 
+            otherlv_4=(Token)match(input,52,FOLLOW_52_in_ruleRelationshipInstanceCS4257); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getRelationshipInstanceCSAccess().getTypedKeyword_4());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2152:1: ( (otherlv_5= RULE_ID ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2153:1: (otherlv_5= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2145:1: ( (otherlv_5= RULE_ID ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2146:1: (otherlv_5= RULE_ID )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2153:1: (otherlv_5= RULE_ID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2154:3: otherlv_5= RULE_ID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2146:1: (otherlv_5= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2147:3: otherlv_5= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getRelationshipInstanceCSRule());
             	        }
                     
-            otherlv_5=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRelationshipInstanceCS4276); 
+            otherlv_5=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRelationshipInstanceCS4277); 
 
             		newLeafNode(otherlv_5, grammarAccess.getRelationshipInstanceCSAccess().getTypeRelationshipCrossReference_5_0()); 
             	
@@ -5301,31 +5229,31 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2165:2: (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )?
-            int alt49=2;
-            int LA49_0 = input.LA(1);
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2158:2: (otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) ) )?
+            int alt47=2;
+            int LA47_0 = input.LA(1);
 
-            if ( (LA49_0==50) ) {
-                alt49=1;
+            if ( (LA47_0==54) ) {
+                alt47=1;
             }
-            switch (alt49) {
+            switch (alt47) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2165:4: otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2158:4: otherlv_6= 'named' ( (lv_name_7_0= ruleValidID ) )
                     {
-                    otherlv_6=(Token)match(input,50,FOLLOW_50_in_ruleRelationshipInstanceCS4289); 
+                    otherlv_6=(Token)match(input,54,FOLLOW_54_in_ruleRelationshipInstanceCS4290); 
 
                         	newLeafNode(otherlv_6, grammarAccess.getRelationshipInstanceCSAccess().getNamedKeyword_6_0());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2169:1: ( (lv_name_7_0= ruleValidID ) )
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2170:1: (lv_name_7_0= ruleValidID )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2162:1: ( (lv_name_7_0= ruleValidID ) )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2163:1: (lv_name_7_0= ruleValidID )
                     {
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2170:1: (lv_name_7_0= ruleValidID )
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2171:3: lv_name_7_0= ruleValidID
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2163:1: (lv_name_7_0= ruleValidID )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2164:3: lv_name_7_0= ruleValidID
                     {
                      
                     	        newCompositeNode(grammarAccess.getRelationshipInstanceCSAccess().getNameValidIDParserRuleCall_6_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleValidID_in_ruleRelationshipInstanceCS4310);
+                    pushFollow(FOLLOW_ruleValidID_in_ruleRelationshipInstanceCS4311);
                     lv_name_7_0=ruleValidID();
 
                     state._fsp--;
@@ -5374,7 +5302,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleExecuteInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2195:1: entryRuleExecuteInstanceCS returns [EObject current=null] : iv_ruleExecuteInstanceCS= ruleExecuteInstanceCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2188:1: entryRuleExecuteInstanceCS returns [EObject current=null] : iv_ruleExecuteInstanceCS= ruleExecuteInstanceCS EOF ;
     public final EObject entryRuleExecuteInstanceCS() throws RecognitionException {
         EObject current = null;
 
@@ -5382,17 +5310,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2196:2: (iv_ruleExecuteInstanceCS= ruleExecuteInstanceCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2197:2: iv_ruleExecuteInstanceCS= ruleExecuteInstanceCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2189:2: (iv_ruleExecuteInstanceCS= ruleExecuteInstanceCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2190:2: iv_ruleExecuteInstanceCS= ruleExecuteInstanceCS EOF
             {
              newCompositeNode(grammarAccess.getExecuteInstanceCSRule()); 
-            pushFollow(FOLLOW_ruleExecuteInstanceCS_in_entryRuleExecuteInstanceCS4348);
+            pushFollow(FOLLOW_ruleExecuteInstanceCS_in_entryRuleExecuteInstanceCS4349);
             iv_ruleExecuteInstanceCS=ruleExecuteInstanceCS();
 
             state._fsp--;
 
              current =iv_ruleExecuteInstanceCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleExecuteInstanceCS4358); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleExecuteInstanceCS4359); 
 
             }
 
@@ -5410,7 +5338,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleExecuteInstanceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2204:1: ruleExecuteInstanceCS returns [EObject current=null] : (otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )? ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2197:1: ruleExecuteInstanceCS returns [EObject current=null] : (otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )? ) ;
     public final EObject ruleExecuteInstanceCS() throws RecognitionException {
         EObject current = null;
 
@@ -5423,21 +5351,21 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2207:28: ( (otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )? ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2208:1: (otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2200:28: ( (otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )? ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2201:1: (otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )? )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2208:1: (otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )? )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2208:3: otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )?
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2201:1: (otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )? )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2201:3: otherlv_0= 'host' ( ( ruleFqn ) ) otherlv_2= 'on' ( ( ruleFqn ) ) (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )?
             {
-            otherlv_0=(Token)match(input,52,FOLLOW_52_in_ruleExecuteInstanceCS4395); 
+            otherlv_0=(Token)match(input,47,FOLLOW_47_in_ruleExecuteInstanceCS4396); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getExecuteInstanceCSAccess().getHostKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2212:1: ( ( ruleFqn ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2213:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2205:1: ( ( ruleFqn ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2206:1: ( ruleFqn )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2213:1: ( ruleFqn )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2214:3: ruleFqn
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2206:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2207:3: ruleFqn
             {
 
             			if (current==null) {
@@ -5447,7 +5375,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getExecuteInstanceCSAccess().getRequiredExecutionPlatformInstanceRequiredExecutionPlatformInstanceCrossReference_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleFqn_in_ruleExecuteInstanceCS4418);
+            pushFollow(FOLLOW_ruleFqn_in_ruleExecuteInstanceCS4419);
             ruleFqn();
 
             state._fsp--;
@@ -5461,15 +5389,15 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,53,FOLLOW_53_in_ruleExecuteInstanceCS4430); 
+            otherlv_2=(Token)match(input,55,FOLLOW_55_in_ruleExecuteInstanceCS4431); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getExecuteInstanceCSAccess().getOnKeyword_2());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2231:1: ( ( ruleFqn ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2232:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2224:1: ( ( ruleFqn ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2225:1: ( ruleFqn )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2232:1: ( ruleFqn )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2233:3: ruleFqn
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2225:1: ( ruleFqn )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2226:3: ruleFqn
             {
 
             			if (current==null) {
@@ -5479,7 +5407,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getExecuteInstanceCSAccess().getProvidedExecutionPlatformInstanceProvidedExecutionPlatformInstanceCrossReference_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleFqn_in_ruleExecuteInstanceCS4453);
+            pushFollow(FOLLOW_ruleFqn_in_ruleExecuteInstanceCS4454);
             ruleFqn();
 
             state._fsp--;
@@ -5493,31 +5421,31 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2246:2: (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )?
-            int alt50=2;
-            int LA50_0 = input.LA(1);
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2239:2: (otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) ) )?
+            int alt48=2;
+            int LA48_0 = input.LA(1);
 
-            if ( (LA50_0==50) ) {
-                alt50=1;
+            if ( (LA48_0==54) ) {
+                alt48=1;
             }
-            switch (alt50) {
+            switch (alt48) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2246:4: otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2239:4: otherlv_4= 'named' ( (lv_name_5_0= ruleValidID ) )
                     {
-                    otherlv_4=(Token)match(input,50,FOLLOW_50_in_ruleExecuteInstanceCS4466); 
+                    otherlv_4=(Token)match(input,54,FOLLOW_54_in_ruleExecuteInstanceCS4467); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getExecuteInstanceCSAccess().getNamedKeyword_4_0());
                         
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2250:1: ( (lv_name_5_0= ruleValidID ) )
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2251:1: (lv_name_5_0= ruleValidID )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2243:1: ( (lv_name_5_0= ruleValidID ) )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2244:1: (lv_name_5_0= ruleValidID )
                     {
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2251:1: (lv_name_5_0= ruleValidID )
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2252:3: lv_name_5_0= ruleValidID
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2244:1: (lv_name_5_0= ruleValidID )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2245:3: lv_name_5_0= ruleValidID
                     {
                      
                     	        newCompositeNode(grammarAccess.getExecuteInstanceCSAccess().getNameValidIDParserRuleCall_4_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleValidID_in_ruleExecuteInstanceCS4487);
+                    pushFollow(FOLLOW_ruleValidID_in_ruleExecuteInstanceCS4488);
                     lv_name_5_0=ruleValidID();
 
                     state._fsp--;
@@ -5566,7 +5494,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulePropertyCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2276:1: entryRulePropertyCS returns [EObject current=null] : iv_rulePropertyCS= rulePropertyCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2269:1: entryRulePropertyCS returns [EObject current=null] : iv_rulePropertyCS= rulePropertyCS EOF ;
     public final EObject entryRulePropertyCS() throws RecognitionException {
         EObject current = null;
 
@@ -5574,17 +5502,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2277:2: (iv_rulePropertyCS= rulePropertyCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2278:2: iv_rulePropertyCS= rulePropertyCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2270:2: (iv_rulePropertyCS= rulePropertyCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2271:2: iv_rulePropertyCS= rulePropertyCS EOF
             {
              newCompositeNode(grammarAccess.getPropertyCSRule()); 
-            pushFollow(FOLLOW_rulePropertyCS_in_entryRulePropertyCS4525);
+            pushFollow(FOLLOW_rulePropertyCS_in_entryRulePropertyCS4526);
             iv_rulePropertyCS=rulePropertyCS();
 
             state._fsp--;
 
              current =iv_rulePropertyCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePropertyCS4535); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePropertyCS4536); 
 
             }
 
@@ -5602,7 +5530,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePropertyCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2285:1: rulePropertyCS returns [EObject current=null] : (otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')' ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2278:1: rulePropertyCS returns [EObject current=null] : (otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')' ) ;
     public final EObject rulePropertyCS() throws RecognitionException {
         EObject current = null;
 
@@ -5615,23 +5543,23 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2288:28: ( (otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')' ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2289:1: (otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2281:28: ( (otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')' ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2282:1: (otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')' )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2289:1: (otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')' )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2289:3: otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')'
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2282:1: (otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2282:3: otherlv_0= '(' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= ':' ( (lv_value_3_0= RULE_STRING ) ) otherlv_4= ')'
             {
-            otherlv_0=(Token)match(input,54,FOLLOW_54_in_rulePropertyCS4572); 
+            otherlv_0=(Token)match(input,56,FOLLOW_56_in_rulePropertyCS4573); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getPropertyCSAccess().getLeftParenthesisKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2293:1: ( (lv_name_1_0= RULE_STRING ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2294:1: (lv_name_1_0= RULE_STRING )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2286:1: ( (lv_name_1_0= RULE_STRING ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2287:1: (lv_name_1_0= RULE_STRING )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2294:1: (lv_name_1_0= RULE_STRING )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2295:3: lv_name_1_0= RULE_STRING
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2287:1: (lv_name_1_0= RULE_STRING )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2288:3: lv_name_1_0= RULE_STRING
             {
-            lv_name_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rulePropertyCS4589); 
+            lv_name_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rulePropertyCS4590); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getPropertyCSAccess().getNameSTRINGTerminalRuleCall_1_0()); 
             		
@@ -5651,17 +5579,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_rulePropertyCS4606); 
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_rulePropertyCS4607); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getPropertyCSAccess().getColonKeyword_2());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2315:1: ( (lv_value_3_0= RULE_STRING ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2316:1: (lv_value_3_0= RULE_STRING )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2308:1: ( (lv_value_3_0= RULE_STRING ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2309:1: (lv_value_3_0= RULE_STRING )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2316:1: (lv_value_3_0= RULE_STRING )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2317:3: lv_value_3_0= RULE_STRING
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2309:1: (lv_value_3_0= RULE_STRING )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2310:3: lv_value_3_0= RULE_STRING
             {
-            lv_value_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rulePropertyCS4623); 
+            lv_value_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rulePropertyCS4624); 
 
             			newLeafNode(lv_value_3_0, grammarAccess.getPropertyCSAccess().getValueSTRINGTerminalRuleCall_3_0()); 
             		
@@ -5681,7 +5609,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,55,FOLLOW_55_in_rulePropertyCS4640); 
+            otherlv_4=(Token)match(input,57,FOLLOW_57_in_rulePropertyCS4641); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getPropertyCSAccess().getRightParenthesisKeyword_4());
                 
@@ -5706,7 +5634,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleResourceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2345:1: entryRuleResourceCS returns [EObject current=null] : iv_ruleResourceCS= ruleResourceCS EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2338:1: entryRuleResourceCS returns [EObject current=null] : iv_ruleResourceCS= ruleResourceCS EOF ;
     public final EObject entryRuleResourceCS() throws RecognitionException {
         EObject current = null;
 
@@ -5714,17 +5642,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2346:2: (iv_ruleResourceCS= ruleResourceCS EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2347:2: iv_ruleResourceCS= ruleResourceCS EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2339:2: (iv_ruleResourceCS= ruleResourceCS EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2340:2: iv_ruleResourceCS= ruleResourceCS EOF
             {
              newCompositeNode(grammarAccess.getResourceCSRule()); 
-            pushFollow(FOLLOW_ruleResourceCS_in_entryRuleResourceCS4676);
+            pushFollow(FOLLOW_ruleResourceCS_in_entryRuleResourceCS4677);
             iv_ruleResourceCS=ruleResourceCS();
 
             state._fsp--;
 
              current =iv_ruleResourceCS; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleResourceCS4686); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleResourceCS4687); 
 
             }
 
@@ -5742,7 +5670,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleResourceCS"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2354:1: ruleResourceCS returns [EObject current=null] : (otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}' ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2347:1: ruleResourceCS returns [EObject current=null] : (otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}' ) ;
     public final EObject ruleResourceCS() throws RecognitionException {
         EObject current = null;
 
@@ -5776,34 +5704,34 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2357:28: ( (otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}' ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2358:1: (otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2350:28: ( (otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}' ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2351:1: (otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}' )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2358:1: (otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}' )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2358:3: otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}'
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2351:1: (otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}' )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2351:3: otherlv_0= 'resource' ( (lv_name_1_0= ruleValidID ) )? otherlv_2= '{' ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )* otherlv_24= '}'
             {
-            otherlv_0=(Token)match(input,56,FOLLOW_56_in_ruleResourceCS4723); 
+            otherlv_0=(Token)match(input,58,FOLLOW_58_in_ruleResourceCS4724); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getResourceCSAccess().getResourceKeyword_0());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2362:1: ( (lv_name_1_0= ruleValidID ) )?
-            int alt51=2;
-            int LA51_0 = input.LA(1);
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2355:1: ( (lv_name_1_0= ruleValidID ) )?
+            int alt49=2;
+            int LA49_0 = input.LA(1);
 
-            if ( (LA51_0==RULE_ID) ) {
-                alt51=1;
+            if ( (LA49_0==RULE_ID) ) {
+                alt49=1;
             }
-            switch (alt51) {
+            switch (alt49) {
                 case 1 :
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2363:1: (lv_name_1_0= ruleValidID )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2356:1: (lv_name_1_0= ruleValidID )
                     {
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2363:1: (lv_name_1_0= ruleValidID )
-                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2364:3: lv_name_1_0= ruleValidID
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2356:1: (lv_name_1_0= ruleValidID )
+                    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2357:3: lv_name_1_0= ruleValidID
                     {
                      
                     	        newCompositeNode(grammarAccess.getResourceCSAccess().getNameValidIDParserRuleCall_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleValidID_in_ruleResourceCS4744);
+                    pushFollow(FOLLOW_ruleValidID_in_ruleResourceCS4745);
                     lv_name_1_0=ruleValidID();
 
                     state._fsp--;
@@ -5828,97 +5756,97 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,14,FOLLOW_14_in_ruleResourceCS4757); 
+            otherlv_2=(Token)match(input,14,FOLLOW_14_in_ruleResourceCS4758); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getResourceCSAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2384:1: ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )*
-            loop54:
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2377:1: ( ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )? )*
+            loop52:
             do {
-                int alt54=2;
-                int LA54_0 = input.LA(1);
+                int alt52=2;
+                int LA52_0 = input.LA(1);
 
-                if ( ((LA54_0>=57 && LA54_0<=64)) ) {
-                    alt54=1;
+                if ( ((LA52_0>=59 && LA52_0<=66)) ) {
+                    alt52=1;
                 }
 
 
-                switch (alt54) {
+                switch (alt52) {
             	case 1 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2384:2: ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )?
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2377:2: ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) ) (otherlv_23= ',' )?
             	    {
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2384:2: ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) )
-            	    int alt52=8;
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2377:2: ( (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) ) | (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) ) | (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) ) | (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) ) | (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) ) | (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) ) | ( (lv_requireCredentials_21_0= 'requireCredentials' ) ) | ( (lv_executeLocally_22_0= 'executeLocally' ) ) )
+            	    int alt50=8;
             	    switch ( input.LA(1) ) {
-            	    case 57:
-            	        {
-            	        alt52=1;
-            	        }
-            	        break;
-            	    case 58:
-            	        {
-            	        alt52=2;
-            	        }
-            	        break;
             	    case 59:
             	        {
-            	        alt52=3;
+            	        alt50=1;
             	        }
             	        break;
             	    case 60:
             	        {
-            	        alt52=4;
+            	        alt50=2;
             	        }
             	        break;
             	    case 61:
             	        {
-            	        alt52=5;
+            	        alt50=3;
             	        }
             	        break;
             	    case 62:
             	        {
-            	        alt52=6;
+            	        alt50=4;
             	        }
             	        break;
             	    case 63:
             	        {
-            	        alt52=7;
+            	        alt50=5;
             	        }
             	        break;
             	    case 64:
             	        {
-            	        alt52=8;
+            	        alt50=6;
+            	        }
+            	        break;
+            	    case 65:
+            	        {
+            	        alt50=7;
+            	        }
+            	        break;
+            	    case 66:
+            	        {
+            	        alt50=8;
             	        }
             	        break;
             	    default:
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 52, 0, input);
+            	            new NoViableAltException("", 50, 0, input);
 
             	        throw nvae;
             	    }
 
-            	    switch (alt52) {
+            	    switch (alt50) {
             	        case 1 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2384:3: (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2377:3: (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2384:3: (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2384:5: otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2377:3: (otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2377:5: otherlv_3= 'download' otherlv_4= ':' ( (lv_downloadCommand_5_0= RULE_STRING ) )
             	            {
-            	            otherlv_3=(Token)match(input,57,FOLLOW_57_in_ruleResourceCS4772); 
+            	            otherlv_3=(Token)match(input,59,FOLLOW_59_in_ruleResourceCS4773); 
 
             	                	newLeafNode(otherlv_3, grammarAccess.getResourceCSAccess().getDownloadKeyword_3_0_0_0());
             	                
-            	            otherlv_4=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS4784); 
+            	            otherlv_4=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS4785); 
 
             	                	newLeafNode(otherlv_4, grammarAccess.getResourceCSAccess().getColonKeyword_3_0_0_1());
             	                
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2392:1: ( (lv_downloadCommand_5_0= RULE_STRING ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2393:1: (lv_downloadCommand_5_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2385:1: ( (lv_downloadCommand_5_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2386:1: (lv_downloadCommand_5_0= RULE_STRING )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2393:1: (lv_downloadCommand_5_0= RULE_STRING )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2394:3: lv_downloadCommand_5_0= RULE_STRING
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2386:1: (lv_downloadCommand_5_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2387:3: lv_downloadCommand_5_0= RULE_STRING
             	            {
-            	            lv_downloadCommand_5_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS4801); 
+            	            lv_downloadCommand_5_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS4802); 
 
             	            			newLeafNode(lv_downloadCommand_5_0, grammarAccess.getResourceCSAccess().getDownloadCommandSTRINGTerminalRuleCall_3_0_0_2_0()); 
             	            		
@@ -5945,26 +5873,26 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 2 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2411:6: (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2404:6: (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2411:6: (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2411:8: otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2404:6: (otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2404:8: otherlv_6= 'upload' otherlv_7= ':' ( (lv_uploadCommand_8_0= RULE_STRING ) )
             	            {
-            	            otherlv_6=(Token)match(input,58,FOLLOW_58_in_ruleResourceCS4826); 
+            	            otherlv_6=(Token)match(input,60,FOLLOW_60_in_ruleResourceCS4827); 
 
             	                	newLeafNode(otherlv_6, grammarAccess.getResourceCSAccess().getUploadKeyword_3_0_1_0());
             	                
-            	            otherlv_7=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS4838); 
+            	            otherlv_7=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS4839); 
 
             	                	newLeafNode(otherlv_7, grammarAccess.getResourceCSAccess().getColonKeyword_3_0_1_1());
             	                
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2419:1: ( (lv_uploadCommand_8_0= RULE_STRING ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2420:1: (lv_uploadCommand_8_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2412:1: ( (lv_uploadCommand_8_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2413:1: (lv_uploadCommand_8_0= RULE_STRING )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2420:1: (lv_uploadCommand_8_0= RULE_STRING )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2421:3: lv_uploadCommand_8_0= RULE_STRING
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2413:1: (lv_uploadCommand_8_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2414:3: lv_uploadCommand_8_0= RULE_STRING
             	            {
-            	            lv_uploadCommand_8_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS4855); 
+            	            lv_uploadCommand_8_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS4856); 
 
             	            			newLeafNode(lv_uploadCommand_8_0, grammarAccess.getResourceCSAccess().getUploadCommandSTRINGTerminalRuleCall_3_0_1_2_0()); 
             	            		
@@ -5991,26 +5919,26 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 3 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2438:6: (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2431:6: (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2438:6: (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2438:8: otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2431:6: (otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2431:8: otherlv_9= 'install' otherlv_10= ':' ( (lv_installCommand_11_0= RULE_STRING ) )
             	            {
-            	            otherlv_9=(Token)match(input,59,FOLLOW_59_in_ruleResourceCS4880); 
+            	            otherlv_9=(Token)match(input,61,FOLLOW_61_in_ruleResourceCS4881); 
 
             	                	newLeafNode(otherlv_9, grammarAccess.getResourceCSAccess().getInstallKeyword_3_0_2_0());
             	                
-            	            otherlv_10=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS4892); 
+            	            otherlv_10=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS4893); 
 
             	                	newLeafNode(otherlv_10, grammarAccess.getResourceCSAccess().getColonKeyword_3_0_2_1());
             	                
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2446:1: ( (lv_installCommand_11_0= RULE_STRING ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2447:1: (lv_installCommand_11_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2439:1: ( (lv_installCommand_11_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2440:1: (lv_installCommand_11_0= RULE_STRING )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2447:1: (lv_installCommand_11_0= RULE_STRING )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2448:3: lv_installCommand_11_0= RULE_STRING
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2440:1: (lv_installCommand_11_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2441:3: lv_installCommand_11_0= RULE_STRING
             	            {
-            	            lv_installCommand_11_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS4909); 
+            	            lv_installCommand_11_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS4910); 
 
             	            			newLeafNode(lv_installCommand_11_0, grammarAccess.getResourceCSAccess().getInstallCommandSTRINGTerminalRuleCall_3_0_2_2_0()); 
             	            		
@@ -6037,26 +5965,26 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 4 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2465:6: (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2458:6: (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2465:6: (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2465:8: otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2458:6: (otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2458:8: otherlv_12= 'configure' otherlv_13= ':' ( (lv_configureCommand_14_0= RULE_STRING ) )
             	            {
-            	            otherlv_12=(Token)match(input,60,FOLLOW_60_in_ruleResourceCS4934); 
+            	            otherlv_12=(Token)match(input,62,FOLLOW_62_in_ruleResourceCS4935); 
 
             	                	newLeafNode(otherlv_12, grammarAccess.getResourceCSAccess().getConfigureKeyword_3_0_3_0());
             	                
-            	            otherlv_13=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS4946); 
+            	            otherlv_13=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS4947); 
 
             	                	newLeafNode(otherlv_13, grammarAccess.getResourceCSAccess().getColonKeyword_3_0_3_1());
             	                
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2473:1: ( (lv_configureCommand_14_0= RULE_STRING ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2474:1: (lv_configureCommand_14_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2466:1: ( (lv_configureCommand_14_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2467:1: (lv_configureCommand_14_0= RULE_STRING )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2474:1: (lv_configureCommand_14_0= RULE_STRING )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2475:3: lv_configureCommand_14_0= RULE_STRING
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2467:1: (lv_configureCommand_14_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2468:3: lv_configureCommand_14_0= RULE_STRING
             	            {
-            	            lv_configureCommand_14_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS4963); 
+            	            lv_configureCommand_14_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS4964); 
 
             	            			newLeafNode(lv_configureCommand_14_0, grammarAccess.getResourceCSAccess().getConfigureCommandSTRINGTerminalRuleCall_3_0_3_2_0()); 
             	            		
@@ -6083,26 +6011,26 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 5 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2492:6: (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2485:6: (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2492:6: (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2492:8: otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2485:6: (otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2485:8: otherlv_15= 'start' otherlv_16= ':' ( (lv_startCommand_17_0= RULE_STRING ) )
             	            {
-            	            otherlv_15=(Token)match(input,61,FOLLOW_61_in_ruleResourceCS4988); 
+            	            otherlv_15=(Token)match(input,63,FOLLOW_63_in_ruleResourceCS4989); 
 
             	                	newLeafNode(otherlv_15, grammarAccess.getResourceCSAccess().getStartKeyword_3_0_4_0());
             	                
-            	            otherlv_16=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS5000); 
+            	            otherlv_16=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS5001); 
 
             	                	newLeafNode(otherlv_16, grammarAccess.getResourceCSAccess().getColonKeyword_3_0_4_1());
             	                
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2500:1: ( (lv_startCommand_17_0= RULE_STRING ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2501:1: (lv_startCommand_17_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2493:1: ( (lv_startCommand_17_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2494:1: (lv_startCommand_17_0= RULE_STRING )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2501:1: (lv_startCommand_17_0= RULE_STRING )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2502:3: lv_startCommand_17_0= RULE_STRING
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2494:1: (lv_startCommand_17_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2495:3: lv_startCommand_17_0= RULE_STRING
             	            {
-            	            lv_startCommand_17_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS5017); 
+            	            lv_startCommand_17_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS5018); 
 
             	            			newLeafNode(lv_startCommand_17_0, grammarAccess.getResourceCSAccess().getStartCommandSTRINGTerminalRuleCall_3_0_4_2_0()); 
             	            		
@@ -6129,26 +6057,26 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 6 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2519:6: (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2512:6: (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2519:6: (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2519:8: otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2512:6: (otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2512:8: otherlv_18= 'stop' otherlv_19= ':' ( (lv_stopCommand_20_0= RULE_STRING ) )
             	            {
-            	            otherlv_18=(Token)match(input,62,FOLLOW_62_in_ruleResourceCS5042); 
+            	            otherlv_18=(Token)match(input,64,FOLLOW_64_in_ruleResourceCS5043); 
 
             	                	newLeafNode(otherlv_18, grammarAccess.getResourceCSAccess().getStopKeyword_3_0_5_0());
             	                
-            	            otherlv_19=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS5054); 
+            	            otherlv_19=(Token)match(input,18,FOLLOW_18_in_ruleResourceCS5055); 
 
             	                	newLeafNode(otherlv_19, grammarAccess.getResourceCSAccess().getColonKeyword_3_0_5_1());
             	                
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2527:1: ( (lv_stopCommand_20_0= RULE_STRING ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2528:1: (lv_stopCommand_20_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2520:1: ( (lv_stopCommand_20_0= RULE_STRING ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2521:1: (lv_stopCommand_20_0= RULE_STRING )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2528:1: (lv_stopCommand_20_0= RULE_STRING )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2529:3: lv_stopCommand_20_0= RULE_STRING
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2521:1: (lv_stopCommand_20_0= RULE_STRING )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2522:3: lv_stopCommand_20_0= RULE_STRING
             	            {
-            	            lv_stopCommand_20_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS5071); 
+            	            lv_stopCommand_20_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleResourceCS5072); 
 
             	            			newLeafNode(lv_stopCommand_20_0, grammarAccess.getResourceCSAccess().getStopCommandSTRINGTerminalRuleCall_3_0_5_2_0()); 
             	            		
@@ -6175,15 +6103,15 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 7 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2546:6: ( (lv_requireCredentials_21_0= 'requireCredentials' ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2539:6: ( (lv_requireCredentials_21_0= 'requireCredentials' ) )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2546:6: ( (lv_requireCredentials_21_0= 'requireCredentials' ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2547:1: (lv_requireCredentials_21_0= 'requireCredentials' )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2539:6: ( (lv_requireCredentials_21_0= 'requireCredentials' ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2540:1: (lv_requireCredentials_21_0= 'requireCredentials' )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2547:1: (lv_requireCredentials_21_0= 'requireCredentials' )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2548:3: lv_requireCredentials_21_0= 'requireCredentials'
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2540:1: (lv_requireCredentials_21_0= 'requireCredentials' )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2541:3: lv_requireCredentials_21_0= 'requireCredentials'
             	            {
-            	            lv_requireCredentials_21_0=(Token)match(input,63,FOLLOW_63_in_ruleResourceCS5101); 
+            	            lv_requireCredentials_21_0=(Token)match(input,65,FOLLOW_65_in_ruleResourceCS5102); 
 
             	                    newLeafNode(lv_requireCredentials_21_0, grammarAccess.getResourceCSAccess().getRequireCredentialsRequireCredentialsKeyword_3_0_6_0());
             	                
@@ -6203,15 +6131,15 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 8 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2562:6: ( (lv_executeLocally_22_0= 'executeLocally' ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2555:6: ( (lv_executeLocally_22_0= 'executeLocally' ) )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2562:6: ( (lv_executeLocally_22_0= 'executeLocally' ) )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2563:1: (lv_executeLocally_22_0= 'executeLocally' )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2555:6: ( (lv_executeLocally_22_0= 'executeLocally' ) )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2556:1: (lv_executeLocally_22_0= 'executeLocally' )
             	            {
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2563:1: (lv_executeLocally_22_0= 'executeLocally' )
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2564:3: lv_executeLocally_22_0= 'executeLocally'
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2556:1: (lv_executeLocally_22_0= 'executeLocally' )
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2557:3: lv_executeLocally_22_0= 'executeLocally'
             	            {
-            	            lv_executeLocally_22_0=(Token)match(input,64,FOLLOW_64_in_ruleResourceCS5138); 
+            	            lv_executeLocally_22_0=(Token)match(input,66,FOLLOW_66_in_ruleResourceCS5139); 
 
             	                    newLeafNode(lv_executeLocally_22_0, grammarAccess.getResourceCSAccess().getExecuteLocallyExecuteLocallyKeyword_3_0_7_0());
             	                
@@ -6233,18 +6161,18 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
             	    }
 
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2577:3: (otherlv_23= ',' )?
-            	    int alt53=2;
-            	    int LA53_0 = input.LA(1);
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2570:3: (otherlv_23= ',' )?
+            	    int alt51=2;
+            	    int LA51_0 = input.LA(1);
 
-            	    if ( (LA53_0==36) ) {
-            	        alt53=1;
+            	    if ( (LA51_0==36) ) {
+            	        alt51=1;
             	    }
-            	    switch (alt53) {
+            	    switch (alt51) {
             	        case 1 :
-            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2577:5: otherlv_23= ','
+            	            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2570:5: otherlv_23= ','
             	            {
-            	            otherlv_23=(Token)match(input,36,FOLLOW_36_in_ruleResourceCS5165); 
+            	            otherlv_23=(Token)match(input,36,FOLLOW_36_in_ruleResourceCS5166); 
 
             	                	newLeafNode(otherlv_23, grammarAccess.getResourceCSAccess().getCommaKeyword_3_1());
             	                
@@ -6259,11 +6187,11 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop54;
+            	    break loop52;
                 }
             } while (true);
 
-            otherlv_24=(Token)match(input,15,FOLLOW_15_in_ruleResourceCS5181); 
+            otherlv_24=(Token)match(input,15,FOLLOW_15_in_ruleResourceCS5182); 
 
                 	newLeafNode(otherlv_24, grammarAccess.getResourceCSAccess().getRightCurlyBracketKeyword_4());
                 
@@ -6288,7 +6216,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleValidID"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2593:1: entryRuleValidID returns [String current=null] : iv_ruleValidID= ruleValidID EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2586:1: entryRuleValidID returns [String current=null] : iv_ruleValidID= ruleValidID EOF ;
     public final String entryRuleValidID() throws RecognitionException {
         String current = null;
 
@@ -6296,17 +6224,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2594:2: (iv_ruleValidID= ruleValidID EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2595:2: iv_ruleValidID= ruleValidID EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2587:2: (iv_ruleValidID= ruleValidID EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2588:2: iv_ruleValidID= ruleValidID EOF
             {
              newCompositeNode(grammarAccess.getValidIDRule()); 
-            pushFollow(FOLLOW_ruleValidID_in_entryRuleValidID5218);
+            pushFollow(FOLLOW_ruleValidID_in_entryRuleValidID5219);
             iv_ruleValidID=ruleValidID();
 
             state._fsp--;
 
              current =iv_ruleValidID.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleValidID5229); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleValidID5230); 
 
             }
 
@@ -6324,7 +6252,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleValidID"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2602:1: ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_ID_0= RULE_ID ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2595:1: ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_ID_0= RULE_ID ;
     public final AntlrDatatypeRuleToken ruleValidID() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -6333,10 +6261,10 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2605:28: (this_ID_0= RULE_ID )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2606:5: this_ID_0= RULE_ID
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2598:28: (this_ID_0= RULE_ID )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2599:5: this_ID_0= RULE_ID
             {
-            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleValidID5268); 
+            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleValidID5269); 
 
             		current.merge(this_ID_0);
                 
@@ -6361,7 +6289,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleFqn"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2621:1: entryRuleFqn returns [String current=null] : iv_ruleFqn= ruleFqn EOF ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2614:1: entryRuleFqn returns [String current=null] : iv_ruleFqn= ruleFqn EOF ;
     public final String entryRuleFqn() throws RecognitionException {
         String current = null;
 
@@ -6369,17 +6297,17 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2622:2: (iv_ruleFqn= ruleFqn EOF )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2623:2: iv_ruleFqn= ruleFqn EOF
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2615:2: (iv_ruleFqn= ruleFqn EOF )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2616:2: iv_ruleFqn= ruleFqn EOF
             {
              newCompositeNode(grammarAccess.getFqnRule()); 
-            pushFollow(FOLLOW_ruleFqn_in_entryRuleFqn5313);
+            pushFollow(FOLLOW_ruleFqn_in_entryRuleFqn5314);
             iv_ruleFqn=ruleFqn();
 
             state._fsp--;
 
              current =iv_ruleFqn.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleFqn5324); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleFqn5325); 
 
             }
 
@@ -6397,7 +6325,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleFqn"
-    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2630:1: ruleFqn returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* ) ;
+    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2623:1: ruleFqn returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* ) ;
     public final AntlrDatatypeRuleToken ruleFqn() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -6410,16 +6338,16 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2633:28: ( (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* ) )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2634:1: (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2626:28: ( (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* ) )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2627:1: (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* )
             {
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2634:1: (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* )
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2635:5: this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )*
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2627:1: (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* )
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2628:5: this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )*
             {
              
                     newCompositeNode(grammarAccess.getFqnAccess().getValidIDParserRuleCall_0()); 
                 
-            pushFollow(FOLLOW_ruleValidID_in_ruleFqn5371);
+            pushFollow(FOLLOW_ruleValidID_in_ruleFqn5372);
             this_ValidID_0=ruleValidID();
 
             state._fsp--;
@@ -6430,22 +6358,22 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
              
                     afterParserOrEnumRuleCall();
                 
-            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2645:1: (kw= '.' this_ValidID_2= ruleValidID )*
-            loop55:
+            // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2638:1: (kw= '.' this_ValidID_2= ruleValidID )*
+            loop53:
             do {
-                int alt55=2;
-                int LA55_0 = input.LA(1);
+                int alt53=2;
+                int LA53_0 = input.LA(1);
 
-                if ( (LA55_0==65) ) {
-                    alt55=1;
+                if ( (LA53_0==67) ) {
+                    alt53=1;
                 }
 
 
-                switch (alt55) {
+                switch (alt53) {
             	case 1 :
-            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2646:2: kw= '.' this_ValidID_2= ruleValidID
+            	    // ../org.cloudml.dsl/src-gen/org/cloudml/dsl/parser/antlr/internal/InternalCloudML.g:2639:2: kw= '.' this_ValidID_2= ruleValidID
             	    {
-            	    kw=(Token)match(input,65,FOLLOW_65_in_ruleFqn5390); 
+            	    kw=(Token)match(input,67,FOLLOW_67_in_ruleFqn5391); 
 
             	            current.merge(kw);
             	            newLeafNode(kw, grammarAccess.getFqnAccess().getFullStopKeyword_1_0()); 
@@ -6453,7 +6381,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	     
             	            newCompositeNode(grammarAccess.getFqnAccess().getValidIDParserRuleCall_1_1()); 
             	        
-            	    pushFollow(FOLLOW_ruleValidID_in_ruleFqn5412);
+            	    pushFollow(FOLLOW_ruleValidID_in_ruleFqn5413);
             	    this_ValidID_2=ruleValidID();
 
             	    state._fsp--;
@@ -6469,7 +6397,7 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop55;
+            	    break loop53;
                 }
             } while (true);
 
@@ -6504,259 +6432,261 @@ public class InternalCloudMLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleValidID_in_ruleCloudMLRoot155 = new BitSet(new long[]{0x0000000000022000L});
     public static final BitSet FOLLOW_ruleProviderCS_in_ruleCloudMLRoot176 = new BitSet(new long[]{0x0000000000022000L});
     public static final BitSet FOLLOW_13_in_ruleCloudMLRoot189 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleCloudMLRoot201 = new BitSet(new long[]{0x0001044000088000L});
-    public static final BitSet FOLLOW_ruleVMCS_in_ruleCloudMLRoot223 = new BitSet(new long[]{0x0001044000088000L});
-    public static final BitSet FOLLOW_ruleInternalComponentCS_in_ruleCloudMLRoot250 = new BitSet(new long[]{0x0001044000088000L});
-    public static final BitSet FOLLOW_ruleExternalComponentCS_in_ruleCloudMLRoot277 = new BitSet(new long[]{0x0001044000088000L});
-    public static final BitSet FOLLOW_ruleRelationshipCS_in_ruleCloudMLRoot300 = new BitSet(new long[]{0x0001000000008000L});
+    public static final BitSet FOLLOW_14_in_ruleCloudMLRoot201 = new BitSet(new long[]{0x0000124000088000L});
+    public static final BitSet FOLLOW_ruleVMCS_in_ruleCloudMLRoot223 = new BitSet(new long[]{0x0000124000088000L});
+    public static final BitSet FOLLOW_ruleInternalComponentCS_in_ruleCloudMLRoot250 = new BitSet(new long[]{0x0000124000088000L});
+    public static final BitSet FOLLOW_ruleExternalComponentCS_in_ruleCloudMLRoot277 = new BitSet(new long[]{0x0000124000088000L});
+    public static final BitSet FOLLOW_ruleRelationshipCS_in_ruleCloudMLRoot300 = new BitSet(new long[]{0x0000020000008000L});
     public static final BitSet FOLLOW_15_in_ruleCloudMLRoot313 = new BitSet(new long[]{0x0000000000010000L});
     public static final BitSet FOLLOW_16_in_ruleCloudMLRoot325 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleCloudMLRoot337 = new BitSet(new long[]{0x0011044000088000L});
-    public static final BitSet FOLLOW_ruleInternalComponentInstanceCS_in_ruleCloudMLRoot359 = new BitSet(new long[]{0x0011044000088000L});
-    public static final BitSet FOLLOW_ruleExternalComponentInstanceCS_in_ruleCloudMLRoot386 = new BitSet(new long[]{0x0011044000088000L});
-    public static final BitSet FOLLOW_ruleVMInstanceCS_in_ruleCloudMLRoot413 = new BitSet(new long[]{0x0011044000088000L});
-    public static final BitSet FOLLOW_ruleRelationshipInstanceCS_in_ruleCloudMLRoot436 = new BitSet(new long[]{0x0011000000008000L});
-    public static final BitSet FOLLOW_ruleExecuteInstanceCS_in_ruleCloudMLRoot458 = new BitSet(new long[]{0x0010000000008000L});
+    public static final BitSet FOLLOW_14_in_ruleCloudMLRoot337 = new BitSet(new long[]{0x0020904000088000L});
+    public static final BitSet FOLLOW_ruleInternalComponentInstanceCS_in_ruleCloudMLRoot359 = new BitSet(new long[]{0x0020904000088000L});
+    public static final BitSet FOLLOW_ruleExternalComponentInstanceCS_in_ruleCloudMLRoot386 = new BitSet(new long[]{0x0020904000088000L});
+    public static final BitSet FOLLOW_ruleVMInstanceCS_in_ruleCloudMLRoot413 = new BitSet(new long[]{0x0020904000088000L});
+    public static final BitSet FOLLOW_ruleRelationshipInstanceCS_in_ruleCloudMLRoot436 = new BitSet(new long[]{0x0020800000008000L});
+    public static final BitSet FOLLOW_ruleExecuteInstanceCS_in_ruleCloudMLRoot458 = new BitSet(new long[]{0x0000800000008000L});
     public static final BitSet FOLLOW_15_in_ruleCloudMLRoot471 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleProviderCS_in_entryRuleProviderCS507 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleProviderCS517 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_17_in_ruleProviderCS554 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_ruleValidID_in_ruleProviderCS575 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleProviderCS587 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleProviderCS604 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleProviderCS630 = new BitSet(new long[]{0x0040000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleProviderCS604 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleProviderCS630 = new BitSet(new long[]{0x0100000000000002L});
     public static final BitSet FOLLOW_ruleVMCS_in_entryRuleVMCS667 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleVMCS677 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_19_in_ruleVMCS714 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_ruleValidID_in_ruleVMCS735 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleVMCS747 = new BitSet(new long[]{0x000000AFFBF28000L});
+    public static final BitSet FOLLOW_14_in_ruleVMCS747 = new BitSet(new long[]{0x0000012FFBF28000L});
     public static final BitSet FOLLOW_17_in_ruleVMCS762 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS774 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleVMCS794 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleVMCS794 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_20_in_ruleVMCS814 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS826 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS843 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS843 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_21_in_ruleVMCS868 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS880 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS897 = new BitSet(new long[]{0x000000BFFBF28000L});
-    public static final BitSet FOLLOW_22_in_ruleVMCS927 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS897 = new BitSet(new long[]{0x0000013FFBF28000L});
+    public static final BitSet FOLLOW_22_in_ruleVMCS927 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_23_in_ruleVMCS959 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS971 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS988 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS988 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_24_in_ruleVMCS1013 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1025 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1042 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1042 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_25_in_ruleVMCS1067 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1079 = new BitSet(new long[]{0x0000000000000040L});
     public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1096 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_26_in_ruleVMCS1113 = new BitSet(new long[]{0x000000BFFBF28040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1130 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_26_in_ruleVMCS1113 = new BitSet(new long[]{0x0000013FFBF28040L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1130 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_27_in_ruleVMCS1156 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1168 = new BitSet(new long[]{0x0000000000000040L});
     public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1185 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_26_in_ruleVMCS1202 = new BitSet(new long[]{0x000000BFFBF28040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1219 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_26_in_ruleVMCS1202 = new BitSet(new long[]{0x0000013FFBF28040L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1219 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_28_in_ruleVMCS1245 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1257 = new BitSet(new long[]{0x0000000000000040L});
     public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1274 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_26_in_ruleVMCS1291 = new BitSet(new long[]{0x000000BFFBF28040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1308 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_26_in_ruleVMCS1291 = new BitSet(new long[]{0x0000013FFBF28040L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleVMCS1308 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_29_in_ruleVMCS1334 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1346 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1363 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1363 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_30_in_ruleVMCS1388 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1400 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1417 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1417 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_31_in_ruleVMCS1442 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1454 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1471 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1471 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_32_in_ruleVMCS1496 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1508 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1525 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1525 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_33_in_ruleVMCS1550 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1562 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1579 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1579 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_34_in_ruleVMCS1604 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1616 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1633 = new BitSet(new long[]{0x000000BFFBF28000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1633 = new BitSet(new long[]{0x0000013FFBF28000L});
     public static final BitSet FOLLOW_35_in_ruleVMCS1658 = new BitSet(new long[]{0x0000000000040000L});
     public static final BitSet FOLLOW_18_in_ruleVMCS1670 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1687 = new BitSet(new long[]{0x000000BFFBF28000L});
-    public static final BitSet FOLLOW_36_in_ruleVMCS1707 = new BitSet(new long[]{0x000000AFFBF28000L});
-    public static final BitSet FOLLOW_ruleProvidedPortCS_in_ruleVMCS1732 = new BitSet(new long[]{0x000000A000008000L});
-    public static final BitSet FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleVMCS1754 = new BitSet(new long[]{0x000000A000008000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleVMCS1687 = new BitSet(new long[]{0x0000013FFBF28000L});
+    public static final BitSet FOLLOW_36_in_ruleVMCS1707 = new BitSet(new long[]{0x0000012FFBF28000L});
+    public static final BitSet FOLLOW_ruleProvidedPortCS_in_ruleVMCS1732 = new BitSet(new long[]{0x0000012000008000L});
+    public static final BitSet FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleVMCS1754 = new BitSet(new long[]{0x0000012000008000L});
     public static final BitSet FOLLOW_37_in_ruleVMCS1768 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleVMCS1780 = new BitSet(new long[]{0x0040000000008000L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleVMCS1801 = new BitSet(new long[]{0x0040000000008000L});
+    public static final BitSet FOLLOW_18_in_ruleVMCS1780 = new BitSet(new long[]{0x0100000000008000L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleVMCS1801 = new BitSet(new long[]{0x0100000000008000L});
     public static final BitSet FOLLOW_15_in_ruleVMCS1816 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleExternalComponentCS_in_entryRuleExternalComponentCS1854 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleExternalComponentCS1864 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleExternalComponentCS1901 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleExternalComponentCS1922 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleExternalComponentCS1934 = new BitSet(new long[]{0x010000A000008000L});
-    public static final BitSet FOLLOW_ruleProvidedPortCS_in_ruleExternalComponentCS1956 = new BitSet(new long[]{0x010000A000008000L});
-    public static final BitSet FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleExternalComponentCS1983 = new BitSet(new long[]{0x010000A000008000L});
-    public static final BitSet FOLLOW_37_in_ruleExternalComponentCS1998 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleExternalComponentCS2010 = new BitSet(new long[]{0x0140000000008000L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleExternalComponentCS2031 = new BitSet(new long[]{0x0140000000008000L});
-    public static final BitSet FOLLOW_ruleResourceCS_in_ruleExternalComponentCS2055 = new BitSet(new long[]{0x0100000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleExternalComponentCS2068 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleProvidedPortCS_in_entryRuleProvidedPortCS2104 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleProvidedPortCS2114 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_ruleProvidedPortCS2151 = new BitSet(new long[]{0x0000010000000000L});
-    public static final BitSet FOLLOW_40_in_ruleProvidedPortCS2163 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleProvidedPortCS2184 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_18_in_ruleProvidedPortCS2197 = new BitSet(new long[]{0x0040030000000002L});
-    public static final BitSet FOLLOW_41_in_ruleProvidedPortCS2217 = new BitSet(new long[]{0x0040031000000002L});
-    public static final BitSet FOLLOW_40_in_ruleProvidedPortCS2249 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleProvidedPortCS2261 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleProvidedPortCS2278 = new BitSet(new long[]{0x0040031000000002L});
-    public static final BitSet FOLLOW_36_in_ruleProvidedPortCS2298 = new BitSet(new long[]{0x0040030000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleProvidedPortCS2323 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_ruleInternalComponentCS_in_entryRuleInternalComponentCS2362 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleInternalComponentCS2372 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_ruleInternalComponentCS2409 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleInternalComponentCS2430 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleInternalComponentCS2442 = new BitSet(new long[]{0x010008A000008000L});
-    public static final BitSet FOLLOW_ruleProvidedPortCS_in_ruleInternalComponentCS2464 = new BitSet(new long[]{0x010008A000008000L});
-    public static final BitSet FOLLOW_ruleRequiredPortCS_in_ruleInternalComponentCS2491 = new BitSet(new long[]{0x010008A000008000L});
-    public static final BitSet FOLLOW_ruleRequiredExecutionPlatformCS_in_ruleInternalComponentCS2518 = new BitSet(new long[]{0x010008A000008000L});
-    public static final BitSet FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleInternalComponentCS2545 = new BitSet(new long[]{0x010008A000008000L});
-    public static final BitSet FOLLOW_37_in_ruleInternalComponentCS2560 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleInternalComponentCS2572 = new BitSet(new long[]{0x0140000000008000L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleInternalComponentCS2593 = new BitSet(new long[]{0x0140000000008000L});
-    public static final BitSet FOLLOW_ruleResourceCS_in_ruleInternalComponentCS2617 = new BitSet(new long[]{0x0100000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleInternalComponentCS2630 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRequiredPortCS_in_entryRuleRequiredPortCS2666 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRequiredPortCS2676 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_ruleRequiredPortCS2713 = new BitSet(new long[]{0x0000010000000000L});
-    public static final BitSet FOLLOW_40_in_ruleRequiredPortCS2725 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleRequiredPortCS2746 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_18_in_ruleRequiredPortCS2759 = new BitSet(new long[]{0x0040130000000002L});
-    public static final BitSet FOLLOW_41_in_ruleRequiredPortCS2779 = new BitSet(new long[]{0x0040131000000002L});
-    public static final BitSet FOLLOW_40_in_ruleRequiredPortCS2811 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleRequiredPortCS2823 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleRequiredPortCS2840 = new BitSet(new long[]{0x0040131000000002L});
-    public static final BitSet FOLLOW_44_in_ruleRequiredPortCS2870 = new BitSet(new long[]{0x0040131000000002L});
-    public static final BitSet FOLLOW_36_in_ruleRequiredPortCS2897 = new BitSet(new long[]{0x0040130000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRequiredPortCS2922 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_ruleRequiredExecutionPlatformCS_in_entryRuleRequiredExecutionPlatformCS2961 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRequiredExecutionPlatformCS2971 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_ruleRequiredExecutionPlatformCS3008 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_45_in_ruleRequiredExecutionPlatformCS3020 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleRequiredExecutionPlatformCS3041 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_18_in_ruleRequiredExecutionPlatformCS3054 = new BitSet(new long[]{0x0000402000000000L});
-    public static final BitSet FOLLOW_46_in_ruleRequiredExecutionPlatformCS3067 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleRequiredExecutionPlatformCS3079 = new BitSet(new long[]{0x0040002000000000L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRequiredExecutionPlatformCS3100 = new BitSet(new long[]{0x0040002000000000L});
-    public static final BitSet FOLLOW_37_in_ruleRequiredExecutionPlatformCS3115 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleRequiredExecutionPlatformCS3127 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRequiredExecutionPlatformCS3148 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_ruleProvidedExecutionPlatformCS_in_entryRuleProvidedExecutionPlatformCS3187 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleProvidedExecutionPlatformCS3197 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_ruleProvidedExecutionPlatformCS3234 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_45_in_ruleProvidedExecutionPlatformCS3246 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleProvidedExecutionPlatformCS3267 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_18_in_ruleProvidedExecutionPlatformCS3280 = new BitSet(new long[]{0x0000802000000000L});
-    public static final BitSet FOLLOW_47_in_ruleProvidedExecutionPlatformCS3293 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleProvidedExecutionPlatformCS3305 = new BitSet(new long[]{0x0040002000000000L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleProvidedExecutionPlatformCS3326 = new BitSet(new long[]{0x0040002000000000L});
-    public static final BitSet FOLLOW_37_in_ruleProvidedExecutionPlatformCS3341 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleProvidedExecutionPlatformCS3353 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleProvidedExecutionPlatformCS3374 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_ruleRelationshipCS_in_entryRuleRelationshipCS3415 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRelationshipCS3425 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_ruleRelationshipCS3462 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleFqn_in_ruleRelationshipCS3485 = new BitSet(new long[]{0x0002000000000000L});
-    public static final BitSet FOLLOW_49_in_ruleRelationshipCS3497 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleFqn_in_ruleRelationshipCS3520 = new BitSet(new long[]{0x0004000000000000L});
-    public static final BitSet FOLLOW_50_in_ruleRelationshipCS3532 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleRelationshipCS3553 = new BitSet(new long[]{0x0000000000044002L});
-    public static final BitSet FOLLOW_18_in_ruleRelationshipCS3567 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRelationshipCS3588 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_14_in_ruleRelationshipCS3609 = new BitSet(new long[]{0x0100002000008000L});
-    public static final BitSet FOLLOW_37_in_ruleRelationshipCS3622 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleRelationshipCS3634 = new BitSet(new long[]{0x0140000000008000L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRelationshipCS3655 = new BitSet(new long[]{0x0140000000008000L});
-    public static final BitSet FOLLOW_ruleResourceCS_in_ruleRelationshipCS3679 = new BitSet(new long[]{0x0100000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleRelationshipCS3692 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleExternalComponentInstanceCS_in_entryRuleExternalComponentInstanceCS3731 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleExternalComponentInstanceCS3741 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleExternalComponentInstanceCS3778 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleExternalComponentInstanceCS3799 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_51_in_ruleExternalComponentInstanceCS3811 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleExternalComponentInstanceCS3831 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleInternalComponentInstanceCS_in_entryRuleInternalComponentInstanceCS3867 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleInternalComponentInstanceCS3877 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_ruleInternalComponentInstanceCS3914 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleInternalComponentInstanceCS3935 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_51_in_ruleInternalComponentInstanceCS3947 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleInternalComponentInstanceCS3967 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleVMInstanceCS_in_entryRuleVMInstanceCS4003 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleVMInstanceCS4013 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_ruleVMInstanceCS4050 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleVMInstanceCS4071 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_51_in_ruleVMInstanceCS4083 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleVMInstanceCS4103 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRelationshipInstanceCS_in_entryRuleRelationshipInstanceCS4139 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRelationshipInstanceCS4149 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_ruleRelationshipInstanceCS4186 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleFqn_in_ruleRelationshipInstanceCS4209 = new BitSet(new long[]{0x0002000000000000L});
-    public static final BitSet FOLLOW_49_in_ruleRelationshipInstanceCS4221 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleFqn_in_ruleRelationshipInstanceCS4244 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_51_in_ruleRelationshipInstanceCS4256 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRelationshipInstanceCS4276 = new BitSet(new long[]{0x0004000000000002L});
-    public static final BitSet FOLLOW_50_in_ruleRelationshipInstanceCS4289 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleRelationshipInstanceCS4310 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleExecuteInstanceCS_in_entryRuleExecuteInstanceCS4348 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleExecuteInstanceCS4358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_52_in_ruleExecuteInstanceCS4395 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleFqn_in_ruleExecuteInstanceCS4418 = new BitSet(new long[]{0x0020000000000000L});
-    public static final BitSet FOLLOW_53_in_ruleExecuteInstanceCS4430 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleFqn_in_ruleExecuteInstanceCS4453 = new BitSet(new long[]{0x0004000000000002L});
-    public static final BitSet FOLLOW_50_in_ruleExecuteInstanceCS4466 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleExecuteInstanceCS4487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyCS_in_entryRulePropertyCS4525 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePropertyCS4535 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_54_in_rulePropertyCS4572 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rulePropertyCS4589 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_rulePropertyCS4606 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rulePropertyCS4623 = new BitSet(new long[]{0x0080000000000000L});
-    public static final BitSet FOLLOW_55_in_rulePropertyCS4640 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleResourceCS_in_entryRuleResourceCS4676 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleResourceCS4686 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_56_in_ruleResourceCS4723 = new BitSet(new long[]{0x0000000000004020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleResourceCS4744 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleResourceCS4757 = new BitSet(new long[]{0xFE00000000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_57_in_ruleResourceCS4772 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleResourceCS4784 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS4801 = new BitSet(new long[]{0xFE00001000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_58_in_ruleResourceCS4826 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleResourceCS4838 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS4855 = new BitSet(new long[]{0xFE00001000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_59_in_ruleResourceCS4880 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleResourceCS4892 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS4909 = new BitSet(new long[]{0xFE00001000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_60_in_ruleResourceCS4934 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleResourceCS4946 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS4963 = new BitSet(new long[]{0xFE00001000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_61_in_ruleResourceCS4988 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleResourceCS5000 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS5017 = new BitSet(new long[]{0xFE00001000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_62_in_ruleResourceCS5042 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleResourceCS5054 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS5071 = new BitSet(new long[]{0xFE00001000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_63_in_ruleResourceCS5101 = new BitSet(new long[]{0xFE00001000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_64_in_ruleResourceCS5138 = new BitSet(new long[]{0xFE00001000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_36_in_ruleResourceCS5165 = new BitSet(new long[]{0xFE00000000008000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_15_in_ruleResourceCS5181 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_entryRuleValidID5218 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleValidID5229 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleValidID5268 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFqn_in_entryRuleFqn5313 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleFqn5324 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleFqn5371 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000002L});
-    public static final BitSet FOLLOW_65_in_ruleFqn5390 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleFqn5412 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleExternalComponentCS1901 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleExternalComponentCS1913 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleExternalComponentCS1934 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleExternalComponentCS1946 = new BitSet(new long[]{0x0400012000008000L});
+    public static final BitSet FOLLOW_ruleProvidedPortCS_in_ruleExternalComponentCS1968 = new BitSet(new long[]{0x0400012000008000L});
+    public static final BitSet FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleExternalComponentCS1995 = new BitSet(new long[]{0x0400012000008000L});
+    public static final BitSet FOLLOW_37_in_ruleExternalComponentCS2010 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleExternalComponentCS2022 = new BitSet(new long[]{0x0500000000008000L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleExternalComponentCS2043 = new BitSet(new long[]{0x0500000000008000L});
+    public static final BitSet FOLLOW_ruleResourceCS_in_ruleExternalComponentCS2067 = new BitSet(new long[]{0x0400000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleExternalComponentCS2080 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleProvidedPortCS_in_entryRuleProvidedPortCS2116 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleProvidedPortCS2126 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_ruleProvidedPortCS2163 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_41_in_ruleProvidedPortCS2175 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleProvidedPortCS2196 = new BitSet(new long[]{0x0000000000040002L});
+    public static final BitSet FOLLOW_18_in_ruleProvidedPortCS2209 = new BitSet(new long[]{0x01000C0000000002L});
+    public static final BitSet FOLLOW_42_in_ruleProvidedPortCS2229 = new BitSet(new long[]{0x01000C1000000002L});
+    public static final BitSet FOLLOW_43_in_ruleProvidedPortCS2261 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleProvidedPortCS2273 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleProvidedPortCS2290 = new BitSet(new long[]{0x01000C1000000002L});
+    public static final BitSet FOLLOW_36_in_ruleProvidedPortCS2310 = new BitSet(new long[]{0x01000C0000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleProvidedPortCS2335 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_ruleInternalComponentCS_in_entryRuleInternalComponentCS2374 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleInternalComponentCS2384 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_ruleInternalComponentCS2421 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleInternalComponentCS2433 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleInternalComponentCS2454 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleInternalComponentCS2466 = new BitSet(new long[]{0x0400212000008000L});
+    public static final BitSet FOLLOW_ruleProvidedPortCS_in_ruleInternalComponentCS2488 = new BitSet(new long[]{0x0400212000008000L});
+    public static final BitSet FOLLOW_ruleRequiredPortCS_in_ruleInternalComponentCS2515 = new BitSet(new long[]{0x0400212000008000L});
+    public static final BitSet FOLLOW_ruleRequiredExecutionPlatformCS_in_ruleInternalComponentCS2542 = new BitSet(new long[]{0x0400212000008000L});
+    public static final BitSet FOLLOW_ruleProvidedExecutionPlatformCS_in_ruleInternalComponentCS2569 = new BitSet(new long[]{0x0400212000008000L});
+    public static final BitSet FOLLOW_37_in_ruleInternalComponentCS2584 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleInternalComponentCS2596 = new BitSet(new long[]{0x0500000000008000L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleInternalComponentCS2617 = new BitSet(new long[]{0x0500000000008000L});
+    public static final BitSet FOLLOW_ruleResourceCS_in_ruleInternalComponentCS2641 = new BitSet(new long[]{0x0400000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleInternalComponentCS2654 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRequiredPortCS_in_entryRuleRequiredPortCS2690 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRequiredPortCS2700 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_ruleRequiredPortCS2737 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_41_in_ruleRequiredPortCS2749 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleRequiredPortCS2770 = new BitSet(new long[]{0x0000000000040002L});
+    public static final BitSet FOLLOW_18_in_ruleRequiredPortCS2783 = new BitSet(new long[]{0x01004C0000000002L});
+    public static final BitSet FOLLOW_42_in_ruleRequiredPortCS2803 = new BitSet(new long[]{0x01004C1000000002L});
+    public static final BitSet FOLLOW_43_in_ruleRequiredPortCS2835 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleRequiredPortCS2847 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleRequiredPortCS2864 = new BitSet(new long[]{0x01004C1000000002L});
+    public static final BitSet FOLLOW_46_in_ruleRequiredPortCS2894 = new BitSet(new long[]{0x01004C1000000002L});
+    public static final BitSet FOLLOW_36_in_ruleRequiredPortCS2921 = new BitSet(new long[]{0x01004C0000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRequiredPortCS2946 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_ruleRequiredExecutionPlatformCS_in_entryRuleRequiredExecutionPlatformCS2985 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRequiredExecutionPlatformCS2995 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_ruleRequiredExecutionPlatformCS3032 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_47_in_ruleRequiredExecutionPlatformCS3044 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleRequiredExecutionPlatformCS3065 = new BitSet(new long[]{0x0000000000040002L});
+    public static final BitSet FOLLOW_18_in_ruleRequiredExecutionPlatformCS3078 = new BitSet(new long[]{0x0001002000000000L});
+    public static final BitSet FOLLOW_48_in_ruleRequiredExecutionPlatformCS3091 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleRequiredExecutionPlatformCS3103 = new BitSet(new long[]{0x0100002000000000L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRequiredExecutionPlatformCS3124 = new BitSet(new long[]{0x0100002000000000L});
+    public static final BitSet FOLLOW_37_in_ruleRequiredExecutionPlatformCS3139 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleRequiredExecutionPlatformCS3151 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRequiredExecutionPlatformCS3172 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_ruleProvidedExecutionPlatformCS_in_entryRuleProvidedExecutionPlatformCS3211 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleProvidedExecutionPlatformCS3221 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_ruleProvidedExecutionPlatformCS3258 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_47_in_ruleProvidedExecutionPlatformCS3270 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleProvidedExecutionPlatformCS3291 = new BitSet(new long[]{0x0000000000040002L});
+    public static final BitSet FOLLOW_18_in_ruleProvidedExecutionPlatformCS3304 = new BitSet(new long[]{0x0002002000000000L});
+    public static final BitSet FOLLOW_49_in_ruleProvidedExecutionPlatformCS3317 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleProvidedExecutionPlatformCS3329 = new BitSet(new long[]{0x0100002000000000L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleProvidedExecutionPlatformCS3350 = new BitSet(new long[]{0x0100002000000000L});
+    public static final BitSet FOLLOW_37_in_ruleProvidedExecutionPlatformCS3365 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleProvidedExecutionPlatformCS3377 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleProvidedExecutionPlatformCS3398 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_ruleRelationshipCS_in_entryRuleRelationshipCS3439 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRelationshipCS3449 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_ruleRelationshipCS3486 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleRelationshipCS3507 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleRelationshipCS3519 = new BitSet(new long[]{0x0004000000000000L});
+    public static final BitSet FOLLOW_50_in_ruleRelationshipCS3531 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleFqn_in_ruleRelationshipCS3554 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_51_in_ruleRelationshipCS3566 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleFqn_in_ruleRelationshipCS3589 = new BitSet(new long[]{0x0400002000008000L});
+    public static final BitSet FOLLOW_37_in_ruleRelationshipCS3602 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleRelationshipCS3614 = new BitSet(new long[]{0x0500000000008000L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_ruleRelationshipCS3635 = new BitSet(new long[]{0x0500000000008000L});
+    public static final BitSet FOLLOW_ruleResourceCS_in_ruleRelationshipCS3659 = new BitSet(new long[]{0x0400000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleRelationshipCS3672 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExternalComponentInstanceCS_in_entryRuleExternalComponentInstanceCS3708 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleExternalComponentInstanceCS3718 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleExternalComponentInstanceCS3755 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleExternalComponentInstanceCS3767 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleExternalComponentInstanceCS3788 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_ruleExternalComponentInstanceCS3800 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleExternalComponentInstanceCS3820 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleInternalComponentInstanceCS_in_entryRuleInternalComponentInstanceCS3856 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleInternalComponentInstanceCS3866 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_ruleInternalComponentInstanceCS3903 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleInternalComponentInstanceCS3915 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleInternalComponentInstanceCS3936 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_ruleInternalComponentInstanceCS3948 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleInternalComponentInstanceCS3968 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleVMInstanceCS_in_entryRuleVMInstanceCS4004 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleVMInstanceCS4014 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_ruleVMInstanceCS4051 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleVMInstanceCS4072 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_ruleVMInstanceCS4084 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleVMInstanceCS4104 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRelationshipInstanceCS_in_entryRuleRelationshipInstanceCS4140 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRelationshipInstanceCS4150 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_53_in_ruleRelationshipInstanceCS4187 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleFqn_in_ruleRelationshipInstanceCS4210 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_51_in_ruleRelationshipInstanceCS4222 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleFqn_in_ruleRelationshipInstanceCS4245 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_ruleRelationshipInstanceCS4257 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRelationshipInstanceCS4277 = new BitSet(new long[]{0x0040000000000002L});
+    public static final BitSet FOLLOW_54_in_ruleRelationshipInstanceCS4290 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleRelationshipInstanceCS4311 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExecuteInstanceCS_in_entryRuleExecuteInstanceCS4349 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleExecuteInstanceCS4359 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_47_in_ruleExecuteInstanceCS4396 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleFqn_in_ruleExecuteInstanceCS4419 = new BitSet(new long[]{0x0080000000000000L});
+    public static final BitSet FOLLOW_55_in_ruleExecuteInstanceCS4431 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleFqn_in_ruleExecuteInstanceCS4454 = new BitSet(new long[]{0x0040000000000002L});
+    public static final BitSet FOLLOW_54_in_ruleExecuteInstanceCS4467 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleExecuteInstanceCS4488 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyCS_in_entryRulePropertyCS4526 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePropertyCS4536 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_56_in_rulePropertyCS4573 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rulePropertyCS4590 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_rulePropertyCS4607 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rulePropertyCS4624 = new BitSet(new long[]{0x0200000000000000L});
+    public static final BitSet FOLLOW_57_in_rulePropertyCS4641 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleResourceCS_in_entryRuleResourceCS4677 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleResourceCS4687 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_58_in_ruleResourceCS4724 = new BitSet(new long[]{0x0000000000004020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleResourceCS4745 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleResourceCS4758 = new BitSet(new long[]{0xF800000000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_59_in_ruleResourceCS4773 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleResourceCS4785 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS4802 = new BitSet(new long[]{0xF800001000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_60_in_ruleResourceCS4827 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleResourceCS4839 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS4856 = new BitSet(new long[]{0xF800001000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_61_in_ruleResourceCS4881 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleResourceCS4893 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS4910 = new BitSet(new long[]{0xF800001000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_62_in_ruleResourceCS4935 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleResourceCS4947 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS4964 = new BitSet(new long[]{0xF800001000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_63_in_ruleResourceCS4989 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleResourceCS5001 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS5018 = new BitSet(new long[]{0xF800001000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_64_in_ruleResourceCS5043 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleResourceCS5055 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleResourceCS5072 = new BitSet(new long[]{0xF800001000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_65_in_ruleResourceCS5102 = new BitSet(new long[]{0xF800001000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_66_in_ruleResourceCS5139 = new BitSet(new long[]{0xF800001000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_36_in_ruleResourceCS5166 = new BitSet(new long[]{0xF800000000008000L,0x0000000000000007L});
+    public static final BitSet FOLLOW_15_in_ruleResourceCS5182 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_entryRuleValidID5219 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleValidID5230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleValidID5269 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFqn_in_entryRuleFqn5314 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleFqn5325 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleFqn5372 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
+    public static final BitSet FOLLOW_67_in_ruleFqn5391 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleFqn5413 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
 
 }

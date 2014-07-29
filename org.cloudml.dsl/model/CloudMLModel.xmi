@@ -6,9 +6,8 @@
     xmlns:net.cloudml.core="http://cloudml.net/core"
     xsi:schemaLocation="http://cloudml.net/core CloudML-2.0.ecore#//core"
     name="B">
-  <externalComponents
-      name="A">
-    <providedPorts
-        name="A"/>
-  </externalComponents>
+  <vms name="baa"
+      login=""
+      location=""
+      imageId=""/>
 </net.cloudml.core:CloudMLModel>

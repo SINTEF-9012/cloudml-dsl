@@ -301,12 +301,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (
-	 *         requiredPort=[RequiredPort|Fqn] 
-	 *         providedPort=[ProvidedPort|Fqn] 
-	 *         name=ValidID 
-	 *         (properties+=PropertyCS* | (properties+=PropertyCS* resources+=ResourceCS*))?
-	 *     )
+	 *     (name=ValidID requiredPort=[RequiredPort|Fqn] providedPort=[ProvidedPort|Fqn] properties+=PropertyCS* resources+=ResourceCS*)
 	 */
 	protected void sequence_RelationshipCS(EObject context, Relationship semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

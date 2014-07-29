@@ -38,6 +38,7 @@ import cloudml.core.VMInstance;
 import cloudml.core.VMPort;
 import cloudml.core.VMPortInstance;
 
+import cloudml.core.util.CoreValidator;
 import cloudml.impl.CloudmlPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -45,6 +46,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -334,6 +336,15 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		// Initialize created meta-data
 		theCorePackage.initializePackageContents();
 		theCloudmlPackage.initializePackageContents();
+
+		// Register package validator
+		EValidator.Registry.INSTANCE.put
+			(theCorePackage, 
+			 new EValidator.Descriptor() {
+				 public EValidator getEValidator() {
+					 return CoreValidator.INSTANCE;
+				 }
+			 });
 
 		// Mark meta-data to indicate it can't be changed
 		theCorePackage.freeze();
@@ -1773,6 +1784,50 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEClass(executeInstanceEClass, ExecuteInstance.class, "ExecuteInstance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getExecuteInstance_ProvidedExecutionPlatformInstance(), this.getProvidedExecutionPlatformInstance(), null, "providedExecutionPlatformInstance", null, 1, 1, ExecuteInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getExecuteInstance_RequiredExecutionPlatformInstance(), this.getRequiredExecutionPlatformInstance(), null, "requiredExecutionPlatformInstance", null, 1, 1, ExecuteInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Create annotations
+		// http://www.eclipse.org/emf/2002/Ecore
+		createEcoreAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore/OCL/LPG
+		createLPGAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createEcoreAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/LPG"
+		   });	
+		addAnnotation
+		  (vmEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "NameCap"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore/OCL/LPG</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createLPGAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/LPG";	
+		addAnnotation
+		  (vmEClass, 
+		   source, 
+		   new String[] {
+			 "NameCap", "name.at(1)=name.at(1).toUpperCase()"
+		   });
 	}
 
 } //CorePackageImpl

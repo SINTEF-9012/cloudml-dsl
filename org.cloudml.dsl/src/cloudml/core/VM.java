@@ -30,7 +30,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see cloudml.core.CorePackage#getVM()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NameCap'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG NameCap='name.at(1)=name.at(1).toUpperCase()'"
  * @generated
  */
 public interface VM extends ExternalComponent {

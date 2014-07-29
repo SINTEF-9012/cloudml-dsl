@@ -14,6 +14,7 @@ import cloudml.core.CloudMLElement
 import cloudml.core.CloudMLModel
 import cloudml.core.VMInstance
 import java.util.ArrayList
+import org.eclipse.ocl.ecore.delegate.OCLDelegateDomain
 
 /**
  * Generates code from your model files on save.
@@ -34,8 +35,13 @@ class CloudMLGenerator implements IGenerator {
 		
 		val fileName = (resource.contents.get(0) as CloudMLElement).getName();
 		
+		//OCLDelegateDomain.initialize(resource.resourceSet, "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot");
+		
 		val xmires = new XMIResourceImpl()
 		xmires.contents.addAll(resource.contents)
+		
+		//OCLDelegateDomain.initialize(xmires.resourceSet, "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot");
+		
 		
 //		val root = xmires.contents.get(0) as CloudMLModel
 //		val vms = root.externalComponentInstances.filter[e | e instanceof VMInstance]

@@ -193,7 +193,7 @@ public class CloudmlPackageImpl extends EPackageImpl implements CloudmlPackage {
 		  (this, 
 		   source, 
 		   new String[] {
-			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/LPG"
+			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/LPG\r\n"
 		   });
 	}
 

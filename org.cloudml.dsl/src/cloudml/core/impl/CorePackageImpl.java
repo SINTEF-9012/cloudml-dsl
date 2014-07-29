@@ -1810,7 +1810,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		  (vmEClass, 
 		   source, 
 		   new String[] {
-			 "constraints", "NameCap"
+			 "constraints", "VM_Name_Upper Max_Core_Bigger_Than_Min"
 		   });
 	}
 
@@ -1826,7 +1826,8 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		  (vmEClass, 
 		   source, 
 		   new String[] {
-			 "NameCap", "name.at(1)=name.at(1).toUpperCase()"
+			 "VM_Name_Upper", "name.at(1)=name.at(1).toUpperCase()\r\n",
+			 "Max_Core_Bigger_Than_Min", "minCores <=0 or maxCores <=0 or minCores <= maxCores"
 		   });
 	}
 

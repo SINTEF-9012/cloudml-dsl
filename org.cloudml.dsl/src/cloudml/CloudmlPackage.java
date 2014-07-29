@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EPackage;
  * <!-- end-user-doc -->
  * @see cloudml.CloudmlFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/LPG'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/LPG\r\n'"
  * @generated
  */
 public interface CloudmlPackage extends EPackage {

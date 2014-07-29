@@ -64,10 +64,11 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="VM" eSuperTypes="#//core/ExternalComponent">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-        <details key="constraints" value="NameCap"/>
+        <details key="constraints" value="VM_Name_Upper Max_Core_Bigger_Than_Min"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG">
-        <details key="NameCap" value="Tuple {&#xD;&#xA;&#x9;message : String = 'wrong',&#xD;&#xA;&#x9;status : Boolean = name.at(1)=name.at(1).toUpperCase()&#xD;&#xA;}.status"/>
+        <details key="VM_Name_Upper" value="name.at(1)=name.at(1).toUpperCase()&#xD;&#xA;"/>
+        <details key="Max_Core_Bigger_Than_Min" value="minCores &lt;=0 or maxCores &lt;=0 or minCores &lt;= maxCores"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="provided" upperBound="-1"
           eType="#//core/VMPort" containment="true"/>

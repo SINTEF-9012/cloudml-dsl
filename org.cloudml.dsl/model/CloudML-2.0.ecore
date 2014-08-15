@@ -19,6 +19,12 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="CloudMLElementWithProperties" abstract="true"
         eSuperTypes="#//core/CloudMLElement">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="constraints" value="Properties_Names_Duplicated"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG">
+        <details key="Properties_Names_Duplicated" value="properties->forAll(p1, p2 | p1 &lt;> p2 implies p1.name &lt;> p2.name)"/>
+      </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="properties" upperBound="-1"
           eType="#//core/Property" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="resources" upperBound="-1"
@@ -165,6 +171,13 @@
     <eClassifiers xsi:type="ecore:EClass" name="RequiredPortInstance" eSuperTypes="#//core/PortInstance"/>
     <eClassifiers xsi:type="ecore:EClass" name="ProvidedPortInstance" eSuperTypes="#//core/PortInstance"/>
     <eClassifiers xsi:type="ecore:EClass" name="RelationshipInstance" eSuperTypes="#//core/CloudMLElementWithProperties">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="constraints" value="Relationship_Required_Port_Should_Match_Its_Type Relationship_Provided_Port_Should_Match_Its_Type"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG">
+        <details key="Relationship_Required_Port_Should_Match_Its_Type" value="if (not type.oclIsUndefined()) and (not requiredPortInstance.oclIsUndefined()) then requiredPortInstance.type = type.requiredPort else true endif"/>
+        <details key="Relationship_Provided_Port_Should_Match_Its_Type" value="if (not type.oclIsUndefined()) and (not providedPortInstance.oclIsUndefined()) then providedPortInstance.type = type.providedPort else true endif"/>
+      </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1"
           eType="#//core/Relationship"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="requiredPortInstance"

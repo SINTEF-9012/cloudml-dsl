@@ -1807,10 +1807,22 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/LPG"
 		   });	
 		addAnnotation
+		  (cloudMLElementWithPropertiesEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "Properties_Names_Duplicated"
+		   });	
+		addAnnotation
 		  (vmEClass, 
 		   source, 
 		   new String[] {
 			 "constraints", "VM_Name_Upper Max_Core_Bigger_Than_Min"
+		   });	
+		addAnnotation
+		  (relationshipInstanceEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "Relationship_Required_Port_Should_Match_Its_Type Relationship_Provided_Port_Should_Match_Its_Type"
 		   });
 	}
 
@@ -1823,11 +1835,24 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 	protected void createLPGAnnotations() {
 		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/LPG";	
 		addAnnotation
+		  (cloudMLElementWithPropertiesEClass, 
+		   source, 
+		   new String[] {
+			 "Properties_Names_Duplicated", "properties->forAll(p1, p2 | p1 <> p2 implies p1.name <> p2.name)"
+		   });	
+		addAnnotation
 		  (vmEClass, 
 		   source, 
 		   new String[] {
 			 "VM_Name_Upper", "name.at(1)=name.at(1).toUpperCase()\r\n",
 			 "Max_Core_Bigger_Than_Min", "minCores <=0 or maxCores <=0 or minCores <= maxCores"
+		   });	
+		addAnnotation
+		  (relationshipInstanceEClass, 
+		   source, 
+		   new String[] {
+			 "Relationship_Required_Port_Should_Match_Its_Type", "if (not type.oclIsUndefined()) and (not requiredPortInstance.oclIsUndefined()) then requiredPortInstance.type = type.requiredPort else true endif",
+			 "Relationship_Provided_Port_Should_Match_Its_Type", "if (not type.oclIsUndefined()) and (not providedPortInstance.oclIsUndefined()) then providedPortInstance.type = type.providedPort else true endif"
 		   });
 	}
 

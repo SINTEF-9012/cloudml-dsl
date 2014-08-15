@@ -18,7 +18,8 @@ package cloudml.core;
  * </p>
  *
  * @see cloudml.core.CorePackage#getRelationshipInstance()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='Relationship_Required_Port_Should_Match_Its_Type Relationship_Provided_Port_Should_Match_Its_Type'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG Relationship_Required_Port_Should_Match_Its_Type='if (not type.oclIsUndefined()) and (not requiredPortInstance.oclIsUndefined()) then requiredPortInstance.type = type.requiredPort else true endif' Relationship_Provided_Port_Should_Match_Its_Type='if (not type.oclIsUndefined()) and (not providedPortInstance.oclIsUndefined()) then providedPortInstance.type = type.providedPort else true endif'"
  * @generated
  */
 public interface RelationshipInstance extends CloudMLElementWithProperties {

@@ -19,6 +19,8 @@ import org.eclipse.emf.common.util.EList;
  *
  * @see cloudml.core.CorePackage#getCloudMLElementWithProperties()
  * @model abstract="true"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='Properties_Names_Duplicated'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/LPG Properties_Names_Duplicated='properties->forAll(p1, p2 | p1 <> p2 implies p1.name <> p2.name)'"
  * @generated
  */
 public interface CloudMLElementWithProperties extends CloudMLElement {

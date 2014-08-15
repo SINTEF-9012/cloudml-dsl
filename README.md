@@ -34,6 +34,7 @@ A real example for SensApp deployment can be found here: [org.cloudml.dsl/sample
 To use the editor of this language:
 
 - Set up Eclipse Luna with Xtext, or directly download [Eclipse IDE for Java and DSL Developers](https://www.eclipse.org/downloads/packages/eclipse-ide-java-and-dsl-developers/lunar)
+- Install the Eclipse OCL plugin from Eclipse Marketplace
 - Import all the projects in this repository into Eclipse
 - Run the projects as "Eclipse Application"
 - Create a new empty project in the new Eclipse, and a new file with extension ".mydsl"

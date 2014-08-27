@@ -39,4 +39,7 @@ To use the editor of this language:
 - Run the projects as "Eclipse Application"
 - Create a new empty project in the new Eclipse, and a new file with extension ".mydsl"
 - Copy the code above into the file, and save
-- A new result.xmi file will be generated in the src-gen folder, and you can use this xmi file for deployment.
+- A <name>.xmi file and a <name>.json file will be generated in the src-gen folder, and you can use either of them for deployment using [cloudml](https://github.com/SINTEF-9012/cloudml/).
+
+
+More examples can be found in the *samples* folder toghether with the source code

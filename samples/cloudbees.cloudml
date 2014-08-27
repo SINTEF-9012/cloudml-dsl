@@ -1,0 +1,43 @@
+deployment model PaasCloudBees
+provider CloudBees : 'c:\\temp\\cloudbees.credential' ('account': 'mod4cloud')
+
+types{
+	external component Cbdb{
+		provider: CloudBees
+		provided communication db
+	}
+	external component GrannyCloudml{
+		provider: CloudBees
+		provided host tomcatProvided
+	}
+	internal component GrannyWar{
+		required communication dbr: local, mandatory
+		required host tomcat
+		properties: 
+			('warfile' : 'c:\\temp\\granny-common.war')
+			('temp-warfile' : 'c:\\temp\\granny-common-temp.war')
+	}
+	communication dbrel {
+		from GrannyWar.dbr to Cbdb.db
+		resource dbconfig {
+			properties:
+				('valet' : 'war-xml')
+				('entry_spring' : "WEB-INF/classes/META-INF/spring/app-context.xml")
+				("path_dburl" : "@self{properties/entry_spring}:://bean[@id=\"dataSource\"]/property[@name=\"url\"]/@value")
+                ("value_dburl" : "jdbc:mysql://@instance{providedEnd/owner/value/publicAddress}")
+                ("path_dbuser" : "@self{properties/entry_spring}:://bean[@id=\"dataSource\"]/property[@name=\"username\"]/@value")
+                ("value_dbuser" : "@instance{providedEnd/owner/value/type/login}")
+                ("path_dbpassword" : "@self{properties/entry_spring}:://bean[@id=\"dataSource\"]/property[@name=\"username\"]/@value")
+                ("value_dbpassword" : "@instance{providedEnd/owner/value/type/passwd}")
+				
+		}
+	}
+}
+
+instances{
+	external component cbdb1 typed Cbdb
+	external component grannycloudml1 typed GrannyCloudml
+	internal component grannywar1 typed GrannyWar
+	connect grannywar1.dbr to cbdb1.db typed dbrel
+	host grannywar1.tomcat on grannycloudml1.tomcatProvided
+}

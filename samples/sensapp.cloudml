@@ -1,0 +1,82 @@
+deployment model SensApp
+provider openstacknova : '' ('endPoint':'http://192.168.1.10:5000/v2.0')
+provider awsec2 : ''
+provider flexiant : '' ('endPoint':'https://api.sd1.flexiant.net:4442/userapi')
+
+types{
+	vm ML{
+		provider: flexiant
+		group: 'sensapp',  securityGroup: 'SensApp', sshKey: 'cloudml'
+		location: 'eu-west-1b', os: 'ubuntu'
+		os64  core: 2..,  ram: 1000..,  storage: 50..			
+		provided host m1Provided: offers: ('OS':'Ubuntu')
+		properties: ('something':'something') ('a':'ab')
+	}
+	
+	vm SL{
+		provider: flexiant, imageID:'Ubuntu-SINTEF'
+		group: 'sensapp',  securityGroup: 'SensApp', sshKey: 'cloudml'
+		location: 'eu-west-1b', os: 'ubuntu'
+		os64  core: 2..,  ram: 1000..,  storage: 50..			
+		provided host s1Provided
+	}
+	
+	internal component mangoDB{
+		required host sl
+		provided communication mangoDB
+		resource NoName{
+			download: 'wget -P ~ http://cloudml.org/scripts/linux/ubuntu/mongoDB/install_mongoDB.sh'
+			install: 'cd ~; sudo bash install_mongoDB.sh'
+		}  
+	}
+	internal component sensapp{
+		provided communication rest 
+		required communication mangoDBRequired
+		required host scRequired
+		resource NoName{
+			download: 'wget -P ~ http://github.com/downloads/SINTEF-9012/sensapp/sensapp.war; wget -P ~ http://cloudml.org/scripts/linux/ubuntu/sensapp/install_start_sensapp.sh'
+			install: 'cd ~; sudo bash install_start_sensapp.sh'
+		}
+	}
+	internal component JettySC{
+		provided host sc
+		required host ml
+		resource NoName{
+			download: 'wget -P ~ http://cloudml.org/scripts/linux/ubuntu/jetty/install_jetty.sh'
+			install: 'cd ~; sudo bash install_jetty.sh'
+			stop: 'sudo service jetty stop'
+		}
+	}
+	internal component SensAppAdmin{
+		required communication restRequired: port:8080
+		required host scRequired
+	}
+	communication SensAppAdminSensApp{
+		from SensAppAdmin.restRequired to sensapp.rest
+		resource NoName{
+			download: 'wget -P ~ http://cloudml.org/scripts/linux/ubuntu/sensappAdmin/configure_sensappadmin.sh'
+			install: 'cd ~; sudo bash configure_sensappadmin.sh'
+		}
+	}
+	communication SensAppMangoDB {from sensapp.mangoDBRequired to mangoDB.mangoDB}
+	//communication RTest {from sensapp.mangoDBRequired to sensapp.rest}
+}
+instances{
+	vm sensappsl1 typed SL
+	vm sensappml1 typed ML
+	internal component jettySC1 typed JettySC
+	internal component sensapp1 typed sensapp
+	internal component mangoDB1 typed mangoDB
+	internal component jettySC2 typed JettySC
+	internal component sensAppAdmin1 typed SensAppAdmin
+	connect sensAppAdmin1.restRequired to sensapp1.rest typed SensAppAdminSensApp
+	connect sensapp1.mangoDBRequired to mangoDB1.mangoDB typed SensAppMangoDB 
+	host jettySC1.ml on sensappml1.m1Provided
+	host jettySC2.ml on sensappsl1.s1Provided
+	host sensapp1.scRequired on jettySC1.sc
+	host sensAppAdmin1.scRequired on jettySC2.sc
+	host mangoDB1.sl on sensappml1.m1Provided 	
+}
+
+
+

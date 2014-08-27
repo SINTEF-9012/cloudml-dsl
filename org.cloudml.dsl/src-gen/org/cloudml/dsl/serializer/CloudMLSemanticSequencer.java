@@ -191,6 +191,7 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 * Constraint:
 	 *     (
 	 *         name=ValidID 
+	 *         provider=[Provider|ID]? 
 	 *         (providedPorts+=ProvidedPortCS | providedExecutionPlatforms+=ProvidedExecutionPlatformCS)* 
 	 *         properties+=PropertyCS* 
 	 *         resources+=ResourceCS*
@@ -348,7 +349,8 @@ public class CloudMLSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *             stopCommand=STRING | 
 	 *             requireCredentials?='requireCredentials' | 
 	 *             executeLocally?='executeLocally'
-	 *         )*
+	 *         )* 
+	 *         properties+=PropertyCS*
 	 *     )
 	 */
 	protected void sequence_ResourceCS(EObject context, Resource semanticObject) {

@@ -73,6 +73,7 @@ VMPortCS returns VMPort: name = ValidID;
 
 ExternalComponentCS returns ExternalComponent:
 	'external' 'component' name = ValidID '{'
+		('provider' ':' provider = [Provider])?
 		(
 			providedPorts += ProvidedPortCS |
 			providedExecutionPlatforms += ProvidedExecutionPlatformCS
@@ -196,6 +197,7 @@ ResourceCS returns Resource:
 			executeLocally ?= 'executeLocally'
 		) (',')?
 		)*
+		('properties' ':' properties += PropertyCS*)?
 	'}'
 ;
 

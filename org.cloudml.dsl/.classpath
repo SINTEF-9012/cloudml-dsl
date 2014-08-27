@@ -5,5 +5,14 @@
 	<classpathentry kind="src" path="xtend-gen"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="lib/codecs.commons-2.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/codecs.kmf-2.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/kotlin-runtime-0.5.429.jar"/>
+	<classpathentry kind="lib" path="lib/kotlin-stdlib-0.5.429.jar"/>
+	<classpathentry kind="lib" path="lib/model-2.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/codecs.xmi-2.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/codecs.json-2.0-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

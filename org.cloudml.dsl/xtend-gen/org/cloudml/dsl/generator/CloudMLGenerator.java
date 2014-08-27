@@ -7,6 +7,9 @@ import cloudml.core.CloudMLElement;
 import cloudml.core.Component;
 import cloudml.core.Port;
 import java.io.ByteArrayOutputStream;
+import org.cloudml.codecs.JsonCodec;
+import org.cloudml.codecs.XmiCodec;
+import org.cloudml.core.NamedElement;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
@@ -14,6 +17,7 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
+import org.eclipse.xtext.util.StringInputStream;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 
 /**
@@ -48,8 +52,16 @@ public class CloudMLGenerator implements IGenerator {
       _contents_1.addAll(_contents_2);
       final ByteArrayOutputStream baos = new ByteArrayOutputStream();
       xmires.save(baos, null);
-      String _string = baos.toString();
-      fsa.generateFile((fileName + ".xmi"), _string);
+      final String result = baos.toString();
+      fsa.generateFile((fileName + ".xmi"), result);
+      final StringInputStream instream = new StringInputStream(result);
+      XmiCodec _xmiCodec = new XmiCodec();
+      final NamedElement dm = _xmiCodec.load(instream);
+      final ByteArrayOutputStream baos2 = new ByteArrayOutputStream();
+      JsonCodec _jsonCodec = new JsonCodec();
+      _jsonCodec.save(dm, baos2);
+      String _string = baos2.toString();
+      fsa.generateFile((fileName + ".json"), _string);
     } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }

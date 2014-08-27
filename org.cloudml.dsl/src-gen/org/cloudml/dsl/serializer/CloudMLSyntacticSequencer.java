@@ -18,7 +18,7 @@ import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 public class CloudMLSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected CloudMLGrammarAccess grammarAccess;
-	protected AbstractElementAlias match_ExternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q;
+	protected AbstractElementAlias match_ExternalComponentCS___PropertiesKeyword_6_0_ColonKeyword_6_1__q;
 	protected AbstractElementAlias match_InternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q;
 	protected AbstractElementAlias match_ProvidedExecutionPlatformCS___ColonKeyword_3_0___OffersKeyword_3_1_0_ColonKeyword_3_1_1__q_PropertiesKeyword_3_2_ColonKeyword_3_3__q;
 	protected AbstractElementAlias match_ProvidedExecutionPlatformCS___OffersKeyword_3_1_0_ColonKeyword_3_1_1__q;
@@ -31,13 +31,14 @@ public class CloudMLSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_RequiredPortCS_ColonKeyword_3_0_q;
 	protected AbstractElementAlias match_RequiredPortCS_CommaKeyword_3_1_1_q;
 	protected AbstractElementAlias match_ResourceCS_CommaKeyword_3_1_q;
+	protected AbstractElementAlias match_ResourceCS___PropertiesKeyword_4_0_ColonKeyword_4_1__q;
 	protected AbstractElementAlias match_VMCS_CommaKeyword_3_1_q;
 	protected AbstractElementAlias match_VMCS___PropertiesKeyword_6_0_ColonKeyword_6_1__q;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (CloudMLGrammarAccess) access;
-		match_ExternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getExternalComponentCSAccess().getPropertiesKeyword_5_0()), new TokenAlias(false, false, grammarAccess.getExternalComponentCSAccess().getColonKeyword_5_1()));
+		match_ExternalComponentCS___PropertiesKeyword_6_0_ColonKeyword_6_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getExternalComponentCSAccess().getPropertiesKeyword_6_0()), new TokenAlias(false, false, grammarAccess.getExternalComponentCSAccess().getColonKeyword_6_1()));
 		match_InternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getInternalComponentCSAccess().getPropertiesKeyword_5_0()), new TokenAlias(false, false, grammarAccess.getInternalComponentCSAccess().getColonKeyword_5_1()));
 		match_ProvidedExecutionPlatformCS___ColonKeyword_3_0___OffersKeyword_3_1_0_ColonKeyword_3_1_1__q_PropertiesKeyword_3_2_ColonKeyword_3_3__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_1_1())), new TokenAlias(false, false, grammarAccess.getProvidedExecutionPlatformCSAccess().getPropertiesKeyword_3_2()), new TokenAlias(false, false, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_3()));
 		match_ProvidedExecutionPlatformCS___OffersKeyword_3_1_0_ColonKeyword_3_1_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getProvidedExecutionPlatformCSAccess().getOffersKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getProvidedExecutionPlatformCSAccess().getColonKeyword_3_1_1()));
@@ -50,6 +51,7 @@ public class CloudMLSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_RequiredPortCS_ColonKeyword_3_0_q = new TokenAlias(false, true, grammarAccess.getRequiredPortCSAccess().getColonKeyword_3_0());
 		match_RequiredPortCS_CommaKeyword_3_1_1_q = new TokenAlias(false, true, grammarAccess.getRequiredPortCSAccess().getCommaKeyword_3_1_1());
 		match_ResourceCS_CommaKeyword_3_1_q = new TokenAlias(false, true, grammarAccess.getResourceCSAccess().getCommaKeyword_3_1());
+		match_ResourceCS___PropertiesKeyword_4_0_ColonKeyword_4_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getResourceCSAccess().getPropertiesKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getResourceCSAccess().getColonKeyword_4_1()));
 		match_VMCS_CommaKeyword_3_1_q = new TokenAlias(false, true, grammarAccess.getVMCSAccess().getCommaKeyword_3_1());
 		match_VMCS___PropertiesKeyword_6_0_ColonKeyword_6_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getVMCSAccess().getPropertiesKeyword_6_0()), new TokenAlias(false, false, grammarAccess.getVMCSAccess().getColonKeyword_6_1()));
 	}
@@ -66,8 +68,8 @@ public class CloudMLSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			if(match_ExternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q.equals(syntax))
-				emit_ExternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			if(match_ExternalComponentCS___PropertiesKeyword_6_0_ColonKeyword_6_1__q.equals(syntax))
+				emit_ExternalComponentCS___PropertiesKeyword_6_0_ColonKeyword_6_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_InternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q.equals(syntax))
 				emit_InternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_ProvidedExecutionPlatformCS___ColonKeyword_3_0___OffersKeyword_3_1_0_ColonKeyword_3_1_1__q_PropertiesKeyword_3_2_ColonKeyword_3_3__q.equals(syntax))
@@ -92,6 +94,8 @@ public class CloudMLSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_RequiredPortCS_CommaKeyword_3_1_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_ResourceCS_CommaKeyword_3_1_q.equals(syntax))
 				emit_ResourceCS_CommaKeyword_3_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_ResourceCS___PropertiesKeyword_4_0_ColonKeyword_4_1__q.equals(syntax))
+				emit_ResourceCS___PropertiesKeyword_4_0_ColonKeyword_4_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_VMCS_CommaKeyword_3_1_q.equals(syntax))
 				emit_VMCS_CommaKeyword_3_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_VMCS___PropertiesKeyword_6_0_ColonKeyword_6_1__q.equals(syntax))
@@ -104,7 +108,7 @@ public class CloudMLSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     ('properties' ':')?
 	 */
-	protected void emit_ExternalComponentCS___PropertiesKeyword_5_0_ColonKeyword_5_1__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ExternalComponentCS___PropertiesKeyword_6_0_ColonKeyword_6_1__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -201,6 +205,14 @@ public class CloudMLSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ','?
 	 */
 	protected void emit_ResourceCS_CommaKeyword_3_1_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ('properties' ':')?
+	 */
+	protected void emit_ResourceCS___PropertiesKeyword_4_0_ColonKeyword_4_1__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

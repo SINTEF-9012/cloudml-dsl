@@ -15,6 +15,11 @@ import cloudml.core.CloudMLModel
 import cloudml.core.VMInstance
 import java.util.ArrayList
 import org.eclipse.ocl.ecore.delegate.OCLDelegateDomain
+import org.cloudml.core.Deployment
+import org.cloudml.codecs.XmiCodec
+import java.io.ByteArrayInputStream
+import org.cloudml.codecs.JsonCodec
+import org.eclipse.xtext.util.StringInputStream
 
 /**
  * Generates code from your model files on save.
@@ -40,22 +45,18 @@ class CloudMLGenerator implements IGenerator {
 		val xmires = new XMIResourceImpl()
 		xmires.contents.addAll(resource.contents)
 		
-		//OCLDelegateDomain.initialize(xmires.resourceSet, "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot");
 		
-		
-//		val root = xmires.contents.get(0) as CloudMLModel
-//		val vms = root.externalComponentInstances.filter[e | e instanceof VMInstance]
-//		val vms2 = new ArrayList<VMInstance>()
-//		vms.forEach[e|
-//			vms2.add(e as VMInstance)
-//		]
-//		
-//		root.vmInstances.addAll(vms2)
-//		
-//		root.externalComponentInstances.removeAll(vms2)
-		
+	
 		val baos = new ByteArrayOutputStream()
 		xmires.save(baos, null)
-		fsa.generateFile(fileName + '.xmi', baos.toString)
+		val result = baos.toString
+		fsa.generateFile(fileName + '.xmi', result)
+		
+		val instream = new StringInputStream(result)
+		
+		val dm = new XmiCodec().load(instream)
+		val baos2 = new ByteArrayOutputStream()
+		new JsonCodec().save(dm, baos2)
+		fsa.generateFile(fileName + '.json', baos2.toString)
 	}
 }

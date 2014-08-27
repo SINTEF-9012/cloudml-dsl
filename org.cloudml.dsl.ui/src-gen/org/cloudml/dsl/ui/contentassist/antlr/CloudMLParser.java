@@ -40,7 +40,7 @@ public class CloudMLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getCloudMLRootAccess().getAlternatives_6(), "rule__CloudMLRoot__Alternatives_6");
 					put(grammarAccess.getCloudMLRootAccess().getAlternatives_11(), "rule__CloudMLRoot__Alternatives_11");
 					put(grammarAccess.getVMCSAccess().getAlternatives_3_0(), "rule__VMCS__Alternatives_3_0");
-					put(grammarAccess.getExternalComponentCSAccess().getAlternatives_4(), "rule__ExternalComponentCS__Alternatives_4");
+					put(grammarAccess.getExternalComponentCSAccess().getAlternatives_5(), "rule__ExternalComponentCS__Alternatives_5");
 					put(grammarAccess.getProvidedPortCSAccess().getAlternatives_3_1_0(), "rule__ProvidedPortCS__Alternatives_3_1_0");
 					put(grammarAccess.getInternalComponentCSAccess().getAlternatives_4(), "rule__InternalComponentCS__Alternatives_4");
 					put(grammarAccess.getRequiredPortCSAccess().getAlternatives_3_1_0(), "rule__RequiredPortCS__Alternatives_3_1_0");
@@ -67,7 +67,8 @@ public class CloudMLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getVMCSAccess().getGroup_3_0_15(), "rule__VMCS__Group_3_0_15__0");
 					put(grammarAccess.getVMCSAccess().getGroup_6(), "rule__VMCS__Group_6__0");
 					put(grammarAccess.getExternalComponentCSAccess().getGroup(), "rule__ExternalComponentCS__Group__0");
-					put(grammarAccess.getExternalComponentCSAccess().getGroup_5(), "rule__ExternalComponentCS__Group_5__0");
+					put(grammarAccess.getExternalComponentCSAccess().getGroup_4(), "rule__ExternalComponentCS__Group_4__0");
+					put(grammarAccess.getExternalComponentCSAccess().getGroup_6(), "rule__ExternalComponentCS__Group_6__0");
 					put(grammarAccess.getProvidedPortCSAccess().getGroup(), "rule__ProvidedPortCS__Group__0");
 					put(grammarAccess.getProvidedPortCSAccess().getGroup_3(), "rule__ProvidedPortCS__Group_3__0");
 					put(grammarAccess.getProvidedPortCSAccess().getGroup_3_1(), "rule__ProvidedPortCS__Group_3_1__0");
@@ -106,6 +107,7 @@ public class CloudMLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getResourceCSAccess().getGroup_3_0_3(), "rule__ResourceCS__Group_3_0_3__0");
 					put(grammarAccess.getResourceCSAccess().getGroup_3_0_4(), "rule__ResourceCS__Group_3_0_4__0");
 					put(grammarAccess.getResourceCSAccess().getGroup_3_0_5(), "rule__ResourceCS__Group_3_0_5__0");
+					put(grammarAccess.getResourceCSAccess().getGroup_4(), "rule__ResourceCS__Group_4__0");
 					put(grammarAccess.getFqnAccess().getGroup(), "rule__Fqn__Group__0");
 					put(grammarAccess.getFqnAccess().getGroup_1(), "rule__Fqn__Group_1__0");
 					put(grammarAccess.getCloudMLRootAccess().getNameAssignment_2(), "rule__CloudMLRoot__NameAssignment_2");
@@ -147,10 +149,11 @@ public class CloudMLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getVMCSAccess().getPropertiesAssignment_6_2(), "rule__VMCS__PropertiesAssignment_6_2");
 					put(grammarAccess.getVMPortCSAccess().getNameAssignment(), "rule__VMPortCS__NameAssignment");
 					put(grammarAccess.getExternalComponentCSAccess().getNameAssignment_2(), "rule__ExternalComponentCS__NameAssignment_2");
-					put(grammarAccess.getExternalComponentCSAccess().getProvidedPortsAssignment_4_0(), "rule__ExternalComponentCS__ProvidedPortsAssignment_4_0");
-					put(grammarAccess.getExternalComponentCSAccess().getProvidedExecutionPlatformsAssignment_4_1(), "rule__ExternalComponentCS__ProvidedExecutionPlatformsAssignment_4_1");
-					put(grammarAccess.getExternalComponentCSAccess().getPropertiesAssignment_5_2(), "rule__ExternalComponentCS__PropertiesAssignment_5_2");
-					put(grammarAccess.getExternalComponentCSAccess().getResourcesAssignment_6(), "rule__ExternalComponentCS__ResourcesAssignment_6");
+					put(grammarAccess.getExternalComponentCSAccess().getProviderAssignment_4_2(), "rule__ExternalComponentCS__ProviderAssignment_4_2");
+					put(grammarAccess.getExternalComponentCSAccess().getProvidedPortsAssignment_5_0(), "rule__ExternalComponentCS__ProvidedPortsAssignment_5_0");
+					put(grammarAccess.getExternalComponentCSAccess().getProvidedExecutionPlatformsAssignment_5_1(), "rule__ExternalComponentCS__ProvidedExecutionPlatformsAssignment_5_1");
+					put(grammarAccess.getExternalComponentCSAccess().getPropertiesAssignment_6_2(), "rule__ExternalComponentCS__PropertiesAssignment_6_2");
+					put(grammarAccess.getExternalComponentCSAccess().getResourcesAssignment_7(), "rule__ExternalComponentCS__ResourcesAssignment_7");
 					put(grammarAccess.getProvidedPortCSAccess().getNameAssignment_2(), "rule__ProvidedPortCS__NameAssignment_2");
 					put(grammarAccess.getProvidedPortCSAccess().getIsLocalAssignment_3_1_0_0(), "rule__ProvidedPortCS__IsLocalAssignment_3_1_0_0");
 					put(grammarAccess.getProvidedPortCSAccess().getPortNumberAssignment_3_1_0_1_2(), "rule__ProvidedPortCS__PortNumberAssignment_3_1_0_1_2");
@@ -209,6 +212,7 @@ public class CloudMLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getResourceCSAccess().getStopCommandAssignment_3_0_5_2(), "rule__ResourceCS__StopCommandAssignment_3_0_5_2");
 					put(grammarAccess.getResourceCSAccess().getRequireCredentialsAssignment_3_0_6(), "rule__ResourceCS__RequireCredentialsAssignment_3_0_6");
 					put(grammarAccess.getResourceCSAccess().getExecuteLocallyAssignment_3_0_7(), "rule__ResourceCS__ExecuteLocallyAssignment_3_0_7");
+					put(grammarAccess.getResourceCSAccess().getPropertiesAssignment_4_2(), "rule__ResourceCS__PropertiesAssignment_4_2");
 				}
 			};
 		}

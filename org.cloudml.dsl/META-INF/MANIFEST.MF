@@ -4,7 +4,16 @@ Bundle-Name: %pluginName
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: .
+Bundle-ClassPath: .,
+ lib/codecs.commons-2.0-SNAPSHOT.jar,
+ lib/codecs.json-2.0-SNAPSHOT.jar,
+ lib/codecs.kmf-2.0-SNAPSHOT.jar,
+ lib/codecs.xmi-2.0-SNAPSHOT.jar,
+ lib/commons-io-2.0.1.jar,
+ lib/gson-2.2.2.jar,
+ lib/kotlin-runtime-0.5.429.jar,
+ lib/kotlin-stdlib-0.5.429.jar,
+ lib/model-2.0-SNAPSHOT.jar
 Bundle-SymbolicName: org.cloudml.dsl;singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext;visibility:=reexport,

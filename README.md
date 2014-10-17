@@ -24,7 +24,7 @@ instances{
 }
 ```
 
-A real example for SensApp deployment can be found here: [org.cloudml.dsl/sample/sensapp.cloudml] (https://github.com/SINTEF-9012/cloudml-dsl/blob/master/org.cloudml.dsl/sample/sensapp.cloudml)
+A real example for SensApp deployment can be found here: [org.cloudml.dsl/sample/sensapp.cloudml] (https://github.com/SINTEF-9012/cloudml-dsl/blob/master/samples/sensapp.cloudml)
 
 #Download and Install
 

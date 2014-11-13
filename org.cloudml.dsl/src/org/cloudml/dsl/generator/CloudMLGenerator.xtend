@@ -20,6 +20,10 @@ import org.cloudml.codecs.XmiCodec
 import java.io.ByteArrayInputStream
 import org.cloudml.codecs.JsonCodec
 import org.eclipse.xtext.util.StringInputStream
+import cloudml.core.Provider
+import cloudml.core.PortInstance
+import cloudml.core.ComponentInstance
+import cloudml.core.ExecutionPlatformInstance
 
 /**
  * Generates code from your model files on save.
@@ -28,14 +32,30 @@ import org.eclipse.xtext.util.StringInputStream
  */
 class CloudMLGenerator implements IGenerator {
 	
+	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
+		
+		
 		
 		val objit = resource.allContents
 		while(objit.hasNext()){
 			val elem = objit.next();
-			if(elem instanceof Port){
-				elem.component = elem.eContainer() as Component
+			switch elem{
+				Port: {
+					elem.component = elem.eContainer() as Component
+				}
+				Provider: {
+					if(elem.name == "openstack_nova")
+						elem.name = "openstack-nova"
+				}
+				PortInstance: {
+					elem.name = '''«elem.name»_«(elem.eContainer as ComponentInstance).name»'''.toString
+				}
+				ExecutionPlatformInstance: {
+					elem.name = '''«elem.name»_«(elem.eContainer as ComponentInstance).name»'''.toString
+				}
 			}
+						
 		}
 		
 		val fileName = (resource.contents.get(0) as CloudMLElement).getName();
@@ -44,19 +64,29 @@ class CloudMLGenerator implements IGenerator {
 		
 		val xmires = new XMIResourceImpl()
 		xmires.contents.addAll(resource.contents)
-		
-		
-	
 		val baos = new ByteArrayOutputStream()
 		xmires.save(baos, null)
 		val result = baos.toString
 		fsa.generateFile(fileName + '.xmi', result)
 		
-		val instream = new StringInputStream(result)
-		
-		val dm = new XmiCodec().load(instream)
-		val baos2 = new ByteArrayOutputStream()
-		new JsonCodec().save(dm, baos2)
-		fsa.generateFile(fileName + '.json', baos2.toString)
+		try{
+			
+			
+			val instream = new StringInputStream(result)
+			
+			val dm = new XmiCodec().load(instream)
+			val baos2 = new ByteArrayOutputStream()
+			new JsonCodec().save(dm, baos2)
+			fsa.generateFile(fileName + '.json', baos2.toString)
+			
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 	}
+	
+	def cloudmlStringRecover(String string) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
 }

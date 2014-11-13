@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="lib/model-2.0-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="lib/codecs.xmi-2.0-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="lib/codecs.json-2.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/commons-jxpath-1.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

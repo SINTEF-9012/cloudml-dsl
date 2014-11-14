@@ -5,7 +5,12 @@ package org.cloudml.dsl.generator;
 
 import cloudml.core.CloudMLElement;
 import cloudml.core.Component;
+import cloudml.core.ComponentInstance;
+import cloudml.core.ExecutionPlatformInstance;
 import cloudml.core.Port;
+import cloudml.core.PortInstance;
+import cloudml.core.Provider;
+import com.google.common.base.Objects;
 import java.io.ByteArrayOutputStream;
 import org.cloudml.codecs.JsonCodec;
 import org.cloudml.codecs.XmiCodec;
@@ -15,6 +20,7 @@ import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
+import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
 import org.eclipse.xtext.util.StringInputStream;
@@ -35,9 +41,51 @@ public class CloudMLGenerator implements IGenerator {
       while (_while) {
         {
           final EObject elem = objit.next();
-          if ((elem instanceof Port)) {
-            EObject _eContainer = ((Port)elem).eContainer();
-            ((Port)elem).setComponent(((Component) _eContainer));
+          boolean _matched = false;
+          if (!_matched) {
+            if (elem instanceof Port) {
+              _matched=true;
+              EObject _eContainer = ((Port)elem).eContainer();
+              ((Port)elem).setComponent(((Component) _eContainer));
+            }
+          }
+          if (!_matched) {
+            if (elem instanceof Provider) {
+              _matched=true;
+              String _name = ((Provider)elem).getName();
+              boolean _equals = Objects.equal(_name, "openstack_nova");
+              if (_equals) {
+                ((Provider)elem).setName("openstack-nova");
+              }
+            }
+          }
+          if (!_matched) {
+            if (elem instanceof PortInstance) {
+              _matched=true;
+              StringConcatenation _builder = new StringConcatenation();
+              String _name = ((PortInstance)elem).getName();
+              _builder.append(_name, "");
+              _builder.append("_");
+              EObject _eContainer = ((PortInstance)elem).eContainer();
+              String _name_1 = ((ComponentInstance) _eContainer).getName();
+              _builder.append(_name_1, "");
+              String _string = _builder.toString();
+              ((PortInstance)elem).setName(_string);
+            }
+          }
+          if (!_matched) {
+            if (elem instanceof ExecutionPlatformInstance) {
+              _matched=true;
+              StringConcatenation _builder = new StringConcatenation();
+              String _name = ((ExecutionPlatformInstance)elem).getName();
+              _builder.append(_name, "");
+              _builder.append("_");
+              EObject _eContainer = ((ExecutionPlatformInstance)elem).eContainer();
+              String _name_1 = ((ComponentInstance) _eContainer).getName();
+              _builder.append(_name_1, "");
+              String _string = _builder.toString();
+              ((ExecutionPlatformInstance)elem).setName(_string);
+            }
           }
         }
         boolean _hasNext_1 = objit.hasNext();
@@ -54,16 +102,29 @@ public class CloudMLGenerator implements IGenerator {
       xmires.save(baos, null);
       final String result = baos.toString();
       fsa.generateFile((fileName + ".xmi"), result);
-      final StringInputStream instream = new StringInputStream(result);
-      XmiCodec _xmiCodec = new XmiCodec();
-      final NamedElement dm = _xmiCodec.load(instream);
-      final ByteArrayOutputStream baos2 = new ByteArrayOutputStream();
-      JsonCodec _jsonCodec = new JsonCodec();
-      _jsonCodec.save(dm, baos2);
-      String _string = baos2.toString();
-      fsa.generateFile((fileName + ".json"), _string);
+      try {
+        final StringInputStream instream = new StringInputStream(result);
+        XmiCodec _xmiCodec = new XmiCodec();
+        final NamedElement dm = _xmiCodec.load(instream);
+        final ByteArrayOutputStream baos2 = new ByteArrayOutputStream();
+        JsonCodec _jsonCodec = new JsonCodec();
+        _jsonCodec.save(dm, baos2);
+        String _string = baos2.toString();
+        fsa.generateFile((fileName + ".json"), _string);
+      } catch (final Throwable _t) {
+        if (_t instanceof Exception) {
+          final Exception e = (Exception)_t;
+          e.printStackTrace();
+        } else {
+          throw Exceptions.sneakyThrow(_t);
+        }
+      }
     } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
+  }
+  
+  public void cloudmlStringRecover(final String string) {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
   }
 }

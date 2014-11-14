@@ -1,35 +1,32 @@
 cloudml-dsl is a text-based domain-specific language for writing CloudML models. See a made-up example below:
 
 ```
-deployment model SomeModel
-provider aws:'./credential'
+deployment model Test
+
 types{
-	internal C1{
-		provided port prv
-		required execution exec
+	internal component IM1{
+		required communication ReqC
+		required host ReqH
 	}
-	internal C2{
-		required port req
-		required execution exec
+	vm VM1 {
+		imageID : 'something'
+		provided communication ProC 
 	}
-	vm VM1{
-		location:'eu', core:1..5, ram:5.., provider:aws
-		provided execution exec
-	}
-	connect C2.req to C1.prv named R1
+	communication Com{
+		from IM1.ReqC to VM1.ProC
+	}	
 }
 instances{
-	internal c1 typed C1
-	internal c2 typed C2
-	vm v1 typed VM1
-	connect c2.req to c1.prv typed R1
-	host c1.exec on v1.exec
-	host c2.exec on v1.exec
+	vm vm1 typed VM1
+	internal component im1 typed IM1
+	connect im1.ReqC to vm1.ProC typed Com named somename 
+	host im1.ReqH on vm1.ProH
 }
-
 ```
 
-A real example for SensApp deployment can be found here: [org.cloudml.dsl/sample/sensapp.mydsl] (https://github.com/SINTEF-9012/cloudml-dsl/blob/master/org.cloudml.dsl/sample/sensapp.mydsl)
+A real example for SensApp deployment can be found here: [org.cloudml.dsl/sample/sensapp.cloudml] (https://github.com/SINTEF-9012/cloudml-dsl/blob/master/samples/sensapp.cloudml)
+
+#Download and Install
 
 To use the editor of this language:
 
@@ -37,7 +34,7 @@ To use the editor of this language:
 - Install the Eclipse OCL plugin from Eclipse Marketplace
 - Import all the projects in this repository into Eclipse
 - Run the projects as "Eclipse Application"
-- Create a new empty project in the new Eclipse, and a new file with extension ".mydsl"
+- Create a new empty project in the new Eclipse, and a new file with extension ".cloudml"
 - Copy the code above into the file, and save
 - A <name>.xmi file and a <name>.json file will be generated in the src-gen folder, and you can use either of them for deployment using [cloudml](https://github.com/SINTEF-9012/cloudml/).
 

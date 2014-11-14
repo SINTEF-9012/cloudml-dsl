@@ -149,6 +149,8 @@ RelationshipCS returns Relationship:
 			'from' requiredPort = [RequiredPort|Fqn] 
 			'to' providedPort = [ProvidedPort|Fqn] 
 			('properties' ':' properties += PropertyCS*)?
+			('client' requiredPortResource=ResourceCS)?
+			('server' providedPortResource=ResourceCS)?
 			resources += ResourceCS*
 		 '}'	
 		

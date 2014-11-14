@@ -50,6 +50,7 @@ public interface Port extends CloudMLElementWithProperties {
 
 	/**
 	 * Returns the value of the '<em><b>Is Local</b></em>' attribute.
+	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Is Local</em>' attribute isn't clear,
@@ -59,7 +60,7 @@ public interface Port extends CloudMLElementWithProperties {
 	 * @return the value of the '<em>Is Local</em>' attribute.
 	 * @see #setIsLocal(boolean)
 	 * @see cloudml.core.CorePackage#getPort_IsLocal()
-	 * @model required="true"
+	 * @model default="false" required="true"
 	 * @generated
 	 */
 	boolean isIsLocal();

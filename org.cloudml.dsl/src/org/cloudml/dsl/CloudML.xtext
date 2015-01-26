@@ -159,14 +159,17 @@ RelationshipCS returns Relationship:
 
 ExternalComponentInstanceCS returns ExternalComponentInstance:
 	'external' 'component' name = ValidID 'typed' type = [ExternalComponent]
+	('{' ('properties' ':' properties += PropertyCS*)? '}')?
 ;
 
 InternalComponentInstanceCS returns InternalComponentInstance:
 	'internal' 'component' name = ValidID 'typed' type = [InternalComponent]
+	('{' ('properties' ':' properties += PropertyCS*)? '}')?
 ;
 
 VMInstanceCS returns VMInstance:
 	'vm'  name = ValidID 'typed' type = [VM]
+	('{' ('properties' ':' properties += PropertyCS*)? '}')?
 ;
 
 RelationshipInstanceCS returns RelationshipInstance:

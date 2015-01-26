@@ -4,16 +4,7 @@ Bundle-Name: %pluginName
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: .,
- lib/codecs.commons-2.0-SNAPSHOT.jar,
- lib/codecs.json-2.0-SNAPSHOT.jar,
- lib/codecs.kmf-2.0-SNAPSHOT.jar,
- lib/codecs.xmi-2.0-SNAPSHOT.jar,
- lib/commons-io-2.0.1.jar,
- lib/gson-2.2.2.jar,
- lib/kotlin-runtime-0.5.429.jar,
- lib/kotlin-stdlib-0.5.429.jar,
- lib/model-2.0-SNAPSHOT.jar
+Bundle-ClassPath: .,lib/codecs.commons-2.0-SNAPSHOT.jar,lib/codecs.json-2.0-SNAPSHOT.jar,lib/codecs.kmf-2.0-SNAPSHOT.jar,lib/codecs.xmi-2.0-SNAPSHOT.jar,lib/commons-io-2.0.1.jar,lib/gson-2.2.2.jar,lib/kotlin-runtime-0.5.429.jar,lib/kotlin-stdlib-0.5.429.jar,lib/model-2.0-SNAPSHOT.jar
 Bundle-SymbolicName: org.cloudml.dsl;singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext;visibility:=reexport,
@@ -31,7 +22,8 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.eclipse.xtext.common.types,
  org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional,
  org.eclipse.ocl.ecore;bundle-version="3.3.100",
- org.eclipse.ocl.examples.pivot;bundle-version="3.4.1"
+ org.eclipse.ocl.examples.pivot;bundle-version="3.4.1",
+ org.eclipse.xtext.xbase.lib
 Import-Package: org.apache.log4j,
  org.eclipse.xtext.xbase.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
